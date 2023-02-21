@@ -3,6 +3,28 @@
         "name": "Men's Comp 4/3mm Full Wetsuit",
         "description": "Light Weight Flexibility. The Comp is the lightest, most stretchy wetsuit we offer. The 100% ultra-stretch exterior combined with our Thermolite IR core, and critically taped seams, make this Men's 4/3mm wetsuit insanely comfortable.",
         "tags": ["wetsuits", "mens", "full", "comp"],
-        "image": "https://cdn.shopify.com/s/files/1/0360/4473/4523/products/MN43ZXC0_XCEL_BLK_FRT1_1024x1024_WEB.jpg?v=1670534453&width=823"
+        "image": "https://cdn.shopify.com/s/files/1/0360/4473/4523/products/MN43ZXC0_XCEL_BLK_FRT1_1024x1024_WEB.jpg?v=1670534453&width=823",
+        "stock": 2
+    },
+    {
+        "name": "Channel Islands Rocket Wide",
+        "description": "The Channel Islands Rocket Wide Surfboard is the incredibly user-friendly cousin of the Rocket 9. It's a shorter, wider skate machine designed to lift the fun factor when the waves are not a their best. Introducing the Rocket Wide. The incredibly user-friendly cousin of the Rocket 9. \"My brothers and I loved the speed and control we were feeling with the Rocket 9 and we wanted to see how we could apply those same levels of fun and performance to a board for small and gutless waves. The Rocket Wide features a wider tail block to skate across flat sections and a wider nose area to accommodate for better paddle power. It's a shorter, wider skate machine designed to lift the fun factor when the waves are not a their best. So don't let those small days get you down cause the Rocket Wide is ready for blast off!!\" Available stock in 3 or 5 fin configurations. Advanced surfers will ride this 2″-4″ shorter than their height.",
+        "tags": ["surfboards", "shortboards", "channel islands"],
+        "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/ci_rw_fut_5000x.jpg?v=1623958927",
+        "stock": 5
+    },
+    {
+        "name": "SURF TERRY BAJA HOODIE IN INDIGO",
+        "description": "For milder months, Todd wanted a hoodie that looked solid yet felt light — the sort of layer that would carry you from a cool spring morning to a breezy beach cookout and still slide effortlessly under a sportcoat. The unlock was a soft and textural French terry cloth made from Peruvian cotton, garment-dyed and washed to look broken-in from the first wear. It looks like a sweatshirt but has the drape and lightness of a tee — in other words, perfect for summer. Our Surf Terry Baja Hoodie is loaded with quality details: cover-stitching on exterior seams, raglan sleeves, a drawstring hood, and a button placket.",
+        "tags": ["clothing", "mens", "hoodies"],
+        "image": "https://cdn.shopify.com/s/files/1/0186/1574/products/KN8439433_BL05_038-copy_2000x.jpg?v=1649186007",
+        "stock": 3
+    },
+    {   
+        "name": "Hot Rod Surf Velvet 9'0",
+        "description":"Hot Rod Surf Velvet Model all around noserider. The Velvet is a specially shaped longboard that is maneuverable and easy to handle measuring in at 9’0 to 9’3 range. Versatile in all conditions the Velvet is a little shorter and narrower that the Tourmaline and Illuminator Models which can be advantageous in larger surf as well as being nimble on smaller summer and spring days. Upon special request The Velvet is also available in a ‘Classic’ longer retro shape reminiscent of longboards from the late 50’s and early 60’s with bigger rails, more belly, and maximized volume. The Velvet is a narrower and shorter range length noserider. Shaped by Mark Whitney Mehran",
+        "tags":["surfboards","longboards"],
+        "image": "https://assets.bigcartel.com/product_images/290730180/HRS+Surfboard+Velvet+rz+_100_+rz.jpg?auto=format&fit=max&h=1000&w=1000",
+        "stock": 1
     }
 ]

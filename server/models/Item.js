@@ -15,7 +15,23 @@ const itemSchema = new Schema ({
     },
     image: {
         type: String
+    },
+    stock: {
+        type: Number
+    },
+    bestSeller: {
+        type: Boolean,
+        default: false
+    },
+    saleItem: {
+        type: Boolean,
+        default: false
+    },
+    newArrival: {
+        type: Boolean,
+        default: false
     }
+
 })
 
 const Item = model('Item', itemSchema)
