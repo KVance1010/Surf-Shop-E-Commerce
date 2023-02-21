@@ -1,0 +1,51 @@
+apparel
+	-mens
+		-boardshorts
+		-shirts
+		-shorts
+		-hoodies
+		-footwear
+		-hats
+	-womens
+		-swimsuits
+		-tops
+		-hoodies
+		-footwear
+		-hats
+	-accessories
+		-watches
+		-shades
+		-towels
+		-bags
+
+	-kids
+		-boys
+			-boardshorts
+			-shirts
+			-shorts
+			-hoodies
+			-footwear
+			-hats
+		-girls
+			-swimsuits
+			-tops
+			-hoodies
+			-footwear
+			-hats	
+
+surfboards
+	-shortboards
+	-longboards
+	-hybrids
+	-guns
+surf accessories
+	-leashes
+	-wax
+	-sunscreen
+	-fins
+	-ding repair
+	-rashguards
+	-earplugs
+	-tail pads
+
+	
