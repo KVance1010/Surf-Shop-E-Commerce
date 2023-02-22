@@ -1,6 +1,7 @@
 [
     {
         "name": "Men's Comp 4/3mm Full Wetsuit",
+        "price": 399.99,
         "description": "Light Weight Flexibility. The Comp is the lightest, most stretchy wetsuit we offer. The 100% ultra-stretch exterior combined with our Thermolite IR core, and critically taped seams, make this Men's 4/3mm wetsuit insanely comfortable.",
         "tags": ["wetsuits", "mens", "full", "comp"],
         "image": "https://cdn.shopify.com/s/files/1/0360/4473/4523/products/MN43ZXC0_XCEL_BLK_FRT1_1024x1024_WEB.jpg?v=1670534453&width=823",
@@ -8,6 +9,7 @@
     },
     {
         "name": "Channel Islands Rocket Wide",
+        "price": 650,
         "description": "The Channel Islands Rocket Wide Surfboard is the incredibly user-friendly cousin of the Rocket 9. It's a shorter, wider skate machine designed to lift the fun factor when the waves are not a their best. Introducing the Rocket Wide. The incredibly user-friendly cousin of the Rocket 9. \"My brothers and I loved the speed and control we were feeling with the Rocket 9 and we wanted to see how we could apply those same levels of fun and performance to a board for small and gutless waves. The Rocket Wide features a wider tail block to skate across flat sections and a wider nose area to accommodate for better paddle power. It's a shorter, wider skate machine designed to lift the fun factor when the waves are not a their best. So don't let those small days get you down cause the Rocket Wide is ready for blast off!!\" Available stock in 3 or 5 fin configurations. Advanced surfers will ride this 2″-4″ shorter than their height.",
         "tags": ["surfboards", "shortboards", "channel islands"],
         "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/ci_rw_fut_5000x.jpg?v=1623958927",
@@ -15,6 +17,7 @@
     },
     {
         "name": "SURF TERRY BAJA HOODIE IN INDIGO",
+        "price": 65.99,
         "description": "For milder months, Todd wanted a hoodie that looked solid yet felt light — the sort of layer that would carry you from a cool spring morning to a breezy beach cookout and still slide effortlessly under a sportcoat. The unlock was a soft and textural French terry cloth made from Peruvian cotton, garment-dyed and washed to look broken-in from the first wear. It looks like a sweatshirt but has the drape and lightness of a tee — in other words, perfect for summer. Our Surf Terry Baja Hoodie is loaded with quality details: cover-stitching on exterior seams, raglan sleeves, a drawstring hood, and a button placket.",
         "tags": ["clothing", "mens", "hoodies"],
         "image": "https://cdn.shopify.com/s/files/1/0186/1574/products/KN8439433_BL05_038-copy_2000x.jpg?v=1649186007",
@@ -22,9 +25,73 @@
     },
     {   
         "name": "Hot Rod Surf Velvet 9'0",
+        "price": 999.99,
         "description":"Hot Rod Surf Velvet Model all around noserider. The Velvet is a specially shaped longboard that is maneuverable and easy to handle measuring in at 9’0 to 9’3 range. Versatile in all conditions the Velvet is a little shorter and narrower that the Tourmaline and Illuminator Models which can be advantageous in larger surf as well as being nimble on smaller summer and spring days. Upon special request The Velvet is also available in a ‘Classic’ longer retro shape reminiscent of longboards from the late 50’s and early 60’s with bigger rails, more belly, and maximized volume. The Velvet is a narrower and shorter range length noserider. Shaped by Mark Whitney Mehran",
         "tags":["surfboards","longboards"],
         "image": "https://assets.bigcartel.com/product_images/290730180/HRS+Surfboard+Velvet+rz+_100_+rz.jpg?auto=format&fit=max&h=1000&w=1000",
         "stock": 1
+    },
+    {
+        "name": "HYPERFREAK S-SEAM FADE 20\" BOARDSHORTS",
+        "price": 50,
+        "image": "https://cdn.shopify.com/s/files/1/2034/7683/products/SP1106012_PBL_P_1_360x.jpg?v=1653426961",
+        "description": "This is our classic Hyperfreak stretch boardshort, designed to keep you surfing longer. Stretch fabrication offers the perfect amount of flex while quick-dry, anti-rash technology is used to maximize comfort and improve drying time.",
+        "tags": ["apparel", "mens", "boardshorts"],
+        "stock": 10,
+        "bestSeller": true
+    },
+    {
+        "name": "SHEIN Men Letter & Tropical Graphic Tee",
+        "price": 30,
+        "description": "Supperrrrr cute shirt love love love. Only problem is that you'd have to wear a more nude bra color if your planning on being more modest. Other than that, def recommend. All size info is accurate.",
+        "image": "https://img.ltwebstatic.com/images3_pi/2022/06/10/165483371841ff8c0b374ce23827774642a2ebd734.webp",
+        "tags":["apparel", "mens", "shirts"],
+        "stock": 20,
+        "saleItem": true
+    },
+    {
+        "name": "Boardwalk Global Entry 20\"",
+        "price": 30,
+        "description": "Tried and true, the Global Entry Evolution 20\" Boardwalk, has you covered. The Global Entry is our most feature-rich Boardwalk, constructed with 4-way Cordura nylon stretch fabric with quick dry properties, stow pockets for your phone and wallet, internal draw cord and premium heat welded zippers. Stay sharp with the ultimate hybrid travel shorts.",
+        "tags":["apparel", "mens","shorts"],
+        "image": "https://www.ripcurl.com/media/catalog/product/c/w/cwacz9_0090-1_11.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "stock": 4,
+        "newArrival": true
+    },
+    {
+        "image": "https://www.ripcurl.com/media/catalog/product/c/f/cfehk9_0090_2_mf_rollover_update_4.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "name": "Anti-Series Soft Tech Fleece",
+        "price": 80,
+        "description": "The Anti-Series Soft Tech Fleece is a ground-breaking men's winter warmer that acts as the ultimate wind-breaker, has a DWR water repellent treatment, and feels like your favourite soft brushed fleece. Finished with adjustable hood, zip pockets, and now available in a wider range of sizes.",
+        "tags": ["apparel","mens","hoodies"],
+        "bestSeller": true
+    },
+    {
+        "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/RF002611BZB_Main_1100x.jpg?v=1642827732",
+        "description": "These full grain leather sandals have a built in bottle opener? And arch support? And a non marking rubber outsole with excellent traction? Hold our beer. For beer on the beach moments no matter where the water is, there's the REEF Draftsmen.",
+        "name": "REEF DRAFTSMEN FLIP FLOPS",
+        "price":49.99,
+        "tags":["apparel","mens","footwear"],
+        "stock": 4,
+        "saleItem": true
+
+    },
+    {
+        "name": "MYSTIC 2mm Neoprene Beanie",
+        "price": 31.50,
+        "description": "Mystic's classic neoprene beanie – this beanie is sufficiently thick and keeps your head warm in bitter windchill. Available in an array of colors, this beanie features an adjustable loop with a clip on the back so that you won't lose it in the water.",
+        "tags":["apparel","mens", "hats"],
+        "image": "https://cdn.watersportsoutlet.com/images/1x1/thumbs/2022%20Mystic%202mm%20Neoprene%20Beanie%2035016.230024%20-%20Dark%20Olive.700x700.jpg",
+        "stock": 2
+    },
+    {
+        "name": "Rip Curl Womens Swimsuit On The Coast Long Sleeve Surfsuit",
+        "price": 99.95,
+        "description": "Designed with an all-over yardage print, with key hole back detail, the On The Coast Long Sleeve Surfsuit is an epic women's one piece swimsuit. Offering good support and coverage, tie back, and removable padding.",
+        "tags":["apparel","womens", "swimsuits"],
+        "image": "https://cdn.shopify.com/s/files/1/0783/3649/products/gsixx9_0090-3_1000x.jpg?v=1647972464",
+        "stock": 1,
+        "bestSeller": true
     }
+    
 ]
