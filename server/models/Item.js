@@ -23,6 +23,9 @@ const itemSchema = new Schema ({
     stock: {
         type: Number
     },
+    brand: {
+        type: String
+    },
     bestSeller: {
         type: Boolean,
         default: false

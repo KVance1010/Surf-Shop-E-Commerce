@@ -92,6 +92,33 @@
         "image": "https://cdn.shopify.com/s/files/1/0783/3649/products/gsixx9_0090-3_1000x.jpg?v=1647972464",
         "stock": 1,
         "bestSeller": true
+    },
+    {
+        "name": "The Fishnet Crewneck Cover-Up",
+        "price": 99.95,
+        "description": "Designed with versatility (and easy packing) in mind, our new Fishnet Crewneck Cover-Up goes with all your favorite swimsuits. Chic and oh-so breezy, it's made from fishnet-inspired material that shows off a peek of your suit. You'll love the drapey, relaxed fit and mid-hip length that provides just the right amount of coverage.",
+        "tags":["apparel","womens","tops"],
+        "image": "https://cdn.shopify.com/s/files/1/1869/0651/products/2_ModelBack_3c9ead6d-eb16-4941-b905-5ff1f1974b07_1024x.jpg",
+        "stock": 15,
+        "newArrival": true
+    },
+    {
+        "name": "BlanketBlend Hoodie",
+        "price": 120,
+        "tags":["apparel","womens","hoodies"],
+        "image": "https://cdn.shopify.com/s/files/1/0721/2253/products/Untitled-5_800x.jpg?v=1672872327",
+        "stock": 1,
+        "bestSeller":true,
+        "saleItem": true
+    },
+    {
+        "name": "REEF CUSHION VISTA",
+        "price": 50,
+        "description": "Do we at REEF have a favorite sandal? Does a parent have a favorite child? Never. (But some favorites are more favorite than others. We love these perfectly proportioned sandals, with a soft double vegan leather strap, modern silhouette and high-energy rebound footbed. But if any of our other shoes asks, we never said this.)",
+        "tags":["apparel","womens","footwear"],
+        "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/RF0A3OKSNAT_MAIN_1100x.jpg?v=1648662655",
+        "stock": 40,
+        "saleItem":true
     }
     
 ]
