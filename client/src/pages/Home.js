@@ -11,9 +11,6 @@ const users = data?.users || []
 return (
     <div>
        Home Page
-       <Link to={'/admin'}>
-            Link to Admin page
-       </Link>
     </div>
 )
 }
