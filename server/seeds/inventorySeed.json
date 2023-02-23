@@ -1,6 +1,7 @@
 [
     {
         "name": "Men's Comp 4/3mm Full Wetsuit",
+        "brand": "XCel",
         "price": 399.99,
         "description": "Light Weight Flexibility. The Comp is the lightest, most stretchy wetsuit we offer. The 100% ultra-stretch exterior combined with our Thermolite IR core, and critically taped seams, make this Men's 4/3mm wetsuit insanely comfortable.",
         "tags": ["wetsuits", "mens", "full", "comp"],
@@ -9,7 +10,8 @@
     },
     {
         "name": "Channel Islands Rocket Wide",
-        "price": 650,
+        "brand": "Channel Islands",
+        "price": 650.00,
         "description": "The Channel Islands Rocket Wide Surfboard is the incredibly user-friendly cousin of the Rocket 9. It's a shorter, wider skate machine designed to lift the fun factor when the waves are not a their best. Introducing the Rocket Wide. The incredibly user-friendly cousin of the Rocket 9. \"My brothers and I loved the speed and control we were feeling with the Rocket 9 and we wanted to see how we could apply those same levels of fun and performance to a board for small and gutless waves. The Rocket Wide features a wider tail block to skate across flat sections and a wider nose area to accommodate for better paddle power. It's a shorter, wider skate machine designed to lift the fun factor when the waves are not a their best. So don't let those small days get you down cause the Rocket Wide is ready for blast off!!\" Available stock in 3 or 5 fin configurations. Advanced surfers will ride this 2″-4″ shorter than their height.",
         "tags": ["surfboards", "shortboards", "channel islands"],
         "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/ci_rw_fut_5000x.jpg?v=1623958927",
@@ -33,7 +35,8 @@
     },
     {
         "name": "HYPERFREAK S-SEAM FADE 20\" BOARDSHORTS",
-        "price": 50,
+        "brand": "O'Neil",
+        "price": 50.00,
         "image": "https://cdn.shopify.com/s/files/1/2034/7683/products/SP1106012_PBL_P_1_360x.jpg?v=1653426961",
         "description": "This is our classic Hyperfreak stretch boardshort, designed to keep you surfing longer. Stretch fabrication offers the perfect amount of flex while quick-dry, anti-rash technology is used to maximize comfort and improve drying time.",
         "tags": ["apparel", "mens", "boardshorts"],
@@ -42,7 +45,8 @@
     },
     {
         "name": "SHEIN Men Letter & Tropical Graphic Tee",
-        "price": 30,
+        "brand": "Shein",
+        "price": 30.00,
         "description": "Supperrrrr cute shirt love love love. Only problem is that you'd have to wear a more nude bra color if your planning on being more modest. Other than that, def recommend. All size info is accurate.",
         "image": "https://img.ltwebstatic.com/images3_pi/2022/06/10/165483371841ff8c0b374ce23827774642a2ebd734.webp",
         "tags":["apparel", "mens", "shirts"],
@@ -51,7 +55,8 @@
     },
     {
         "name": "Boardwalk Global Entry 20\"",
-        "price": 30,
+        "brand": "Rip Curl",
+        "price": 30.00,
         "description": "Tried and true, the Global Entry Evolution 20\" Boardwalk, has you covered. The Global Entry is our most feature-rich Boardwalk, constructed with 4-way Cordura nylon stretch fabric with quick dry properties, stow pockets for your phone and wallet, internal draw cord and premium heat welded zippers. Stay sharp with the ultimate hybrid travel shorts.",
         "tags":["apparel", "mens","shorts"],
         "image": "https://www.ripcurl.com/media/catalog/product/c/w/cwacz9_0090-1_11.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
@@ -61,13 +66,15 @@
     {
         "image": "https://www.ripcurl.com/media/catalog/product/c/f/cfehk9_0090_2_mf_rollover_update_4.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
         "name": "Anti-Series Soft Tech Fleece",
-        "price": 80,
+        "brand": "Rip Curl",
+        "price": 80.00,
         "description": "The Anti-Series Soft Tech Fleece is a ground-breaking men's winter warmer that acts as the ultimate wind-breaker, has a DWR water repellent treatment, and feels like your favourite soft brushed fleece. Finished with adjustable hood, zip pockets, and now available in a wider range of sizes.",
         "tags": ["apparel","mens","hoodies"],
         "bestSeller": true
     },
     {
         "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/RF002611BZB_Main_1100x.jpg?v=1642827732",
+        "brand": "Reef",
         "description": "These full grain leather sandals have a built in bottle opener? And arch support? And a non marking rubber outsole with excellent traction? Hold our beer. For beer on the beach moments no matter where the water is, there's the REEF Draftsmen.",
         "name": "REEF DRAFTSMEN FLIP FLOPS",
         "price":49.99,
@@ -78,6 +85,7 @@
     },
     {
         "name": "MYSTIC 2mm Neoprene Beanie",
+        "brand": "Mystic",
         "price": 31.50,
         "description": "Mystic's classic neoprene beanie – this beanie is sufficiently thick and keeps your head warm in bitter windchill. Available in an array of colors, this beanie features an adjustable loop with a clip on the back so that you won't lose it in the water.",
         "tags":["apparel","mens", "hats"],
@@ -86,6 +94,7 @@
     },
     {
         "name": "Rip Curl Womens Swimsuit On The Coast Long Sleeve Surfsuit",
+        "brand": "Rip Curl",
         "price": 99.95,
         "description": "Designed with an all-over yardage print, with key hole back detail, the On The Coast Long Sleeve Surfsuit is an epic women's one piece swimsuit. Offering good support and coverage, tie back, and removable padding.",
         "tags":["apparel","womens", "swimsuits"],
@@ -104,7 +113,7 @@
     },
     {
         "name": "BlanketBlend Hoodie",
-        "price": 120,
+        "price": 120.00,
         "tags":["apparel","womens","hoodies"],
         "image": "https://cdn.shopify.com/s/files/1/0721/2253/products/Untitled-5_800x.jpg?v=1672872327",
         "stock": 1,
@@ -113,12 +122,75 @@
     },
     {
         "name": "REEF CUSHION VISTA",
-        "price": 50,
+        "price": 50.00,
+        "brand": "Reef",
         "description": "Do we at REEF have a favorite sandal? Does a parent have a favorite child? Never. (But some favorites are more favorite than others. We love these perfectly proportioned sandals, with a soft double vegan leather strap, modern silhouette and high-energy rebound footbed. But if any of our other shoes asks, we never said this.)",
         "tags":["apparel","womens","footwear"],
         "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/RF0A3OKSNAT_MAIN_1100x.jpg?v=1648662655",
         "stock": 40,
         "saleItem":true
+    },
+    {
+        "name": "Billabong Surf Bucket Hat-Black",
+        "brand": "Billabong",
+        "price": 40.00,
+        "tags":["apparel","womens","hats"],
+        "image": "https://cdn.shopify.com/s/files/1/2062/5873/products/ABJHA00222BLKSecondary1_x1400.jpg?v=1674244737",
+        "stock": 25,
+        "bestSeller": true
+    },
+    {
+        "name": "Rip Curl Men's Automatic Watch with Polyurethane Strap, Black, 26 (Model: A1119),Mignight 21",
+        "brand": "Rip Curl",
+        "price": 99.99,
+        "tags":["apparel","accesories","watches"],
+        "image": "https://m.media-amazon.com/images/I/51IA+C-sbWL._AC_UX679_.jpg",
+        "stock": 3,
+        "saleItem": true
+    },
+    {
+        "name": "Oakley Hydra",
+        "price": 173.00,
+        "brand": "Oakley",
+        "tags":["apparel","accesories","shades"],
+        "image": "https://assets.oakley.com/is/image/OakleyEYE/888392593429__PREMIUM__shad__al6.png?impolicy=OO_ratio&width=1000",
+        "stock": 14,
+        "newArrival": true
+    },
+    {
+        "name": "Poncho Towel: Rockies Moss",
+        "price": 79.95,
+        "brand": "Nomadix",
+        "tags":["apparel","accesories","towels"],
+        "image": "https://cdn.shopify.com/s/files/1/0714/2297/products/AT5I1719.jpg?v=1615418124",
+        "stock": 10
+    },
+    {
+        "name": "Public Goods Reusable Cotton Tote Bag",
+        "price": 10.00,
+        "tags":["apparel","accesories","bags"],
+        "image": "https://cdn.shopify.com/s/files/1/0838/7991/products/cotton-tote-bag_1000x.jpg?v=1627997728",
+        "stock": 11
+    },
+    {
+        "name": "Vernor Hybridl",
+        "brand": "Vernor",
+        "price": 749.00,
+        "description": "This is the most user friendly surfboard on the market. The thickness from your crotch to your chest area resembles a 9' longboard and the width in the nose gives you a paddling advantage. From the middle of the board to the tail you have characteristics of a contemporary shortboard. Having one of these boards in your quiver will definitely improve your wave count and stoke.",
+        "tags":["surfboards","hybrids"],
+        "image": "https://www.vernorsurfboards.com/img/boards/main-hybrid.jpg",
+        "stock": 5,
+        "saleItem": true
+    },
+    {
+        "name": "Padillac",
+        "brand": "Pyzel",
+        "price": 955.00,
+        "description": "The Padillac has been ridden to more big wave contest victories than any other single surfboard design in history! John John Florence won the 2016 Eddie at maxing Waimea, Billy Kemper rode them to an unbelievable 4 Jaws wins (and a second place) AND got what is considered the greatest Jaws tube ride so far! Mark Healey gave it the name, and was instrumental in developing and testing the design which he was on when he won the 2014 Billabong XXL Biggest Paddle Award! In the past few years Nathan Florence, JJF, Makua and Koa Rothman, Eli Olson, Billy Kemper, Nic Von Rupp and a bunch of other crazy f@#$ers have put it to the test in the world's biggest waves and they all come back saying it's the best big wave board they have had.",
+        "tags":["surfboards","guns"],
+        "image": "https://images3.shaperbuddy.com/18/surfboards/1123169905d099.jpg",
+        "stock": 0,
+        "bestSeller": true
     }
     
 ]

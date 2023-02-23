@@ -20,6 +20,7 @@ const typeDefs = gql`
 
     type Query {
         users: [User]
+        items: [Item]
         itemsByCategory(tags: [String]): [Item]
     }
 `
