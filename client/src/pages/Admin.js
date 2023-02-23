@@ -1,40 +1,44 @@
 import React from 'react'
 import {useQuery, useMutation} from '@apollo/client'
-import 'bootstrap'
+import { QUERY_ITEMS } from '../utils/queries'
+import { QUERY_ITEMS_BY_TAGS } from '../utils/queries'
 
 const Admin = () => {
+    const { loading, data } = useQuery(QUERY_ITEMS);
+    const items = data?.items || [];
+    console.log(items)
+
     return(
         <div>
             <h1>
-                Add new item:
-                
+                Add new item:  
             </h1>
             <form>
                 <div className="form-group">
                     <label >Item Name</label><br/>
                     <input type="text" className="form-control" id="itemName" />
                 </div>
-                <div classNAme="form-group">
+                <div className="form-group">
                     <label>Price</label><br/>
                     <input type="text" className="form-control" id="itemPrice" />
                 </div>
-                <div classNAme="form-group">
+                <div className="form-group">
                     <label>Description</label><br/>
                     <input type="text" className="form-control" id="itemDescription" />
                 </div>
-                <div classNAme="form-group">
+                <div className="form-group">
                     <label>Tags: separate with comma</label><br/>
                     <input type="text" className="form-control" id="itemTags" />
                 </div>
-                <div classNAme="form-group">
+                <div className="form-group">
                     <label>Stock</label><br/>
                     <input type="text" className="form-control" id="itemStock" />
                 </div>
-                <div classNAme="form-group">
+                <div className="form-group">
                     <label>Brand</label><br/>
                     <input type="text" className="form-control" id="itemBrand" />
                 </div>
-                <div classNAme="form-group">
+                <div className="form-group">
                     <label>Brand</label><br/>
                     <input type="text" className="form-control" id="itemBrand" />
                 </div><br/>
@@ -70,6 +74,24 @@ const Admin = () => {
                 </div>
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>
+            <div>
+                {loading ? (
+                    <div>
+                        ...loading
+                    </div>
+                ) : (
+                    <ul>
+                    {items.map((item) => 
+                      
+                            <li>
+                                {item.name}
+                            </li>
+                   
+                    )}
+                </ul>
+                )}
+               
+            </div>
         </div>
     )
 }
