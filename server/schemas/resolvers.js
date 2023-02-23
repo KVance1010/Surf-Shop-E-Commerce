@@ -5,10 +5,14 @@ const resolvers = {
         users:  async () => {
             return User.find()
         },
-        itemsByCategory: async () => {
-            return Item.find()
-        }
-    }
+        itemsByCategory: async (parent, args) => {
+            return (await Item.find({
+                tags: {$all: [...args.tags]}
+            }))
+        },  
+    },
+       
+      
 }
 
 module.exports = resolvers;
