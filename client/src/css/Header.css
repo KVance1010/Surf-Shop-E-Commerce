@@ -1,0 +1,6 @@
+.header_container{
+    display: flex;
+}
+.nav_bar {
+    list-style-type: none;
+}
