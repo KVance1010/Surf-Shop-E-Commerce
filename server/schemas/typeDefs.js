@@ -5,9 +5,22 @@ const typeDefs = gql`
         username: String
         email: String
     }
+    type Item {
+        name: String
+        price: Float
+        description: String
+        tags: [String]
+        image: String
+        stock: Int
+        brand: String
+        bestSeller: Boolean
+        saleItem: Boolean
+        newArrival: Boolean
+    }
 
     type Query {
         users: [User]
+        itemsByCategory(tags: [String]): [Item]
     }
 `
 
