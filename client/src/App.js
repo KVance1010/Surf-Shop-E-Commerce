@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import './App.css';
@@ -7,32 +7,41 @@ import Admin from './pages/Admin';
 import Header from './components/Header';
 
 const client = new ApolloClient({
-  uri: '/graphql',
-  cache: new InMemoryCache(),
+	uri: '/graphql',
+	cache: new InMemoryCache(),
 });
 
-
-
 function App() {
-  return (
-    <ApolloProvider client={client}>
-      <Router>
-      <Header/>
-        <Routes>
-          <Route
-            path='/'
-            element={<Home/>}>
-          </Route>
-          <Route
-            path='/admin'
-            element={<Admin/>}>
-          </Route>
-        </Routes>
-      </Router>
+	const [currentPage, setCurrentPage] = useState('');
+	const handlePageChange = (page) => setCurrentPage(page);
 
-     
-    </ApolloProvider>
-  );
+	return (
+		<ApolloProvider client={client}>
+			<Router>
+				<Header />
+				<Routes>
+					<Route
+						path="/"
+						element={
+							<Home
+								currentPage={currentPage}
+								handlePageChange={handlePageChange}
+							/>
+						}
+					></Route>
+					<Route
+						path="/admin"
+						element={
+							<Admin
+								currentPage={currentPage}
+								handlePageChange={handlePageChange}
+							/>
+						}
+					></Route>
+				</Routes>
+			</Router>
+		</ApolloProvider>
+	);
 }
 
 //the following one renders the word hello
@@ -40,7 +49,7 @@ function App() {
 // function App() {
 //   return (
 //     <ApolloProvider client={client}>
-//     hello 
+//     hello
 //     </ApolloProvider>
 //   );
 // }
