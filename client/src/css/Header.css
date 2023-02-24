@@ -18,15 +18,15 @@
 	display: flex;
 	font-size: 24px;
 	align-items: center;
-	color:#d5c67a;
+	color: #d5c67a;
 	margin-left: 20px;
 }
-.navList li{
+.navList li {
 	margin-left: 20px;
 }
 .navContainer {
 	align-self: center;
- } 
+}
 
 .hamburger {
 	display: none;
@@ -77,9 +77,11 @@
 		flex-direction: column;
 		text-align: center;
 	}
-	.navLink {
+	.navbarDropdown li {
 		font-size: 16px;
 		padding: 15px 20px;
+		background-color: #052f5f;
+		border: solid 1px black;
 	}
 }
 
