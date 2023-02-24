@@ -1,5 +1,6 @@
 import React from 'react'
 import AddItemForm from '../components/admin/AddItemForm'
+import ItemList from '../components/ItemList'
 import {useQuery, useMutation} from '@apollo/client'
 import { QUERY_ITEMS, QUERY_ITEMS_BY_TAGS  } from '../utils/queries'
 
@@ -56,6 +57,7 @@ const Admin = () => {
                 </div>
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>
+            <ItemList tags={["surfboards"]}/>
         </div>
     )
 }

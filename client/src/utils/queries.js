@@ -27,20 +27,18 @@ export const QUERY_ITEMS = gql`
 `
 
 export const QUERY_ITEMS_BY_TAGS = gql`
-    query getItemsByTag {
-        itemsByCategory {
+    query Query($tags: [String]) {
+        itemsByCategory(tags: $tags) {
         bestSeller
         brand
         description
-        name
-        price
-        newArrival
         image
+        name
+        newArrival
+        price
+        saleItem
         stock
         tags
-        saleItem
-        saleItem
-        saleItem
         }
     }
 `
