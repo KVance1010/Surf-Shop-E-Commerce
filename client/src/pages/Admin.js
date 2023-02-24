@@ -57,7 +57,7 @@ const Admin = () => {
                 </div>
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>
-            <ItemList tags={["surfboards"]}/>
+            <ItemList tags={["apparel", "mens", "shorts"]}/>
         </div>
     )
 }

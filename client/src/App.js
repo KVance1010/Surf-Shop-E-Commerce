@@ -4,7 +4,9 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import './App.css';
 import Home from './pages/Home';
 import Admin from './pages/Admin';
+import Apparel from './pages/Apparel'
 import Header from './components/Header';
+
 
 const client = new ApolloClient({
 	uri: '/graphql',
@@ -33,6 +35,15 @@ function App() {
 						path="/admin"
 						element={
 							<Admin
+								currentPage={currentPage}
+								handlePageChange={handlePageChange}
+							/>
+						}
+					></Route>
+					<Route
+						path="/apparel"
+						element={
+							<Apparel
 								currentPage={currentPage}
 								handlePageChange={handlePageChange}
 							/>
