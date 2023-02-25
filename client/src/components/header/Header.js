@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
-import '../css/Header.css';
+import SearchBar from './SearchBar';
+import '../../css/Header.css';
 
-const Header = ({currentPage, handlePageChange}) => {
+const Header = ({ currentPage, handlePageChange }) => {
 	const [dropDown, setDropdown] = useState(false);
 	const [activeState, setActiveState] = useState('');
 	const handleDropDown = () => {
@@ -15,12 +16,14 @@ const Header = ({currentPage, handlePageChange}) => {
 		}
 	};
 	return (
-		<header className='header_container'>
+		<header className="headerContainer">
 			<Link to="/" className="logoLink">
 				SurfShop
 			</Link>
 			<nav className="navContainer">
+				
 				<ul className="navList">
+					<SearchBar/>
 					<NavBar
 						currentPage={currentPage}
 						handlePageChange={handlePageChange}
