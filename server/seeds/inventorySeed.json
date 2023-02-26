@@ -201,6 +201,77 @@
         "image": "https://cdn.shopify.com/s/files/1/0770/3687/products/heavyduty-leash-6.jpg?v=1610501535&width=1024",
         "stock": 10,
         "bestSeller": true
+    },
+    {
+        "name": "Original 6-Pack | Cold",
+        "brand": "Sticky Bumps",
+        "price": 18.00,
+        "description": "Long lasting and easy to apply. Optimal for water temps from 60°F and below.",
+        "tags":["surf accessories","wax"],
+        "image": "https://cdn11.bigcommerce.com/s-wsye173qvw/images/stencil/1280x1280/products/340/1116/COLD3-22__56610.1657811872.jpg?c=2",
+        "stock": 200,
+        "bestSeller": true
+    },
+    {
+        "name": "STUSSY X SALT & STONE TINTED SUNSCREEN STICK",
+        "brand": "Stussy",
+        "price": 20.00,
+        "description": "SALT & STONE has collaborated with Californian sportswear brand Stussy on a natural sunscreen face stick. The broad spectrum, water resistant, and reef safe face stick goes on smooth without any white residue. Formulated with a natural tint to blend into all skin tones. Perfect protection for a morning session in the Pacific. This exclusive product is only available at Salt & Stone and Stussy and can't be found anywhere else. This product is excluded from all promotional discounts and offers.",
+        "tags":["surf accessories","sunscreen"],
+        "image": "https://cdn.shopify.com/s/files/1/1916/1271/products/SS-StussySPFStick-Open_1080x.png?v=1643931030",
+        "stock": 50,
+        "saleItem": true,
+        "bestSeller": true
+    },
+    {
+        "name": "R3 Legacy Series",
+        "brand": "Futures",
+        "price": 110.00,
+        "description": "The R3 Legacy Series is an xsmall sized thruster in the Rake template category. The increased rake provides hold through turns, and the Honeycomb construction gives a balanced feel for all-around performance.",
+        "tags":["surf accessories","fins"],
+        "image": "https://cdn.shopify.com/s/files/1/0332/4362/7659/products/legacy_rake_xsmall_1800x1800.jpg?v=1656617784",
+        "stock": 26,
+        "bestSeller": true
+    },
+    {
+        "name": "Ding ALL 4 Oz All Super Polyester Repair Kit for Medium to Large Sized Polyester Surfboards Repairs",
+        "brand": "Ding All",
+        "price": 22.99,
+        "description": "THE ORIGINAL POLYESTER SANDING RESIN: Ding All Polyester Resin contains Silmar brand 250A UV Polyester Sanding Resin, which is the undisputed, highest-quality resin available to the industry. Sanding Resin is typically used for surfboard hot-coats and is widely popular for use with dings repairs   LARGER SURFBOARD REPAIRS KIT: Purposed for larger polyester ding repairs, this kit contains ultra clear, non-yellowing and UV Stable 4oz. sanding resin plus hardener. Average cure time is: Gel -6 to 10 minutes, hard in 45 to 60 minutes @ 77 degrees F   ALLOWS EASY SANDING: This resin is non tacky and dries smooth providing the user an easy surface to finish sanding  A COMPLETE REPAIR KIT: This MADE IN USA kit come with 4oz. sanding resin plus hardener, fiberglass cloth (6” x 27”), 2 sided sanding pad, 2x measuring cups, 6 x mixing sticks/applicators, Q-Cell White Filler, bonus - Sun Cure 1 oz. mini fiberfill tube, 2 cover sheet and easy instructions.mmBONUS SUN CURE RESIN: If smaller dings are being fixed, the kit comes complete with our world-famous Sun Cure Epoxy Fiberfill resin. Packed with fiberglass strands for strength, Sun Cure will get the job done in minutes after sun/UV exposure",
+        "tags":["surf accessories","ding repair"],
+        "image": "https://m.media-amazon.com/images/I/61rzcpOU4ZL._AC_SX679_.jpg",
+        "stock": 15,
+        "bestSeller": true
+    },
+    {
+        "name": "All Time Long Sleeve UPF 50 Rashguard",
+        "brand": "Quiksilver",
+        "price": 32.99,
+        "description": "One and done. The All Time Long Sleeve Rashguard for men will likely be the best and last rashguard you ever buy. You're looking at a legend. With built-in UPF 50 sun protection and made from recycled polyester, this legendary rashguard has been a surfer's go-to for countless years and a couple of million waves. Snug fit, classic Quik logo details, and good to go in pools too, this rashguard is an essential tool no surf kit should be without.",
+        "tags":["surf accessories","rashguards"],
+        "image": "https://images.boardriders.com/globalGrey/quiksilver-products/all/default/xlarge/eqywr03357_quiksilver,v_byhh_frt1.jpg",
+        "stock": 30,
+        "bestSeller": true
+    },
+    {
+        "name": "Eargasm Aquaplugs",
+        "brand": "Eargasm",
+        "price": 45.99,
+        "description": "Enjoy your favorite activities, without worrying about water entering your ears! Get the perfect fit with 4 different ear tip sizes included with every package.3 different ear wing sizes and included connector cord keep your Aquaplugs secure in your ear and minimize risk of loss.Protect your ears from water while still being able to hear your surroundings clearly. Great for surfing, swimming, and other water activities.Comes with a waterproof aluminum case for easy transport.100% reusable and washable so that you can use your Aquaplugs over and over.",
+        "tags":["surf accessories","earplugs"],
+        "image": "https://cdn.shopify.com/s/files/1/1124/3298/products/61ee44fb-21c9-4f34-ba19-95603ab323bd_1966x1388.png?v=1639548855",
+        "stock": 23,
+        "saleItem": true
+    },
+    {
+        "name": "Rip Curl 3 Piece Traction Pad",
+        "brand": "Rip Curl",
+        "price": 35.95,
+        "description": "Rip Curl's 3 Piece Traction is a great three-piece tail pad, made of a thin closed cell high density perforated EVA. Cut with a deep diamond groove and designed with base flex groove, for superior adhesion.",
+        "tags":["surf accessories","tail pads"],
+        "image": "https://cdn11.bigcommerce.com/s-1pj0bf1gcq/images/stencil/1280x1280/products/533/2189/00ymsh_0090-1_1__94603.1671830752.jpg?c=1",
+        "stock": 14,
+        "newArrival": true
     }
     
 ]
