@@ -1,0 +1,13 @@
+.searchInput{
+    background-color: #005377;
+    border: none;
+}
+
+
+.magifineglass {
+    align-self: center;
+    padding: 4px;
+    height: 100%; 
+    text-align: center;
+    background-color: #005377;
+}
