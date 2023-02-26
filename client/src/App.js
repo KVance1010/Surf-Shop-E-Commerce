@@ -3,12 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
 import Admin from './pages/Admin';
-<<<<<<< HEAD
-import Header from './components/header/Header';
-=======
+import CategoryList from './pages/CategoryList';
 import Apparel from './pages/Apparel'
-import Header from './components/Header';
->>>>>>> 02aef32347865202d41d42feba53a2886c58f9ed
+import Header from './components/header/Header';
+
 
 
 const client = new ApolloClient({
@@ -47,6 +45,15 @@ function App() {
 						path="/apparel"
 						element={
 							<Apparel
+								currentPage={currentPage}
+								handlePageChange={handlePageChange}
+							/>
+						}
+					></Route>
+					<Route
+						path="/category-list"
+						element={
+							<CategoryList
 								currentPage={currentPage}
 								handlePageChange={handlePageChange}
 							/>
