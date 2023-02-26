@@ -1,6 +1,7 @@
 .headerContainer {
 	display: flex;
 	position: fixed;
+	font-family: 'IBM Plex Mono', monospace;
 	z-index: 0;
 	width: 100vw;
 	padding: 40px 60px;
