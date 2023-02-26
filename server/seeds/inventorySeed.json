@@ -272,6 +272,16 @@
         "image": "https://cdn11.bigcommerce.com/s-1pj0bf1gcq/images/stencil/1280x1280/products/533/2189/00ymsh_0090-1_1__94603.1671830752.jpg?c=1",
         "stock": 14,
         "newArrival": true
+    },
+    {
+        "name": "SIMBA SENTIEL NO LOGO PEARL WHITE SURF HELMET",
+        "brand": "Simba",
+        "price": 199.99,
+        "description": "The Simba Sentiel No Logo Pearl White Surf Helmet. A lightweight, low-profile helmet engineered specifically for the safety of surfers and water sports enthusiasts. The Sentinel 1’s technically advanced design provides high-level impact protection with optimum aquadynamic performance.",
+        "tags":["surf accessories","helmets"],
+        "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/SimbaNoLogoWhite_5000x.jpg?v=1645389225",
+        "stock": 22,
+        "newArrival": true
     }
     
 ]
