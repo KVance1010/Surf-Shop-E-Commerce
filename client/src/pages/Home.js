@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import heroVideo from '../images/ezgif.com-video-to-gif.mp4'
 import { QUERY_USERS } from '../utils/queries';
 import '../css/Home.css';
@@ -14,8 +14,8 @@ return (
        <video  loop autoPlay muted src= {heroVideo}/>
        <div className='heroContent'>
         <p className='heroTitle'>THE SURF IS CALLING</p>
-        <p className='heroAction'>TIME TO ANSWER</p>
-        <button className='heroButton'>Shop</button>
+        <p className='heroAction'>TIME TO ANSWER...</p>
+        <button className='heroButton'><Link to= 'apperal'>Shop</Link></button>
        </div>
     </div>
 )

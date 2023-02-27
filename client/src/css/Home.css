@@ -19,6 +19,8 @@
 
 .heroTitle {
 	font-size: 50px;
+	font-weight: 900;
+	color: var(--boldFontColor);
 }
 
 .heroAction {
@@ -30,7 +32,10 @@
 	margin-top: 10px;
 	background-color: var(--mainBackgroundColor);
 	border: none;
-	color: var(--fontBackgroundColor);
-	padding: 10px;
+	padding: 10px 50px;
     border-radius: 10px;
+}
+.heroButton a{
+	color: var(--fontColor);
+	font-size: 30px;
 }
