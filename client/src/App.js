@@ -7,6 +7,9 @@ import CategoryList from './components/CategoryList';
 import Apparel from './pages/Apparel'
 import Header from './components/header/Header';
 import "./css/App.css";
+import { mensApparelCategory, womensApparelCategory, surfboardsCategory, surfAccessoriesCategory
+  } from './utils/categoryList';
+ 
 
 
 
@@ -55,8 +58,7 @@ function App() {
 						path="/apparel/mens"
 						element={
 							<CategoryList
-								currentPage={currentPage}
-								handlePageChange={handlePageChange}
+								categories={mensApparelCategory}
 							/>
 						}
 					></Route>
