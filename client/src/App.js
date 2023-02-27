@@ -6,6 +6,7 @@ import Admin from './pages/Admin';
 import CategoryList from './pages/CategoryList';
 import Apparel from './pages/Apparel'
 import Header from './components/header/Header';
+import "./css/App.css";
 
 
 
@@ -64,15 +65,5 @@ function App() {
 		</ApolloProvider>
 	);
 }
-
-//the following one renders the word hello
-
-// function App() {
-//   return (
-//     <ApolloProvider client={client}>
-//     hello
-//     </ApolloProvider>
-//   );
-// }
 
 export default App;

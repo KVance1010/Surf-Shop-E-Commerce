@@ -6,12 +6,12 @@
 	width: 100vw;
 	padding: 40px 60px;
 	justify-content: space-between;
-	background-color: #052f5f;
+	background-color: var(--headerColor);
 }
 
 .logoLink {
 	font-size: 48px;
-	color: #f1a208;
+	color: var(--boldFontColor);
 	font-weight: 700;
 }
 
@@ -19,12 +19,9 @@
 	display: flex;
 	font-size: 24px;
 	align-items: center;
-	color: #d5c67a;
-	margin-left: 20px;
+	color: var(--fontColor);
 }
-.navList li {
-	margin-left: 20px;
-}
+
 .navContainer {
 	align-self: center;
 }
@@ -41,7 +38,7 @@
 	margin: 7px auto;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-	background-color: #f1a208;
+	background-color: var(--boldFontColor);
 }
 
 @media screen and (max-width: 984px) {
@@ -81,7 +78,7 @@
 	.navbarDropdown li {
 		font-size: 16px;
 		padding: 15px 20px;
-		background-color: #052f5f;
+		background-color: var(--headerColor);
 		border: solid 1px black;
 	}
 }
