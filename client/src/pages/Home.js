@@ -12,6 +12,11 @@ const users = data?.users || [];
 return (
     <div className='heroContainer'>
        <video  loop autoPlay muted src= {heroVideo}/>
+       <div className='heroContent'>
+        <p className='heroTitle'>THE SURF IS CALLING</p>
+        <p className='heroAction'>TIME TO ANSWER</p>
+        <button className='heroButton'>Shop</button>
+       </div>
     </div>
 )
 }

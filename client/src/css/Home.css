@@ -1,8 +1,36 @@
-.heroContainer video{
-    object-fit: cover;
-    width: 100vw;  
-    position:fixed;
-    top: 0;
-    left:0;
-    z-index: -1;
-} 
+.heroContainer video {
+	object-fit: cover;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.heroContent {
+	position: absolute;
+	left: 60px;
+	bottom: 15%;
+	background-color: rgba(0, 0, 0, 0.30);
+	border-radius: 10px;
+	color: var(--fontColor);
+	padding: 20px;
+}
+
+.heroTitle {
+	font-size: 50px;
+}
+
+.heroAction {
+	margin-top: 10px;
+	font-size: 40px;
+}
+
+.heroButton {
+	margin-top: 10px;
+	background-color: var(--mainBackgroundColor);
+	border: none;
+	color: var(--fontBackgroundColor);
+	padding: 10px;
+    border-radius: 10px;
+}

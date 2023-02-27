@@ -1,5 +1,5 @@
 .searchInput{
-    background-color: var(--mainBackground);
+    background-color: var(--mainBackgroundColor);
     color: var(--mainFontColor);
     border: none;
     padding: 5px;
@@ -16,5 +16,5 @@
     top:5px;
     align-content: center;
     padding: 4px;
-    background-color: var(--mainBackground);
+    background-color: var(--mainBackgroundColor);
 }
