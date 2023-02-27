@@ -1,65 +1,73 @@
 export const mensApparelCategory = 
 {
-    "name": "Mens Apparel",
-    "categories": [
+    name: "Mens Apparel",
+    categories: [
         {
-            "name": "Boardshorts",
-            "image": "s/1/2034/7683/products/SP1106012_PBL_P_1_360x.jpg?v=1653426961"
+            name: "Boardshorts",
+            image: "s/1/2034/7683/products/SP1106012_PBL_P_1_360x.jpg?v=1653426961"
         },
         {
-            "name": "Shirts",
-            "image": "https://img.ltwebstatic.com/images3_pi/2022/06/10/165483371841ff8c0b374ce23827774642a2ebd734.webp"
+            name: "Shirts",
+            image: "https://img.ltwebstatic.com/images3_pi/2022/06/10/165483371841ff8c0b374ce23827774642a2ebd734.webp"
         },
         {
-            "name": "Shorts",
-            "image": "https://www.ripcurl.com/media/catalog/product/c/w/cwacz9_0090-1_11.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950"
+            name: "Shorts",
+            image: "https://www.ripcurl.com/media/catalog/product/c/w/cwacz9_0090-1_11.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950"
         },
         {
-            "name": "Hoodies",
-            "image": "https://www.ripcurl.com/media/catalog/product/c/f/cfehk9_0090_2_mf_rollover_update_4.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950"
+            name: "Hoodies",
+            image: "https://www.ripcurl.com/media/catalog/product/c/f/cfehk9_0090_2_mf_rollover_update_4.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950"
         },
         {
-            "name": "Foodwear",
-            "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/RF002611BZB_Main_1100x.jpg?v=1642827732"
+            name: "Foodwear",
+            image: "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/RF002611BZB_Main_1100x.jpg?v=1642827732"
         },
         {
-            "name": "Hats",
-            "image": "https://cdn.watersportsoutlet.com/images/1x1/thumbs/2022%20Mystic%202mm%20Neoprene%20Beanie%2035016.230024%20-%20Dark%20Olive.700x700.jpg"
+            name: "Hats",
+            image: "https://cdn.watersportsoutlet.com/images/1x1/thumbs/2022%20Mystic%202mm%20Neoprene%20Beanie%2035016.230024%20-%20Dark%20Olive.700x700.jpg"
+        },
+        {
+            name: "wetsuits",
+            image: "https://cdn.shopify.com/s/files/1/0360/4473/4523/products/MN43ZXC0_XCEL_BLK_FRT1_1024x1024_WEB.jpg?v=1670534453&width=823"
         }
     ]
 }
 export const womensApparelCategory = 
 {
-    "name": "Womens Apparel",
-    "categories": [
+    name: "Womens Apparel",
+    categories: [
         {
-            "name": "Swimsuits",
-            "image": "https://cdn.shopify.com/s/files/1/0783/3649/products/gsixx9_0090-3_1000x.jpg?v=1647972464"
+            name: "Swimsuits",
+            image: "https://cdn.shopify.com/s/files/1/0783/3649/products/gsixx9_0090-3_1000x.jpg?v=1647972464"
         },
         {
-            "name": "Tops",
-            "image": "https://cdn.shopify.com/s/files/1/1869/0651/products/2_ModelBack_3c9ead6d-eb16-4941-b905-5ff1f1974b07_1024x.jpg"
+            name: "Tops",
+            image: "https://cdn.shopify.com/s/files/1/1869/0651/products/2_ModelBack_3c9ead6d-eb16-4941-b905-5ff1f1974b07_1024x.jpg"
         },
         {
-            "name": "Hoodies",
-            "image": "https://cdn.shopify.com/s/files/1/0721/2253/products/Untitled-5_800x.jpg?v=1672872327"
+            name: "Hoodies",
+            image: "https://cdn.shopify.com/s/files/1/0721/2253/products/Untitled-5_800x.jpg?v=1672872327"
         },
         {
-            "name": "Footwear",
-            "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/RF0A3OKSNAT_MAIN_1100x.jpg?v=1648662655"
+            name: "Footwear",
+            image: "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/RF0A3OKSNAT_MAIN_1100x.jpg?v=1648662655"
         },
         {
-            "name": "Hats",
-            "image": "https://cdn.shopify.com/s/files/1/2062/5873/products/ABJHA00222BLKSecondary1_x1400.jpg?v=1674244737"
+            name: "Hats",
+            image: "https://cdn.shopify.com/s/files/1/2062/5873/products/ABJHA00222BLKSecondary1_x1400.jpg?v=1674244737"
+        },
+        {
+            name: "wetsuits",
+            image: "https://www.ripcurl.com/media/catalog/product/w/s/wst5yw_0090-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950"
         }
     ]
 }
 export const accessoriesCategory = 
 {
-    "name": "Accessories",
-    "categories": [
+    name: "Accessories",
+    categories: [
         {
-            "name": "Watches",
+            name: "Watches",
             "image": "https://m.media-amazon.com/images/I/51IA+C-sbWL._AC_UX679_.jpg"
         },
         {

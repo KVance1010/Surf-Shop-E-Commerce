@@ -4,9 +4,19 @@
         "brand": "XCel",
         "price": 399.99,
         "description": "Light Weight Flexibility. The Comp is the lightest, most stretchy wetsuit we offer. The 100% ultra-stretch exterior combined with our Thermolite IR core, and critically taped seams, make this Men's 4/3mm wetsuit insanely comfortable.",
-        "tags": ["wetsuits", "mens", "full", "comp"],
+        "tags": [" apparel","wetsuits", "mens"],
         "image": "https://cdn.shopify.com/s/files/1/0360/4473/4523/products/MN43ZXC0_XCEL_BLK_FRT1_1024x1024_WEB.jpg?v=1670534453&width=823",
         "stock": 2
+    },
+    {
+        "name": "Women’s E7 Flashbomb Heatseeker 4/3 Zip Free Wetsuit",
+        "brand": "Rip Curl",
+        "price": 499.99,
+        "description": "The new E7 Flashbomb HeatSeeker 4/3 Zip Free Wetsuit is our most technically advanced cold-water wetsuit. This season, we're combining our all new E7 Flash Lining through out the wetsuit and our unique Version 2 Flex Energy lining that generates even more heat when stretched. Along with added superior technical features, the Flashbomb Heat Seeker is our warmest and stretchiest Flashbomb yet.        ",
+        "tags":["apparel","womens", "wetsuits"],
+        "image": "https://www.ripcurl.com/media/catalog/product/w/s/wst5yw_0090-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "stock": 13,
+        "saleItem": true
     },
     {
         "name": "Channel Islands Rocket Wide",
