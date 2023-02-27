@@ -9,6 +9,7 @@ import Header from './components/header/Header';
 import "./css/App.css";
 import { mensApparelCategory, womensApparelCategory, surfboardsCategory, surfAccessoriesCategory
   } from './utils/categoryList';
+  
  
 
 
@@ -21,6 +22,9 @@ const client = new ApolloClient({
 function App() {
 	const [currentPage, setCurrentPage] = useState('');
 	const handlePageChange = (page) => setCurrentPage(page);
+	const [currentCategory, setCurrentCategory] = useState({});
+	const handleCurrentCategory = category => setCurrentCategory(category);
+
 
 	return (
 		<ApolloProvider client={client}>
@@ -51,6 +55,7 @@ function App() {
 							<Apparel
 								currentPage={currentPage}
 								handlePageChange={handlePageChange}
+								handleCurrentCategory={handleCurrentCategory}
 							/>
 						}
 					></Route>
@@ -58,7 +63,7 @@ function App() {
 						path="/apparel/mens"
 						element={
 							<CategoryList
-								categories={mensApparelCategory}
+								categories={currentCategory}
 							/>
 						}
 					></Route>

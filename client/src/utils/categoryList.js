@@ -71,37 +71,37 @@ export const accessoriesCategory =
             "image": "https://m.media-amazon.com/images/I/51IA+C-sbWL._AC_UX679_.jpg"
         },
         {
-            "name": "Shades",
-            "image": "https://assets.oakley.com/is/image/OakleyEYE/888392593429__PREMIUM__shad__al6.png?impolicy=OO_ratio&width=1000"
+            name: "Shades",
+            image: "https://assets.oakley.com/is/image/OakleyEYE/888392593429__PREMIUM__shad__al6.png?impolicy=OO_ratio&width=1000"
         },
         {
-            "name": "Towels",
-            "image": "https://cdn.shopify.com/s/files/1/0714/2297/products/AT5I1719.jpg?v=1615418124"
+            name: "Towels",
+            image: "https://cdn.shopify.com/s/files/1/0714/2297/products/AT5I1719.jpg?v=1615418124"
         },
         {
-            "nam": "Bags",
-            "image": "https://cdn.shopify.com/s/files/1/0838/7991/products/cotton-tote-bag_1000x.jpg?v=1627997728"
+            name: "Bags",
+            image: "https://cdn.shopify.com/s/files/1/0838/7991/products/cotton-tote-bag_1000x.jpg?v=1627997728"
         }
     ]
 }
 export const surfboardsCategory = 
 {
-    "name": "Surfboards",
-    "categories": [
+    name: "Surfboards",
+    categories: [
         {
-            "name": "Shortboards",
-            "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/ci_rw_fut_5000x.jpg?v=1623958927"
+            name: "Shortboards",
+            image: "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/ci_rw_fut_5000x.jpg?v=1623958927"
         },
         {
-            "name": "Longboards",
-            "image": "https://assets.bigcartel.com/product_images/290730180/HRS+Surfboard+Velvet+rz+_100_+rz.jpg?auto=format&fit=max&h=1000&w=1000"
+            name: "Longboards",
+            image: "https://assets.bigcartel.com/product_images/290730180/HRS+Surfboard+Velvet+rz+_100_+rz.jpg?auto=format&fit=max&h=1000&w=1000"
         },
         {
-            "name": "Hybrids",
-            "image": "https://www.vernorsurfboards.com/img/boards/main-hybrid.jpg"
+            name: "Hybrids",
+            image: "https://www.vernorsurfboards.com/img/boards/main-hybrid.jpg"
         },
         {
-            "name": "Guns",
+            name: "Guns",
             "image":"https://images3.shaperbuddy.com/18/surfboards/1123169905d099.jpg"
         }
     ]

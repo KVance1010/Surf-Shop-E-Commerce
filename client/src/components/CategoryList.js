@@ -1,8 +1,8 @@
-import React from "react";
-
+import React, {useState} from "react";
 
 
 const CategoryList = (props) => {
+    console.log(props)
     return(
         <div>
             <ul>
@@ -10,7 +10,7 @@ const CategoryList = (props) => {
                     return(
                         <li>
                         {category.name}
-                        </li>
+                    </li>
                     )
                     
                 })}
