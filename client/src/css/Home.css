@@ -39,3 +39,8 @@
 	color: var(--fontColor);
 	font-size: 30px;
 }
+.downArrow{
+	position:absolute;
+	bottom:20px;
+	right:50%;
+}

@@ -18,3 +18,11 @@
     padding: 4px;
     background-color: var(--mainBackgroundColor);
 }
+
+/* .dropDownSearch {
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    z-index: 3;
+    background-color: var(--headerColor);
+} */
