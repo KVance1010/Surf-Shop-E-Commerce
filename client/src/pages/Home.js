@@ -3,6 +3,8 @@ import { useQuery } from '@apollo/client';
 import { Link } from 'react-router-dom';
 import heroVideo from '../images/ezgif.com-video-to-gif.mp4';
 import { QUERY_USERS } from '../utils/queries';
+import Carousel from '../components/Carousel';
+import {mensApparelCategory, womensApparelCategory,} from '../utils/categoryList.js'
 import '../css/Home.css';
 
 const Home = () => {
@@ -10,6 +12,7 @@ const Home = () => {
 	const users = data?.users || [];
 
 	return (
+		<>
 		<div className="heroContainer">
 			<video loop autoPlay muted src={heroVideo} />
 			<div className="heroContent">
@@ -33,6 +36,9 @@ const Home = () => {
 				/>
 			</svg>
 		</div>
+		<Carousel apparel = {womensApparelCategory}/>
+		<Carousel apparel = {mensApparelCategory}/>
+		</>
 	);
 };
 export default Home;

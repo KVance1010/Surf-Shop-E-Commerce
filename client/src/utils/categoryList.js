@@ -71,76 +71,76 @@ export const accessoriesCategory =
             "image": "https://m.media-amazon.com/images/I/51IA+C-sbWL._AC_UX679_.jpg"
         },
         {
-            "name": "Shades",
-            "image": "https://assets.oakley.com/is/image/OakleyEYE/888392593429__PREMIUM__shad__al6.png?impolicy=OO_ratio&width=1000"
+            name: "Shades",
+            image: "https://assets.oakley.com/is/image/OakleyEYE/888392593429__PREMIUM__shad__al6.png?impolicy=OO_ratio&width=1000"
         },
         {
-            "name": "Towels",
-            "image": "https://cdn.shopify.com/s/files/1/0714/2297/products/AT5I1719.jpg?v=1615418124"
+            name: "Towels",
+            image: "https://cdn.shopify.com/s/files/1/0714/2297/products/AT5I1719.jpg?v=1615418124"
         },
         {
-            "nam": "Bags",
-            "image": "https://cdn.shopify.com/s/files/1/0838/7991/products/cotton-tote-bag_1000x.jpg?v=1627997728"
+            name: "Bags",
+            image: "https://cdn.shopify.com/s/files/1/0838/7991/products/cotton-tote-bag_1000x.jpg?v=1627997728"
         }
     ]
 }
 export const surfboardsCategory = 
 {
-    "name": "Surfboards",
-    "categories": [
+    name: "Surfboards",
+    categories: [
         {
-            "name": "Shortboards",
-            "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/ci_rw_fut_5000x.jpg?v=1623958927"
+            name: "Shortboards",
+            image: "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/ci_rw_fut_5000x.jpg?v=1623958927"
         },
         {
-            "name": "Longboards",
-            "image": "https://assets.bigcartel.com/product_images/290730180/HRS+Surfboard+Velvet+rz+_100_+rz.jpg?auto=format&fit=max&h=1000&w=1000"
+            name: "Longboards",
+            image: "https://assets.bigcartel.com/product_images/290730180/HRS+Surfboard+Velvet+rz+_100_+rz.jpg?auto=format&fit=max&h=1000&w=1000"
         },
         {
-            "name": "Hybrids",
-            "image": "https://www.vernorsurfboards.com/img/boards/main-hybrid.jpg"
+            name: "Hybrids",
+            image: "https://www.vernorsurfboards.com/img/boards/main-hybrid.jpg"
         },
         {
-            "name": "Guns",
-            "image":"https://images3.shaperbuddy.com/18/surfboards/1123169905d099.jpg"
+            name: "Guns",
+            image:"https://images3.shaperbuddy.com/18/surfboards/1123169905d099.jpg"
         }
     ]
 }
 export const surfAccessoriesCategory = 
 {
-    "name": "Surf Accessories",
-    "categories": [
+    name: "Surf Accessories",
+    categories: [
         {
-            "name": "Leashes",
-            "image": "https://cdn.shopify.com/s/files/1/0770/3687/products/heavyduty-leash-6.jpg?v=1610501535&width=1024"
+            name: "Leashes",
+            image: "https://cdn.shopify.com/s/files/1/0770/3687/products/heavyduty-leash-6.jpg?v=1610501535&width=1024"
         },
         {
-            "name": "Wax",
-            "image": "https://cdn11.bigcommerce.com/s-wsye173qvw/images/stencil/1280x1280/products/340/1116/COLD3-22__56610.1657811872.jpg?c=2"
+            name: "Wax",
+            image: "https://cdn11.bigcommerce.com/s-wsye173qvw/images/stencil/1280x1280/products/340/1116/COLD3-22__56610.1657811872.jpg?c=2"
         },
         {
-            "name": "Sunscreen",
-            "image": "https://cdn.shopify.com/s/files/1/1916/1271/products/SS-StussySPFStick-Open_1080x.png?v=1643931030"
+            name: "Sunscreen",
+            image: "https://cdn.shopify.com/s/files/1/1916/1271/products/SS-StussySPFStick-Open_1080x.png?v=1643931030"
         },
         {
-            "name": "Fins",
-            "image": "https://cdn.shopify.com/s/files/1/0332/4362/7659/products/legacy_rake_xsmall_1800x1800.jpg?v=1656617784"
+            name: "Fins",
+            image: "https://cdn.shopify.com/s/files/1/0332/4362/7659/products/legacy_rake_xsmall_1800x1800.jpg?v=1656617784"
         },
         {
-            "name": "Ding Repair",
-            "image": "https://m.media-amazon.com/images/I/61rzcpOU4ZL._AC_SX679_.jpg"
+            name: "Ding Repair",
+            image: "https://m.media-amazon.com/images/I/61rzcpOU4ZL._AC_SX679_.jpg"
         },
         {
-            "name": "Rashguards",
-            "image": "https://images.boardriders.com/globalGrey/quiksilver-products/all/default/xlarge/eqywr03357_quiksilver,v_byhh_frt1.jpg"
+            name: "Rashguards",
+            image: "https://images.boardriders.com/globalGrey/quiksilver-products/all/default/xlarge/eqywr03357_quiksilver,v_byhh_frt1.jpg"
         },
         {
-            "name": "Earplugs",
-            "image": "https://cdn.shopify.com/s/files/1/1124/3298/products/61ee44fb-21c9-4f34-ba19-95603ab323bd_1966x1388.png?v=1639548855"
+            name: "Earplugs",
+            image: "https://cdn.shopify.com/s/files/1/1124/3298/products/61ee44fb-21c9-4f34-ba19-95603ab323bd_1966x1388.png?v=1639548855"
         },
         {
-            "name": "Tail Pads",
-            "image": "https://cdn11.bigcommerce.com/s-1pj0bf1gcq/images/stencil/1280x1280/products/533/2189/00ymsh_0090-1_1__94603.1671830752.jpg?c=1"
+            name: "Tail Pads",
+            image: "https://cdn11.bigcommerce.com/s-1pj0bf1gcq/images/stencil/1280x1280/products/533/2189/00ymsh_0090-1_1__94603.1671830752.jpg?c=1"
         }
 
     ]
