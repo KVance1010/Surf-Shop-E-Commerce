@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
 import Admin from './pages/Admin';
-import CategoryList from './pages/CategoryList';
+import CategoryList from './components/CategoryList';
 import Apparel from './pages/Apparel'
 import Header from './components/header/Header';
 import "./css/App.css";
@@ -52,7 +52,7 @@ function App() {
 						}
 					></Route>
 					<Route
-						path="/category-list"
+						path="/apparel/mens"
 						element={
 							<CategoryList
 								currentPage={currentPage}
