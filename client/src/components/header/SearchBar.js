@@ -57,7 +57,7 @@ const SearchBar = () => {
 							return (
 								<div
 									onClick={() => updateSearch(value)}
-									className=""
+									className="dropDownSearch"
 									key={i}
 									tabIndex="0"
 								>
