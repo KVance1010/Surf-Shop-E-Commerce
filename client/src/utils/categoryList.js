@@ -1,10 +1,11 @@
 export const mensApparelCategory = 
 {
     name: "Mens Apparel",
+    pathName: "mens-apparel",
     categories: [
         {
             name: "Boardshorts",
-            image: "s/1/2034/7683/products/SP1106012_PBL_P_1_360x.jpg?v=1653426961"
+            image: "https://cdn.shopify.com/s/files/1/2034/7683/products/SP1106012_PBL_P_1_360x.jpg?v=1653426961"
         },
         {
             name: "Shirts",
@@ -35,6 +36,7 @@ export const mensApparelCategory =
 export const womensApparelCategory = 
 {
     name: "Womens Apparel",
+    pathName: "womens-apparel",
     categories: [
         {
             name: "Swimsuits",

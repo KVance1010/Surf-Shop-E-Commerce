@@ -23,7 +23,7 @@ function App() {
 	const [currentPage, setCurrentPage] = useState('');
 	const handlePageChange = (page) => setCurrentPage(page);
 	const [currentCategory, setCurrentCategory] = useState({});
-	const handleCurrentCategory = category => setCurrentCategory(category);
+	const handleCurrentCategory = (category) => {setCurrentCategory(category)};
 
 
 	return (
@@ -60,7 +60,7 @@ function App() {
 						}
 					></Route>
 					<Route
-						path="/apparel/mens"
+						path="/category/:categoryName"
 						element={
 							<CategoryList
 								categories={currentCategory}

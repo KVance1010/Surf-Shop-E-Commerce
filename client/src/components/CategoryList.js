@@ -9,7 +9,11 @@ const CategoryList = (props) => {
                 {props.categories.categories.map((category) => {
                     return(
                         <li>
-                        {category.name}
+                            <>
+                            {category.name}
+                            <img src={category.image}/>
+                            </>
+                        
                     </li>
                     )
                     
