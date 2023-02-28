@@ -292,6 +292,67 @@
         "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/SimbaNoLogoWhite_5000x.jpg?v=1645389225",
         "stock": 22,
         "newArrival": true
+    },
+    {
+        "name": "Infinity Boardshort",
+        "brand": "Vuori",
+        "price": 85,
+        "description": "Inspired by surfer Rob Machado, the Infinity Boardshort has all the details you need for your best session yet. Moisture-wicking fabric with 4-way stretch and an interior neoprene waistband keep you comfortable in the waves (and lounging in the sand after), while the zip pocket keeps your keys or other essentials safe and secure. Built with recycled materials and upcycled coconut making them naturally anti-microbial as well. Beach days just got better.",
+        "tags":["apparel", "mens","boardshorts"],
+        "image": "https://vuori.imgix.net/s/files/1/0022/4008/6074/products/V383DST_1200x_crop_center.jpg.webp?ixlib=js-3.7.0&w=800&auto=format&dpr=2&q=50&s=073fd6babead7871a8e8f761b1460867",
+        "stock": 2,
+        "newArrival": true
+    },
+    {
+        "name": "Cruise Boardshort",
+        "brand": "Vuori",
+        "price": 85,
+        "description": "Built like everyday shorts and made partially with recycled materials, the Cruise Boardshorts in our VCycled™ fabric are your best piece to transition from water to life. With a scalloped leg and high-performance fit, these boardshorts were made with a nod to our Mother Ocean.",
+        "tags":["apparel", "mens","boardshorts"],
+        "image": "https://vuori.imgix.net/s/files/1/0022/4008/6074/products/V314-CSB_1200x_crop_center.jpg.webp?ixlib=js-3.7.0&w=800&auto=format&dpr=2&q=50&s=57c853537edc8dc19a172a45c3cc8718",
+        "stock": 6,
+        "newArrival": true
+    },
+    {
+        "name": "Apex Trunks By Kelly Slater",
+        "brand": "Outerknown",
+        "price": 120,
+        "description": "There’s no trunk like the Apex, literally. Developed and tested by the 11x World Champion Kelly Slater and sustainably engineered for maximum performance. Did we also mention it’s made from plastic water bottles?",
+        "tags":["apparel", "mens","boardshorts"],
+        "image": "https://cdn.shopify.com/s/files/1/2445/4975/products/1810036_outerknown_ApexTrunk_NVH_2_1440x.jpg?v=1654185084",
+        "stock": 2,
+        "saleItem": true,
+        "bestSeller": true
+    },
+    {
+        "name": "SurfSilk Tijuana 19\" Boardshorts",
+        "brand": "Quiksilver",
+        "price": 50,
+        "description": "We headed to ol' Mexico to find the inspiration for these men's' boardshort's print and colors. But its performance and design are definitely from the future. Our exclusive SurfSilk performance fabric is what gives these surf trunks their superpower. Made from recycled water bottles, the outside is as tough as steel while the inside wears extremely soft and smooth against your skin. No rubbing, no rashing, just a supremely comfortable feel. And as for mobility, you won't find a boardshort with as much pop. 4-way stretch boosts the fabric with flex right where you need it. Progressive surfing requires progressive style. And you can rely on the SurfSilk Tijuana 19\" Boardshort for men to deliver the best of both",
+        "tags":["apparel", "mens","boardshorts"],
+        "image": "https://images.boardriders.com/globalGrey/quiksilver-products/all/default/xlarge/eqybs04652_quiksilver,f_cmm9_frt1.jpg",
+        "stock": 3,
+        "bestSeller": true
+    },
+    {
+        "name": "Men's Lightweight All-Wear Hemp Volley Shorts - 7\"",
+        "brand": "Patagonia",
+        "price": 35,
+        "description": "Everyday shorts with a 7\" inseam are made of lightweight organic cotton/hemp fabric for cool-wearing comfort in hot weather. Fair Trade Certified™ sewn.",
+        "tags":["apparel", "mens","boardshorts"],
+        "image": "https://www.patagonia.com/dw/image/v2/BDJB_PRD/on/demandware.static/-/Sites-patagonia-master/default/dwbff112a0/images/hi-res/57870_SEGN.jpg?sw=1914&sh=1914&sfrm=png&q=95&bgcolor=f5f5f5",
+        "stock": 16,
+        "saleItem": true
+    },
+    {
+        "name": "Swim Board Short",
+        "brand": "Mack Weldon",
+        "price": 98,
+        "description": "Designed with high-performance features and an elevated look, for in and out of the water. Inseam length is 8.75\". Pair with our Stealth Boxer Brief.",
+        "tags":["apparel", "mens","boardshorts"],
+        "image": "https://cdn.shopify.com/s/files/1/0078/6825/2273/products/M03A02-PSOSRH_Front_08948f00-d7fa-4b50-87ec-feceeb0c23c4_1024x.png?v=1625748871",
+        "stock": 15,
+        "bestSeller": true
     }
     
 ]
