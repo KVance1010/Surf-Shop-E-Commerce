@@ -353,6 +353,97 @@
         "image": "https://cdn.shopify.com/s/files/1/0078/6825/2273/products/M03A02-PSOSRH_Front_08948f00-d7fa-4b50-87ec-feceeb0c23c4_1024x.png?v=1625748871",
         "stock": 15,
         "bestSeller": true
+    },
+    {
+        "name": "Sundays Slim Fit Short Sleeve Button-Up Shirt",
+        "brand": "Billabong",
+        "price": 36.99,
+        "description": "A sweet tropical print defines a breezy shirt cut from pure organic cotton.",
+        "tags":["apparel", "mens","shirts"],
+        "image": "https://n.nordstrommedia.com/id/sr3/bf4ec1ca-3120-4b06-b585-44c207dc7c2d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        "stock": 20,
+        "saleItem": true,
+        "bestSeller": true
+    },
+    {
+        "name": "Stretch Riviera Short Sleeve Shirt",
+        "brand": "Bonobos",
+        "price": 29.00,
+        "description": "Our best seller for a reason. A few reasons, actually: Original prints, comfy stretch & a better fit",
+        "tags":["apparel", "mens","shirts"],
+        "image": "https://bonobos-prod-s3.imgix.net/products/249073/original/WOVEN-CASUAL-SHIRT_BUTTON-DOWN-WOVEN-SHIRT_BSH01757SB1924_1.jpg?1677311148=&auto=format&fit=clip&cs=srgb&w=768&q=75",
+        "stock": 5,
+        "saleItem": true,
+        "bestSeller": true
+    },
+    {
+        "name": "ROCKDALE SHORT SLEEVE WOVEN SHIRT",
+        "brand": "Reef",
+        "price": 37.00,
+        "description": "Add a feather to your camp with this floral-and-feather-motif camp-style shirt. Pre-washed, slubby poplin is the ideal spring and summer material, perfect to take you from beach to beverages. A great neutral shade, too, to throw over a tee or wear on its own.",
+        "tags":["apparel", "mens","shirts"],
+        "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/3FMWS0231ROS_ALT1_750x.jpg?v=1674590097",
+        "stock": 11,
+        "saleItem": true
+    },
+    {
+        "name": "TAME SHIRT",
+        "brand": "O'Neil",
+        "price": 42.99,
+        "description": "An easy to wear button-up shirt that goes great with shorts or jeans. It has a quality cotton, modern design that fits slimmer in the body and sleeves.",
+        "tags":["apparel", "mens","shirts"],
+        "image": "https://cdn.shopify.com/s/files/1/2034/7683/products/SP2104105_fog_1_720x.jpg?v=1660252857",
+        "stock": 12,
+        "newArrival": true
+    },
+    {
+        "name": "BILLABONG Unity Stack Mens T-Shirt",
+        "brand": "Billabong",
+        "price": 17.99,
+        "description": "Billabong Unity Stack tee. Featuring Billabong graphic front center. Ribbed neck crew. Short sleeve. 100% Cotton. Machine wash. Imported.",
+        "tags":["apparel", "mens","shirts"],
+        "image": "https://www.tillys.com/dw/image/v2/BFBK_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4ad057d3/tillys/images/catalog/1000x1000/359569210.jpg?sw=1000&sh=1286",
+        "stock": 20,
+        "newArrival": false
+    },
+    {
+        "name": "BILLABONG Coastline Mens Flannel",
+        "brand": "Billabong",
+        "price": 60.99,
+        "description": "Billabong Coastline Flannel. All over pattern. Pocket on left chest. Flat collar. Button front. Long sleeves. 100% Cotton. Machine wash. Imported.",
+        "tags":["apparel", "mens","shirts"],
+        "image": "https://www.tillys.com/dw/image/v2/BFBK_PRD/on/demandware.static/-/Sites-master-catalog/default/dw49a6d982/tillys/images/catalog/1000x1000/439561866.jpg?sw=1000&sh=1286",
+        "stock": 20,
+        "bestSeller": true
+    },
+    {
+        "name": "BLUES LONG SLEEVE TEE",
+        "brand": "Reef",
+        "price": 25.99,
+        "description": "Wear this and be reminded paradise is a state of mind. A peaceful blossom with REEF's logo keeps things beachy on this tee. It's made with 100% soft cotton jersey, to instantly become one of your comfortable faves.",
+        "tags":["apparel", "mens","shirts"],
+        "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/3RMEN0229LSISG_ALT2_7c82f83e-6e20-48b9-9343-26139d9d48e3_750x.jpg?v=1674582396",
+        "stock": 16,
+        "saleItem": true
+    },
+    {
+        "name": "GLACIER LONG SLEEVE SHIRT",
+        "brand": "O'Neil",
+        "price": 54.99,
+        "tags":["apparel", "mens","shirts"],
+        "image": "https://cdn.shopify.com/s/files/1/2034/7683/products/glacierovershirt_FA2102104_gry_6_720x.jpg?v=1661988498",
+        "stock": 23,
+        "newArrival": true
+    },
+    {
+        "name": "Legacy T-Shirt: Black",
+        "brand": "Former",
+        "description":"200GSM 100% carded cotton // Standard Fit // Front Screen Print",
+        "price": 30.99,
+        "tags":["apparel", "mens","shirts"],
+        "image": "https://cdn.shopify.com/s/files/1/1525/9036/products/FORMER_Q1.23-FTE-23101-LEGACYT-SHIRT-BLACK-2.jpg?v=1673948429&width=1066",
+        "stock": 6,
+        "saleItem": true
     }
     
 ]
