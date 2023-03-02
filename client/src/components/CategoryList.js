@@ -7,6 +7,11 @@ const CategoryList = () => {
 
     const {categoryName} = useParams({})
     let currentCategory
+    let hrefSplit = window.location.href.split('/')
+
+    let categoryTag = (hrefSplit[hrefSplit.length-1])
+    let pageTag = (hrefSplit[hrefSplit.length-2])
+    console.log(pageTag)
 
     switch(categoryName) {
         case 'mens':
@@ -33,7 +38,7 @@ const CategoryList = () => {
                 {currentCategory.categories.map((category) => {
                     return(
                         <li key={category.name}>
-                            <Link to=''>
+                            <Link to={`/${pageTag}/${categoryTag}/${category.name.toLocaleLowerCase()}`}>
                                 <div>
                                 {category.name}
                                 <img src={category.image} alt={`${category.name} `}/>

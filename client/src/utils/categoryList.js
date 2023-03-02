@@ -20,7 +20,7 @@ export const mensApparelCategory =
             image: "https://www.ripcurl.com/media/catalog/product/c/f/cfehk9_0090_2_mf_rollover_update_4.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950"
         },
         {
-            name: "Foodwear",
+            name: "Footwear",
             image: "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/RF002611BZB_Main_1100x.jpg?v=1642827732"
         },
         {
