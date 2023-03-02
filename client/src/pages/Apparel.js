@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { mensApparelCategory, womensApparelCategory } from '../utils/categoryList';
 
-const Apperal = () => {
+const Apparel = () => {
     return (
         <div>
             <div>
