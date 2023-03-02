@@ -7,6 +7,7 @@ import CategoryList from './components/CategoryList';
 import Category from './components/Category';
 import Apparel from './pages/Apparel';
 import Header from './components/header/Header';
+<<<<<<< HEAD
 import './css/App.css';
 import {
 	mensApparelCategory,
@@ -14,6 +15,11 @@ import {
 	surfboardsCategory,
 	surfAccessoriesCategory,
 } from './utils/categoryList';
+=======
+import "./css/App.css";
+import ItemList from './components/ItemList';
+
+>>>>>>> 22cacc7dea6d765f4f3043eddbbdde577beecc88
 
 const client = new ApolloClient({
 	uri: '/graphql',
@@ -23,8 +29,12 @@ const client = new ApolloClient({
 function App() {
 	const [currentPage, setCurrentPage] = useState('');
 	const handlePageChange = (page) => setCurrentPage(page);
+<<<<<<< HEAD
 	const [currentCategory, setCurrentCategory] = useState({});
 	const handleCurrentCategory = (category) => setCurrentCategory(category);
+=======
+
+>>>>>>> 22cacc7dea6d765f4f3043eddbbdde577beecc88
 
 	return (
 		<ApolloProvider client={client}>
@@ -57,13 +67,53 @@ function App() {
 								women={womansApparelCategory}
 								currentPage={currentPage}
 								handlePageChange={handlePageChange}
-								handleCurrentCategory={handleCurrentCategory}
 							/>
 						}
 					></Route>
 					<Route
+<<<<<<< HEAD
 						path="/category"
 						element={<CategoryList categories={currentCategory} />}
+=======
+						path="/apparel/:categoryName"
+						element={<CategoryList/>}
+					></Route>
+					<Route
+						path="/apparel/:categoryName/:itemList"
+						element={<ItemList/>}
+					></Route>
+					<Route
+						path="/apparel/:categoryName/:itemList/:item"
+						element={<ItemList/>}
+					></Route>
+					<Route
+						path="/surfboards"
+						element={<CategoryList
+							currentPage={currentPage}
+							handlePageChange={handlePageChange}/>}
+					></Route>
+					<Route
+						path="/surfboards/:itemList"
+						element={<ItemList/>}
+					></Route>
+					<Route
+						path="/apparel/:categoryName/:itemList/:item"
+						element={<ItemList/>}
+					></Route>
+					<Route
+						path="/accessories"
+						element={<ItemList
+							currentPage={currentPage}
+							handlePageChange={handlePageChange}/>}
+					></Route>
+					<Route
+						path="/accessories/:itemList"
+						element={<ItemList/>}
+					></Route>
+					<Route
+						path="/accessories/:itemList/:item"
+						element={<ItemList/>}
+>>>>>>> 22cacc7dea6d765f4f3043eddbbdde577beecc88
 					></Route>
 				</Routes>
 			</Router>

@@ -1,10 +1,11 @@
 export const mensApparelCategory = 
 {
     name: "Mens Apparel",
+    pathName: "mens",
     categories: [
         {
             name: "Boardshorts",
-            image: "s/1/2034/7683/products/SP1106012_PBL_P_1_360x.jpg?v=1653426961"
+            image: "https://cdn.shopify.com/s/files/1/2034/7683/products/SP1106012_PBL_P_1_360x.jpg?v=1653426961"
         },
         {
             name: "Shirts",
@@ -19,7 +20,7 @@ export const mensApparelCategory =
             image: "https://www.ripcurl.com/media/catalog/product/c/f/cfehk9_0090_2_mf_rollover_update_4.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950"
         },
         {
-            name: "Foodwear",
+            name: "Footwear",
             image: "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/RF002611BZB_Main_1100x.jpg?v=1642827732"
         },
         {
@@ -34,7 +35,12 @@ export const mensApparelCategory =
 }
 export const womansApparelCategory = 
 {
+<<<<<<< HEAD
     name: "Womans Apparel",
+=======
+    name: "Womens Apparel",
+    pathName: "womens",
+>>>>>>> 22cacc7dea6d765f4f3043eddbbdde577beecc88
     categories: [
         {
             name: "Swimsuits",
@@ -57,7 +63,7 @@ export const womansApparelCategory =
             image: "https://cdn.shopify.com/s/files/1/2062/5873/products/ABJHA00222BLKSecondary1_x1400.jpg?v=1674244737"
         },
         {
-            name: "wetsuits",
+            name: "Wetsuits",
             image: "https://www.ripcurl.com/media/catalog/product/w/s/wst5yw_0090-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950"
         }
     ]
@@ -65,6 +71,7 @@ export const womansApparelCategory =
 export const accessoriesCategory = 
 {
     name: "Accessories",
+    pathName: 'accessories',
     categories: [
         {
             name: "Watches",
@@ -87,6 +94,7 @@ export const accessoriesCategory =
 export const surfboardsCategory = 
 {
     name: "Surfboards",
+    pathName: 'surfboards',
     categories: [
         {
             name: "Shortboards",
@@ -109,6 +117,7 @@ export const surfboardsCategory =
 export const surfAccessoriesCategory = 
 {
     name: "Surf Accessories",
+    pathName: 'surf-accessories',
     categories: [
         {
             name: "Leashes",
