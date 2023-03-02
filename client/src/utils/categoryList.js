@@ -59,7 +59,7 @@ export const womensApparelCategory =
             image: "https://cdn.shopify.com/s/files/1/2062/5873/products/ABJHA00222BLKSecondary1_x1400.jpg?v=1674244737"
         },
         {
-            name: "wetsuits",
+            name: "Wetsuits",
             image: "https://www.ripcurl.com/media/catalog/product/w/s/wst5yw_0090-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950"
         }
     ]
@@ -67,6 +67,7 @@ export const womensApparelCategory =
 export const accessoriesCategory = 
 {
     name: "Accessories",
+    pathName: 'accessories',
     categories: [
         {
             name: "Watches",
@@ -89,6 +90,7 @@ export const accessoriesCategory =
 export const surfboardsCategory = 
 {
     name: "Surfboards",
+    pathName: 'surfboards',
     categories: [
         {
             name: "Shortboards",
@@ -111,6 +113,7 @@ export const surfboardsCategory =
 export const surfAccessoriesCategory = 
 {
     name: "Surf Accessories",
+    pathName: 'surf-accessories',
     categories: [
         {
             name: "Leashes",

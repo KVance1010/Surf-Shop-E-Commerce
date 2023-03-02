@@ -7,7 +7,7 @@ import Carousel from '../components/Carousel';
 import {mensApparelCategory, womensApparelCategory,} from '../utils/categoryList.js'
 import '../css/Home.css';
 
-const Home = () => {
+const Home = ({ handleCurrentTags }) => {
 	const { loading, data } = useQuery(QUERY_USERS);
 	const users = data?.users || [];
 
@@ -19,7 +19,7 @@ const Home = () => {
 				<p className="heroTitle">THE SURF IS CALLING</p>
 				<p className="heroAction">TIME TO ANSWER...</p>
 				<button className="heroButton">
-					<Link to="apparel">Shop</Link>
+					<Link to="apparel">Shop onClick={ () => {handleCurrentTags(['apparel'])}}</Link>
 				</button>
 			</div>
 			<svg

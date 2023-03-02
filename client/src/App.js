@@ -7,11 +7,7 @@ import CategoryList from './components/CategoryList';
 import Apparel from './pages/Apparel'
 import Header from './components/header/Header';
 import "./css/App.css";
-import { mensApparelCategory, womensApparelCategory, surfboardsCategory, surfAccessoriesCategory
-  } from './utils/categoryList';
-  
- 
-
+import ItemList from './components/ItemList';
 
 
 const client = new ApolloClient({
@@ -22,8 +18,9 @@ const client = new ApolloClient({
 function App() {
 	const [currentPage, setCurrentPage] = useState('');
 	const handlePageChange = (page) => setCurrentPage(page);
-	const [currentCategory, setCurrentCategory] = useState({});
-	const handleCurrentCategory = (category) => {setCurrentCategory(category)};
+	
+	const [currentTags, setCurrentTags] = useState([]);
+	const handleCurrentTags = (tags) => {setCurrentTags(tags)}
 
 
 	return (
@@ -37,6 +34,7 @@ function App() {
 							<Home
 								currentPage={currentPage}
 								handlePageChange={handlePageChange}
+								handleCurrentTags={handleCurrentTags}
 							/>
 						}
 					></Route>
@@ -50,20 +48,26 @@ function App() {
 						}
 					></Route>
 					<Route
-						path="/apparel"
+						path="/:page"
 						element={
 							<Apparel
 								currentPage={currentPage}
 								handlePageChange={handlePageChange}
-								handleCurrentCategory={handleCurrentCategory}
+								handleCurrentTags={handleCurrentTags}
 							/>
 						}
 					></Route>
 					<Route
-						path="/category/:categoryName"
+						path="/apparel/:categoryName"
 						element={
-							<CategoryList
-								categories={currentCategory}
+							<CategoryList/>
+						}
+					></Route>
+					<Route
+						path="/item-list/:tags"
+						element={
+							<ItemList
+								
 							/>
 						}
 					></Route>
