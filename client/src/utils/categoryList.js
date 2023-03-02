@@ -32,9 +32,9 @@ export const mensApparelCategory =
         }
     ]
 }
-export const womensApparelCategory = 
+export const womansApparelCategory = 
 {
-    name: "Womens Apparel",
+    name: "Womans Apparel",
     categories: [
         {
             name: "Swimsuits",

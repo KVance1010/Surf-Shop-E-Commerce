@@ -4,15 +4,16 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
 import Admin from './pages/Admin';
 import CategoryList from './components/CategoryList';
-import Apparel from './pages/Apparel'
+import Category from './components/Category';
+import Apparel from './pages/Apparel';
 import Header from './components/header/Header';
-import "./css/App.css";
-import { mensApparelCategory, womensApparelCategory, surfboardsCategory, surfAccessoriesCategory
-  } from './utils/categoryList';
-  
- 
-
-
+import './css/App.css';
+import {
+	mensApparelCategory,
+	womansApparelCategory,
+	surfboardsCategory,
+	surfAccessoriesCategory,
+} from './utils/categoryList';
 
 const client = new ApolloClient({
 	uri: '/graphql',
@@ -23,8 +24,7 @@ function App() {
 	const [currentPage, setCurrentPage] = useState('');
 	const handlePageChange = (page) => setCurrentPage(page);
 	const [currentCategory, setCurrentCategory] = useState({});
-	const handleCurrentCategory = category => setCurrentCategory(category);
-
+	const handleCurrentCategory = (category) => setCurrentCategory(category);
 
 	return (
 		<ApolloProvider client={client}>
@@ -53,6 +53,8 @@ function App() {
 						path="/apparel"
 						element={
 							<Apparel
+								men={mensApparelCategory}
+								women={womansApparelCategory}
 								currentPage={currentPage}
 								handlePageChange={handlePageChange}
 								handleCurrentCategory={handleCurrentCategory}
@@ -60,12 +62,8 @@ function App() {
 						}
 					></Route>
 					<Route
-						path="/apparel/mens"
-						element={
-							<CategoryList
-								categories={currentCategory}
-							/>
-						}
+						path="/category"
+						element={<CategoryList categories={currentCategory} />}
 					></Route>
 				</Routes>
 			</Router>

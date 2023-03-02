@@ -46,3 +46,6 @@
 	bottom: 20px;
 	right: 50%;
 }
+.carouselGroup{
+	display:flex;
+}
