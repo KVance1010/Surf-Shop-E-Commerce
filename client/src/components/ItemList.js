@@ -5,10 +5,21 @@ import { QUERY_ITEMS_BY_TAGS } from "../utils/queries";
 const ItemList = () => {
 
     let hrefSplit = window.location.href.split('/')
+    let tags = []
     let itemTag = (hrefSplit[hrefSplit.length-1])
+    if(itemTag){
+        tags.push(itemTag)
+    }
     let categoryTag = (hrefSplit[hrefSplit.length-2])
+    if(categoryTag){
+        tags.push(categoryTag)
+    }
     let pageTag = (hrefSplit[hrefSplit.length-1])
-    let tags = [itemTag, categoryTag, pageTag]
+    if(pageTag){
+        tags.push(pageTag)
+    }
+    console.log(tags)
+    
 
    const {loading, data } = useQuery(QUERY_ITEMS_BY_TAGS, {
     variables: {tags: tags}

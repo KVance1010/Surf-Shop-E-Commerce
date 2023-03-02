@@ -26,9 +26,6 @@ const CategoryList = () => {
         case 'surfboards':
             currentCategory = surfboardsCategory
             break
-        case 'surf-accessories':
-            currentCategory = surfAccessoriesCategory
-            break
         default:{}
     }
 
