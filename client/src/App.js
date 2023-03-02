@@ -4,16 +4,9 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
 import Admin from './pages/Admin';
 import CategoryList from './components/CategoryList';
-import Category from './components/Category';
 import Apparel from './pages/Apparel';
 import Header from './components/header/Header';
 import './css/App.css';
-import {
-	mensApparelCategory,
-	womensApparelCategory,
-	surfboardsCategory,
-	surfAccessoriesCategory,
-} from './utils/categoryList';
 import ItemList from './components/ItemList';
 
 
@@ -53,8 +46,6 @@ function App() {
 						path="/apparel"
 						element={
 							<Apparel
-								men={mensApparelCategory}
-								women={womensApparelCategory}
 								currentPage={currentPage}
 								handlePageChange={handlePageChange}
 							/>
@@ -73,13 +64,13 @@ function App() {
 						element={<ItemList/>}
 					></Route>
 					<Route
-						path="/surfboards"
+						path="/surfboards/:categoryName/"
 						element={<CategoryList
 							currentPage={currentPage}
 							handlePageChange={handlePageChange}/>}
 					></Route>
 					<Route
-						path="/surfboards/:itemList"
+						path="/surfboards/:categoryName/:itemList"
 						element={<ItemList/>}
 					></Route>
 					<Route

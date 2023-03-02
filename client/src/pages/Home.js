@@ -39,10 +39,10 @@ const Home = ({ handleCurrentTags }) => {
 					/>
 				</svg>
 			</div>
-			{/* <div className="carouselGroup"> */}
+			<div className="carouselGroup">
 				<Carousel apparel={womensApparelCategory} />
 				<Carousel apparel={mensApparelCategory} />
-			{/* </div> */}
+			</div>
 		</>
 	);
 };
