@@ -33,9 +33,10 @@ export const mensApparelCategory =
         }
     ]
 }
-export const womansApparelCategory = 
+export const womensApparelCategory = 
 {
 
+    
     name: "Womens Apparel",
     pathName: "womens",
     categories: [

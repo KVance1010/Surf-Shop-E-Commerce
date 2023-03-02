@@ -4,10 +4,9 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
 import Admin from './pages/Admin';
 import CategoryList from './components/CategoryList';
-import Category from './components/Category';
 import Apparel from './pages/Apparel';
 import Header from './components/header/Header';
-import "./css/App.css";
+import './css/App.css';
 import ItemList from './components/ItemList';
 
 
@@ -19,7 +18,6 @@ const client = new ApolloClient({
 function App() {
 	const [currentPage, setCurrentPage] = useState('');
 	const handlePageChange = (page) => setCurrentPage(page);
-
 
 	return (
 		<ApolloProvider client={client}>

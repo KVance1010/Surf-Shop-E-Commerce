@@ -6,7 +6,7 @@ import { QUERY_USERS } from '../utils/queries';
 import Carousel from '../components/CarouselPage';
 import {
 	mensApparelCategory,
-	womansApparelCategory,
+	womensApparelCategory,
 } from '../utils/categoryList.js';
 import '../css/Home.css';
 
@@ -39,10 +39,10 @@ const Home = ({ handleCurrentTags }) => {
 					/>
 				</svg>
 			</div>
-			<div className="carouselGroup">
-				<Carousel apparel={womansApparelCategory} />
+			{/* <div className="carouselGroup"> */}
+				<Carousel apparel={womensApparelCategory} />
 				<Carousel apparel={mensApparelCategory} />
-			</div>
+			{/* </div> */}
 		</>
 	);
 };
