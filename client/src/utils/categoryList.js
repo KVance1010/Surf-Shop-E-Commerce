@@ -33,10 +33,14 @@ export const mensApparelCategory =
         }
     ]
 }
-export const womensApparelCategory = 
+export const womansApparelCategory = 
 {
+<<<<<<< HEAD
+    name: "Womans Apparel",
+=======
     name: "Womens Apparel",
     pathName: "womens",
+>>>>>>> 22cacc7dea6d765f4f3043eddbbdde577beecc88
     categories: [
         {
             name: "Swimsuits",

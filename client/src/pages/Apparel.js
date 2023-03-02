@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { mensApparelCategory, womensApparelCategory } from '../utils/categoryList';
 
@@ -24,4 +24,4 @@ const Apperal = () => {
     )
 }
 
-export default Apperal
+export default Apparel;
