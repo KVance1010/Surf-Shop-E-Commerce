@@ -65,13 +65,13 @@ function App() {
 						element={<ItemList/>}
 					></Route>
 					<Route
-						path="/surfboards"
+						path="/surfboards/:categoryName"
 						element={<CategoryList
 							currentPage={currentPage}
 							handlePageChange={handlePageChange}/>}
 					></Route>
 					<Route
-						path="/surfboards/:itemList"
+						path="/surfboards/:categoryName/:itemList"
 						element={<ItemList/>}
 					></Route>
 					<Route
@@ -80,7 +80,7 @@ function App() {
 					></Route>
 					<Route
 						path="/accessories"
-						element={<ItemList
+						element={<CategoryList
 							currentPage={currentPage}
 							handlePageChange={handlePageChange}/>}
 					></Route>
