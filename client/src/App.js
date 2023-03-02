@@ -18,9 +18,6 @@ const client = new ApolloClient({
 function App() {
 	const [currentPage, setCurrentPage] = useState('');
 	const handlePageChange = (page) => setCurrentPage(page);
-	
-	const [currentTags, setCurrentTags] = useState([]);
-	const handleCurrentTags = (tags) => {setCurrentTags(tags)}
 
 
 	return (
@@ -34,7 +31,6 @@ function App() {
 							<Home
 								currentPage={currentPage}
 								handlePageChange={handlePageChange}
-								handleCurrentTags={handleCurrentTags}
 							/>
 						}
 					></Route>
@@ -48,28 +44,53 @@ function App() {
 						}
 					></Route>
 					<Route
-						path="/:page"
+						path="/apparel"
 						element={
 							<Apparel
 								currentPage={currentPage}
 								handlePageChange={handlePageChange}
-								handleCurrentTags={handleCurrentTags}
 							/>
 						}
 					></Route>
 					<Route
 						path="/apparel/:categoryName"
-						element={
-							<CategoryList/>
-						}
+						element={<CategoryList/>}
 					></Route>
 					<Route
-						path="/item-list/:tags"
-						element={
-							<ItemList
-								
-							/>
-						}
+						path="/apparel/:categoryName/:itemList"
+						element={<ItemList/>}
+					></Route>
+					<Route
+						path="/apparel/:categoryName/:itemList/:item"
+						element={<ItemList/>}
+					></Route>
+					<Route
+						path="/surfboards"
+						element={<CategoryList
+							currentPage={currentPage}
+							handlePageChange={handlePageChange}/>}
+					></Route>
+					<Route
+						path="/surfboards/:itemList"
+						element={<ItemList/>}
+					></Route>
+					<Route
+						path="/apparel/:categoryName/:itemList/:item"
+						element={<ItemList/>}
+					></Route>
+					<Route
+						path="/accessories"
+						element={<ItemList
+							currentPage={currentPage}
+							handlePageChange={handlePageChange}/>}
+					></Route>
+					<Route
+						path="/accessories/:itemList"
+						element={<ItemList/>}
+					></Route>
+					<Route
+						path="/accessories/:itemList/:item"
+						element={<ItemList/>}
 					></Route>
 				</Routes>
 			</Router>

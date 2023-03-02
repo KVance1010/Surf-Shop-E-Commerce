@@ -1,7 +1,7 @@
 export const mensApparelCategory = 
 {
     name: "Mens Apparel",
-    pathName: "mens-apparel",
+    pathName: "mens",
     categories: [
         {
             name: "Boardshorts",
@@ -36,7 +36,7 @@ export const mensApparelCategory =
 export const womensApparelCategory = 
 {
     name: "Womens Apparel",
-    pathName: "womens-apparel",
+    pathName: "womens",
     categories: [
         {
             name: "Swimsuits",

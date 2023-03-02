@@ -3,16 +3,16 @@ import { useParams } from "react-router-dom";
 import { mensApparelCategory, womensApparelCategory, accessoriesCategory, surfboardsCategory, surfAccessoriesCategory } from '../utils/categoryList';
 
 
-const CategoryList = ({ categories, handleCurrentTags,  }) => {
+const CategoryList = () => {
 
     const {categoryName} = useParams({})
     let currentCategory
 
     switch(categoryName) {
-        case 'mens-apparel':
+        case 'mens':
             currentCategory = mensApparelCategory
             break
-        case 'womens-apparel':
+        case 'womens':
             currentCategory = womensApparelCategory
             break
         case 'accessories':
