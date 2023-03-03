@@ -28,13 +28,15 @@ export const mensApparelCategory =
             image: "https://cdn.watersportsoutlet.com/images/1x1/thumbs/2022%20Mystic%202mm%20Neoprene%20Beanie%2035016.230024%20-%20Dark%20Olive.700x700.jpg"
         },
         {
-            name: "wetsuits",
+            name: "Wetsuits",
             image: "https://cdn.shopify.com/s/files/1/0360/4473/4523/products/MN43ZXC0_XCEL_BLK_FRT1_1024x1024_WEB.jpg?v=1670534453&width=823"
         }
     ]
 }
 export const womensApparelCategory = 
 {
+
+    
     name: "Womens Apparel",
     pathName: "womens",
     categories: [

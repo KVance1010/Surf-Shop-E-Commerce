@@ -14,7 +14,7 @@ const ItemList = () => {
     variables: {tags: tags}
    })
    const items = data?.itemsByCategory || []
-   console.log(data, items)
+
    return ( 
     <div>
         {loading ? (

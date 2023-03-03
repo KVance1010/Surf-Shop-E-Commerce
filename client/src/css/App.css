@@ -2,7 +2,7 @@
 
 :root {
 	--headerColor: #052f5f;
-	/*  #119DA4; */
+	--altBackgroundColor:  #119DA4;
 	--mainBackgroundColor: #005377;
 	/* -- #06A77D; */
 	--fontColor: #d5c67a;
@@ -10,10 +10,9 @@
 }
 
 body {
-	font-family: 'IBM Plex Mono', monospace;
-	/* -apple-system, BlinkMacSystemFont, 	'Segoe UI', 'Roboto', 'Oxygen',
-		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-		sans-serif; */
+	font-family: 'IBM Plex Mono', 'monospace', 'Segoe UI', 'Roboto', 'Oxygen',
+	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }

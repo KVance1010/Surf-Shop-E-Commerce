@@ -11,7 +11,7 @@ const Links = () => {
 				</Link>
 			</li>
 			<li>
-				<Link to="/surfboards" className="navLink">
+				<Link to="/surfboards/surfboards" className="navLink">
 					Surfboards
 				</Link>
 			</li>

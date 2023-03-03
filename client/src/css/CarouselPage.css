@@ -1,3 +1,40 @@
 .carousel {
-    width: 50vw;
+	width: 50vw;
+    padding: 40px 60px;
+	background-color: var(--mainBackgroundColor);
+	/* background-color: var(--altBackgroundColor); */
 }
+
+.carousel img {
+	width: 45vw;
+    height: 80vh;
+    /* object-fit: cover; */
+    object-fit: fill;
+    /* object-fit:contain; */
+}
+
+.react-multiple-carousel__arrow{
+    /* background-color: rgba(0, 0, 0, 0); */
+}
+
+.categoryName{
+    position: relative;
+    z-index:3;
+    top: -90px;
+    left: 16vw;
+    font-size: 20px;
+    padding: 20px 40px;
+    display:inline;
+    color: var(--boldFontColor);
+    background-color: var(--mainBackgroundColor);
+    border-radius: 10px;
+}
+
+.categoryGender{
+    font-size: 30px;
+    color: var(--boldFontColor);
+    padding-bottom: 40px; 
+}
+
+
+

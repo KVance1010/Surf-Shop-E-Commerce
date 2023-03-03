@@ -12,7 +12,7 @@
 .heroContent {
 	position: absolute;
 	left: 60px;
-	bottom: 15%;
+	bottom: 18%;
 	background-color: rgba(0, 0, 0, 0.3);
 	border-radius: 10px;
 	color: var(--fontColor);
@@ -43,9 +43,10 @@
 }
 .downArrow {
 	position: absolute;
-	bottom: 20px;
+	bottom: 40px;
 	right: 50%;
 }
 .carouselGroup{
 	display:flex;
+	margin-top: -3px;
 }
