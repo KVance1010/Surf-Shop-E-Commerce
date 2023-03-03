@@ -1,6 +1,8 @@
 import React from "react";
 import { useMutation, useQuery } from "@apollo/client";
 import { QUERY_ITEMS_BY_TAGS } from "../utils/queries";
+import { Link } from 'react-router-dom'
+import { BSONValue } from 'bson-objectid';
 
 const ItemList = () => {
 
@@ -18,9 +20,8 @@ const ItemList = () => {
     if(pageTag){
         tags.push(pageTag)
     }
-    console.log(tags)
+ 
     
-
    const {loading, data } = useQuery(QUERY_ITEMS_BY_TAGS, {
     variables: {tags: tags}
    })
@@ -34,9 +35,12 @@ const ItemList = () => {
             </div>
         ) : (
             <ul>
-                {items.map((item) => 
-                    <li key={item._id}>
-                         {item.name}
+                {items.map((item, index) => 
+                    <li key={index}>
+                        {console.log(item)}
+                        <Link to={`${item.name}`}>
+                            {item.name}
+                        </Link>
                     </li>
                 )}
             </ul>

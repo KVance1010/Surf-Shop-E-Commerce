@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/mseaman26/MERN-Template/issues"
   },
-  "homepage": "https://github.com/mseaman26/MERN-Template#readme"
+  "homepage": "https://github.com/mseaman26/MERN-Template#readme",
+  "dependencies": {
+    "bson-objectid": "^2.0.4"
+  }
 }
