@@ -8,7 +8,7 @@ import {
 	mensApparelCategory,
 	womensApparelCategory,
 } from '../utils/categoryList.js';
-import SurfBoards from '../images/surfboards1.jpg';
+import SurfBoards from '../images/surfboards.jpg';
 import '../css/Home.css';
 
 const Home = ({ handleCurrentTags }) => {
