@@ -12,7 +12,12 @@ const resolvers = {
             return (await Item.find({
                 tags: {$all: [...args.tags]}
             }))
-        },  
+        }, 
+        itemByName: async (parent, args) => {
+            return (await Item.findOne({
+                name: args.name
+            }))
+        } 
     },   
 }
 

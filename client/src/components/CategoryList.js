@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'
 import { useParams } from "react-router-dom";
-import { mensApparelCategory, womensApparelCategory, accessoriesCategory, surfboardsCategory, surfAccessoriesCategory } from '../utils/categoryList';
+import { mensApparelCategory, womensApparelCategory, accessoriesCategory, surfboardsCategory } from '../utils/categoryList';
 
 
 const CategoryList = () => {

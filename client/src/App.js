@@ -8,6 +8,7 @@ import Apparel from './pages/Apparel';
 import Header from './components/header/Header';
 import './css/App.css';
 import ItemList from './components/ItemList';
+import Item from './components/Item'
 
 
 const client = new ApolloClient({
@@ -61,7 +62,7 @@ function App() {
 					></Route>
 					<Route
 						path="/apparel/:categoryName/:itemList/:item"
-						element={<ItemList/>}
+						element={<Item/>}
 					></Route>
 					<Route
 						path="/surfboards/:categoryName"
@@ -74,8 +75,12 @@ function App() {
 						element={<ItemList/>}
 					></Route>
 					<Route
+						path="/surfboards/:categoryName/:itemList/:item"
+						element={<Item/>}
+					></Route>
+					<Route
 						path="/apparel/:categoryName/:itemList/:item"
-						element={<ItemList/>}
+						element={<Item/>}
 					></Route>
 					<Route
 						path="/accessories/:categoryName"
@@ -88,8 +93,8 @@ function App() {
 						element={<ItemList/>}
 					></Route>
 					<Route
-						path="/accessories/:itemList/:item"
-						element={<ItemList/>}
+						path="/accessories/:categoryName/:itemList/:item"
+						element={<Item/>}
 					></Route>
 				</Routes>
 			</Router>

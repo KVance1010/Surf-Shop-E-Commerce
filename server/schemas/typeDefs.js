@@ -22,6 +22,7 @@ const typeDefs = gql`
         users: [User]
         items: [Item]
         itemsByCategory(tags: [String]): [Item]
+        itemByName(name: String): Item
     }
 `
 

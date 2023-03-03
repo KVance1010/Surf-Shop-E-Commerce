@@ -42,3 +42,19 @@ export const QUERY_ITEMS_BY_TAGS = gql`
         }
     }
 `
+export const QUERY_ITEM_BY_NAME = gql`
+query Query($name: String) {
+    itemByName(name: $name) {
+        name
+        brand
+        description
+        image
+        bestSeller
+        newArrival
+        price
+        saleItem
+        stock
+        stock
+      }
+  }
+`
