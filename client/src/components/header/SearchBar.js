@@ -50,7 +50,7 @@ const SearchBar = () => {
 				</svg>
 			</label>
 			{display && (
-				<div className="">
+				<div className="dropDownMenu">
 					{items
 						.filter((item) => item.indexOf(search.toLowerCase()) > -1)
 						.map((value, i) => {

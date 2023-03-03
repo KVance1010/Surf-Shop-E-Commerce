@@ -6,7 +6,8 @@
 }
 
 .searchBox {
-    display: flex;
+    /* display: flex; */
+    /* position: absolute; */
 }
 
 .searchIcon {
@@ -19,10 +20,13 @@
     background-color: var(--mainBackgroundColor);
 }
 
-/* .dropDownSearch {
+.dropDownSearch {
+    padding: 15px 25px;
+    border: solid .5px;
+}
+
+.dropDownMenu{
     position: absolute;
-    display:flex;
-    flex-direction: column;
-    z-index: 3;
     background-color: var(--headerColor);
-} */
+    
+}
