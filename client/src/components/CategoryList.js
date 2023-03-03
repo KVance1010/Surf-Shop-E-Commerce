@@ -37,7 +37,7 @@ const CategoryList = () => {
                         <li key={category.name}>
                             <Link to={`/${pageTag}/${categoryTag}/${category.name.toLocaleLowerCase()}`}>
                                 <div>
-                                {category.name}
+                                {category.name.split('_').join(' ')}
                                 <img src={category.image} alt={`${category.name} `}/>
                                 </div>
                             </Link>

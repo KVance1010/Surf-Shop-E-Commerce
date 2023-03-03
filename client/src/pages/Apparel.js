@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { mensApparelCategory, womensApparelCategory } from '../utils/categoryList';
+import mikePic from '../../src/images/mike_cropped.jpg'
 
 const Apparel = () => {
     return (
@@ -8,7 +9,7 @@ const Apparel = () => {
             <div>
                 <Link  
                 to={`/apparel/${mensApparelCategory.pathName}`}>
-                <img src="https://images.unsplash.com/photo-1459745930869-b3d0d72c3cbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="male surfer in the tube"/>
+                <img src={mikePic} alt="male surfer in the tube"/>
                     Shop Mens Apparel
                 </Link>
             </div>
