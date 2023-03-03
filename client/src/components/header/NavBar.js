@@ -16,7 +16,7 @@ const Links = () => {
 				</Link>
 			</li>
 			<li>
-				<Link to="/accessories" className="navLink">
+				<Link to="/accessories/accessories" className="navLink">
 					Accessories
 				</Link>
 			</li>

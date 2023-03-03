@@ -6,39 +6,23 @@ apparel
 		-hoodies
 		-footwear
 		-hats
+		-shades
+		-wetsuits
 	-womens
 		-swimsuits
 		-tops
 		-hoodies
 		-footwear
 		-hats
-	-accessories
-		-watches
 		-shades
-		-towels
-		-bags
-
-	-kids
-		-boys
-			-boardshorts
-			-shirts
-			-shorts
-			-hoodies
-			-footwear
-			-hats
-		-girls
-			-swimsuits
-			-tops
-			-hoodies
-			-footwear
-			-hats	
+		-wetsuits
 
 surfboards
 	-shortboards
 	-longboards
 	-hybrids
 	-guns
-surf accessories
+-accessories
 	-leashes
 	-wax
 	-sunscreen
@@ -48,5 +32,7 @@ surf accessories
 	-earplugs
 	-tail pads
 	-helmets
-
+	-watches
+	-towels
+	-bags
 	

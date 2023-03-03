@@ -153,7 +153,7 @@
         "name": "Rip Curl Men's Automatic Watch with Polyurethane Strap, Black, 26 (Model: A1119),Mignight 21",
         "brand": "Rip Curl",
         "price": 99.99,
-        "tags":["apparel","accesories","watches"],
+        "tags":["accessories","watches"],
         "image": "https://m.media-amazon.com/images/I/51IA+C-sbWL._AC_UX679_.jpg",
         "stock": 3,
         "saleItem": true
@@ -162,7 +162,7 @@
         "name": "Oakley Hydra",
         "price": 173.00,
         "brand": "Oakley",
-        "tags":["apparel","accesories","shades"],
+        "tags":["apparel","mens","shades"],
         "image": "https://assets.oakley.com/is/image/OakleyEYE/888392593429__PREMIUM__shad__al6.png?impolicy=OO_ratio&width=1000",
         "stock": 14,
         "newArrival": true
@@ -171,14 +171,14 @@
         "name": "Poncho Towel: Rockies Moss",
         "price": 79.95,
         "brand": "Nomadix",
-        "tags":["apparel","accesories","towels"],
+        "tags":["accessories","towels"],
         "image": "https://cdn.shopify.com/s/files/1/0714/2297/products/AT5I1719.jpg?v=1615418124",
         "stock": 10
     },
     {
         "name": "Public Goods Reusable Cotton Tote Bag",
         "price": 10.00,
-        "tags":["apparel","accesories","bags"],
+        "tags":["accessories","bags"],
         "image": "https://cdn.shopify.com/s/files/1/0838/7991/products/cotton-tote-bag_1000x.jpg?v=1627997728",
         "stock": 11
     },
@@ -207,7 +207,7 @@
         "brand": "Stay Covered",
         "price": 45.00,
         "description": "These Heavy Duty Hand Tied leashes are the most versatile leash in the Stay Covered line. You can use this leash on your Stand Up in small to medium sized waves or on your step up at double overhead Puerto Escondido. The hand tied feature eliminates weak points creating a leash you can trust. Stay Covered uses a #90 durometer cord to create a slightly softer leash, reducing tangles and creating a perfect blend of stretch and memory retention.",
-        "tags":["surf accessories","leashes"],
+        "tags":["accessories","leashes"],
         "image": "https://cdn.shopify.com/s/files/1/0770/3687/products/heavyduty-leash-6.jpg?v=1610501535&width=1024",
         "stock": 10,
         "bestSeller": true
@@ -217,7 +217,7 @@
         "brand": "Sticky Bumps",
         "price": 18.00,
         "description": "Long lasting and easy to apply. Optimal for water temps from 60°F and below.",
-        "tags":["surf accessories","wax"],
+        "tags":["accessories","wax"],
         "image": "https://cdn11.bigcommerce.com/s-wsye173qvw/images/stencil/1280x1280/products/340/1116/COLD3-22__56610.1657811872.jpg?c=2",
         "stock": 200,
         "bestSeller": true
@@ -227,7 +227,7 @@
         "brand": "Stussy",
         "price": 20.00,
         "description": "SALT & STONE has collaborated with Californian sportswear brand Stussy on a natural sunscreen face stick. The broad spectrum, water resistant, and reef safe face stick goes on smooth without any white residue. Formulated with a natural tint to blend into all skin tones. Perfect protection for a morning session in the Pacific. This exclusive product is only available at Salt & Stone and Stussy and can't be found anywhere else. This product is excluded from all promotional discounts and offers.",
-        "tags":["surf accessories","sunscreen"],
+        "tags":["accessories","sunscreen"],
         "image": "https://cdn.shopify.com/s/files/1/1916/1271/products/SS-StussySPFStick-Open_1080x.png?v=1643931030",
         "stock": 50,
         "saleItem": true,
@@ -238,7 +238,7 @@
         "brand": "Futures",
         "price": 110.00,
         "description": "The R3 Legacy Series is an xsmall sized thruster in the Rake template category. The increased rake provides hold through turns, and the Honeycomb construction gives a balanced feel for all-around performance.",
-        "tags":["surf accessories","fins"],
+        "tags":["accessories","fins"],
         "image": "https://cdn.shopify.com/s/files/1/0332/4362/7659/products/legacy_rake_xsmall_1800x1800.jpg?v=1656617784",
         "stock": 26,
         "bestSeller": true
@@ -248,7 +248,7 @@
         "brand": "Ding All",
         "price": 22.99,
         "description": "THE ORIGINAL POLYESTER SANDING RESIN: Ding All Polyester Resin contains Silmar brand 250A UV Polyester Sanding Resin, which is the undisputed, highest-quality resin available to the industry. Sanding Resin is typically used for surfboard hot-coats and is widely popular for use with dings repairs   LARGER SURFBOARD REPAIRS KIT: Purposed for larger polyester ding repairs, this kit contains ultra clear, non-yellowing and UV Stable 4oz. sanding resin plus hardener. Average cure time is: Gel -6 to 10 minutes, hard in 45 to 60 minutes @ 77 degrees F   ALLOWS EASY SANDING: This resin is non tacky and dries smooth providing the user an easy surface to finish sanding  A COMPLETE REPAIR KIT: This MADE IN USA kit come with 4oz. sanding resin plus hardener, fiberglass cloth (6” x 27”), 2 sided sanding pad, 2x measuring cups, 6 x mixing sticks/applicators, Q-Cell White Filler, bonus - Sun Cure 1 oz. mini fiberfill tube, 2 cover sheet and easy instructions.mmBONUS SUN CURE RESIN: If smaller dings are being fixed, the kit comes complete with our world-famous Sun Cure Epoxy Fiberfill resin. Packed with fiberglass strands for strength, Sun Cure will get the job done in minutes after sun/UV exposure",
-        "tags":["surf accessories","ding repair"],
+        "tags":["accessories","ding_repair"],
         "image": "https://m.media-amazon.com/images/I/61rzcpOU4ZL._AC_SX679_.jpg",
         "stock": 15,
         "bestSeller": true
@@ -258,7 +258,7 @@
         "brand": "Quiksilver",
         "price": 32.99,
         "description": "One and done. The All Time Long Sleeve Rashguard for men will likely be the best and last rashguard you ever buy. You're looking at a legend. With built-in UPF 50 sun protection and made from recycled polyester, this legendary rashguard has been a surfer's go-to for countless years and a couple of million waves. Snug fit, classic Quik logo details, and good to go in pools too, this rashguard is an essential tool no surf kit should be without.",
-        "tags":["surf accessories","rashguards"],
+        "tags":["accessories","rashguards"],
         "image": "https://images.boardriders.com/globalGrey/quiksilver-products/all/default/xlarge/eqywr03357_quiksilver,v_byhh_frt1.jpg",
         "stock": 30,
         "bestSeller": true
@@ -268,7 +268,7 @@
         "brand": "Eargasm",
         "price": 45.99,
         "description": "Enjoy your favorite activities, without worrying about water entering your ears! Get the perfect fit with 4 different ear tip sizes included with every package.3 different ear wing sizes and included connector cord keep your Aquaplugs secure in your ear and minimize risk of loss.Protect your ears from water while still being able to hear your surroundings clearly. Great for surfing, swimming, and other water activities.Comes with a waterproof aluminum case for easy transport.100% reusable and washable so that you can use your Aquaplugs over and over.",
-        "tags":["surf accessories","earplugs"],
+        "tags":["accessories","earplugs"],
         "image": "https://cdn.shopify.com/s/files/1/1124/3298/products/61ee44fb-21c9-4f34-ba19-95603ab323bd_1966x1388.png?v=1639548855",
         "stock": 23,
         "saleItem": true
@@ -278,7 +278,7 @@
         "brand": "Rip Curl",
         "price": 35.95,
         "description": "Rip Curl's 3 Piece Traction is a great three-piece tail pad, made of a thin closed cell high density perforated EVA. Cut with a deep diamond groove and designed with base flex groove, for superior adhesion.",
-        "tags":["surf accessories","tail pads"],
+        "tags":["accessories","tail_pads"],
         "image": "https://cdn11.bigcommerce.com/s-1pj0bf1gcq/images/stencil/1280x1280/products/533/2189/00ymsh_0090-1_1__94603.1671830752.jpg?c=1",
         "stock": 14,
         "newArrival": true
@@ -288,7 +288,7 @@
         "brand": "Simba",
         "price": 199.99,
         "description": "The Simba Sentiel No Logo Pearl White Surf Helmet. A lightweight, low-profile helmet engineered specifically for the safety of surfers and water sports enthusiasts. The Sentinel 1’s technically advanced design provides high-level impact protection with optimum aquadynamic performance.",
-        "tags":["surf accessories","helmets"],
+        "tags":["accessories","helmets"],
         "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/SimbaNoLogoWhite_5000x.jpg?v=1645389225",
         "stock": 22,
         "newArrival": true
@@ -442,6 +442,16 @@
         "price": 30.99,
         "tags":["apparel", "mens","shirts"],
         "image": "https://cdn.shopify.com/s/files/1/1525/9036/products/FORMER_Q1.23-FTE-23101-LEGACYT-SHIRT-BLACK-2.jpg?v=1673948429&width=1066",
+        "stock": 6,
+        "saleItem": true
+    },
+    {
+        "name": "COME THRU",
+        "brand": "Quay",
+        "description":"Are you going to COME THRU? This modern cat eye features invisible, injection frames that put the focus on a range of mirrored + new blackout lenses that completely conceal the eyes. Show up and show out in these fan faves sunnies.",
+        "price": 39.00,
+        "tags":["apparel", "womens","shades"],
+        "image": "https://cdn.shopify.com/s/files/1/0898/5824/products/Quay_ComeThru_MatteBlackBlackPinkFade_Front_1.jpg?v=1670177760&width=1100",
         "stock": 6,
         "saleItem": true
     }

@@ -78,13 +78,13 @@ function App() {
 						element={<ItemList/>}
 					></Route>
 					<Route
-						path="/accessories"
+						path="/accessories/:categoryName"
 						element={<CategoryList
 							currentPage={currentPage}
 							handlePageChange={handlePageChange}/>}
 					></Route>
 					<Route
-						path="/accessories/:itemList"
+						path="/accessories/:categoryName/:itemList"
 						element={<ItemList/>}
 					></Route>
 					<Route
