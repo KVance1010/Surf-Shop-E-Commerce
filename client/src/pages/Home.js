@@ -8,6 +8,7 @@ import {
 	mensApparelCategory,
 	womensApparelCategory,
 } from '../utils/categoryList.js';
+import SurfBoards from '../images/surfboards.jpg';
 import '../css/Home.css';
 
 const Home = ({ handleCurrentTags }) => {
@@ -42,6 +43,17 @@ const Home = ({ handleCurrentTags }) => {
 			<div className="carouselGroup">
 				<Carousel apparel={womensApparelCategory} />
 				<Carousel apparel={mensApparelCategory} />
+			</div>
+			<div className="surfBoardAdContainer">
+				<img className= 'surfBoardAd' src={SurfBoards} />
+				<div className='surfBoardOverLay'>
+					<p className='surfBoardAdTitle'>
+					A Board for Every Occasion
+					</p>
+					<p className='surfBoardAdButton'>
+						Discover
+					</p>
+				</div>
 			</div>
 		</>
 	);
