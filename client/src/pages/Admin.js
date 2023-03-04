@@ -3,6 +3,7 @@ import AddItemForm from '../components/admin/AddItemForm'
 import ItemList from '../components/ItemList'
 import {useQuery, useMutation} from '@apollo/client'
 import { QUERY_ITEMS, QUERY_ITEMS_BY_TAGS  } from '../utils/queries'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Admin = () => {

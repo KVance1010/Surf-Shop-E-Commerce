@@ -27,6 +27,7 @@ const Item = () => {
                     <h1>
                         Brand: {itemData.brand}
                     </h1>
+                    <img src={itemData.image} alt={item.name}/>
                 </div>
             )}
         </div>

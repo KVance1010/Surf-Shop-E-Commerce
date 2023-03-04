@@ -11,6 +11,8 @@ import ItemList from './components/ItemList';
 import Item from './components/Item'
 
 
+
+
 const client = new ApolloClient({
 	uri: '/graphql',
 	cache: new InMemoryCache(),

@@ -1,6 +1,7 @@
 import {Link} from 'react-router-dom'
 import { useParams } from "react-router-dom";
 import { mensApparelCategory, womensApparelCategory, accessoriesCategory, surfboardsCategory } from '../utils/categoryList';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const CategoryList = () => {
@@ -30,21 +31,27 @@ const CategoryList = () => {
     }
 
     return(
-        <div>
-            <ul>
-                {currentCategory.categories.map((category) => {
-                    return(
-                        <li key={category.name}>
-                            <Link to={`/${pageTag}/${categoryTag}/${category.name.toLocaleLowerCase()}`}>
-                                <div>
-                                {category.name.split('_').join(' ')}
-                                <img src={category.image} alt={`${category.name} `}/>
+        <div >
+            <div className='g-*'>
+                <ul>
+                    {currentCategory.categories.map((category, index) => {
+                        return(
+                            <div className='row-cols-3'>
+                                <div className='card container'>
+                                    
+                                    <div className='card-body'>
+                                    <img src={category.image} alt={`${category.name} `} className='card-img-top img-fluid'/>
+                                    <h3 className='card-title'>{category.name.split('_').join(' ')}</h3>
+                                    </div>
+                                    <Link to={`/${pageTag}/${categoryTag}/${category.name.toLocaleLowerCase()}`} className='btn btn-success'>
+                                        Shop
+                                    </Link>
                                 </div>
-                            </Link>
-                        </li>
-                    )  
-                })}
-            </ul>
+                            </div>
+                        )  
+                    })}
+                </ul>
+            </div>
         </div>   
     )
 }

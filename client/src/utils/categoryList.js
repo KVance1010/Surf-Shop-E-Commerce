@@ -9,7 +9,7 @@ export const mensApparelCategory =
         },
         {
             name: "Shirts",
-            image: "https://img.ltwebstatic.com/images3_pi/2022/06/10/165483371841ff8c0b374ce23827774642a2ebd734.webp"
+            image: "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/3FMWS0231ROS_ALT1_750x.jpg?v=1674590097"
         },
         {
             name: "Shorts",
