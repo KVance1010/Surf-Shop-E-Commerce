@@ -2,7 +2,7 @@
     background-color: var(--mainBackgroundColor);
     color: var(--mainFontColor);
     border: none;
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 .searchBox {
@@ -12,21 +12,22 @@
 
 .searchIcon {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     left: -30px;
-    top:5px;
     align-content: center;
     padding: 4px;
     background-color: var(--mainBackgroundColor);
 }
 
 .dropDownSearch {
-    padding: 15px 25px;
+    /* padding: 15px 25px; */
+    padding: 15px;
     border: solid .5px;
 }
 
 .dropDownMenu{
     position: absolute;
+    z-index: 3;
     background-color: var(--headerColor);
     
 }

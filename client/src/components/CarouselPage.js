@@ -17,7 +17,7 @@ const CarouselPage = ({ apparel }) => {
 	};
 	return (
 		<div className="carousel">
-			<div className='categoryGender'>{apparel.name}</div>
+			<div className="categoryGender">{apparel.name}</div>
 			<Carousel
 				arrows={true}
 				responsive={responsive}
@@ -25,14 +25,16 @@ const CarouselPage = ({ apparel }) => {
 				swipeable={true}
 				draggable={true}
 				keyBoardControl={true}
-				containerClass="container"
+				// containerClass="container"
 				removeArrowOnDeviceType={['tablet', 'mobile']}
 			>
 				{apparelArr.map((item) => (
-					<div key= {item.name}>
-						{/* <div>{item.name}</div> */}
-						<img src={item.image} />
-						<div className='categoryName'>{item.name}</div>
+					<div className="containerWhiteSpace">
+						<div key={item.name}>
+							{/* <div>{item.name}</div> */}
+							<img src={item.image} />
+							<div className="categoryName">{item.name}</div>
+						</div>
 					</div>
 				))}
 			</Carousel>
@@ -41,4 +43,3 @@ const CarouselPage = ({ apparel }) => {
 };
 
 export default CarouselPage;
-
