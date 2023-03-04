@@ -24,10 +24,21 @@ const Item = () => {
                     <h1>
                         Name: {itemData.name}
                     </h1>
-                    <h1>
+                    {itemData.brand? (
+                        <h1>
                         Brand: {itemData.brand}
-                    </h1>
+                        </h1>
+                    ) : (<></>)}
                     <img src={itemData.image} alt={item.name}/>
+                    <p>
+                        {itemData.description}
+                    </p>
+                    <h1>
+                        Price: ${itemData.price}
+                    </h1>
+                    <div className='btn btn-success'>
+                        Add to Cart!
+                    </div>
                 </div>
             )}
         </div>
