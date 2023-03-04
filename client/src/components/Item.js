@@ -14,30 +14,48 @@ const Item = () => {
     const itemData = data?.itemByName || {}
 
     return(
-        <div>
+        <div className='container'>
             {loading ? (
                 <div>
                     ...loading
                 </div>
             ) : (
-                <div>
-                    <h1>
-                        Name: {itemData.name}
-                    </h1>
-                    {itemData.brand? (
+                <div className='row col-6'>
+                    <div>
                         <h1>
-                        Brand: {itemData.brand}
+                            Name: {itemData.name}
                         </h1>
-                    ) : (<></>)}
-                    <img src={itemData.image} alt={item.name}/>
-                    <p>
-                        {itemData.description}
-                    </p>
-                    <h1>
-                        Price: ${itemData.price}
-                    </h1>
-                    <div className='btn btn-success'>
-                        Add to Cart!
+                        {itemData.brand? (
+                            <h1>
+                            Brand: {itemData.brand}
+                            </h1>
+                        ) : (<></>)}
+                        {itemData.saleItem? (
+                                <h4>
+                                    On Sale!!
+                                </h4>
+                            ) : <></>}
+                        {itemData.newArrival? (
+                                <h4>
+                                    New Arrival!!
+                                </h4>
+                            ) : <></>}
+                        {itemData.bestSeller? (
+                                <h4>
+                                    Best Seller!!
+                                </h4>
+                            ) : <></>}
+                        <img src={itemData.image} alt={item.name} className='img-fluid'/>
+                        <p>
+                            {itemData.description}
+                        </p>
+                        <h1>
+                            Price: ${itemData.price}
+                        </h1>
+                        
+                        <div className='btn btn-success'>
+                            Add to Cart!
+                        </div>
                     </div>
                 </div>
             )}

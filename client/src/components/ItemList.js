@@ -38,7 +38,26 @@ const ItemList = () => {
                 {items.map((item, index) =>
                     <div className="card container">
                         <div className="card-body">
+                            <h3 className="card-title">
+                                {item.name}
+                            </h3>
+                            {item.saleItem? (
+                                <h4>
+                                    On Sale!!
+                                </h4>
+                            ) : <></>}
+                            {item.newArrival? (
+                                <h4>
+                                    New Arrival!!
+                                </h4>
+                            ) : <></>}
+                            {item.bestSeller? (
+                                <h4>
+                                    Best Seller!!
+                                </h4>
+                            ) : <></>}
                             <img src={item.image} alt={item.name} className='card-img-top img-fluid'/>
+                            
                             <Link to={`${item.name}`} className='btn btn-success d-flex justify-content-center'>
                                 Learn More
                             </Link>
