@@ -1,0 +1,9 @@
+.category_list{
+    display: flex;
+    flex-wrap: wrap
+}
+.single_category{
+    width: 33%;
+    flex-shrink: 0;
+    height: 50vh;
+}
