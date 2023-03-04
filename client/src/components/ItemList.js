@@ -3,6 +3,7 @@ import { useMutation, useQuery } from "@apollo/client";
 import { QUERY_ITEMS_BY_TAGS } from "../utils/queries";
 import { Link } from 'react-router-dom'
 
+
 const ItemList = () => {
 
     let hrefSplit = window.location.href.split('/')
@@ -25,7 +26,7 @@ const ItemList = () => {
     variables: {tags: tags}
    })
    const items = data?.itemsByCategory || []
-
+   
    return ( 
     <div>
         {loading ? (
@@ -33,14 +34,16 @@ const ItemList = () => {
             ...loading
             </div>
         ) : (
-            <ul>
-                {items.map((item, index) => 
-                    <li key={index}>
-                        {console.log(item)}
-                        <Link to={`${item.name}`}>
-                            {item.name}
-                        </Link>
-                    </li>
+            <ul className="container col-3 ">
+                {items.map((item, index) =>
+                    <div className="card container">
+                        <div className="card-body">
+                            <img src={item.image} alt={item.name} className='card-img-top img-fluid'/>
+                            <Link to={`${item.name}`} className='btn btn-success d-flex justify-content-center'>
+                                Learn More
+                            </Link>
+                        </div>
+                    </div>
                 )}
             </ul>
         )}

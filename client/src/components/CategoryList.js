@@ -2,7 +2,6 @@ import {Link} from 'react-router-dom'
 import { useParams } from "react-router-dom";
 import { mensApparelCategory, womensApparelCategory, accessoriesCategory, surfboardsCategory } from '../utils/categoryList';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/categoryList.css'
 
 
 const CategoryList = () => {
@@ -34,11 +33,11 @@ const CategoryList = () => {
     return(
         <div >
             <div className='g-*'>
-                <ul className='category_list'>
+                <ul className='category_list container'>
                     {currentCategory.categories.map((category, index) => {
                         return(
-                            <div >
-                                <div className='card container '>
+                            <div className='row col-sm-3 single_category'>
+                                <div className='card container'>
                                     <div className='card-body'>
                                     <img src={category.image} alt={`${category.name} `} className='card-img-top img-fluid'/>
                                     <h3 className='card-title'>{category.name.split('_').join(' ')}</h3>
