@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, createContext } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
@@ -9,6 +9,7 @@ import Header from './components/header/Header';
 import './css/App.css';
 import ItemList from './components/ItemList';
 import Item from './components/Item';
+export const cartContext = createContext()
 
 const client = new ApolloClient({
 	uri: '/graphql',
@@ -18,9 +19,11 @@ const client = new ApolloClient({
 function App() {
 	const [currentPage, setCurrentPage] = useState('');
 	const handlePageChange = (page) => setCurrentPage(page);
+	const cartValue = {message: 'nerp'};
 
 	return (
 		<ApolloProvider client={client}>
+			<cartContext.Provider value={cartValue}>
 			<Router>
 				<Header currentPage={currentPage} handlePageChange={handlePageChange} />
 				<Routes>
@@ -69,6 +72,7 @@ function App() {
 					></Route>
 				</Routes>
 			</Router>
+			</cartContext.Provider>
 		</ApolloProvider>
 	);
 }

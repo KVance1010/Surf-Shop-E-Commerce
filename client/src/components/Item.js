@@ -1,14 +1,16 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { cartContext } from '../App'
 import { useParams } from 'react-router-dom'
 import { useQuery } from '@apollo/client'
 import { QUERY_ITEM_BY_ID } from '../utils/queries'
 import  {QUERY_ITEM_BY_NAME}  from '../utils/queries'
 
 
-const Item = () => {    
 
+const Item = () => {    
+    const cartValue = useContext(cartContext)
     const {item} = useParams({})
-    console.log(item)
+    console.log(cartValue)
     // const {loading, data} = useQuery(QUERY_ITEM_BY_ID, {
     //     variables: {_id: item}
     // })
