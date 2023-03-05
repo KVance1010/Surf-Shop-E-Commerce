@@ -1,10 +1,9 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import '../css/CarouselPage.css';
+import '../../css/CarouselHome.css';
 
-const CarouselPage = ({ apparel }) => {
-	const apparelArr = apparel.categories;
+const CarouselPage = ({ categories }) => {
 	const responsive = {
 		desktop: {
 			breakpoint: { max: 4000, min: 1024 },
@@ -17,7 +16,7 @@ const CarouselPage = ({ apparel }) => {
 	};
 	return (
 		<div className="carousel">
-			<div className="categoryGender">{apparel.name}</div>
+			<div className="categoryGender">{categories.name}</div>
 			<Carousel
 				arrows={true}
 				responsive={responsive}
@@ -28,7 +27,7 @@ const CarouselPage = ({ apparel }) => {
 				// containerClass="container"
 				removeArrowOnDeviceType={['tablet', 'mobile']}
 			>
-				{apparelArr.map((item) => (
+				{categories.map((item) => (
 					<div className="containerWhiteSpace">
 						<div key={item.name}>
 							{/* <div>{item.name}</div> */}

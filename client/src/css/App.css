@@ -2,19 +2,60 @@
 
 :root {
 	--headerColor: #052f5f;
-	--altBackgroundColor:  #119DA4;
+	/* --altBackgroundColor: #119da4; */
+	/* --altBackgroundColor: #0f757a; */
 	--mainBackgroundColor: #005377;
 	/* -- #06A77D; */
 	--fontColor: #d5c67a;
 	--boldFontColor: #f1a208;
 }
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
 
 body {
+	line-height: 1;
 	font-family: 'IBM Plex Mono', 'monospace', 'Segoe UI', 'Roboto', 'Oxygen',
-	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-	sans-serif;
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+}
+
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+	font-size: 100%;
+	font-family: inherit;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
 }
 
 code {

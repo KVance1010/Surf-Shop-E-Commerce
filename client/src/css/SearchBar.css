@@ -15,12 +15,10 @@
     z-index: 3;
     left: -30px;
     align-content: center;
-    padding: 4px;
     background-color: var(--mainBackgroundColor);
 }
 
 .dropDownSearch {
-    /* padding: 15px 25px; */
     padding: 15px;
     border: solid .5px;
 }

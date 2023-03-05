@@ -6,6 +6,7 @@ const typeDefs = gql`
         email: String
     }
     type Item {
+        _id: ID
         name: String
         price: Float
         description: String
@@ -23,6 +24,7 @@ const typeDefs = gql`
         items: [Item]
         itemsByCategory(tags: [String]): [Item]
         itemByName(name: String): Item
+        itemById(_id: String): Item
     }
 `
 
