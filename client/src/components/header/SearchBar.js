@@ -3,7 +3,42 @@ import '../../css/SearchBar.css';
 
 const SearchBar = () => {
 	const [display, setDisplay] = useState(false);
-	const [items, setItems] = useState(['shirt', 'shoes', 'hats', 'board']);
+	const [items, setItems] = useState([
+		'Women - Boardshorts',
+		'Women - Shirts',
+		'Women - Shorts',
+		'Women - Hoodies',
+		'Women - Footwear',
+		'Women - Hats',
+		'Women - Shades',
+		'Women - Wetsuits',
+		'Women - Shoes',
+		'Men - Boardshorts',
+		'Men - Shirts',
+		'Men - Shorts',
+		'Men - Hoodies',
+		'Men - Footwear',
+		'Men - Hats',
+		'Men - Shades',
+		'Men - Wetsuits',
+		'Men - Shoes',
+		'Surfboards - Shortboards',
+		'Surfboards - Longboards',
+		'Surfboards - Hybrids',
+		'Surfboards - Guns',
+		'Accessories - Leashes',
+		'Accessories - wax',
+		'Accessories - sunscreen',
+		'Accessories - fins',
+		'Accessories - ding repair',
+		'Accessories - rashguards',
+		'Accessories - earplugs',
+		'Accessories - tail pads',
+		'Accessories - helmets',
+		'Accessories - watches',
+		'Accessories - towels',
+		'Accessories - bags',
+	]);
 	const [search, setSearch] = useState('');
 	const wrapperRef = useRef(null);
 

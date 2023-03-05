@@ -22,9 +22,9 @@ const Home = ({ handleCurrentTags }) => {
 				<div className="heroContent">
 					<p className="heroTitle">THE SURF IS CALLING</p>
 					<p className="heroAction">TIME TO ANSWER...</p>
-					<button className="heroButton">
+					{/* <button className="heroButton">
 						<Link to="apparel">Shop</Link>
-					</button>
+					</button> */}
 				</div>
 				<svg
 					width="44"
@@ -45,14 +45,10 @@ const Home = ({ handleCurrentTags }) => {
 				<Carousel apparel={mensApparelCategory} />
 			</div>
 			<div className="surfBoardAdContainer">
-				<img className= 'surfBoardAd' src={SurfBoards} />
-				<div className='surfBoardOverLay'>
-					<p className='surfBoardAdTitle'>
-					A Board for Every Occasion
-					</p>
-					<p className='surfBoardAdButton'>
-						Discover
-					</p>
+				<img className="surfBoardAd" src={SurfBoards} />
+				<div className="surfBoardOverLay">
+					<p className="surfBoardAdTitle">A Board for Every Occasion</p>
+					<p className="surfBoardAdButton">Discover</p>
 				</div>
 			</div>
 		</>
