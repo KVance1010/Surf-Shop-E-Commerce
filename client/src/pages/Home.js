@@ -14,13 +14,14 @@ import '../css/Home.css';
 const Home = () => {
 	const { loading, data } = useQuery(QUERY_USERS);
 	const users = data?.users || [];
-
+	// const accessories = false;
 	return (
 		<div className="heroContainer">
 			<Hero />
 			<div className="carouselGroup">
-				<Carousel categories = {womensApparelCategory.categories} />
-				<Carousel categories = {mensApparelCategory.categories} />
+				<Carousel categories = {womensApparelCategory.categories} accessories = {false} />
+				<Carousel categories = {mensApparelCategory.categories} 
+				accessories = {false}/>
 			</div>
 			<SurfBoard />
 			<Accessories/>

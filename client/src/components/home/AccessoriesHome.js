@@ -13,14 +13,14 @@ const AccessoriesHome = () => {
 				</p>
 			</div>
 			<div className="accessoryImageContainer">
-        <div className='imageContainer'>
-					{categoryList.map((accessory) => (
-						<div key={accessory.name}>
-							<img src={accessory.image1} alt={accessory.alt} />
-							<p>{accessory.name}</p>
-						</div>
-					))}
-          </div>
+				{/* <div className="imageContainer"> */}
+				{/* {categoryList.map((accessory) => (
+							<div key={accessory.name}>
+								<img src={accessory.image1} alt={accessory.alt} />
+								<p>{accessory.name}</p>
+							</div>
+						))} */}
+				{/* </div> */}
 				<h2 className="accessoriesTitle">Accessories for every need</h2>
 			</div>
 		</div>

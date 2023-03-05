@@ -3,7 +3,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import '../../css/CarouselHome.css';
 
-const CarouselPage = ({ categories }) => {
+const CarouselPage = ({ categories}) => {
 	const responsive = {
 		desktop: {
 			breakpoint: { max: 4000, min: 1024 },
@@ -15,29 +15,28 @@ const CarouselPage = ({ categories }) => {
 		},
 	};
 	return (
-		<div className="carousel">
-			<div className="categoryGender">{categories.name}</div>
-			<Carousel
-				arrows={true}
-				responsive={responsive}
-				infinite={true}
-				swipeable={true}
-				draggable={true}
-				keyBoardControl={true}
-				// containerClass="container"
-				removeArrowOnDeviceType={['tablet', 'mobile']}
-			>
-				{categories.map((item) => (
-					<div className="containerWhiteSpace">
-						<div key={item.name}>
-							{/* <div>{item.name}</div> */}
-							<img src={item.image} />
-							<div className="categoryName">{item.name}</div>
-						</div>
-					</div>
-				))}
-			</Carousel>
-		</div>
+	
+				<div className="carousel">
+					<div className="categoryGender">{categories.name}</div>
+					<Carousel
+						arrows={true}
+						responsive={responsive}
+						infinite={true}
+						swipeable={true}
+						draggable={true}
+						keyBoardControl={true}
+						removeArrowOnDeviceType={['tablet', 'mobile']}
+					>
+						{categories.map((item) => (
+							<div key={item.name} className="containerWhiteSpace">
+								<div >
+									<img src={item.image} alt=""/>
+									<div className="categoryName">{item.name}</div>
+								</div>
+							</div>
+						))}
+					</Carousel>
+				</div>
 	);
 };
 
