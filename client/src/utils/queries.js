@@ -58,3 +58,19 @@ query Query($name: String) {
       }
   }
 `
+export const QUERY_ITEM_BY_ID = gql`
+    query ItemById($_id: String) {
+        itemById(_id: $_id) {
+        name
+        bestSeller
+        brand
+        description
+        image
+        newArrival
+        price
+        saleItem
+        stock
+        tags
+        }
+    }
+`

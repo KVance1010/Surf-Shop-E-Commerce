@@ -2,6 +2,7 @@ import React from "react";
 import { useMutation, useQuery } from "@apollo/client";
 import { QUERY_ITEMS_BY_TAGS } from "../utils/queries";
 import { Link } from 'react-router-dom'
+import mongoose from 'mongoose'
 
 
 const ItemList = () => {
@@ -37,6 +38,7 @@ const ItemList = () => {
             <ul className="container col-3 ">
                 {items.map((item, index) =>
                     <div className="card container">
+                        {console.log(mongoose.Types.ObjectId(item._id).toString())}
                         <div className="card-body">
                             <h3 className="card-title">
                                 {item.name}
@@ -57,7 +59,9 @@ const ItemList = () => {
                                 </h4>
                             ) : <></>}
                             <img src={item.image} alt={item.name} className='card-img-top img-fluid'/>
-                            
+                            <h4>
+                                Price: ${item.price}
+                            </h4>
                             <Link to={`${item.name}`} className='btn btn-success d-flex justify-content-center'>
                                 Learn More
                             </Link>

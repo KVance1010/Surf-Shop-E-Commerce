@@ -17,8 +17,11 @@ const resolvers = {
             return (await Item.findOne({
                 name: args.name
             }))
-        } 
-    },   
+        },
+        itemById: async (parent, args) => {
+            return (await Item.findById(args._id))
+        }
+    }   
 }
 
 module.exports = resolvers;
