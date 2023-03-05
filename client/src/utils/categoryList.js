@@ -1,3 +1,98 @@
+import bag from '../images/bag.svg';
+import dingRepair from '../images/dingRepair.svg';
+import earplugs from '../images/earplugs.svg';
+import fin from '../images/fin.svg';
+import helmet from '../images/helmet.svg';
+import leash from '../images/leash.svg';
+import rashGuard from '../images/rashGuard.svg';
+import sunscreen from '../images/sunscreen.svg';
+import towels from '../images/towel.svg';
+import watch from '../images/watch.svg';
+import wax from '../images/wax.svg';
+import tailPad from '../images/tailPad.svg';
+
+export const accessoriesCategory = 
+{
+    name: "Accessories",
+    pathName: 'accessories',
+    categories: [
+        
+        {
+            name: "Leashes",
+            image: "https://cdn.shopify.com/s/files/1/0770/3687/products/heavyduty-leash-6.jpg?v=1610501535&width=1024",
+            image1: leash,
+            alt: "Surf board leash"
+        },
+        {
+            name: "Wax",
+            image: "https://cdn11.bigcommerce.com/s-wsye173qvw/images/stencil/1280x1280/products/340/1116/COLD3-22__56610.1657811872.jpg?c=2"
+            ,
+            image1: wax,
+            alt: "Surf board wax"
+
+        },
+        {
+            name: "Sunscreen",
+            image: "https://cdn.shopify.com/s/files/1/1916/1271/products/SS-StussySPFStick-Open_1080x.png?v=1643931030",
+            image1: sunscreen,
+            alt: "Sunscreen"
+        },
+        {
+            name: "Fins",
+            image: "https://cdn.shopify.com/s/files/1/0332/4362/7659/products/legacy_rake_xsmall_1800x1800.jpg?v=1656617784",
+            image1: fin,
+            alt: "Surf board fin replacement"
+        },
+        {
+            name: "Ding_Repair",
+            image: "https://m.media-amazon.com/images/I/61rzcpOU4ZL._AC_SX679_.jpg",
+            image1: dingRepair,
+            alt: "Surf board ding repair kit"
+        },
+        {
+            name: "Rashguards",
+            image: "https://images.boardriders.com/globalGrey/quiksilver-products/all/default/xlarge/eqywr03357_quiksilver,v_byhh_frt1.jpg",
+            image1: rashGuard,
+            alt: "quick silver rash guard long sleave shirt"
+        },
+        {
+            name: "Earplugs",
+            image: "https://cdn.shopify.com/s/files/1/1124/3298/products/61ee44fb-21c9-4f34-ba19-95603ab323bd_1966x1388.png?v=1639548855",
+            image1: earplugs,
+            alt: "water ear plugs"
+        },
+        {
+            name: "Tail_Pads",
+            image: "https://cdn11.bigcommerce.com/s-1pj0bf1gcq/images/stencil/1280x1280/products/533/2189/00ymsh_0090-1_1__94603.1671830752.jpg?c=1",
+            image1: tailPad,
+            alt: "Surf board tail pad"
+        },
+        {
+            name: "Helmets",
+            image: "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/SimbaNoLogoWhite_5000x.jpg?v=1645389225",
+            image1: helmet,
+            alt: "Surfing helmet"
+        },
+        {
+            name: "Watches",
+            image: "https://m.media-amazon.com/images/I/51IA+C-sbWL._AC_UX679_.jpg",
+            image1: watch,
+            alt: "water resistant surfing watch"
+        },
+        {
+            name: "Towels",
+            image: "https://cdn.shopify.com/s/files/1/0714/2297/products/AT5I1719.jpg?v=1615418124",
+            image1: towels,
+            alt: "Towel cover"
+        },
+        {
+            name: "Bags",
+            image: "https://cdn.shopify.com/s/files/1/0838/7991/products/cotton-tote-bag_1000x.jpg?v=1627997728",
+            image1: bag,
+            alt: "tote bag"
+        },
+    ]
+}
 export const mensApparelCategory = 
 {
     name: "Mens Apparel",
@@ -74,62 +169,7 @@ export const womensApparelCategory =
         }
     ]
 }
-export const accessoriesCategory = 
-{
-    name: "Accessories",
-    pathName: 'accessories',
-    categories: [
-        
-        {
-            name: "Leashes",
-            image: "https://cdn.shopify.com/s/files/1/0770/3687/products/heavyduty-leash-6.jpg?v=1610501535&width=1024"
-        },
-        {
-            name: "Wax",
-            image: "https://cdn11.bigcommerce.com/s-wsye173qvw/images/stencil/1280x1280/products/340/1116/COLD3-22__56610.1657811872.jpg?c=2"
-        },
-        {
-            name: "Sunscreen",
-            image: "https://cdn.shopify.com/s/files/1/1916/1271/products/SS-StussySPFStick-Open_1080x.png?v=1643931030"
-        },
-        {
-            name: "Fins",
-            image: "https://cdn.shopify.com/s/files/1/0332/4362/7659/products/legacy_rake_xsmall_1800x1800.jpg?v=1656617784"
-        },
-        {
-            name: "Ding_Repair",
-            image: "https://m.media-amazon.com/images/I/61rzcpOU4ZL._AC_SX679_.jpg"
-        },
-        {
-            name: "Rashguards",
-            image: "https://images.boardriders.com/globalGrey/quiksilver-products/all/default/xlarge/eqywr03357_quiksilver,v_byhh_frt1.jpg"
-        },
-        {
-            name: "Earplugs",
-            image: "https://cdn.shopify.com/s/files/1/1124/3298/products/61ee44fb-21c9-4f34-ba19-95603ab323bd_1966x1388.png?v=1639548855"
-        },
-        {
-            name: "Tail_Pads",
-            image: "https://cdn11.bigcommerce.com/s-1pj0bf1gcq/images/stencil/1280x1280/products/533/2189/00ymsh_0090-1_1__94603.1671830752.jpg?c=1"
-        },
-        {
-            name: "Helmets",
-            image: "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/SimbaNoLogoWhite_5000x.jpg?v=1645389225"
-        },
-        {
-            name: "Watches",
-            image: "https://m.media-amazon.com/images/I/51IA+C-sbWL._AC_UX679_.jpg"
-        },
-        {
-            name: "Towels",
-            image: "https://cdn.shopify.com/s/files/1/0714/2297/products/AT5I1719.jpg?v=1615418124"
-        },
-        {
-            name: "Bags",
-            image: "https://cdn.shopify.com/s/files/1/0838/7991/products/cotton-tote-bag_1000x.jpg?v=1627997728"
-        },
-    ]
-}
+
 export const surfboardsCategory = 
 {
     name: "Surfboards",

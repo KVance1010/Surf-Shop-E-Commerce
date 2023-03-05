@@ -8,10 +8,7 @@ import Apparel from './pages/Apparel';
 import Header from './components/header/Header';
 import './css/App.css';
 import ItemList from './components/ItemList';
-import Item from './components/Item'
-
-
-
+import Item from './components/Item';
 
 const client = new ApolloClient({
 	uri: '/graphql',
@@ -25,78 +22,50 @@ function App() {
 	return (
 		<ApolloProvider client={client}>
 			<Router>
-				<Header />
+				<Header currentPage={currentPage} handlePageChange={handlePageChange} />
 				<Routes>
-					<Route
-						path="/"
-						element={
-							<Home
-								currentPage={currentPage}
-								handlePageChange={handlePageChange}
-							/>
-						}
-					></Route>
-					<Route
-						path="/admin"
-						element={
-							<Admin
-								currentPage={currentPage}
-								handlePageChange={handlePageChange}
-							/>
-						}
-					></Route>
-					<Route
-						path="/apparel"
-						element={
-							<Apparel
-								currentPage={currentPage}
-								handlePageChange={handlePageChange}
-							/>
-						}
-					></Route>
+					<Route path="/" element={<Home />}></Route>
+					<Route path="/admin" element={<Admin />}></Route>
+					<Route path="/apparel" element={<Apparel />}></Route>
 					<Route
 						path="/apparel/:categoryName"
-						element={<CategoryList/>}
+						element={<CategoryList />}
 					></Route>
 					<Route
 						path="/apparel/:categoryName/:itemList"
-						element={<ItemList/>}
+						element={<ItemList />}
 					></Route>
 					<Route
 						path="/apparel/:categoryName/:itemList/:item"
-						element={<Item/>}
+						element={<Item />}
 					></Route>
 					<Route
 						path="/surfboards/:categoryName"
-						element={<CategoryList
-							currentPage={currentPage}
-							handlePageChange={handlePageChange}/>}
+						element={<CategoryList />}
 					></Route>
 					<Route
 						path="/surfboards/:categoryName/:itemList"
-						element={<ItemList/>}
+						element={<ItemList />}
 					></Route>
 					<Route
 						path="/surfboards/:categoryName/:itemList/:item"
-						element={<Item/>}
+						element={<Item />}
 					></Route>
 					<Route
 						path="/apparel/:categoryName/:itemList/:item"
-						element={<Item/>}
+						element={<Item />}
 					></Route>
 					<Route
 						path="/accessories/:categoryName"
-						element={<CategoryList
-							currentPage={currentPage}
-							handlePageChange={handlePageChange}/>}
+						element={<CategoryList />}
 					></Route>
 					<Route
 						path="/accessories/:categoryName/:itemList"
-						element={<ItemList/>}
+						element={<ItemList />}
 					></Route>
 					<Route
 						path="/accessories/:categoryName/:itemList/:item"
-						element={<Item/>}
+						element={<Item />}
 					></Route>
 				</Routes>
 			</Router>
