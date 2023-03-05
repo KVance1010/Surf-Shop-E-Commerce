@@ -1,18 +1,22 @@
 import React from 'react'
-import { useQuery } from '@apollo/client'
-import { QUERY_ITEM_BY_NAME } from '../utils/queries'
 import { useParams } from 'react-router-dom'
+import { useQuery } from '@apollo/client'
+import { QUERY_ITEM_BY_ID } from '../utils/queries'
+import  {QUERY_ITEM_BY_NAME}  from '../utils/queries'
 
-const Item = () => {
+
+const Item = () => {    
 
     const {item} = useParams({})
-
+    console.log(item)
+    // const {loading, data} = useQuery(QUERY_ITEM_BY_ID, {
+    //     variables: {_id: item}
+    // })
     const {loading, data} = useQuery(QUERY_ITEM_BY_NAME, {
-        variables: {name: item}
+        variables:{ name: item }
     })
-
     const itemData = data?.itemByName || {}
-
+    console.log(itemData)
     return(
         <div className='container'>
             {loading ? (

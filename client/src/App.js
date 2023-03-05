@@ -82,7 +82,7 @@ function App() {
 					></Route>
 					<Route
 						path="/apparel/:categoryName/:itemList/:item"
-						element={<Item/>}
+						element={<Item />}
 					></Route>
 					<Route
 						path="/accessories/:categoryName"
