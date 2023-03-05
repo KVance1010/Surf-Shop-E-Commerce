@@ -25,8 +25,9 @@ const ItemList = () => {
    const {loading, data } = useQuery(QUERY_ITEMS_BY_TAGS, {
     variables: {tags: tags}
    })
-   const items = data?.itemsByCategory || []
    
+   const items = data?.itemsByCategory || []
+   console.log(items)
    return ( 
     <div>
         {loading ? (
