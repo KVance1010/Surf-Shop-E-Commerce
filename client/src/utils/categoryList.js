@@ -16,7 +16,6 @@ export const accessoriesCategory =
     name: "Accessories",
     pathName: 'accessories',
     categories: [
-        
         {
             name: "Leashes",
             image: "https://cdn.shopify.com/s/files/1/0770/3687/products/heavyduty-leash-6.jpg?v=1610501535&width=1024",

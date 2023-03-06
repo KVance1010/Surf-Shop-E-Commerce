@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../components/home/Hero';
-import Carousel from '../components/home/CarouselHome';
+import Apparel from '../components/home/ApparelHome';
 import SurfBoard from '../components/home/SurfBoardHome';
 import Accessories from '../components/home/AccessoriesHome';
 import { useQuery } from '@apollo/client';
@@ -19,8 +19,8 @@ const Home = () => {
 		<div className="heroContainer">
 			<Hero />
 			<div className="carouselGroup">
-				<Carousel categories = {womensApparelCategory.categories} />
-				<Carousel categories = {mensApparelCategory.categories} />
+				<Apparel categories = {womensApparelCategory.categories} />
+				<Apparel categories = {mensApparelCategory.categories} />
 			</div>
 			<SurfBoard />
 			<Accessories/>
