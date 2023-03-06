@@ -1,9 +1,12 @@
-import React from 'react';
+import * as React from 'react';
 import { accessoriesCategory } from '../../utils/categoryList.js';
+import Carousel from '../CarouselComponent';
 import '../../css/AccessoriesHome.css';
 
 const AccessoriesHome = () => {
 	const categoryList = accessoriesCategory.categories;
+	const accessories = true;
+	const items = 4;
 	return (
 		<div className="accessoriesContainer">
 			<div className="accessoriesContent">
@@ -13,14 +16,9 @@ const AccessoriesHome = () => {
 				</p>
 			</div>
 			<div className="accessoryImageContainer">
-				{/* <div className="imageContainer"> */}
-				{/* {categoryList.map((accessory) => (
-							<div key={accessory.name}>
-								<img src={accessory.image1} alt={accessory.alt} />
-								<p>{accessory.name}</p>
-							</div>
-						))} */}
-				{/* </div> */}
+				<div className="imageContainer">
+				<Carousel categories={categoryList} className='accessoriesContainer backgoundButtons' accessories={accessories} items = {items}/>
+				</div>
 				<h2 className="accessoriesTitle">Accessories for every need</h2>
 			</div>
 		</div>
