@@ -7,7 +7,7 @@ const SurfBoardMain = () => {
     <div className="surfBoardAdContainer">
 				<img className="surfBoardAd" src={SurfBoards} alt= 'old waterlogged surfboards lined up in the background'/>
 				<div className="surfBoardOverLay">
-					<p className="surfBoardAdTitle">A Board for Every Occasion</p>
+					<p className="surfBoardAdTitle">It's time for a new board...We got you covered</p>
 					<p className="surfBoardAdButton">Explore</p>
 				</div>
 			</div>

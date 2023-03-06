@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import cart from '../../images/cartIcon.svg';
+import cartIcon from '../../images/cartIcon.svg';
 import '../../css/NavBar.css';
+import { useCartContext } from '../../utils/cartContext';
 
 
 const Links = ({ currentPage, handlePageChange }) => {
+
+	const { cart, cartTotal } = useCartContext()
+
 	return (
 		<>
 			<li>
@@ -27,7 +31,8 @@ const Links = ({ currentPage, handlePageChange }) => {
 			<li>
 				<Link to="/cart" className="navLink"
 				 onClick = {(event)=>handlePageChange(event.target.value)}>
-					<img src={cart} alt='cart icon' />
+					<img src={cartIcon} alt='cart icon' />
+					
 				</Link>
 			</li>
 		</>
