@@ -1,38 +1,39 @@
 .accessoriesContainer {
 	display: flex;
 	background-color: var(--mainBackgroundColor);
-	height: 70vh;
-    align-content: center;
-    align-items: center;
+	/* height: 70vh; */
+	/* align-content: center; */
+	/* align-items: center; */
 }
 
-.accessoriesContent{
-    width: 33%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.224);
+.accessoriesContent {
+	width: 33%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.224);
 }
-.accessoriesContent h3{
-    color: var(--boldFontColor);
+.accessoriesContent h3 {
+	color: var(--boldFontColor);
 }
-.accessoriesContent p{
-    color: var(--fontColor);
+.accessoriesContent p {
+	color: var(--fontColor);
 }
-.accessoriesTitle{
-    border-top: 5px solid var(--fontColor);
-    color:var(--boldFontColor);
-    font-size: 56px;
+.accessoriesTitle {
+	border-top: 5px solid var(--fontColor);
+	color: var(--boldFontColor);
+	font-size: 56px;
 }
-.accessoryImageContainer{
-    padding:60px;
-    /* align-items: center;
-     */
-     /* justify-content: center; */
+.accessoryImageContainer {
+	padding: 60px;
+	width: 60vw;
+	/* height: 00px; */
 }
-.accessoryImageContainer img{
-    /* width:100%; */
-    width:25%;
+.accessoryImageContainer img {
+	/* width:100%; */
+	width: 25%;
 }
-.imageContainer{
-    /* display:inline-flex;
-    flex-wrap: wrap; */
+.imageContainer {
+}
+
+.react-multiple-carousel__arrow {
+	background: var(--mainBackgroundColor);
 }
