@@ -5,7 +5,7 @@ const CartContext = createContext()
 export const useCartContext = () => useContext(CartContext)
 
 export const CartProvider = ({children}) => {
-    const [cart, setCart] = useState({})
+    const [cart, setCart] = useState({surfboar: 1})
 
     const addItem = (item) => {
         let newCart = cart

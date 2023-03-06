@@ -1,5 +1,4 @@
 import React, {useContext} from 'react'
-import { cartContext } from '../App'
 import { useParams } from 'react-router-dom'
 import { useQuery } from '@apollo/client'
 import { QUERY_ITEM_BY_ID } from '../utils/queries'
@@ -68,7 +67,7 @@ const Item = () => {
                             <div className='btn btn-success' onClick={() => {
                                 addItem({name: item})
                                 console.log(cart)
-                                alert(`${item} has been added to your cart!`)
+                                
                             }   
                             }>
                                 Add to Cart!
