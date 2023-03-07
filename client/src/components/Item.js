@@ -13,7 +13,6 @@ const Item = () => {
     
     const { cart, addItem, clearCart, setCart, cartTotal } =  useCartContext()
     console.log(cart)
-    console.log(cartTotal())
      // const {loading, data} = useQuery(QUERY_ITEM_BY_ID, {
     //     variables: {_id: item}
     // })
@@ -66,9 +65,8 @@ const Item = () => {
                             
                             <div className='btn btn-success' onClick={() => {
                                 addItem({name: item})
-                                let newCart = cart
-                                console.log(newCart)
-                                setCart({...newCart})
+                                
+                                setCart({...cart})
                             }   
                             }>
                                 Add to Cart!
