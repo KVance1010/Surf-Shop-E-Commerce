@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useContext} from 'react';
 import { Link } from 'react-router-dom';
 import cartIcon from '../../images/cartIcon.svg';
 import '../../css/NavBar.css';
@@ -6,9 +6,10 @@ import { useCartContext } from '../../utils/cartContext';
 
 
 const Links = ({ currentPage, handlePageChange }) => {
-
+	
 	const { cart, cartTotal } = useCartContext()
-
+	
+	
 	return (
 		<>
 			<li>
@@ -34,6 +35,7 @@ const Links = ({ currentPage, handlePageChange }) => {
 					<img src={cartIcon} alt='cart icon' />
 					
 				</Link>
+				<div>{cartTotal()}</div>
 			</li>
 		</>
 	);
