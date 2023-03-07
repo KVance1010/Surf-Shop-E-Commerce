@@ -17,7 +17,7 @@ const AccessoriesHome = () => {
 			</div>
 			<div className="accessoryImageContainer">
 				<div className="imageContainer">
-				<Carousel categories={categoryList} className='accessoriesContainer backgoundButtons' accessories={accessories} items = {items}/>
+				<Carousel categories={categoryList} className='accessoryCarrouselContainer backgoundButtons' accessories={accessories} items = {items}/>
 				</div>
 				<h2 className="accessoriesTitle">Accessories for every need</h2>
 			</div>

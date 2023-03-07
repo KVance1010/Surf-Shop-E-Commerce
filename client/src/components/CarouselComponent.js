@@ -33,7 +33,7 @@ const CarouselComponent = (props) => {
           (<img src={item.image1} />):
           (<img src={item.image} />)}
           
-          <h4 className="categoryName">{item.name}</h4>
+          <h4>{item.name}</h4>
         </div>
       </div>
     ))}
