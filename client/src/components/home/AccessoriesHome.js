@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { accessoriesCategory } from '../../utils/categoryList.js';
 import Carousel from '../CarouselComponent';
-import '../../css/AccessoriesHome.css';
+import '../../css/home/AccessoriesHome.css';
 
 const AccessoriesHome = () => {
 	const categoryList = accessoriesCategory.categories;

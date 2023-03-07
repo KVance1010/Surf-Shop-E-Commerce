@@ -9,7 +9,7 @@ import {
 	mensApparelCategory,
 	womensApparelCategory,
 } from '../utils/categoryList.js';
-import '../css/Home.css';
+import '../css/home/Home.css';
 
 const Home = () => {
 	const { loading, data } = useQuery(QUERY_USERS);
@@ -19,8 +19,8 @@ const Home = () => {
 		<div className="heroContainer">
 			<Hero />
 			<div className="carouselGroup">
-				<Apparel categories = {womensApparelCategory.categories} />
-				<Apparel categories = {mensApparelCategory.categories} />
+				<Apparel categories = {womensApparelCategory} />
+				<Apparel categories = {mensApparelCategory} />
 			</div>
 			<SurfBoard />
 			<Accessories/>

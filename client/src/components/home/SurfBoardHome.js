@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/SurfBoardHome.css';
+import '../../css/home/SurfBoardHome.css';
 import SurfBoards from '../../images/surfboards.jpg';
 
 const SurfBoardMain = () => {
