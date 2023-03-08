@@ -454,6 +454,119 @@
         "image": "https://cdn.shopify.com/s/files/1/0898/5824/products/Quay_ComeThru_MatteBlackBlackPinkFade_Front_1.jpg?v=1670177760&width=1100",
         "stock": 6,
         "saleItem": true
+    },
+    {
+        "name": "All Day Overdyed Layback Boardshorts 17\"",
+        "brand": "Billabong",
+        "description":"The All Day Overdyed Layback Boardshort are meant to be worn all day, whether you’re in the surf or on the sand. Made with recycler surf suede, these layback boardshorts have water repellent coating with a lightweight and quick drying durable fabric. Garment overdye adds a buttery hand feel and high/low color dimension. Finished with an elastic waist for comfort and side and back patch pockets.",
+        "price": 45.95,
+        "tags":["apparel", "mens","shorts"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abybs00134_billabong,f_blk_frt1.jpg",
+        "stock": 10,
+        "saleItem": true
+    },
+    {
+        "name": "SurfSilk Washed 18\" Boardshorts",
+        "brand": "Quiksilver",
+        "description":"A unique washed treatment gives these boardshorts their vintage, slightly faded appearance. But there's nothing old-school about how they perform. Our exclusive SurfSilk performance fabric is what gives these surf trunks their superpower. Made from recycled water bottles, the outside is as tough as steel while the inside wears extremely soft and smooth against your skin. No rubbing, no rashing, just a supremely comfortable feel. And as for mobility, you won’t find a boardshort with as much pop. 4-way stretch boosts the fabric with flex right where you need it. Progressive surfing requires progressive style. And you can rely on the SurfSilk Washed 18\" Boardshort for men to deliver the best of both.",
+        "price": 50.00,
+        "tags":["apparel", "mens","shorts"],
+        "image": "https://images.boardriders.com/globalGrey/quiksilver-products/all/default/xlarge/eqybs04650_quiksilver,f_kvj6_frt1.jpg",
+        "stock": 2,
+        "bestSeller": true
+    },
+    {
+        "name": "CORD LOCAL SHORT",
+        "brand": "Katin",
+        "description":"The Cord Local Short is a vintage-inspired walk-short made up of 98% cotton and 2% spandex 16-wale corduroy. Utilizing our 17\" outseam 'Local Short' block, The Cord Local features front welt side seam pockets, elastic waistband with drawcords, back welt pockets, faux fly, and internal diagonal pinstripe binding.",
+        "price": 59.99,
+        "tags":["apparel", "mens","shorts"],
+        "image": "https://cdn.shopify.com/s/files/1/0802/7401/products/Katin-Cord-Local-Short-Overcast-10_5000x.jpg?v=1677523387",
+        "stock": 5,
+        "bestSeller": true,
+        "newArrival":true
+    },
+    {
+        "name": "Boardwalk Phase 21\"",
+        "brand": "Rip Curl",
+        "description":"The Phase Boardwalk is another popular Rip Curl walkshort with hydrophobic and quick-dry properties. Its multi blend stretch fabric, standard fit, and 21\" outseam exude a quiet confidence. A rock solid staple you can wear anywhere.",
+        "price": 53.00,
+        "tags":["apparel", "mens","shorts"],
+        "image": "https://www.ripcurl.com/media/catalog/product/c/w/cwabk9_0064-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "stock": 17,
+        "newArrival":true
+    },
+    {
+        "name": "H2O-DRI MARWICK WALKSHORTS 20\"",
+        "brand": "Hurley",
+        "description":"A GO ANYWHERE SHORT, THE DRI MARWICK 20\" FEATURE H2O-DRI MATERIAL TO KEEP YOU COOL AND DRY, WHILE A STRETCH WAISTBAND DELIVERS COMFORT THAT MOVES WITH YOU.",
+        "price": 32.00,
+        "tags":["apparel", "mens","shorts"],
+        "image": "https://cdn.shopify.com/s/files/1/0277/3680/1419/products/mws0006560_obsidian_1_12903c54-fafb-48f4-91b7-ca8c675f0b66.jpg?v=16545486670",
+        "stock": 30,
+        "bestSeller":true,
+        "saleItem":true
+    },
+    {
+        "name": "Renzo Sherpa Lined Hoodie",
+        "brand": "O'Neil",
+        "description":"Look cool and fashionable wearing this super cozy and warm O'Neill Renzo Sherpa Lined Hoodie featuring high-pile fleece.",
+        "price": 59.99,
+        "tags":["apparel", "mens","hoodies"],
+        "image": "https://m.media-amazon.com/images/I/71iT1-CivNL._AC_SR1472,1840_.jpg",
+        "stock": 16,
+        "bestSeller":true
+    },
+    {
+        "name": "AQUA BRIDGE LOGO CREW SWEATSHIRT",
+        "brand": "Aqua",
+        "description":"Aqua bridge logo, our take on a San Francisco landmark, screened in international orange on a dark heather gray sweatshirt",
+        "price": 55.00,
+        "tags":["apparel", "mens","hoodies"],
+        "image": "https://cdn.shopify.com/s/files/1/0224/3853/products/BRIDGE_CREW_DKHEAGRY_FR_1920x1920_bdcbf8ef-ffe1-4c24-a73d-ce40df15a801_1920x.jpg?v=1535742671",
+        "stock": 20,
+        "bestSeller":true
+    },
+    {
+        "name": "Waterman After Surf Hoodie",
+        "brand": "Quiksilver",
+        "description":"Your post-session sidekick— mellow down and warm up in the Waterman After Surf Hoodie. Featuring logo embroidery at the chest, this Waterman Classic men's sweatshirt has a regular fit with ribbed bands and pocket details. Heavyweight french terry keeps it feeling seriously soft and comfortable for your post-surf chill.",
+        "price": 70.99,
+        "tags":["apparel", "mens","hoodies"],
+        "image": "https://images.boardriders.com/globalGrey/quiksilver-products/all/default/xlarge/aqmft03033_quiksilver,f_brd0_frt1.jpg",
+        "stock": 8,
+        "newArrival":true
+    },
+    {
+        "name": "BORA PULLOVER HOODIE",
+        "brand": "Reef",
+        "description":"Kick it old school tropical with this soft, warm fleeced hoodie that features a vintage-y REEF graphic. Perfect for surf checks and bonfires.",
+        "price": 55.99,
+        "tags":["apparel", "mens","hoodies"],
+        "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/3FMKL5010384TH_ALT1_750x.jpg?v=1665012544",
+        "stock": 10,
+        "newArrival":true
+    },
+    {
+        "name": "All Day Organic Pullover Hoodie",
+        "brand": "Billabong",
+        "description":"The Billabong All Day Pullover Hoodie brings you ultimate comfort, function and style in one. Made from organic cotton and recycled polyester fabrics, this fleece-lined sweatshirt features an adjustable hood, ribbed trims, pouch pocket and Billabong logo branding at the chest.",
+        "price": 50.99,
+        "tags":["apparel", "mens","hoodies"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abyft00336_billabong,w_kkb_frt1.jpg",
+        "stock": 12,
+        "bestSeller":true
+    },
+    {
+        "name": "Byron Bay Hoodie",
+        "brand": "Faherty",
+        "description":"This incredible hoodie pairs everyday versatility with some serious style. It’s knit from five different colors of yarn to create the sea-and-sunset inspired stripes, while the yarn itself is pure organic cotton for year-round comfort and breathability. Soft and comfortable on the inside, subtly textured on the outside, the Byron goes well beyond the level of your basic sweatshirt.",
+        "price": 130.00,
+        "tags":["apparel", "mens","hoodies"],
+        "image": "https://cdn.shopify.com/s/files/1/0359/8357/products/SP23-faherty-mens-MKC0113-SRP-BYRON-BAY-HOODIE-SIERRA-PARADISE_crop-1_1000x.jpg?v=1675294022",
+        "stock": 6,
+        "newArrival":true
     }
+
     
 ]
