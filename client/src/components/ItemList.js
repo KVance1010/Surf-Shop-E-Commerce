@@ -27,7 +27,7 @@ const ItemList = () => {
    })
    
    const items = data?.itemsByCategory || []
-   console.log(items)
+
    return ( 
     <div>
         {loading ? (

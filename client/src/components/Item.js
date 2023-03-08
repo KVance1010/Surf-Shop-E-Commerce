@@ -10,7 +10,6 @@ const Item = () => {
     const {item} = useParams({})
     
     const { cart, addItem, setCart } =  useCartContext()
-    console.log(cart)
      // const {loading, data} = useQuery(QUERY_ITEM_BY_ID, {
     //     variables: {_id: item}
     // })
@@ -18,7 +17,7 @@ const Item = () => {
         variables:{ name: item }
     })
     const itemData = data?.itemByName || {}
-    console.log(itemData)
+
     return(
         
             
@@ -65,6 +64,7 @@ const Item = () => {
                                 addItem({name: item})
                                 
                                 setCart({...cart})
+                                localStorage.setItem('cart', JSON.stringify(cart))
                             }   
                             }>
                                 Add to Cart!
