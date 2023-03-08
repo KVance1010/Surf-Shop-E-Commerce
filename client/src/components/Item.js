@@ -1,11 +1,9 @@
-import React, {useContext} from 'react'
-import { useParams } from 'react-router-dom'
-import { useQuery } from '@apollo/client'
-import { QUERY_ITEM_BY_ID } from '../utils/queries'
-import  {QUERY_ITEM_BY_NAME}  from '../utils/queries'
-import { useCartContext } from '../utils/cartContext'
-
-
+import React, {useContext} from 'react';
+import { useParams } from 'react-router-dom';
+import { useQuery } from '@apollo/client';
+import { QUERY_ITEM_BY_ID } from '../utils/queries';
+import  {QUERY_ITEM_BY_NAME}  from '../utils/queries';
+import { useCartContext } from '../utils/cartContext';
 
 const Item = () => {    
     
@@ -76,7 +74,7 @@ const Item = () => {
                 )}
             </div>
           
-    )
+    );
 }
 
-export default Item
+export default Item;

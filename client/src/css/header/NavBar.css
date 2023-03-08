@@ -7,6 +7,22 @@
 
 .navLink:hover{
     font-weight: 700;
+    color: var(--boldFontColor);
+}
+.cartIcon svg{
+    fill: var(--fontColor)
+}
+.cartIcon svg:hover{
+    /* font-weight: 700; */
+    /* color: var(--boldFontColor); */
+    fill: blue;
+
+}
+.cartIcon svg:focus{
+    /* font-weight: 700; */
+    /* color: var(--boldFontColor); */
+    fill: blue;
+
 }
 
 @media screen and (max-width: 984px) { 

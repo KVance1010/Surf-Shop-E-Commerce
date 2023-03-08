@@ -1,0 +1,49 @@
+.searchInput {
+	background-color: var(--mainBackgroundColor);
+}
+/* Label on search bar */
+#combo-box-demo-label {
+	color: var(--fontColor);
+}
+/* Input field */
+.css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root {
+	color: var(--fontColor) !important;
+}
+/* Up and down arrows in search bar */
+.css-i4bv87-MuiSvgIcon-root{
+    fill:var(--fontColor) !important;
+}
+/* closing svg */
+.css-ptiqhd-MuiSvgIcon-root {
+    fill:var(--fontColor) !important;
+}
+
+/* .css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root {
+    fill:var(--fontColor) !important;
+    background-color: var(--mainBackgroundColor) !important;
+} */
+
+/* .searchInput{
+    background-color: var(--mainBackgroundColor);
+    color: var(--mainFontColor);
+    border: none;
+}
+
+.searchIcon {
+    position: relative;
+    z-index: 3;
+    left: -30px;
+    align-content: center;
+    background-color: var(--mainBackgroundColor);
+}
+
+.dropDownSearch {
+    padding: 15px;
+    border: solid .5px;
+}
+
+.dropDownMenu{
+    position: absolute;
+    z-index: 3;
+    background-color: var(--headerColor);
+} */

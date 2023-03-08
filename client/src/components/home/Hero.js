@@ -1,7 +1,7 @@
 import React from 'react';
 import heroVideo from '../../images/ezgif.com-video-to-gif.mp4';
 // import { Link } from 'react-router-dom';
-import '../../css/Hero.css';
+import '../../css/home/Hero.css';
 
 const Hero = () => {
 	return (

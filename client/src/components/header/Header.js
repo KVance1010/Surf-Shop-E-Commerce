@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
 import SearchBar from './SearchBar';
-import '../../css/Header.css';
+import '../../css/header/Header.css';
 import { CartProvider } from '../../utils/cartContext';
 
 const Header = ({ currentPage, handlePageChange }) => {
