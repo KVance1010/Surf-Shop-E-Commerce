@@ -566,6 +566,128 @@
         "image": "https://cdn.shopify.com/s/files/1/0359/8357/products/SP23-faherty-mens-MKC0113-SRP-BYRON-BAY-HOODIE-SIERRA-PARADISE_crop-1_1000x.jpg?v=1675294022",
         "stock": 6,
         "newArrival":true
+    },
+    {
+        "name": "CUSHION SWAMI",
+        "brand": "Reef",
+        "description":"Whether you pull on the Swami for surf check or work, it's built to serve. This sleek boot takes you from day to night in total confidence, but it's the inside that matters. A super soft cushion plus rebound and arch support keep you comfortable, and soft, water.resistant suede keeps you in effortless style.",
+        "price": 85.00,
+        "tags":["apparel", "mens","footwear"],
+        "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/CI8712_MAIN_1100x.jpg?v=1662140110",
+        "stock": 23,
+        "newArrival":true
+    },
+    {
+        "name": "All Day Impact Slip-On Sandals",
+        "brand": "Billabong",
+        "description":"When the path to the sand calls for a little extra comfort, the All Day Impact steps in. Designed with durable comfort, the squishy sandals are built with an anatomically-correct footbed, arch cookie, heel wedge and vegan nubuck upper strap with padding. A textured insole adds traction in wet conditions, while the outsole features a boat-friendly non-scuff material.",
+        "price": 25.00,
+        "tags":["apparel", "mens","footwear"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/mfot1bad_billabong,p_nvy_frt3.jpg",
+        "stock": 15,
+        "bestSeller":true
+    },
+    {
+        "name": "CUSHION MATEY",
+        "brand": "Reef",
+        "description":"These shoes are magical: they turn any sidewalk into a boardwalk! Their premium natural fiber uppers and the casual fold.down heel for easy on and off bring REEF's surf style anywhere. Our signature cushion with rebound footbed with heel and arch support, plus a cork topsheet for freshness and breathability, are for real.",
+        "price": 69.99,
+        "tags":["apparel", "mens","footwear"],
+        "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/CI4014_MAIN_1100x.jpg?v=1642821806",
+        "stock": 22,
+        "bestSeller":true
+    },
+    {
+        "name": "Tahiti 2mm Reef Walker Boot",
+        "brand": "Billabong",
+        "description":"Shallow-reef sessions just got a whole lot smoother thanks to the Tahiti Reef Walker Bootie. Made with a durable and impenetrable sole, reinforced with internal matting, the reef boot keeps the sharp things out without weighing you down.",
+        "price": 39.99,
+        "tags":["apparel", "mens","footwear"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/mwbonbrw_billabong,v_blk_frt1.jpg",
+        "stock": 30,
+        "saleItem":true,
+        "newArrival":true
+    },
+    {
+        "name": "CUSHION HOMEY",
+        "brand": "Reef",
+        "description":"You're so going to bond with your Homeys, because these slippers are ready to serve you all day at home or out and about town in total comfort. It's an easy on-and-off shoe, with a cushioned and durable rubber outsole, 100% natural cork insole, and breathable upper. The house shoe, redefined.",
+        "price": 65.00,
+        "tags":["apparel", "mens","footwear"],
+        "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/CI8566_MAIN_1100x.jpg?v=1658514466",
+        "stock": 23,
+        "saleItem":true
+    },
+    {
+        "name": "KRUZERS 2.0 SHOE",
+        "brand": "Travis Mathew",
+        "description":"Easy and wearable, the KRUZERS 2.0's subtle details set it apart from the pack. With trim on the laces, a traction outsole, and a molded Ortholite insole, you'll have all day comfort on lock. Available in multiple colors and fabrications—like textile, suede, and canvas—elevate your everyday look with the ultimate in versatility.",
+        "price": 70.00,
+        "tags":["apparel", "mens","footwear"],
+        "image": "https://www.travismathew.com/medias/sys_master/images/images/hac/h9f/8988273475614/4MT115-0QSH.jpg?im=Resize,width=700",
+        "stock": 16,
+        "saleItem":true
+    },
+    {
+        "name": "H2O-DRI ONE AND ONLY HAT",
+        "brand": "Hurley",
+        "description":"THE HURLEY H2O-DRI ONE AND ONLY HAT IS MADE WITH A MOISTURE-WICKING SWEATBAND AND STRETCH FABRIC TO KEEP YOU DRY AND COMFORTABLE THROUGHOUT THE DAY AND A CLEAN HURLEY LOGO FOR A TIMELESS LOOK.",
+        "price": 30.00,
+        "tags":["apparel", "mens","hats"],
+        "image": "https://cdn.shopify.com/s/files/1/0277/3680/1419/products/892025_BLACK_BLACK_1_vv3_800x.jpg?v=1651620075",
+        "stock": 10,
+        "bestSeller":true
+    },
+    {
+        "name": "MANU SAFARI HAT",
+        "brand": "Reef",
+        "description":"Behold the REEF safari hat in its natural habitat, which is on your head wherever you go. Made of cotton ripstop- it is tough yet comfortable. Take this one into the wild, whether on the beach or in the city.",
+        "price": 40.00,
+        "tags":["apparel", "mens","hats"],
+        "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/3FXWC0271CVR_FRONT_1100x.jpg?v=1650045286",
+        "stock": 20,
+        "newArrival":true
+    },
+    {
+        "name": "DOWNPOUR STRAW HAT",
+        "brand": "Reef",
+        "description":"Our take on the classic straw hat is a must this spring and summer. Breathable and lightweight, this hat is made to protect you in casual REEF style. A chin cord with a bead and knot, along with a stretch cotton sweatband, keep this hat comfortable and secure. And isn't that what life's about?",
+        "price": 32.00,
+        "tags":["apparel", "mens","hats"],
+        "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/3FXWC0396CVR_FRONT_1100x.jpg?v=1650307099",
+        "stock": 33,
+        "bestSeller":true
+    },
+    {
+        "name": "Outsider Waterman Sun Hat",
+        "brand": "Quiksilver",
+        "description":"Keep the vacation vibes going with your carefree attitude in the Quicksilver™ Waterman Outsider Sun Hat. This lightweight straw hat features a large logo flag across the front.",
+        "price": 24.99,
+        "tags":["apparel", "mens","hats"],
+        "image": "https://m.media-amazon.com/images/I/71KGCQZMdgL._AC_SR1472,1840_.jpg",
+        "stock": 27,
+        "saleItem":true
+    },
+    {
+        "name": "Big John Surf Safari Hat",
+        "brand": "Billabong",
+        "description":"Providing 360 degree sun protection, the Big John Men’s Hat keeps the adventure alive. A men’s safari hat made from heavy cotton twill for a slight structure, the Big John adds a woven label at the front and adjustable chin strap to keep it in place on the move",
+        "price": 25.99,
+        "tags":["apparel", "mens","hats"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abyha00131_billabong,p_chi_frt1.jpg",
+        "stock": 6,
+        "newArrival":true
+    },
+    {
+        "name": "Surf Series Cap",
+        "brand": "Rip Curl",
+        "description":"The Surf Series Cap is a perfect addition to your surf accessories. Great for beach or surf with 50+ sun protection. Designed with detachable chin cord with toggle and neck flap.",
+        "price": 22.99,
+        "tags":["apparel", "mens","hats"],
+        "image": "https://www.ripcurl.com/media/catalog/product/c/c/ccaci9_9389_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "stock": 30,
+        "saleItem":true,
+        "bestSeller":true
     }
 
     
