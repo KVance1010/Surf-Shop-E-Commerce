@@ -25,6 +25,7 @@ const typeDefs = gql`
         itemsByCategory(tags: [String]): [Item]
         itemByName(name: String): Item
         itemById(_id: String): Item
+        itemsByNames(names: [String]): [Item]
     }
 `
 

@@ -9,7 +9,7 @@ const Item = () => {
     
     const {item} = useParams({})
     
-    const { cart, addItem, clearCart, setCart, cartTotal } =  useCartContext()
+    const { cart, addItem, setCart } =  useCartContext()
     console.log(cart)
      // const {loading, data} = useQuery(QUERY_ITEM_BY_ID, {
     //     variables: {_id: item}

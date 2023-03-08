@@ -13,6 +13,13 @@ const resolvers = {
                 tags: {$all: [...args.tags]}
             }))
         }, 
+        itemsByNames: async (partent, args) => {
+            console.log(args.names)
+            return (await Item.find({
+                
+                name: {$in: [...args.names]}
+            }))
+        },
         itemByName: async (parent, args) => {
             return (await Item.findOne({
                 name: args.name

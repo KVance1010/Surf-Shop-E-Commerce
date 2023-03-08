@@ -74,3 +74,13 @@ export const QUERY_ITEM_BY_ID = gql`
         }
     }
 `
+export const QUERY_ITEMS_BY_NAMES = gql`
+    query getItemsByNames($names: [String]) {
+        itemsByNames(names: $names) {
+        name
+        price
+        image
+        brand
+        }
+    }
+`
