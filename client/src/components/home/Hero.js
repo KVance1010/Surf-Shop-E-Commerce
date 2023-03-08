@@ -1,6 +1,5 @@
 import React from 'react';
 import heroVideo from '../../images/ezgif.com-video-to-gif.mp4';
-// import { Link } from 'react-router-dom';
 import '../../css/home/Hero.css';
 
 const Hero = () => {
@@ -10,9 +9,6 @@ const Hero = () => {
 			<div className="heroContent">
 				<p className="heroTitle">THE SURF IS CALLING</p>
 				<p className="heroAction">TIME TO ANSWER...</p>
-				{/* <button className="heroButton">
-						<Link to="apparel">Shop</Link>
-					</button> */}
 			</div>
 			<svg
 				width="44"
