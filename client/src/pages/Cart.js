@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { useQuery } from "@apollo/client";
 import { QUERY_ITEMS_BY_NAMES } from "../utils/queries";
 import { useCartContext } from "../utils/cartContext";
@@ -6,6 +6,7 @@ import { useCartContext } from "../utils/cartContext";
 const Cart = () => {
     const { cart, setCart, clearCart, addItem, removeItem, cartTotal} = useCartContext()
 
+    const [update, setUpdate] = useState(true)
     const itemNameList = []
     for(let key in cart){
         itemNameList.push(key)
@@ -28,10 +29,22 @@ const Cart = () => {
                 </div>
             ) : (
                 <ul>
-                    {items.map((item) => 
-                        <h3>
+                    {items.map((item, index) => 
+                        
+                        <div key={index}>
+                            <h3>
                             {`${item.name}: Quantity: ${cart[item.name]}`}
-                        </h3>
+                            </h3>
+                            <button onClick={()=> {
+                                let newCart = cart
+                                delete newCart[item.name]
+                                setCart({...newCart})
+                                localStorage.setItem('cart', JSON.stringify(newCart))   
+                            }}>
+                                Romove Item
+                            </button>
+                        </div>
+                        
                     )}
                 </ul>
             )}
