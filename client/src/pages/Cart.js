@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { useQuery } from "@apollo/client";
 import { QUERY_ITEMS_BY_NAMES } from "../utils/queries";
 import { useCartContext } from "../utils/cartContext";
+import '../css/cart.css'
 
 const Cart = () => {
     const { cart, setCart, clearCart, addItem, removeItem, cartTotal} = useCartContext()
@@ -33,39 +34,48 @@ const Cart = () => {
                 </div>
             ) : (
                 <div>
-                    <ul>
-                        {items.map((item, index) => 
-                            
-                            <div key={index}>
-                                <h3>
-                                {`${item.name}`}
-                                </h3>
-                                <h3>
-                                    {`Price: ${item.price}`}
-                                </h3>
-                                <h3>
-                                    {`Quantity: ${cart[item.name]}`}
-                                </h3>
-                                <h3>
-                                    {`Total = ${item.price * cart[item.name]}`}
-                                </h3>
+                    {items.length > 0 ? (
+                        <div>
+                        <ul>
+                            {items.map((item, index) => 
                                 
-                                <button onClick={()=> {
+                                <div key={index}>
+                                    <h3>
+                                    {`${item.name}`}
+                                    </h3>
+                                    <img src={item.image} alt={item.name} className='cart_item_image'/>
+                                    <h3>
+                                        {`Price: ${item.price}`}
+                                    </h3>
+                                    <h3>
+                                        {`Quantity: ${cart[item.name]}`}
+                                    </h3>
+                                    <h3>
+                                        {`Total = ${item.price * cart[item.name]}`}
+                                    </h3>
                                     
-                                    let newCart = cart
-                                    delete newCart[item.name]
-                                    setCart({...newCart})
-                                    localStorage.setItem('cart', JSON.stringify(newCart))   
-                                }}>
-                                    Romove Item
-                                </button>
-                            </div>
-                            
-                        )}
-                    </ul>
-                    <h3>
-                        {`Grand Total: ${total}`}
-                    </h3>
+                                    <button onClick={()=> {
+                                        let newCart = cart
+                                        delete newCart[item.name]
+                                        setCart({...newCart})
+                                        localStorage.setItem('cart', JSON.stringify(newCart))   
+                                    }}>
+                                        Romove Item
+                                    </button>
+                                </div>
+                                
+                            )}
+                        </ul>
+                        <h3>
+                            {`Grand Total: ${total}`}
+                        </h3>
+                    </div>
+                    ) : (
+                        <h1>
+                            Your Cart is Empty
+                        </h1>
+                    )}
+                    
                 </div>
             )}
 
