@@ -37,15 +37,16 @@ const Links = ({ currentPage, handlePageChange }) => {
 					Accessories
 				</Link>
 			</li>
-			<li>
+			<li className='cartLi'>
 				<Link
 					to="/cart"
 					className="navLink"
 					onClick={(event) => handlePageChange(event.target.value)}
 				>
 					<img src={cartIcon} className="cartIcon" alt="cart icon" />
+					<div className='cartTotal'>{cartTotal()}</div>
 				</Link>
-				<div>{cartTotal()}</div>
+				
 			</li>
 			<li>
 				<PersonIcon />

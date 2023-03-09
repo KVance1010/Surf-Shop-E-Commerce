@@ -9,21 +9,15 @@
     font-weight: 700;
     color: var(--boldFontColor);
 }
-.cartIcon svg{
-    fill: var(--fontColor)
+.cartTotal {
+    position: absolute;
+    z-index: 3;
+    right: 105px;
+    font-size: 20px;
+    top: 47px;
+    background-color: var(--headerColor);
 }
-.cartIcon svg:hover{
-    /* font-weight: 700; */
-    /* color: var(--boldFontColor); */
-    fill: blue;
 
-}
-.cartIcon svg:focus{
-    /* font-weight: 700; */
-    /* color: var(--boldFontColor); */
-    fill: blue;
-
-}
 
 @media screen and (max-width: 984px) { 
 	.navLink {
