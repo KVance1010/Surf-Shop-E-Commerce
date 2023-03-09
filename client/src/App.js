@@ -12,7 +12,7 @@ import Item from './components/Item';
 import Cart from './pages/Cart'
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-// import Checkout from './pages/Checkout';
+import Checkout from './pages/Checkout';
 import { CartProvider } from './utils/cartContext';
 
 const client = new ApolloClient({
@@ -37,7 +37,7 @@ function App() {
 						<Route path='/cart' element={<Cart />}></Route>
 						<Route path='/login' element={<Login />}></Route>
 						<Route path='/signup' element={<Signup />}></Route>
-						{/* <Route path='/checkout' element={Checkout}></Route> */}
+						<Route path='/checkout' element={<Checkout />}></Route>
 						<Route
 							path="/apparel/:categoryName"
 							element={<CategoryList />}
