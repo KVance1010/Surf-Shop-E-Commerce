@@ -28,7 +28,6 @@ export const accessoriesCategory =
             ,
             image1: wax,
             alt: "Surf board wax"
-
         },
         {
             name: "Sunscreen",
@@ -133,8 +132,6 @@ export const mensApparelCategory =
 }
 export const womensApparelCategory = 
 {
-
-
     name: "Womens Apparel",
     pathName: "womens",
     categories: [
