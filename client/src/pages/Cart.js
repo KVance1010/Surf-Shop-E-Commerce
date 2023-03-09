@@ -8,20 +8,16 @@ import { Link } from "react-router-dom";
 const Cart = () => {
     const { cart, setCart, clearCart, addItem, removeItem, cartTotal} = useCartContext()
 
-    const [update, setUpdate] = useState(true)
     const itemNameList = []
     for(let key in cart){
         itemNameList.push(key)
     }
-    console.log(itemNameList)
 
     const {loading, data} = useQuery(QUERY_ITEMS_BY_NAMES, {
         variables: {names: itemNameList}
     })
 
     const items = data?.itemsByNames || []
-    console.log(items)
-    console.log('cart', cart)
 
     let total = 0
     for(let i = 0; i < items.length; i++){

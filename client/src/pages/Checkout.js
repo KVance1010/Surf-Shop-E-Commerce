@@ -15,6 +15,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import AddressForm from '../components/AddressForm';
 import PaymentForm from '../components/PaymentForm';
 import Review from '../components/Review';
+import { useCartContext } from '../utils/cartContext';
 
 function Copyright() {
   return (
@@ -48,8 +49,12 @@ const theme = createTheme();
 
 export default function Checkout() {
   const [activeStep, setActiveStep] = React.useState(0);
+  const { clearCart } = useCartContext()
 
   const handleNext = () => {
+    if(activeStep === steps.length - 1) {
+      clearCart()
+    }
     setActiveStep(activeStep + 1);
   };
 
