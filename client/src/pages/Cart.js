@@ -3,6 +3,7 @@ import { useQuery } from "@apollo/client";
 import { QUERY_ITEMS_BY_NAMES } from "../utils/queries";
 import { useCartContext } from "../utils/cartContext";
 import '../css/cart.css'
+import { Link } from "react-router-dom";
 
 const Cart = () => {
     const { cart, setCart, clearCart, addItem, removeItem, cartTotal} = useCartContext()
@@ -69,6 +70,9 @@ const Cart = () => {
                         <h3>
                             {`Grand Total: ${total}`}
                         </h3>
+                        <Link to={'/checkout'}>           
+                            <button>Checkout</button>
+                        </Link>
                     </div>
                     ) : (
                         <h1>
