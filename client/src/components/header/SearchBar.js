@@ -16,7 +16,11 @@ const SearchBar = () => {
 				.substring(category.lastIndexOf(' ') + 1)
 				.toLowerCase();
 			let cat = category.substring(0, category.indexOf(' ')).toLowerCase();
-			if (cat.includes('men')) cat = `apparel/${cat}`;
+			if (cat.includes('men')) {
+				cat = `apparel/${cat}`;
+			} else {
+				cat = `${cat}/${cat}`
+			}
 			link = `/${cat}/${item}`;
 			navigate(link, { replace: true });
 		}
