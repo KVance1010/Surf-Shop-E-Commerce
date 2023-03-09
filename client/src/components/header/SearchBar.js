@@ -31,10 +31,9 @@ const SearchBar = () => {
 			// disablePortal
 			id="combo-box-demo"
 			onChange={handleSearchInput}
-			// onKeyDown={handleSearchInput}
 			className="searchInput"
 			options={searchItems}
-			sx={{ width: 250 }}
+			sx={{ width: 250, borderRadius: 1.5 }}
 			renderInput={(params) => <TextField {...params} label="search" />}
 		/>
 	);
