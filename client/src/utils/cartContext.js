@@ -19,6 +19,7 @@ export const CartProvider = ({children}) => {
             newCart[item.name] = 1
         }
         setCart(newCart)
+        localStorage.setItem('cart', JSON.stringify(newCart))
     }
     const removeItem = (item) => {
         let newCart = cart
@@ -26,9 +27,11 @@ export const CartProvider = ({children}) => {
             newCart[item.name] -= 1
         }
         setCart(newCart)
+        localStorage.setItem('cart', JSON.stringify(newCart))
     }
     const clearCart = () => {
         setCart({})
+        localStorage.setItem('cart', JSON.stringify({}))
     }
     const cartTotal = () => {
         let total = 0

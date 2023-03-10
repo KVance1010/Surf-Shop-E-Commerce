@@ -12,7 +12,6 @@ const CategoryList = () => {
 
     let categoryTag = (hrefSplit[hrefSplit.length-1])
     let pageTag = (hrefSplit[hrefSplit.length-2])
-    console.log(categoryName)
 
     switch(categoryName) {
         case 'mens':

@@ -1,6 +1,7 @@
 import React, { useState, createContext } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
+import  { setContext } from '@apollo/client/link/context'
 import Home from './pages/Home';
 import Admin from './pages/Admin';
 import CategoryList from './components/CategoryList';
@@ -15,6 +16,22 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Checkout from './pages/Checkout';
 import { CartProvider } from './utils/cartContext';
+
+const httpLink = createHttpLink({
+	uri: '/graphql',
+  });
+
+
+
+const authLink = setContext((_, { headers }) => {
+	const token = localStorage.setItem('id_token');
+	return {
+		headers: {
+			...headers,
+			authorization: token ? `Bearer ${token}` : ''
+		}
+	}
+})
 
 const client = new ApolloClient({
 	uri: '/graphql',
