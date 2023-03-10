@@ -1,37 +1,42 @@
 .apparelContainer {
 	display: flex;
 	background-color: var(--mainBackgroundColor);
-	/* padding: 40px 60px; */
-	/* gap: 60px; */
-	/* justify-content: center; */
+	padding: 40px 60px;
+	gap: 60px;
+	justify-content: center;
 }
 .mensApparel {
-	width: 50vw;
+	width: 45vw;
 	position: relative;
 	/* height: calc(100vh- - 89px); */
 }
 .mensApparel img{
-	width: 50vw;
+	width: 45vw;
 	object-fit: cover;
-	height: 85vh;
+	height: 75vh;
+}
+.mensApparel img:hover{
+	border: solid 5px var(--fontColor);
 }
 
 .womensApparel {
 	position: relative;
-	width: 50vw;
+	width: 45vw;
 }
 .womensApparel img{
-	width: 50vw;
-	height: 85vh;
+	width: 45vw;
+	height: 75vh;
 	object-fit: cover;
+}
+.womensApparel img:hover{
+	border: solid 5px var(--fontColor);
 }
 .apparelTags{
 	color: var(--boldFontColor);
-	position: absolute;
+	position: absolute;	
 	z-index: 2;
-	width: 50vw;
+	width: 45vw;
 	font-size: 48px;
 	bottom:60px;
 	text-align: center;
-	justify-content: center;
 }

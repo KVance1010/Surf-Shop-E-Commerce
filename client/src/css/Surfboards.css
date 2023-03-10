@@ -1,0 +1,39 @@
+.surfboardsContainer {
+	display: flex;
+	padding: 47px 0;
+    justify-content: space-evenly;
+    background-color: var(--mainBackgroundColor);
+}
+
+.boardContent {
+	width: 20%;
+    height:75vh;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.boardContent img:hover {
+	border: solid 5px var(--boldFontColor);
+}
+.boardContent img {
+	width: 100%;
+    /* width: 50%; */
+    height:75vh;
+    object-fit: cover;
+}
+
+.boardTypeTitle {
+	/* position: absolute; */
+    /* z-index: 3; */
+    /* bottom: 70px; */
+    text-shadow: 1px 1px 2px black;
+    padding: 10px;
+    color: var(--boldFontColor);
+    /* background-color: var(--mainBackgroundColor); */
+    /* background-color: aliceblue; */
+    /* border-radius: 10px; */
+    font-size: 50px;
+    /* width: 20%; */
+    text-align: center;
+    /* border: 2px solid var(--boldFontColor); */
+    /* border: 2px solid black; */
+}

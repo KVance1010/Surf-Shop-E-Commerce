@@ -6,6 +6,7 @@ import Admin from './pages/Admin';
 import CategoryList from './components/CategoryList';
 import Apparel from './pages/Apparel';
 import Header from './components/header/Header';
+import Surfboards from './pages/Surfboards';
 import './css/App.css';
 import ItemList from './components/ItemList';
 import Item from './components/Item';
@@ -52,7 +53,7 @@ function App() {
 						></Route>
 						<Route
 							path="/surfboards/:categoryName"
-							element={<CategoryList />}
+							element={<Surfboards />}
 						></Route>
 						<Route
 							path="/surfboards/:categoryName/:itemList"
