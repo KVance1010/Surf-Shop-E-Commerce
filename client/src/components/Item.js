@@ -62,9 +62,8 @@ const Item = () => {
                             
                             <div className='btn btn-success' onClick={() => {
                                 addItem({name: item})
-                                
                                 setCart({...cart})
-                                localStorage.setItem('cart', JSON.stringify(cart))
+                                
                             }   
                             }>
                                 Add to Cart!

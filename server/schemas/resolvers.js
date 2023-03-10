@@ -14,7 +14,6 @@ const resolvers = {
             }))
         }, 
         itemsByNames: async (partent, args) => {
-            console.log(args.names)
             return (await Item.find({
                 
                 name: {$in: [...args.names]}
