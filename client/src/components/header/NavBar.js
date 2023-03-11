@@ -62,9 +62,7 @@ const Links = ({ currentPage, handlePageChange }) => {
 					<li >
 						<Link to={'/login'} className='navLink'>login</Link>
 					</li>
-					<li>
-					<Link onClick={Auth.logout} className='navLink'>logout</Link>
-					</li>
+					<li><Link to={'/signup'} className='navLink'>Signup</Link></li>
 				</>
 			)}
 		</>
