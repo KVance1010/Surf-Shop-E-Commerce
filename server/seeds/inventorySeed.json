@@ -688,6 +688,76 @@
         "stock": 30,
         "saleItem":true,
         "bestSeller":true
+    },
+    {
+        "name": "Mens Psycho Tech+ 4/3mm Chest Zip Wetsuit",
+        "brand": "O'Neil",
+        "description":"O’Neill’s PsychoTech combines the exclusive TechnoButter 3 neoprene with TechnoButter 3 Air Firewall insulation, Stitchless Seam technology with exterior Single Fluid Seam Weld, internal TB3X Tape and a F.U.Z.E Closure Sytem. Lighter, warmer, more insulating and quick drying with improved ease of entry. PsychoTech is the latest advancement in cold water wetsuit technology from the leaders in innovation for over 60 years.",
+        "price": 480.99,
+        "tags":["apparel", "mens","wetsuits"],
+        "image": "https://cdn.watersportsoutlet.com/images/1x1/thumbs/ONeill-Psycho-Tech-Chest-Zip-Wetsuit---Black.700x700.jpg",
+        "stock": 25,
+        "bestSeller":true
+    },
+    {
+        "name": "Mens O'riginal 2mm Back Zip Short Sleeve Wetsuit",
+        "brand": "O'Neil",
+        "description":"The ultimate package. The O’Riginal wetsuit ticks all the right boxes. Classic style paired with modern technology and the best fit in the industry.",
+        "price": 111.99,
+        "tags":["apparel", "mens","wetsuits"],
+        "image": "https://cdn.watersportsoutlet.com/images/1x1/thumbs/5296-A00-High-Res-2000x2000-79f12943-0f1a-4544-b786-14d17f4f7f96.700x700.jpg",
+        "stock": 35,
+        "saleItem":true
+    },
+    {
+        "name": "Mens Reactor II 2mm Back Zip Shorty Wetsuit",
+        "brand": "O'Neil",
+        "description":"Get a full dose of performance technology at incredible value. The Reactor II Series utilises our exclusive FluidFlex™ in the shoulder and sleeves, a fully adjustable super seal neck and Krypto knee Padz. Everything you could possibly want in an entry level wetsuit.",
+        "price": 104.99,
+        "tags":["apparel", "mens","wetsuits"],
+        "image": "https://cdn.watersportsoutlet.com/images/1x1/thumbs/ONeill%20Reactor%20II%202mm%20Back%20Zip%20Shorty%20Wetsuit%20BLACK%205041.700x700.jpg",
+        "stock": 40,
+        "saleItem":true
+    },
+    {
+        "name": "E7 Flashbomb HeatSeeker 4\\3 Zip Free Wetsuit",
+        "brand": "Rip Curl",
+        "description":"The new E7 Flashbomb HeatSeeker 4/3 Zip Free Wetsuit is our most technically advanced cold-water wetsuit. This season, we're combining our all new E7 Flash Lining through out the wetsuit and our unique Version 2 Flex Energy lining that generates even more heat when stretched. Along with added superior technical features, the Flashbomb Heat Seeker is our warmest and stretchiest Flashbomb yet.",
+        "price": 510.99,
+        "tags":["apparel", "mens","wetsuits"],
+        "image": "https://www.ripcurl.com/media/catalog/product/w/s/wst5qf_0090_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "stock": 10,
+        "bestSeller":true
+    },
+    {
+        "name": "E-Bomb 5\\4mm Hooded Zip Free Wetsuit",
+        "brand": "Rip Curl",
+        "description":"The E-Bomb 5/4 Hooded Zip Free Wetsuit is the season's ultimate, high performance fullsuit featuring our signature E6 neoprene with Thermo Lining throughout the entire suit. We've also combined these features with our newest zip free entry system for maximum paddling freedom and water seal so you can embrace the elements and enjoy longer sessions.",
+        "price": 380.99,
+        "tags":["apparel", "mens","wetsuits"],
+        "image": "https://www.ripcurl.com/media/catalog/product/w/s/wsm5je_0090-1.jpeg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "stock": 13,
+        "newArrival":true
+    },
+    {
+        "name": "Dawn Patrol 4\\3 Back Zip Wetsuit",
+        "brand": "Rip Curl",
+        "description":"The Dawn Patrol is the wetsuit for the surfer who wants high performance and durability, providing great service whilst also being great value. Designed with E5 flash lining, back mesh skin panels and E4 thermoflex neoprene, this 4/3 back zip steamer will keep you warm in even the coldest waters, all winter long.",
+        "price": 134.99,
+        "tags":["apparel", "mens","wetsuits"],
+        "image": "https://www.ripcurl.com/media/catalog/product/w/s/wsm9em_0049-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "stock": 5,
+        "saleItem":true
+    },
+    {
+        "name": "Regular - High Bridge Fit",
+        "brand": "Oakley",
+        "description":"The Dawn Patrol is the wetsuit for the surfer who wants high performance and durability, providing great service whilst also being great value. Designed with E5 flash lining, back mesh skin panels and E4 thermoflex neoprene, this 4/3 back zip steamer will keep you warm in even the coldest waters, all winter long.",
+        "price": 134.99,
+        "tags":["apparel", "mens","wetsuits"],
+        "image": "https://www.ripcurl.com/media/catalog/product/w/s/wsm9em_0049-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "stock": 5,
+        "saleItem":true
     }
 
     
