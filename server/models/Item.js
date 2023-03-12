@@ -1,4 +1,4 @@
-const { default: ObjectID } = require('bson-objectid')
+
 const { Schema, model } = require('mongoose')
 
 const itemSchema = new Schema ({

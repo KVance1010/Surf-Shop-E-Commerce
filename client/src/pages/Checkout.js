@@ -16,6 +16,7 @@ import AddressForm from '../components/AddressForm';
 import PaymentForm from '../components/PaymentForm';
 import Review from '../components/Review';
 import { useCartContext } from '../utils/cartContext';
+import Auth from '../utils/auth'
 
 function Copyright() {
   return (
@@ -48,6 +49,11 @@ function getStepContent(step) {
 const theme = createTheme();
 
 export default function Checkout() {
+
+  if(!Auth.loggedIn()){
+    window.location.assign('/login')
+}
+
   const [activeStep, setActiveStep] = React.useState(0);
   const { clearCart } = useCartContext()
 
