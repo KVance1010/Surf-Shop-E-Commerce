@@ -1,11 +1,13 @@
 [
     {
-        "username": "mikeymike",
+        "firstName": "Mike",
+        "lastName": "Mike",
         "email": "mike@mike.com",
         "password": "!Q2w3e4r"
     },
     {
-        "username": "daveydave",
+        "firstName": "Dave",
+        "lastName": "West",
         "email": "dave@dave.com",
         "password": "%T6y7u8i"
     }

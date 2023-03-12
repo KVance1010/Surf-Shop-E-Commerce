@@ -15,14 +15,21 @@ const checkPassword = function(input) {
 }
 
 const userSchema = new Schema ({
-    username: {
+    firstName: {
         type: String,
         required: true,
         minlength: 1,
         maxlength: 50,
-        unique: true,
         trim: true
     },
+    lastName: {
+        type: String,
+        required: true,
+        minlength: 1,
+        maxlength: 50,
+        trim: true
+    },
+    
     email:{
         type: String,
         required: true,
