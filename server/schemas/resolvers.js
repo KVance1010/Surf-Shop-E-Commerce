@@ -8,7 +8,13 @@ const resolvers = {
             return await User.find()
         },
         user: async (parent, args) => {
-            return User.findOne({username: args.username})
+            return User.findOne({email: args.email})
+        },
+        me: async (parent, args, context) => {
+            if(context.user){
+                return User.findOne({email: context.user.email})
+            }
+            throw new AuthenticationError('you are not logged in!')
         },
         items: async () => {
             return await Item.find()

@@ -6,6 +6,7 @@ import '../css/cart.css'
 import { Link } from "react-router-dom";
 
 const Cart = () => {
+    
     const { cart, setCart, clearCart, addItem, removeItem, cartTotal} = useCartContext()
 
     const itemNameList = []

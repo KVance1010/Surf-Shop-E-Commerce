@@ -4,7 +4,8 @@ export const QUERY_USERS = gql`
     query getUsers {
         users {
             _id
-            username
+            firstName
+            lastName
             email
         }
     }
@@ -84,4 +85,14 @@ export const QUERY_ITEMS_BY_NAMES = gql`
         brand
         }
     }
+`
+export const GET_ME = gql`
+query me {
+    me {
+      email
+      firstName
+      lastName
+      _id
+    }
+  }
 `

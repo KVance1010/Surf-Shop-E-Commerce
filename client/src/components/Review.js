@@ -6,7 +6,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Grid from '@mui/material/Grid';
 import { useCartContext } from '../utils/cartContext';
 import { useQuery } from '@apollo/client';
-import { QUERY_ITEMS_BY_NAMES } from '../utils/queries';
+import { QUERY_ITEMS_BY_NAMES, GET_ME } from '../utils/queries';
 
 const products = [
   {
@@ -52,12 +52,24 @@ export default function Review() {
     const { loading, data } = useQuery(QUERY_ITEMS_BY_NAMES, {
         variables: {names: itemNameList}
     })
+    const {meLoading, meData} = useQuery(GET_ME)
+    console.log('meData', meData)
+    
 
     const items = data?.itemsByNames || []
 
     let total = 0
     for(let i = 0; i < items.length; i++){
         total += items[i].price * cart[items[i].name]
+    }
+
+    const order = {}
+    const orderItems = []
+    for(let i = 0; i < items.length; i++){
+        const orderItem = {}
+        orderItem.name = itemNameList[i]
+        orderItem.quantity = cart[items[i].name]
+        orderItem.price = items[i].price
     }
 
     return (
