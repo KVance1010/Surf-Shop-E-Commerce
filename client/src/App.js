@@ -1,4 +1,4 @@
-import React, { useState, createContext } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
 import  { setContext } from '@apollo/client/link/context'
@@ -7,6 +7,7 @@ import Admin from './pages/Admin';
 import CategoryList from './components/CategoryList';
 import Apparel from './pages/Apparel';
 import Header from './components/header/Header';
+import Surfboards from './pages/Surfboards';
 import './css/App.css';
 import ItemList from './components/ItemList';
 import Item from './components/Item';
@@ -70,15 +71,15 @@ function App() {
 							element={<Item />}
 						></Route>
 						<Route
-							path="/surfboards/:categoryName"
-							element={<CategoryList />}
+							path="/surfboards"
+							element={<Surfboards />}
 						></Route>
 						<Route
-							path="/surfboards/:categoryName/:itemList"
+							path="/surfboards/:itemList"
 							element={<ItemList />}
 						></Route>
 						<Route
-							path="/surfboards/:categoryName/:itemList/:item"
+							path="/surfboards/:itemList/:item"
 							element={<Item />}
 						></Route>
 						<Route

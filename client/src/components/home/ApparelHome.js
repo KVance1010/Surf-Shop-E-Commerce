@@ -4,7 +4,7 @@ import '../../css/home/ApparelHome.css';
 
 const ApparelHome = ({ categories }) => {
 	const accessories = false;
-	const items = 1;
+	const items = [1,1];
 	return (
 		<div className="carousel">
 			<div className="categoryGender">{categories.name}</div>

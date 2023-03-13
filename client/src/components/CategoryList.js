@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
 import { useParams } from "react-router-dom";
+import Item from './Item';
 import { mensApparelCategory, womensApparelCategory, accessoriesCategory, surfboardsCategory } from '../utils/categoryList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
