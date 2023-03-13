@@ -40,8 +40,8 @@ const CarouselComponent = (props) => {
       <div key={item.name} className={classes}>
         <Link to={`/${type}/${item.name.toLowerCase()}`}>
           {props.accessories?
-          (<img src={item.image1} />):
-          (<img src={item.image} />)}
+          (<img src={item.image1} alt={item.alt}/>):
+          (<img src={item.image} alt={item.alt}/>)}
           <h4>{item.name}</h4>
         </Link>
       </div>

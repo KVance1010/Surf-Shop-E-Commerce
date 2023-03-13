@@ -49,7 +49,7 @@ const Links = ({ currentPage, handlePageChange }) => {
 					{console.log('logged in', Auth.loggedIn())}
 				</Link>
 			</li>
-			<li></li>
+		
 			{Auth.loggedIn() ? (
 				<li>
 					<Link className="navLink" onClick={Auth.logout}>

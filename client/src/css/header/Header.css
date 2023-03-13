@@ -41,8 +41,13 @@
 	transition: all 0.3s ease-in-out;
 	background-color: var(--boldFontColor);
 }
+@media screen and (max-width:1510px) {
+	.headerContainer {
+		padding: 20px 40px;
+	}
+}
 
-@media screen and (max-width: 984px) {
+@media screen and (max-width: 1350px) {
 	.cartTotal{
 		display: none;
 	}
@@ -88,9 +93,9 @@
 }
 
 @media screen and (max-width: 415px) {
-	.headerContainer {
+	/* .headerContainer {
 		padding: 20px 40px;
-		}
+		} */
 	.logoLink {
 		font-size: 25px;
 	}

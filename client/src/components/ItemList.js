@@ -1,5 +1,5 @@
 import React from "react";
-import { useMutation, useQuery } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 import { QUERY_ITEMS_BY_TAGS } from "../utils/queries";
 import { Link } from 'react-router-dom'
 
