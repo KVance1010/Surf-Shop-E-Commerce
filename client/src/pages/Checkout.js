@@ -104,7 +104,7 @@ export default function Checkout() {
       try{
         const { data } = await addOrder({
           variables: {
-            email: JSON.stringify(localStorage.getItem('email')),
+            email: (localStorage.getItem('email')),
             itemNames: itemNames,
             itemPrices: itemPrices,
             itemQuantities: itemQuantities
