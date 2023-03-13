@@ -15,6 +15,7 @@ import Cart from './pages/Cart'
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Checkout from './pages/Checkout';
+import Accessories from './pages/Accessories';
 import { CartProvider } from './utils/cartContext';
 
 const httpLink = createHttpLink({
@@ -86,7 +87,7 @@ function App() {
 						></Route>
 						<Route
 							path="/accessories/:categoryName"
-							element={<CategoryList />}
+							element={<Accessories />}
 						></Route>
 						<Route
 							path="/accessories/:categoryName/:itemList"
