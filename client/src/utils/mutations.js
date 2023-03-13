@@ -25,12 +25,13 @@ export const LOGIN_USER = gql`
     }
 ` 
 export const ADD_ORDER = gql`
-mutation addOrder($email: String, $itemNames: [String], $itemPrices: [Float], $itemQuantities: [Int]) {
-    addOrder(email: $email, itemNames: $itemNames, itemPrices: $itemPrices, itemQuantities: $itemQuantities) {
+mutation Mutation($email: String, $itemNames: [String], $itemPrices: [Float], $itemQuantities: [Int], $createdAt: String) {
+    addOrder(email: $email, itemNames: $itemNames, itemPrices: $itemPrices, itemQuantities: $itemQuantities, createdAt: $createdAt) {
       email
       itemNames
       itemQuantities
       itemPrices
+      createdAt
     }
   }
 `

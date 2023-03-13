@@ -55,7 +55,7 @@ function getStepContent(step) {
 const theme = createTheme();
 
 export default function Checkout() {
-
+  console.log((Date.now()))
   if(!Auth.loggedIn()){
     window.location.assign('/login')
 }
@@ -100,6 +100,8 @@ export default function Checkout() {
   const { clearCart } = useCartContext()
 
   const handleNext = async () => {
+    const date = Date.now()
+    console.log(JSON.stringify(date))
     if(activeStep === steps.length - 1) {
       try{
         const { data } = await addOrder({
@@ -107,7 +109,8 @@ export default function Checkout() {
             email: (localStorage.getItem('email')),
             itemNames: itemNames,
             itemPrices: itemPrices,
-            itemQuantities: itemQuantities
+            itemQuantities: itemQuantities,
+            createdAt: JSON.stringify(date)
           }
         })
       }catch(e){
