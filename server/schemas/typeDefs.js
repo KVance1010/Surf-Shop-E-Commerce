@@ -28,9 +28,10 @@ const typeDefs = gql`
     }
     type Order {
         email: String
-        itemsNames: [String]
+        itemNames: [String]
         itemQuantities: [Int]
         itemPrices: [Float]
+        createdAt: String
     }
 
     type Query {
@@ -42,13 +43,13 @@ const typeDefs = gql`
         itemById(_id: String): Item
         itemsByNames(names: [String]): [Item]
         me: User
-        ordersByEmail: [Order]
+        ordersByEmail(email: String): [Order]
     }
 
     type Mutation {
         addUser(firstName: String!, lastName: String, email: String, password: String): Auth
         login(email: String, password: String!): Auth
-        addOrder(email: String, itemNames: [String], itemPrices: [Float], itemQuantities: [Int]): Order
+        addOrder(email: String, itemNames: [String], itemPrices: [Float], itemQuantities: [Int], createdAt: String): Order
     }
 `
 

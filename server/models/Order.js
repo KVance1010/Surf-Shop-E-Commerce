@@ -15,8 +15,7 @@ const orderSchema = new Schema ({
         type: Array
     },
     createdAt: {
-        type: Date,
-        default: Date.now
+        type: Number
     }
 
 })

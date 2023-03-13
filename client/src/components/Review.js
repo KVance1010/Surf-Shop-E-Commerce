@@ -16,7 +16,7 @@ const payments = [
   { name: 'Expiry date', detail: '04/2024' },
 ];
 
-export default function Review() {
+export default function Review(props) {
 
     const { cart } = useCartContext()
 
@@ -36,17 +36,7 @@ export default function Review() {
         total += items[i].price * cart[items[i].name]
     }
 
-    const order = {}
-    const orderItems = []
-    for(let i = 0; i < items.length; i++){
-        const orderItem = {}
-        orderItem.name = items[i].name
-        orderItem.quantity = cart[items[i].name]
-        orderItem.price = items[i].price
-        orderItems.push(orderItem)
-    }
-    order.email = JSON.stringify(localStorage.getItem('email'))
-    order.items = orderItems
+
 
     
 
