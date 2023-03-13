@@ -31,15 +31,17 @@ class AuthService {
 		return localStorage.getItem('id_token');
 	}
 
-	login(idToken) {
-		localStorage.setItem('id_token', idToken);
-		window.location.assign('/');
-	}
+  login(idToken, email) {
+    localStorage.setItem('email', email)
+    localStorage.setItem('id_token', idToken);
+    window.location.assign('/');
+  }
 
-	logout() {
-		localStorage.removeItem('id_token');
-		window.location.reload();
-	}
+  logout() {
+    localStorage.removeItem('email');
+    localStorage.removeItem('id_token');
+    window.location.reload();
+  }
 }
 
 export default new AuthService();

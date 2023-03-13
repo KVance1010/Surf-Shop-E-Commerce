@@ -57,7 +57,7 @@ export default function Login() {
         variables: {...formState}
       })
     
-      Auth.login(data.login.token)
+      Auth.login(data.login.token, formState.email)
     }catch (e){
       console.error(e)
     }

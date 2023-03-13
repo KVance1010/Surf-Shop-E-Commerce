@@ -16,6 +16,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Checkout from './pages/Checkout';
 import Accessories from './pages/Accessories';
+import Account from './pages/Account'
 import { CartProvider } from './utils/cartContext';
 
 const httpLink = createHttpLink({
@@ -57,6 +58,7 @@ function App() {
 						<Route path='/login' element={<Login />}></Route>
 						<Route path='/signup' element={<Signup />}></Route>
 						<Route path='/checkout' element={<Checkout />}></Route>
+						<Route path='/account' element={<Account />}></Route>
 						<Route
 							path="/apparel/:categoryName"
 							element={<CategoryList />}

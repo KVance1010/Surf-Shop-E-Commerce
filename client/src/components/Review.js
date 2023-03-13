@@ -8,30 +8,6 @@ import { useCartContext } from '../utils/cartContext';
 import { useQuery } from '@apollo/client';
 import { QUERY_ITEMS_BY_NAMES, GET_ME } from '../utils/queries';
 
-const products = [
-  {
-    name: 'Product 1',
-    desc: 'A nice thing',
-    price: '$9.99',
-  },
-  {
-    name: 'Product 2',
-    desc: 'Another thing',
-    price: '$3.45',
-  },
-  {
-    name: 'Product 3',
-    desc: 'Something else',
-    price: '$6.51',
-  },
-  {
-    name: 'Product 4',
-    desc: 'Best thing of all',
-    price: '$14.11',
-  },
-  { name: 'Shipping', desc: '', price: 'Free' },
-];
-
 const addresses = ['1 MUI Drive', 'Reactville', 'Anytown', '99999', 'USA'];
 const payments = [
   { name: 'Card type', detail: 'Visa' },
@@ -52,10 +28,7 @@ export default function Review() {
     const { loading, data } = useQuery(QUERY_ITEMS_BY_NAMES, {
         variables: {names: itemNameList}
     })
-    const {meLoading, meData} = useQuery(GET_ME)
-    console.log('meData', meData)
     
-
     const items = data?.itemsByNames || []
 
     let total = 0
@@ -67,10 +40,15 @@ export default function Review() {
     const orderItems = []
     for(let i = 0; i < items.length; i++){
         const orderItem = {}
-        orderItem.name = itemNameList[i]
+        orderItem.name = items[i].name
         orderItem.quantity = cart[items[i].name]
         orderItem.price = items[i].price
+        orderItems.push(orderItem)
     }
+    order.email = JSON.stringify(localStorage.getItem('email'))
+    order.items = orderItems
+
+    
 
     return (
         <React.Fragment>

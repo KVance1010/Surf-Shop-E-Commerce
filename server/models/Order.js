@@ -5,7 +5,13 @@ const orderSchema = new Schema ({
         type: String,
         required: true
     },
-    items: {
+    itemNames: {
+        type: Array
+    },
+    itemPrices: {
+        type: Array
+    },
+    itemQuantities: {
         type: Array
     },
     createdAt: {
