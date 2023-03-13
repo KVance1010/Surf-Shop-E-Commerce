@@ -41,6 +41,7 @@ export const CartProvider = ({children}) => {
         }
         return total
     }
+    
 
     return (
         <CartContext.Provider

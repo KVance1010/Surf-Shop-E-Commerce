@@ -28,7 +28,7 @@ const typeDefs = gql`
     }
     type Order {
         email: String
-        itemsNames: [String]
+        itemNames: [String]
         itemQuantities: [Int]
         itemPrices: [Float]
     }
@@ -42,7 +42,7 @@ const typeDefs = gql`
         itemById(_id: String): Item
         itemsByNames(names: [String]): [Item]
         me: User
-        ordersByEmail: [Order]
+        ordersByEmail(email: String): [Order]
     }
 
     type Mutation {

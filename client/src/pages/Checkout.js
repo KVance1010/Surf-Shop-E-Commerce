@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useQuery, useMutation } from '@apollo/client';
 import CssBaseline from '@mui/material/CssBaseline';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -16,6 +17,9 @@ import AddressForm from '../components/AddressForm';
 import PaymentForm from '../components/PaymentForm';
 import Review from '../components/Review';
 import { useCartContext } from '../utils/cartContext';
+import { QUERY_ITEMS_BY_NAMES } from '../utils/queries';
+import { ADD_ORDER } from '../utils/mutations';
+
 import Auth from '../utils/auth'
 
 function Copyright() {
@@ -30,6 +34,8 @@ function Copyright() {
     </Typography>
   );
 }
+
+
 
 const steps = ['Shipping address', 'Payment details', 'Review your order'];
 
@@ -54,11 +60,59 @@ export default function Checkout() {
     window.location.assign('/login')
 }
 
+  //convert cart object into order object
+  const { cart } = useCartContext()
+
+    const itemNameList = []
+    for(let key in cart){
+        itemNameList.push(key)
+    }
+
+    const { loading, data } = useQuery(QUERY_ITEMS_BY_NAMES, {
+        variables: {names: itemNameList}
+    })
+    const [addOrder, {error, orderData}] = useMutation(ADD_ORDER)
+    
+    const items = data?.itemsByNames || []
+
+    let total = 0
+    for(let i = 0; i < items.length; i++){
+        total += items[i].price * cart[items[i].name]
+    }
+
+    const itemPrices = []
+    const itemQuantities = []
+    const itemNames = []
+
+    items.map((item) => {
+      itemPrices.push(item.price)
+      itemQuantities.push(cart[item.name])
+      itemNames.push(item.name)
+    })
+
+
+   
+
+  
+
+
   const [activeStep, setActiveStep] = React.useState(0);
   const { clearCart } = useCartContext()
 
-  const handleNext = () => {
+  const handleNext = async () => {
     if(activeStep === steps.length - 1) {
+      try{
+        const { data } = await addOrder({
+          variables: {
+            email: JSON.stringify(localStorage.getItem('email')),
+            itemNames: itemNames,
+            itemPrices: itemPrices,
+            itemQuantities: itemQuantities
+          }
+        })
+      }catch(e){
+        console.error(e)
+      }
       clearCart()
     }
     setActiveStep(activeStep + 1);
@@ -80,11 +134,6 @@ export default function Checkout() {
           borderBottom: (t) => `1px solid ${t.palette.divider}`,
         }}
       >
-        <Toolbar>
-          <Typography variant="h6" color="inherit" noWrap>
-            Company name
-          </Typography>
-        </Toolbar>
       </AppBar>
       <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
         <Paper variant="outlined" sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>

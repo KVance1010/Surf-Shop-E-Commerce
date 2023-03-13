@@ -24,3 +24,13 @@ export const LOGIN_USER = gql`
         }
     }
 ` 
+export const ADD_ORDER = gql`
+mutation addOrder($email: String, $itemNames: [String], $itemPrices: [Float], $itemQuantities: [Int]) {
+    addOrder(email: $email, itemNames: $itemNames, itemPrices: $itemPrices, itemQuantities: $itemQuantities) {
+      email
+      itemNames
+      itemQuantities
+      itemPrices
+    }
+  }
+`
