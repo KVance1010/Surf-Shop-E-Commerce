@@ -1,5 +1,33 @@
-.categoryList{
-    display: flex;
-    justify-content: center;
-    background-color: var(--mainBackgroundColor);
+.categoryList {
+	display: flex;
+	justify-content: center;
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+	background-color: var(--mainBackgroundColor);
+    padding: 40px 60px;
+    gap:20px;
+    align-content: space-around;
+}
+
+.imageCard {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    width: 30vw;
+    min-width: 300px;
+    max-width:520px;
+}
+.imageCard:hover {
+   border: solid 5px var(--boldFontColor);
+}
+.accessoriesPageTitle {
+    color: black;
+    font-size: 28px;
+}
+.accessoriesPageImg{
+    width: 100%;
+    height: 50vh;
+    object-fit: fit;
 }

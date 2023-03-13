@@ -84,19 +84,15 @@ function App() {
 							element={<Item />}
 						></Route>
 						<Route
-							path="/apparel/:categoryName/:itemList/:item"
-							element={<Item />}
-						></Route>
-						<Route
-							path="/accessories/:categoryName"
+							path="/accessories"
 							element={<Accessories />}
 						></Route>
 						<Route
-							path="/accessories/:categoryName/:itemList"
+							path="/accessories/:itemList"
 							element={<ItemList />}
 						></Route>
 						<Route
-							path="/accessories/:categoryName/:itemList/:item"
+							path="/accessories/:itemList/:item"
 							element={<Item />}
 						></Route>
 					</Routes>
