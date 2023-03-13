@@ -12,7 +12,9 @@ const resolvers = {
         },
         me: async (parent, args, context) => {
             if(context.user){
-                return User.findOne({email: context.user.email})
+                const userData = User.findOne({_id: context.user._id})
+                console.log(userData)
+                return userData
             }
             throw new AuthenticationError('you are not logged in!')
         },

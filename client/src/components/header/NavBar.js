@@ -51,20 +51,11 @@ const Links = ({ currentPage, handlePageChange }) => {
 				
 			</li>
 			<li>
-				<PersonIcon />
+				<Link to={'/account'}>
+					<PersonIcon />
+				</Link>
 			</li>
-			{Auth.loggedIn() ? (
-				<li>
-					<Link className='navLink' onClick={Auth.logout}>logout</Link>
-				</li>
-			) : (
-				<>
-					<li >
-						<Link to={'/login'} className='navLink'>login</Link>
-					</li>
-					<li><Link to={'/signup'} className='navLink'>Signup</Link></li>
-				</>
-			)}
+			
 		</>
 	);
 };
