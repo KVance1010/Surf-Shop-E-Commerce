@@ -6,7 +6,7 @@ import '../../css/home/AccessoriesHome.css';
 const AccessoriesHome = () => {
 	const categoryList = accessoriesCategory.categories;
 	const accessories = true;
-	const items = 4;
+	const items = [4,1];
 	return (
 		<div className="accessoriesContainer">
 			<div className="accessoriesContent">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { surfboardsCategory } from '../utils/categoryList';
+import {Link} from 'react-router-dom';
 import '../css/Surfboards.css';
 
 const Surfboards = () => {
@@ -7,10 +8,10 @@ const Surfboards = () => {
 	return (
 		<div className="surfboardsContainer">
 			{surfboards.map((item) => (
-				<div className="boardContent" key={item.name}>
+				<Link className="boardContent" key={item.name} to={`/surfboards/${item.name.toLocaleLowerCase()}`}>
 					<img src={item.image} alt={item.name} />
 					<div className="boardTypeTitle">{item.name}</div>
-				</div>
+				</Link>
 			))}
 		</div>
 	);

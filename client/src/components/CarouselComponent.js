@@ -17,11 +17,11 @@ const CarouselComponent = (props) => {
   const responsive = {
 		desktop: {
 			breakpoint: { max: 4000, min: 1024 },
-			items: items,
+			items: items[0],
 		},
 		mobile: {
-			breakpoint: { max: 768, min: 0 },
-			items: items,
+			breakpoint: { max: 1100, min: 0 },
+			items: items[1],
 		},
 	};
   

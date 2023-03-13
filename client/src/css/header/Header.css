@@ -12,6 +12,9 @@
 	color: var(--boldFontColor);
 	font-weight: 700;
 }
+.logoLink:hover {
+	color: var(--boldFontColor);
+}
 
 .navList {
 	display: flex;
@@ -40,6 +43,9 @@
 }
 
 @media screen and (max-width: 984px) {
+	.cartTotal{
+		display: none;
+	}
 	.navContainer {
 		padding-top: 0px;
 	}
@@ -81,11 +87,21 @@
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
+	.headerContainer {
+		padding: 20px 40px;
+		}
 	.logoLink {
 		font-size: 25px;
 	}
 	.bar {
 		margin: 5px auto;
+	}
+	.hamburger.active .bar:nth-child(1) {
+		transform: translateY(5px) rotate(45deg);
+	}
+
+	.hamburger.active .bar:nth-child(3) {
+		transform: translateY(-10px) rotate(-45deg);
 	}
 }

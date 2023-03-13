@@ -29,18 +29,19 @@
 	background-color: rgba(0, 0, 0, 0.718);
 	display: inline;
 	padding: 20px;
-	margin-right: 60px;
+	margin: 0 60px;
 	border-radius: 10px;
 }
 .surfBoardAdButton {
-	/* color: var(--boldFontColor); */
 	color: var(--fontColor);
 	font-size: 26px;
-	/* background-color: rgba(0, 0, 0, 0.718); */
 	background-color: var(--mainBackgroundColor);
 	display: inline;
 	padding: 20px 40px;
 	border-radius: 20px;
-	/* margin-right: 60px; */
-	margin: 20px 60px 0 0;
+	margin: 40px 60px 0 0;
+}
+.surfBoardAdButton:hover {
+	color: var(--boldFontColor);
+	font-weight: 900;
 }
