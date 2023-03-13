@@ -22,26 +22,28 @@
 }
 
 .heroAction {
-	/* margin-top: 10px; */
 	font-size: 50px;
-	text-align: end;
+	text-align: right;
 	margin: 0;
-}
-
-.heroButton {
-	/* margin-top: 10px; */
-	background-color: var(--mainBackgroundColor);
-	border: none;
-	padding: 10px 50px;
-	border-radius: 10px;
-}
-.heroButton a {
-	color: var(--fontColor);
-	font-size: 30px;
-	text-decoration: none;
 }
 .downArrow {
 	position: absolute;
 	bottom: 40px;
 	right: 50%;
+}
+
+@media screen and (max-width: 901px) {
+	.heroTitle {
+		font-size: 48px;
+		padding-right: 40px;
+	}
+	.heroAction {
+		font-size: 28px;
+		text-align: start;
+		padding-right: 40px;
+	}
+	.heroContent {
+		left: 40px;
+		
+	}
 }

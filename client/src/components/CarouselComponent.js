@@ -17,11 +17,11 @@ const CarouselComponent = (props) => {
   const responsive = {
 		desktop: {
 			breakpoint: { max: 4000, min: 1024 },
-			items: items,
+			items: items[0],
 		},
 		mobile: {
-			breakpoint: { max: 768, min: 0 },
-			items: items,
+			breakpoint: { max: 1100, min: 0 },
+			items: items[1],
 		},
 	};
   
@@ -40,8 +40,8 @@ const CarouselComponent = (props) => {
       <div key={item.name} className={classes}>
         <Link to={`/${type}/${item.name.toLowerCase()}`}>
           {props.accessories?
-          (<img src={item.image1} />):
-          (<img src={item.image} />)}
+          (<img src={item.image1} alt={item.alt}/>):
+          (<img src={item.image} alt={item.alt}/>)}
           <h4>{item.name}</h4>
         </Link>
       </div>

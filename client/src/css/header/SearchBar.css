@@ -1,5 +1,6 @@
 .searchInput {
 	background-color: var(--mainBackgroundColor);
+	margin-right: 15px;
 }
 /* Label on search bar */
 #combo-box-demo-label {

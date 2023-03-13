@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import cartIcon from '../../images/cartIcon.svg';
+import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import '../../css/header/NavBar.css';
 import PersonIcon from '@mui/icons-material/Person';
 import { useCartContext } from '../../utils/cartContext';
-import Auth from '../../utils/auth'
+import Auth from '../../utils/auth';
 
 const Links = ({ currentPage, handlePageChange }) => {
 	const { cart, cartTotal } = useCartContext();
@@ -22,7 +22,7 @@ const Links = ({ currentPage, handlePageChange }) => {
 			</li>
 			<li>
 				<Link
-					to="/surfboards/surfboards"
+					to="/surfboards"
 					className="navLink"
 					onClick={(event) => handlePageChange(event.target.value)}
 				>
@@ -38,31 +38,31 @@ const Links = ({ currentPage, handlePageChange }) => {
 					Accessories
 				</Link>
 			</li>
-			<li className='cartLi'>
+			<li className="cartLi">
 				<Link
 					to="/cart"
 					className="navLink"
 					onClick={(event) => handlePageChange(event.target.value)}
 				>
-					<img src={cartIcon} className="cartIcon" alt="cart icon" />
-					<div className='cartTotal'>{cartTotal()}</div>
-					{console.log('logged in',Auth.loggedIn())}
+					<ShoppingCartCheckoutIcon sx={{ fontSize: 32 }}/>
+					<div className="cartTotal">{cartTotal()}</div>
+					{console.log('logged in', Auth.loggedIn())}
 				</Link>
-				
 			</li>
-			<li>
-				<PersonIcon />
-			</li>
+		
 			{Auth.loggedIn() ? (
 				<li>
-					<Link className='navLink' onClick={Auth.logout}>logout</Link>
+					<Link className="navLink" onClick={Auth.logout}>
+						logout
+					</Link>
 				</li>
 			) : (
 				<>
-					<li >
-						<Link to={'/login'} className='navLink'>login</Link>
+					<li>
+						<Link to={'/login'} className="navLink">
+							<PersonIcon sx={{ fontSize: 32 }}/>
+						</Link>
 					</li>
-					<li><Link to={'/signup'} className='navLink'>Signup</Link></li>
 				</>
 			)}
 		</>
