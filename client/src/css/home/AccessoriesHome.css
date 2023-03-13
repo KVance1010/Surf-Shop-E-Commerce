@@ -48,3 +48,21 @@
 }
 
 /* .react-multi-carousel-item{} */
+@media screen and (max-width:830px) {
+	.accessoriesTitle {
+		font-size: 28px;
+	}
+	.accessoryCarrouselContainer h4 {
+		font-size: 16;
+		padding: 20px 20px;
+	}
+	.accessoryImageContainer {
+		padding: 0 40px;
+	}
+}
+
+@media screen and (max-width:377) {
+	.accessoriesTitle {
+		font-size: 20px;
+	}
+}

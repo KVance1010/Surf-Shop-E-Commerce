@@ -1,0 +1,15 @@
+.itemContainer {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	background-color: #005377;
+	padding: 40px 0;
+	height: 86vh;
+}
+.itemCard {
+	max-width: 1000px;
+	border: solid 2px var(--boldFontColor);
+}
+.imgFluid {
+	margin-bottom: 20px;
+}

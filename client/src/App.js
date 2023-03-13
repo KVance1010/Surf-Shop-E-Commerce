@@ -77,7 +77,7 @@ function App() {
 							element={<ItemList />}
 						></Route>
 						<Route
-							path="/surfboards/:categoryName/:itemList/:item"
+							path="/surfboards/:itemList/:item"
 							element={<Item />}
 						></Route>
 						<Route
