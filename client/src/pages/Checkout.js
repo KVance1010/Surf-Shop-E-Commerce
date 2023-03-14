@@ -83,18 +83,15 @@ export default function Checkout() {
     const itemPrices = []
     const itemQuantities = []
     const itemNames = []
+    const itemImages = []
 
     items.map((item) => {
       itemPrices.push(item.price)
       itemQuantities.push(cart[item.name])
       itemNames.push(item.name)
+      itemImages.push(item.image)
+      console.log(itemImages)
     })
-
-
-   
-
-  
-
 
   const [activeStep, setActiveStep] = React.useState(0);
   const { clearCart } = useCartContext()
@@ -110,6 +107,7 @@ export default function Checkout() {
             itemNames: itemNames,
             itemPrices: itemPrices,
             itemQuantities: itemQuantities,
+            itemImages: itemImages,
             createdAt: JSON.stringify(Date.now())
           }
         })

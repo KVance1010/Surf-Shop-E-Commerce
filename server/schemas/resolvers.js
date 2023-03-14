@@ -62,7 +62,8 @@ const resolvers = {
                 itemNames: args.itemNames,
                 itemPrices: args.itemPrices,
                 itemQuantities: args.itemQuantities,
-                createdAt: args.createdAt
+                createdAt: args.createdAt,
+                itemImages: args.itemImages
             })
         },
         login: async (parent, args) => {

@@ -105,6 +105,7 @@ query Query($email: String) {
       itemQuantities
       itemPrices
       createdAt
+      itemImages
     }
   }
 `

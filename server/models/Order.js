@@ -14,6 +14,9 @@ const { Schema, model } = require('mongoose')
         itemQuantities: {
             type: Array
         },
+        itemImages: {
+            type: Array
+        },
         createdAt: {
             type: Number
         }

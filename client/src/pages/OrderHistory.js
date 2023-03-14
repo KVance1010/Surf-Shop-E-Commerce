@@ -54,6 +54,7 @@ const OrderHistory = () => {
                         total += order.itemPrices[index] * order.itemQuantities[index]
                         return(
                             <>
+                            <img style={{'width': '200px'}} src={order.itemImages[index]} alt={order.itemNames[index]}/>
                             <h3>
                                 {`${order.itemNames[index]}: $${order.itemPrices[index]} X ${order.itemQuantities[index]} = ${order.itemPrices[index] * order.itemQuantities[index]}` }
                             </h3>
@@ -64,6 +65,7 @@ const OrderHistory = () => {
                     <h3>
                         {`Total: ${total}`}
                     </h3>
+                    <hr/>
                 </li>
                 )
                 
