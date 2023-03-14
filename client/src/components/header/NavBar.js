@@ -31,7 +31,7 @@ const Links = ({ currentPage, handlePageChange }) => {
 			</li>
 			<li>
 				<Link
-					to="/accessories/accessories"
+					to="/accessories"
 					className="navLink"
 					onClick={(event) => handlePageChange(event.target.value)}
 				>

@@ -15,6 +15,7 @@ import Cart from './pages/Cart'
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Checkout from './pages/Checkout';
+import Accessories from './pages/Accessories';
 import Account from './pages/Account'
 import OrderHistory from './pages/OrderHistory';
 import { CartProvider } from './utils/cartContext';
@@ -85,19 +86,15 @@ function App() {
 							element={<Item />}
 						></Route>
 						<Route
-							path="/apparel/:categoryName/:itemList/:item"
-							element={<Item />}
+							path="/accessories"
+							element={<Accessories />}
 						></Route>
 						<Route
-							path="/accessories/:categoryName"
-							element={<CategoryList />}
-						></Route>
-						<Route
-							path="/accessories/:categoryName/:itemList"
+							path="/accessories/:itemList"
 							element={<ItemList />}
 						></Route>
 						<Route
-							path="/accessories/:categoryName/:itemList/:item"
+							path="/accessories/:itemList/:item"
 							element={<Item />}
 						></Route>
 					</Routes>
