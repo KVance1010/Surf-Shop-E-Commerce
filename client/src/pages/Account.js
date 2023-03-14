@@ -20,7 +20,7 @@ const Account = () => {
             </Link>
             <br/>
             <br/>
-            <Link>
+            <Link to={'/order-history'}>
                 Order History
             </Link>
             <Link></Link>

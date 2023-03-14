@@ -110,7 +110,7 @@ export default function Checkout() {
             itemNames: itemNames,
             itemPrices: itemPrices,
             itemQuantities: itemQuantities,
-            createdAt: JSON.stringify(date)
+            createdAt: JSON.stringify(Date.now())
           }
         })
       }catch(e){

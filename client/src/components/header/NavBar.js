@@ -49,22 +49,11 @@ const Links = ({ currentPage, handlePageChange }) => {
 					{console.log('logged in', Auth.loggedIn())}
 				</Link>
 			</li>
-		
-			{Auth.loggedIn() ? (
-				<li>
-					<Link className="navLink" onClick={Auth.logout}>
-						logout
-					</Link>
-				</li>
-			) : (
-				<>
-					<li>
-						<Link to={'/login'} className="navLink">
-							<PersonIcon sx={{ fontSize: 32 }}/>
-						</Link>
-					</li>
-				</>
-			)}
+			<li>
+				<Link to={Auth.loggedIn() ? '/account' : '/login'}>
+					<PersonIcon />
+				</Link>
+			</li>
 		</>
 	);
 };

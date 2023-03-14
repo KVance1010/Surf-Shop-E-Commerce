@@ -96,3 +96,15 @@ query me {
     }
   }
 `
+
+export const GET_ORDERS_BY_EMAIL = gql`
+query Query($email: String) {
+    ordersByEmail(email: $email) {
+      email
+      itemNames
+      itemQuantities
+      itemPrices
+      createdAt
+    }
+  }
+`
