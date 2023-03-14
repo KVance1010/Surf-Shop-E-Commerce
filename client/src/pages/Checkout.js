@@ -99,12 +99,12 @@ export default function Checkout() {
   const [activeStep, setActiveStep] = React.useState(0);
   const { clearCart } = useCartContext()
 
-  const handleNext = async () => {
+  const handleNext =  () => {
     const date = Date.now()
     console.log(JSON.stringify(date))
     if(activeStep === steps.length - 1) {
       try{
-        const { data } = await addOrder({
+        const { data } =  addOrder({
           variables: {
             email: (localStorage.getItem('email')),
             itemNames: itemNames,
