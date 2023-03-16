@@ -1,5 +1,4 @@
 import React from 'react'
-import { useEffect } from 'react'
 import { useQuery } from '@apollo/client'
 import { GET_ORDERS_BY_EMAIL } from '../utils/queries'
 
@@ -9,7 +8,7 @@ const OrderHistory = () => {
         variables: {
             email: localStorage.getItem('email')
         },
-        fetchPolicy: 'cache-and-network'
+        fetchPolicy: 'cache-and-network' //gets most updated data
     }, )
 
     const orders = data?.ordersByEmail || []
@@ -35,8 +34,6 @@ const OrderHistory = () => {
         return `${month}/${day}/${year} ${hours}:${minutes}${ampm}`;
       }
 
-    
-   
     return(
         <>
         {loading ? (
@@ -47,30 +44,28 @@ const OrderHistory = () => {
                 let total = 0
                 return(
                     <li key={index}>
-                    <h1>
-                        {`Date: ${formatDate(parseInt(order.createdAt))}`}
-                    </h1>
-                    {order.itemNames.map((item, index) => {
-                        total += order.itemPrices[index] * order.itemQuantities[index]
-                        return(
-                            <>
-                            <img style={{'width': '200px'}} src={order.itemImages[index]} alt={order.itemNames[index]}/>
-                            <h3>
-                                {`${order.itemNames[index]}: $${order.itemPrices[index]} X ${order.itemQuantities[index]} = ${order.itemPrices[index] * order.itemQuantities[index]}` }
-                            </h3>
-                        </>
+                        <h1>
+                            {`Date: ${formatDate(parseInt(order.createdAt))}`}
+                        </h1>
+                        {order.itemNames.map((item, index) => {
+                            total += order.itemPrices[index] * order.itemQuantities[index]
+                            return(
+                                <>
+                                    <img style={{'width': '200px'}} src={order.itemImages[index]} alt={order.itemNames[index]}/>
+                                    <h3>
+                                        {`${order.itemNames[index]}: $${order.itemPrices[index]} X ${order.itemQuantities[index]} = ${order.itemPrices[index] * order.itemQuantities[index]}` }
+                                    </h3>
+                                </>
+                            )}
+                            
                         )}
-                        
-                    )}
-                    <h3>
-                        {`Total: ${total}`}
-                    </h3>
-                    <hr/>
-                </li>
-                )
-                
-            })}
-        </ul>
+                        <h3>
+                            {`Total: ${total}`}
+                        </h3>
+                        <hr/>
+                    </li>
+                )})}
+            </ul>
         )}
         
         </>

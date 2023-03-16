@@ -4,6 +4,7 @@ import { QUERY_ITEMS_BY_NAMES } from "../utils/queries";
 import { useCartContext } from "../utils/cartContext";
 import '../css/cart.css'
 import { Link } from "react-router-dom";
+import Auth from '../utils/auth'
 
 const Cart = () => {
     
@@ -67,7 +68,7 @@ const Cart = () => {
                         <h3>
                             {`Grand Total: ${total}`}
                         </h3>
-                        <Link to={'/checkout'}>           
+                        <Link to={Auth.loggedIn() ? '/checkout' : '/login'}>           
                             <button>Checkout</button>
                         </Link>
                     </div>

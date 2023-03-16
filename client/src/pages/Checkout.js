@@ -55,10 +55,6 @@ function getStepContent(step) {
 const theme = createTheme();
 
 export default function Checkout() {
-  console.log((Date.now()))
-  if(!Auth.loggedIn()){
-    window.location.assign('/login')
-}
 
   //convert cart object into order object
   const { cart } = useCartContext()
