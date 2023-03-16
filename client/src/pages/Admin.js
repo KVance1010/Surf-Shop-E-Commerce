@@ -25,40 +25,7 @@ const Admin = () => {
             </h1>
             <AddItemForm />
             {/* {query all items test} */}
-            <div>
-                {loading ? (
-                    <div>
-                        ...loading
-                    </div>
-                ) : (
-                    <ul>
-                    {items.map((item) => 
-                      
-                            <li>
-                                {item.name}
-                            </li>
-                   
-                    )}
-                </ul>
-                )}
-               
-            </div>
-            <form onSubmit={handleTagSubmit}>
-                <div className="form-group">
-                    <label >tag 1</label><br/>
-                    <input type="text" className="form-control" id="tag1" />
-                </div>
-                <div className="form-group">
-                    <label>tag 2</label><br/>
-                    <input type="text" className="form-control" id="tag2" />
-                </div>
-                <div className="form-group">
-                    <label>tag 3</label><br/>
-                    <input type="text" className="form-control" id="itemDescription" />
-                </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
-            </form>
-            <ItemList tags={["apparel", "mens", "shirts"]}/>
+
         </div>
     )
 }

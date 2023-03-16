@@ -65,6 +65,21 @@ const resolvers = {
                 createdAt: args.createdAt,
                 itemImages: args.itemImages
             })
+        },addItem: async (parent, args) => {
+      
+            const item = await Item.create({
+                name: args.name,
+                price: args.price,
+                description: args.description,
+                tags: args.tags,
+                image: args.image,
+                stock: args.stock,
+                brand: args.brand,
+                bestSeller: args.bestSeller,
+                saleItem: args.saleItem,
+                newArrival: args.newArrival
+            })
+            return item
         },
         login: async (parent, args) => {
             const user = await User.findOne({email: args.email})

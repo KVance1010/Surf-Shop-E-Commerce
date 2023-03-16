@@ -36,3 +36,20 @@ mutation Mutation($email: String, $itemNames: [String], $itemPrices: [Float], $i
     }
   }
 `
+export const ADD_ITEM = gql`
+mutation Mutation($tags: [String], $name: String, $price: Float, $description: String, $image: String, $stock: Int, $brand: String, $bestSeller: Boolean, $saleItem: Boolean, $newArrival: Boolean) {
+    addItem(tags: $tags, name: $name, price: $price, description: $description, image: $image, stock: $stock, brand: $brand, bestSeller: $bestSeller, saleItem: $saleItem, newArrival: $newArrival) {
+      _id
+      name
+      price
+      description
+      tags
+      image
+      stock
+      brand
+      bestSeller
+      saleItem
+      newArrival
+    }
+  }
+`

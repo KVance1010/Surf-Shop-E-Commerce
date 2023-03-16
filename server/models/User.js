@@ -47,6 +47,10 @@ const userSchema = new Schema ({
             message: 'choose a more secure password (must be at least 8 characters long, contain at least one lower-case letter, one upper-case letter, and one number or one special character)'
         }
     },
+    isAdmin: {
+        type: Boolean,
+        default: false
+    }
 
 })
 // set up pre-save middleware to create password

@@ -1,4 +1,5 @@
 import decode from 'jwt-decode';
+const adminUsers = require('./adminUsers.json')
 
 class AuthService {
 	getProfile() {
@@ -10,7 +11,13 @@ class AuthService {
 		// If there is a token and it's not expired, return `true`
 		return token && !this.isTokenExpired(token) ? true : false;
 	}
-
+	isAdmin(){
+		if(adminUsers.includes(localStorage.getItem('email'))){
+			return true
+		} else {
+			return false
+		}
+	}
 	isTokenExpired(token) {
 		try {
 			// Decode the token to get its expiration time that was set by the server
