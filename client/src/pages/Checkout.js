@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react';
 import { useQuery, useMutation } from '@apollo/client';
 import CssBaseline from '@mui/material/CssBaseline';
 import AppBar from '@mui/material/AppBar';
@@ -20,8 +21,6 @@ import { useCartContext } from '../utils/cartContext';
 import { QUERY_ITEMS_BY_NAMES } from '../utils/queries';
 import { ADD_ORDER } from '../utils/mutations';
 
-import Auth from '../utils/auth'
-
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" align="center">
@@ -39,6 +38,7 @@ function Copyright() {
 
 const steps = ['Shipping address', 'Payment details', 'Review your order'];
 
+
 function getStepContent(step) {
   switch (step) {
     case 0:
@@ -55,6 +55,8 @@ function getStepContent(step) {
 const theme = createTheme();
 
 export default function Checkout() {
+  const [shippingAddress, setShippingAddress] = useState({})
+  const handleShippingAddress = (address) => setShippingAddress(address)
 
   //convert cart object into order object
   const { cart } = useCartContext()

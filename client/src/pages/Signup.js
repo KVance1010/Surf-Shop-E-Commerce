@@ -159,6 +159,13 @@ export default function SignUp() {
         </Box>
         {/* <Copyright sx={{ mt: 5 }} /> */}
       </Container>
+      { error && (
+                <div
+                  style={{color:'red'}}
+                  className="text-center">
+                  {error.message}
+                </div>
+              )}
     </ThemeProvider>
   );
 }
