@@ -23,9 +23,6 @@ const Account = () => {
             <Link to={'/order-history'}>
                 Order History
             </Link>
-            <Link to={'/order-history'}>
-                Order History
-            </Link>
             <Link></Link>
         </>
     )

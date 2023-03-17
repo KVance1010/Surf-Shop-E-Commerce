@@ -39,14 +39,14 @@ function Copyright() {
 const steps = ['Shipping address', 'Payment details', 'Review your order'];
 
 
-function getStepContent(step) {
+function getStepContent(step, handleShippingAddress, shippingAddress) {
   switch (step) {
     case 0:
-      return <AddressForm />;
+      return <AddressForm handleShippingAddress={handleShippingAddress}/>;
     case 1:
       return <PaymentForm />;
     case 2:
-      return <Review />;
+      return <Review shippingAddress={shippingAddress}/>;
     default:
       throw new Error('Unknown step');
   }
@@ -57,7 +57,7 @@ const theme = createTheme();
 export default function Checkout() {
   const [shippingAddress, setShippingAddress] = useState({})
   const handleShippingAddress = (address) => setShippingAddress(address)
-
+  console.log(shippingAddress)
   //convert cart object into order object
   const { cart } = useCartContext()
 
@@ -88,15 +88,15 @@ export default function Checkout() {
       itemQuantities.push(cart[item.name])
       itemNames.push(item.name)
       itemImages.push(item.image)
-      console.log(itemImages)
     })
 
   const [activeStep, setActiveStep] = React.useState(0);
   const { clearCart } = useCartContext()
 
+  const [addressError, setAddressError] = useState('')
+
   const handleNext =  () => {
-    const date = Date.now()
-    console.log(JSON.stringify(date))
+    console.log(shippingAddress)
     if(activeStep === steps.length - 1) {
       try{
         const { data } =  addOrder({
@@ -113,8 +113,21 @@ export default function Checkout() {
         console.error(e)
       }
       clearCart()
+      setActiveStep(activeStep + 1)
     }
-    setActiveStep(activeStep + 1);
+    if(activeStep === 0){
+      if(!shippingAddress.firstName || !shippingAddress.lastName || !shippingAddress.address1 || !shippingAddress.city || !shippingAddress.state || !shippingAddress.zip || !shippingAddress.country){
+        setAddressError('you must fill out all required fields!')
+
+      }
+      else{
+        setAddressError('')
+        setActiveStep(activeStep + 1)
+      } 
+    }else{
+      setActiveStep(activeStep + 1)
+    }
+    ;
   };
 
   const handleBack = () => {
@@ -159,7 +172,8 @@ export default function Checkout() {
             </React.Fragment>
           ) : (
             <React.Fragment>
-              {getStepContent(activeStep)}
+              {getStepContent(activeStep, handleShippingAddress, shippingAddress)}
+              <p style={{"color": "red"}}>{addressError}</p>
               <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                 {activeStep !== 0 && (
                   <Button onClick={handleBack} sx={{ mt: 3, ml: 1 }}>

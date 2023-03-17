@@ -19,10 +19,13 @@ const AddItemForm = () => {
     const handleTagsChange = (event) => {
         const {name, value} = event.target
         tagsArray = value.split(',')
+        let trimmedTagsArray = tagsArray.map((tag) => {
+            return tag.trim()
+        })
 
         setFormState({
             ...formState,
-            [name]: tagsArray
+            [name]: trimmedTagsArray
         })
     }
     const handlePriceChange = (event) => {
@@ -64,6 +67,7 @@ const AddItemForm = () => {
             const {data} = await addItem({
                 variables: {...formState}
             })
+            document.getElementById('success').textContent = 'Item Added to inventory!'
         }catch (e){
             console.error(e)
         }
@@ -147,9 +151,14 @@ const AddItemForm = () => {
                 <div
                   style={{color:'red'}}
                   className="text-center">
-                  {error.message}
-                </div>
+                  {'something went wrong. Check to make sure all the data you entered is of the correct type'}
+                </div>               
               )}
+              <div
+                  style={{color:'green'}}
+                  className="text-center" id='success'>
+                  
+            </div> 
             </form>
             
     )

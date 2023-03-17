@@ -66,8 +66,8 @@ export default function Review(props) {
             <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
                 Shipping
             </Typography>
-            <Typography gutterBottom>John Smith</Typography>
-            <Typography gutterBottom>{addresses.join(', ')}</Typography>
+            <Typography gutterBottom>{`${props.shippingAddress.firstName} ${props.shippingAddress.lastName}`}</Typography>
+            <Typography gutterBottom>{`${props.shippingAddress.address1} ${props.shippingAddress.address2}, ${props.shippingAddress.city}, ${props.shippingAddress.state}, ${props.shippingAddress.zip}, ${props.shippingAddress.country}`}</Typography>
             </Grid>
             <Grid item container direction="column" xs={12} sm={6}>
             <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
