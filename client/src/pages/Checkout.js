@@ -39,14 +39,14 @@ function Copyright() {
 const steps = ['Shipping address', 'Payment details', 'Review your order'];
 
 
-function getStepContent(step, handleShippingAddress, shippingAddress) {
+function getStepContent(step, handleShippingAddress, shippingAddress, handlePaymentInfo, paymentInfo) {
   switch (step) {
     case 0:
       return <AddressForm handleShippingAddress={handleShippingAddress}/>;
     case 1:
-      return <PaymentForm />;
+      return <PaymentForm handlePaymentInfo={handlePaymentInfo}/>;
     case 2:
-      return <Review shippingAddress={shippingAddress}/>;
+      return <Review shippingAddress={shippingAddress} paymentInfo={paymentInfo}/>;
     default:
       throw new Error('Unknown step');
   }
@@ -58,6 +58,10 @@ export default function Checkout() {
   const [shippingAddress, setShippingAddress] = useState({})
   const handleShippingAddress = (address) => setShippingAddress(address)
   console.log(shippingAddress)
+
+  const [paymentInfo, setPaymentInfo] = useState({})
+  const handlePaymentInfo = (paymentInfo) => setPaymentInfo(paymentInfo)
+
   //convert cart object into order object
   const { cart } = useCartContext()
 
@@ -115,7 +119,8 @@ export default function Checkout() {
       clearCart()
       setActiveStep(activeStep + 1)
     }
-    if(activeStep === 0){
+    // if(activeStep === 0){
+      if(false){
       if(!shippingAddress.firstName || !shippingAddress.lastName || !shippingAddress.address1 || !shippingAddress.city || !shippingAddress.state || !shippingAddress.zip || !shippingAddress.country){
         setAddressError('you must fill out all required fields!')
 
@@ -172,7 +177,7 @@ export default function Checkout() {
             </React.Fragment>
           ) : (
             <React.Fragment>
-              {getStepContent(activeStep, handleShippingAddress, shippingAddress)}
+              {getStepContent(activeStep, handleShippingAddress, shippingAddress, handlePaymentInfo, paymentInfo)}
               <p style={{"color": "red"}}>{addressError}</p>
               <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                 {activeStep !== 0 && (

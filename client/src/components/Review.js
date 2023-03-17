@@ -9,15 +9,31 @@ import { useQuery } from '@apollo/client';
 import { QUERY_ITEMS_BY_NAMES, GET_ME } from '../utils/queries';
 
 const addresses = ['1 MUI Drive', 'Reactville', 'Anytown', '99999', 'USA'];
-const payments = [
-  { name: 'Card type', detail: 'Visa' },
-  { name: 'Card holder', detail: 'Mr John Smith' },
-  { name: 'Card number', detail: 'xxxx-xxxx-xxxx-1234' },
-  { name: 'Expiry date', detail: '04/2024' },
-];
+// const payments = [
+//   { name: 'Card type', detail: 'Visa' },
+//   { name: 'Card holder', detail: 'Mr John Smith' },
+//   { name: 'Card number', detail: 'xxxx-xxxx-xxxx-1234' },
+//   { name: 'Expiry date', detail: '04/2024' },
+// ];
+
+const payments = []
+
 
 export default function Review(props) {
-
+    let cardX = ''
+    for(let i = 0; i < props.paymentInfo.cardNumber.length; i++){
+        if(i < props.paymentInfo.cardNumber.length - 4 ){
+            cardX += 'X'
+        }else{
+            cardX += props.paymentInfo.cardNumber[i].toString()
+        }
+    }
+    console.log(cardX)
+    payments.push({name: 'Card Holder', detail: props.paymentInfo.cardName, })
+    payments.push({name: 'Card Number', detail: cardX})
+    payments.push({name: 'Expiration Date', detail: props.paymentInfo.expDate})
+    
+    console.log(props.paymentInfo)
     const { cart } = useCartContext()
 
     const itemNameList = []
@@ -74,16 +90,32 @@ export default function Review(props) {
                 Payment details
             </Typography>
             <Grid container>
-                {payments.map((payment) => (
-                <React.Fragment key={payment.name}>
+                
+                <React.Fragment >
                     <Grid item xs={6}>
-                    <Typography gutterBottom>{payment.name}</Typography>
+                    <Typography gutterBottom>{`CardHolder`}</Typography>
                     </Grid>
                     <Grid item xs={6}>
-                    <Typography gutterBottom>{payment.detail}</Typography>
+                    <Typography gutterBottom>{props.paymentInfo.cardName}</Typography>
                     </Grid>
                 </React.Fragment>
-                ))}
+                <React.Fragment >
+                    <Grid item xs={6}>
+                    <Typography gutterBottom>{`Card Number`}</Typography>
+                    </Grid>
+                    <Grid item xs={6}>
+                    <Typography gutterBottom>{cardX}</Typography>
+                    </Grid>
+                </React.Fragment>
+                <React.Fragment >
+                    <Grid item xs={6}>
+                    <Typography gutterBottom>{`Expiration Date`}</Typography>
+                    </Grid>
+                    <Grid item xs={6}>
+                    <Typography gutterBottom>{props.paymentInfo.expDate}</Typography>
+                    </Grid>
+                </React.Fragment>
+               
             </Grid>
             </Grid>
         </Grid>

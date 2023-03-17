@@ -7,37 +7,14 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 
 export default function AddressForm(props) {
-  const [formState, setFormState] = useState({
-    firstName: '',
-    lastName: '',
-    address1: '',
-    address2: '',
-    city: '',
-    state: '',
-    zip: '',
-    country: ''
-  })
-
-    const handleKeyDown = (event) => {
-    
-      const {name, value } = event.target
-      setFormState({
-        ...formState,
-        [name]: value
-      });
-    
-  };
+  const [formState, setFormState] = useState({})
 
   const handleChange = (event) =>  {
     const { name, value } = event.target;
-    setFormState((prevState) => ({
-      ...prevState,
+    setFormState({
+      ...formState,
       [name]: value
-    }))
-      props.handleShippingAddress({...formState})
-
-     
-    
+    })
   }
   //the following useEffect was necessary to avoid getting stale data from the address form.  it was previously always one event behind before adding this.  It took me a loooooong time to find this solution
     useEffect(() => {
