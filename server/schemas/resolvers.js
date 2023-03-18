@@ -81,6 +81,13 @@ const resolvers = {
             })
             return item
         },
+        updateItem: async (parent, args) => {
+            return await Item.findByIdAndUpdate(
+                {name: args.name},
+                {...args},
+                {new: true}
+            )
+        },
         login: async (parent, args) => {
             const user = await User.findOne({email: args.email})
             if(!user) {

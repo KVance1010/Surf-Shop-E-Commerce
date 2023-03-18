@@ -20,13 +20,9 @@ const payments = []
 
 
 export default function Review(props) {
-    let cardX = ''
-    for(let i = 0; i < props.paymentInfo.cardNumber.length; i++){
-        if(i < props.paymentInfo.cardNumber.length - 4 ){
-            cardX += 'X'
-        }else{
+    let cardX = 'XXXX-'
+    for(let i = props.paymentInfo.cardNumber.length-4; i < props.paymentInfo.cardNumber.length; i++){
             cardX += props.paymentInfo.cardNumber[i].toString()
-        }
     }
     console.log(cardX)
     payments.push({name: 'Card Holder', detail: props.paymentInfo.cardName, })
