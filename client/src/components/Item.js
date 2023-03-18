@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_ITEM_BY_UUID } from '../utils/queries';
-import { QUERY_ITEM_BY_NAME } from '../utils/queries';
 import { useCartContext } from '../utils/cartContext';
 import CardHeader from '@mui/material/CardHeader';
 import Card from '@mui/material/Card';
@@ -16,6 +15,8 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import '../css/Item.css';
+import Auth from '../utils/auth'
+import { Link } from 'react-router-dom';
 
 const ExpandMore = styled((props) => {
 	const { expand, ...other } = props;
@@ -29,6 +30,7 @@ const ExpandMore = styled((props) => {
 }));
 
 const Item = () => {
+	console.log(Auth.isAdmin())
 	const { item } = useParams({});
 	console.log('hello')
 	console.log(item)
@@ -48,6 +50,9 @@ const Item = () => {
 		setCart({ ...cart });
 		localStorage.setItem('cart', JSON.stringify(cart));
 	};
+	const storeItem = () => {
+		localStorage.setItem('item',JSON.stringify(itemData))
+	}
 
 	return (
 		<div className="itemContainer" style={{}}>
@@ -84,6 +89,25 @@ const Item = () => {
 					</Collapse>
 				</Card>
 			)}
+			{Auth.isAdmin() ? (
+				<>
+					<Link onClick={storeItem} to={`/update/${itemData.uuid}`}>
+						<button>
+							update tiem
+						</button>
+					</Link>
+					<Link>
+						<button>
+							Delete tiem
+						</button>
+					</Link>
+				</>
+			) : (
+				<>
+					
+				</>
+			)}
+			
 		</div>
 	);
 };

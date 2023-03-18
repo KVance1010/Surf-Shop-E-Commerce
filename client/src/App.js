@@ -4,6 +4,7 @@ import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@ap
 import  { setContext } from '@apollo/client/link/context'
 import Home from './pages/Home';
 import Admin from './pages/Admin';
+import Update from './pages/Update'
 import CategoryList from './components/CategoryList';
 import Apparel from './pages/Apparel';
 import Header from './components/header/Header';
@@ -54,6 +55,7 @@ function App() {
 					<Routes>
 						<Route path="/" element={<Home />}></Route>
 						<Route path="/admin" element={<Admin />}></Route>
+						<Route path="/update/:uuid" element={<Update />}></Route>
 						<Route path="/apparel" element={<Apparel />}></Route>
 						<Route path='/cart' element={<Cart />}></Route>
 						<Route path='/login' element={<Login />}></Route>
