@@ -27,7 +27,7 @@ const ItemList = () => {
    })
    
    const items = data?.itemsByCategory || []
-
+   console.log(items[0])
    return ( 
     <div>
         {loading ? (
@@ -37,7 +37,7 @@ const ItemList = () => {
         ) : (
             <ul className="container col-3 ">
                 {items.map((item, index) =>
-                    <div className="card container">
+                    <div className="card container" key={index}>
                         {/* {console.log(mongoose.Types.ObjectId(item._id).toString())} */}
                         <div className="card-body">
                             <h3 className="card-title">
@@ -62,7 +62,7 @@ const ItemList = () => {
                             <h4>
                                 Price: ${item.price}
                             </h4>
-                            <Link to={`${item.name}`} className='btn btn-success d-flex justify-content-center'>
+                            <Link to={`${item.uuid}`} className='btn btn-success d-flex justify-content-center'>
                                 Learn More
                             </Link>
                         </div>

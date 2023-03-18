@@ -37,7 +37,13 @@ const resolvers = {
             }))
         },
         itemById: async (parent, args) => {
-            return (await Item.findById(args._id))
+            console.log(args.id)
+            return Item.findOne({_id: args.id})
+        },
+        itemByUUID: async (parent, args) => {
+            return await Item.findOne({
+                uuid: args.uuid
+            })
         },
         ordersByEmail: async (parent, args) => {
             return (await Order.find({

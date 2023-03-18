@@ -20,6 +20,7 @@ const typeDefs = gql`
         bestSeller: Boolean
         saleItem: Boolean
         newArrival: Boolean
+        uuid: String
     }
 
     type Auth {
@@ -41,7 +42,8 @@ const typeDefs = gql`
         items: [Item]
         itemsByCategory(tags: [String]): [Item]
         itemByName(name: String): Item
-        itemById(_id: String): Item
+        itemById(id: ID!): Item
+        itemByUUID(uuid: String!): Item
         itemsByNames(names: [String]): [Item]
         me: User
         ordersByEmail(email: String): [Order]

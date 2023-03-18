@@ -1,5 +1,7 @@
 
 const { Schema, model } = require('mongoose')
+const uniqueValidator = require('mongoose-unique-validator');
+const { v4: uuidv4 } = require('uuid');
 
 const itemSchema = new Schema ({
    
@@ -39,10 +41,17 @@ const itemSchema = new Schema ({
     newArrival: {
         type: Boolean,
         default: false
-    }
+    },
+    uuid: {
+        type: String,
+        unique: true,
+        trim: true,
+        default: uuidv4
+      },
 
 })
 
+itemSchema.plugin(uniqueValidator);
 const Item = model('Item', itemSchema)
 
 module.exports = Item

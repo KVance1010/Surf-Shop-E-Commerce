@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
-// import { QUERY_ITEM_BY_ID } from '../utils/queries';
+import { QUERY_ITEM_BY_UUID } from '../utils/queries';
 import { QUERY_ITEM_BY_NAME } from '../utils/queries';
 import { useCartContext } from '../utils/cartContext';
 import CardHeader from '@mui/material/CardHeader';
@@ -30,16 +30,19 @@ const ExpandMore = styled((props) => {
 
 const Item = () => {
 	const { item } = useParams({});
+	console.log('hello')
+	console.log(item)
 	const [expanded, setExpanded] = React.useState(false);
 	const handleExpandClick = () => {
 		setExpanded(!expanded);
 	};
 
 	const { cart, addItem, setCart } = useCartContext();
-	const { loading, data } = useQuery(QUERY_ITEM_BY_NAME, {
-		variables: { name: item },
+	const { loading, data } = useQuery(QUERY_ITEM_BY_UUID, {
+		variables: { uuid: item},
 	});
-	const itemData = data?.itemByName || {};
+	
+	const itemData = data?.itemByUUID || {}; 
 	const addToCart = () => {
 		addItem({ name: item });
 		setCart({ ...cart });

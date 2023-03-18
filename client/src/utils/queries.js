@@ -31,6 +31,7 @@ export const QUERY_ITEMS = gql`
 export const QUERY_ITEMS_BY_TAGS = gql`
     query Query($tags: [String]) {
         itemsByCategory(tags: $tags) {
+        _id
         bestSeller
         brand
         description
@@ -41,6 +42,7 @@ export const QUERY_ITEMS_BY_TAGS = gql`
         saleItem
         stock
         tags
+        uuid
         }
     }
 `
@@ -61,20 +63,39 @@ query Query($name: String) {
   }
 `
 export const QUERY_ITEM_BY_ID = gql`
-    query ItemById($_id: String) {
-        itemById(_id: $_id) {
-        name
-        bestSeller
-        brand
-        description
-        image
-        newArrival
-        price
-        saleItem
-        stock
-        tags
-        }
+query Query($itemByIdId: ID!) {
+    itemById(id: $itemByIdId) {
+      name
+      _id
+      price
+      description
+      tags
+      image
+      stock
+      brand
+      bestSeller
+      saleItem
+      newArrival
     }
+  }
+`
+export const QUERY_ITEM_BY_UUID =gql`
+query Query($uuid: String!) {
+    itemByUUID(uuid: $uuid) {
+      _id
+      name
+      price
+      description
+      tags
+      image
+      stock
+      brand
+      bestSeller
+      saleItem
+      newArrival
+      uuid
+    }
+  }
 `
 export const QUERY_ITEMS_BY_NAMES = gql`
     query getItemsByNames($names: [String]) {
