@@ -58,7 +58,7 @@ const typeDefs = gql`
         
         addItem(name: String, price: Float, description: String, tags: [String], image: String, stock: Int, brand: String, bestSeller: Boolean, saleItem: Boolean, newArrival: Boolean):Item
 
-        updateItem(name: String, price: Float, description: String, tags: [String], image: String, stock: Int, brand: String, bestSeller: Boolean, saleItem: Boolean, newArrival: Boolean):Item
+        updateItem(uuid: String, name: String, price: Float, description: String, tags: [String], image: String, stock: Int, brand: String, bestSeller: Boolean, saleItem: Boolean, newArrival: Boolean):Item
     }
 `
 

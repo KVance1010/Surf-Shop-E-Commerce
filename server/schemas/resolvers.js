@@ -88,11 +88,12 @@ const resolvers = {
             return item
         },
         updateItem: async (parent, args) => {
-            return await Item.findByIdAndUpdate(
-                {name: args.name},
+            const item = await Item.findOne({
+                uuid: args.uuid
+            })
+            return (await item.update(
                 {...args},
-                {new: true}
-            )
+            ))
         },
         login: async (parent, args) => {
             const user = await User.findOne({email: args.email})
