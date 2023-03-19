@@ -53,6 +53,12 @@ const Item = () => {
 	const storeItem = () => {
 		localStorage.setItem('item',JSON.stringify(itemData))
 	}
+	const deleteItem = () => {
+		const yesDelete = window.confirm('are you sure you want to delete this item? All data for this item will be lost')
+		if(yesDelete){
+			console.log('delete')
+		}
+	}
 
 	return (
 		<div className="itemContainer" style={{}}>
@@ -96,11 +102,10 @@ const Item = () => {
 							update tiem
 						</button>
 					</Link>
-					<Link>
-						<button>
-							Delete tiem
-						</button>
-					</Link>
+					<button onClick={deleteItem}>
+						Delete tiem
+					</button>
+
 				</>
 			) : (
 				<>

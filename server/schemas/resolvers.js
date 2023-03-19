@@ -95,6 +95,11 @@ const resolvers = {
                 {...args},
             ))
         },
+        deleteItem: async (parent, args) => {
+            const deletedItem = await Item.deleteOne({
+                uuid: args.uuid
+            })
+        },
         login: async (parent, args) => {
             const user = await User.findOne({email: args.email})
             if(!user) {
