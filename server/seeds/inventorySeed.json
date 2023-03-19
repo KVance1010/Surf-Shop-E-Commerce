@@ -818,6 +818,87 @@
         "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/rebargunmetal_c9a9ebd3-0fd2-47bd-b2c7-e3643b6a0276_5000x.jpg?v=1655916042",
         "stock": 15,
         "saleItem":true
+    },
+    {
+        "name": "Color Jam One-Piece Swimsuit",
+        "brand": "Roxy",
+        "description":"Crafted from a textured blend of recycled stretch fabric, the Color Jam solid one-piece swimsuit elevates a classic fixed-strap design with a front cut-out and an O-ring at the center.",
+        "price": 99,
+        "tags":["apparel", "womens","swimsuits"],
+        "image": "https://images.boardriders.com/globalGrey/roxy-products/all/default/hi-res/erjx103522_roxy,m_tng_frt1.jpg",
+        "stock": 12,
+        "saleItem":true
+    },
+    {
+        "name": "Dreamland Rev Multi Reversible Triangle Bikini Top",
+        "brand": "Billabong",
+        "description":"Double the looks, double the fun. Featuring a reversible print on recycled Peach Stretch fabric, this convertible triangle bikini top ties at the neck and back.",
+        "price": 59.99,
+        "tags":["apparel", "womens","swimsuits"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjx300706_billabong,l_mul_frt1.jpg",
+        "stock": 13,
+        "saleItem":true
+    },
+    {
+        "name": "Covered In Love Tanlines Morgn Underwired Bikini Top",
+        "brand": "Billabong",
+        "description":"Made of recycled Tanlines rib fabric, this underwire bra bikini top features seaming detail on the cups, adjustable straps, and a back hook closure. In love is an understatement.",
+        "price": 69.95,
+        "tags":["apparel", "womens","swimsuits"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjx300725_billabong,l_pgr0_frt1.jpg",
+        "stock": 13,
+        "newArrival":true
+    },
+    {
+        "name": "In The Loop Emma Underwire Bikini Top",
+        "brand": "Billabong",
+        "description":"A fresh take on a timeless beauty, the In The Loop Emma Underwire Bikini Top goes all-in on style and support. This medium-coverage women's swim top is made of recycled terry rib texture fabric with fixed straps, a back hook closure, and seaming details to accentuate your shape.",
+        "price": 69.95,
+        "tags":["apparel", "womens","swimsuits"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjx300679_billabong,w_nhp0_frt1.jpg",
+        "stock": 13,
+        "bestSeller":true
+    },
+    {
+        "name": "Chi Chi Sirena Underwire Bra Bikini Top",
+        "brand": "Billabong",
+        "description":"Daydream in abstracts with the Chi Sirena Underwire Bra Bikini Top. Eco-consciously made in recycled Stretch Crepe fabric, this skimpy women's swim top doubles up on style and support with easily-adjustable shoulder straps, a hook back closure, and gathers at the front.",
+        "price": 69.95,
+        "tags":["apparel", "womens","swimsuits"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/ubjx300320_billabong,l_mul_frt1.jpg",
+        "stock": 20,
+        "bestSeller":true
+    },
+    {
+        "name": "Day Break Long Line Bandeau Bikini Top x Erin Miller Wray",
+        "brand": "Rip Curl",
+        "description":"The Day Break Long Line Bandeau is an epic women's bikini top made in collaboration with artist Erin Miller Wray. This piece is designed with Extra Life Microfiber Lycra that gives long-lasting comfort, fit and shape. Featuring a colorful asym stripe design, it's fully adjustable, offering light support, and removable padding and straps.",
+        "price": 69.95,
+        "tags":["apparel", "womens","swimsuits"],
+        "image": "https://www.ripcurl.com/media/catalog/product/e/m/emwr.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "stock": 14,
+        "saleItem":true,
+        "newArrival": true
+    },
+    {
+        "name": "Trippin Long Sleeve Surf Suit",
+        "brand": "Rip Curl",
+        "description":"Our Trippin Long Sleeve Surf Suit is a super cute silhouette with the throwback flare we love about our Surf Revival collection. This one piece is made from Extra Life Microfiber Lycra® for lasting wear and comfort through the seasons and a performance fit for less drag. The closure includes a 5 gauge back zip and offers good coverage.",
+        "price": 109.95,
+        "tags":["apparel", "womens","swimsuits"],
+        "image": "https://www.ripcurl.com/media/catalog/product/1/4/14xwrv_3282-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "stock": 20,
+        "newArrival": true
+    },
+    {
+        "name": "Day Break Long Sleeve Zip Through Rash Guard",
+        "brand": "Rip Curl",
+        "description":"Decorated with the iconic color blocking of our Surf Revival collection, the Day Break Long Sleeve Zip Through Rash Guard provides both sun protection and all day comfort. Made from Extra Life microfiber for lasting wear and a full front zip closure, this rashie is sure to be a beach favorite.",
+        "price": 69.95,
+        "tags":["apparel", "womens","swimsuits"],
+        "image": "https://www.ripcurl.com/media/catalog/product/1/4/14bwrv_0049-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "stock": 5,
+        "bestSeller": true
     }
 
     
