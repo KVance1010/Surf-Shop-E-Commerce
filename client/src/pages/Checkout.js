@@ -119,8 +119,8 @@ export default function Checkout() {
       clearCart()
       setActiveStep(activeStep + 1)
     }
-    // if(activeStep === 0){
-      if(false){
+    if(activeStep === 0){
+      // if(false){
       if(!shippingAddress.firstName || !shippingAddress.lastName || !shippingAddress.address1 || !shippingAddress.city || !shippingAddress.state || !shippingAddress.zip || !shippingAddress.country){
         setAddressError('you must fill out all required fields!')
 

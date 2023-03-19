@@ -46,7 +46,7 @@ const Item = () => {
 	
 	const itemData = data?.itemByUUID || {}; 
 	const addToCart = () => {
-		addItem({ name: item });
+		addItem({ name: itemData.name });
 		setCart({ ...cart });
 		localStorage.setItem('cart', JSON.stringify(cart));
 	};

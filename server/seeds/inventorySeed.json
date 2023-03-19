@@ -899,7 +899,86 @@
         "image": "https://www.ripcurl.com/media/catalog/product/1/4/14bwrv_0049-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
         "stock": 5,
         "bestSeller": true
+    },
+    {
+        "name": "Saturn Tee",
+        "brand": "Free People",
+        "description":"Take your tee game to the next level with this so cool version featured in an oversized, slouchy fit with exaggerated cutout at shoulder and defined distressing throughout for a true lived-in look.",
+        "price": 68,
+        "tags":["apparel", "womens","tops"],
+        "image": "https://images.urbndata.com/is/image/FreePeople/81768426_012_a/?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=1080",
+        "stock": 7,
+        "bestSeller": true
+    },
+    {
+        "name": "Blossom Tee",
+        "brand": "Free People",
+        "description":"More than just your average tee, this top is featured in a soft cotton and billowy silhouette with bold puffed sleeves.",
+        "price": 68,
+        "tags":["apparel", "womens","tops"],
+        "image": "https://images.urbndata.com/is/image/FreePeople/81139735_054_c/?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=1080",
+        "stock": 18,
+        "newArrival": true
+    },
+    {
+        "name": "Rubi Tee Tunic",
+        "brand": "Free People",
+        "description":"Effortlessly essential, this sweet tunic from our Endless Summer has endless ways to wear.",
+        "price": 75.99,
+        "tags":["apparel", "womens","tops"],
+        "image": "https://images.urbndata.com/is/image/FreePeople/82233560_011_a/?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=1080",
+        "stock": 8,
+        "saleItem": true
+    },
+    {
+        "name": "Pure Sugar Puff Sleeve Top",
+        "brand": "Roxy",
+        "description":"Sunny sky and warm weather will have you feelin' beachy, so pull on the Pure Sugar woven top. Crafted from lightweight viscose fabric in two summer-ready colorways, the puff sleeve top offers a flattering feminine fit with endless comfort. Complete with a square neckline and button front closure.",
+        "price": 42.99,
+        "tags":["apparel", "womens","tops"],
+        "image": "https://images.boardriders.com/globalGrey/roxy-products/all/default/hi-res/arjwt03275_roxy,l_cjj6_frt3.jpg",
+        "stock": 20,
+        "bestSeller": true
+    },
+    {
+        "name": "Tempest Floral Crop Top",
+        "brand": "Billabong",
+        "description":"We've revived this bold crop top for a limited time because you loved it, we loved it, and we're all tempted for more! The Tempest Top features a palette of warm sunshiny florals printed on viscose sateen fabric. It's silky-soft, and the straight-across style with adjustable straps make it seriously comfortable, too. The perfect crop to usher in spring— if you missed this beauty the first time around, don't make the same mistake twice. She's here for a limited time only so, treat yourself!",
+        "price": 42.99,
+        "tags":["apparel", "womens","tops"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/ubjwt00123_billabong,l_lml_frt1.jpg",
+        "stock": 12,
+        "bestSeller": true
+    },
+    {
+        "name": "Fine By Me Long Sleeve Top",
+        "brand": "Billabong",
+        "description":"Match your outfit with your easy-going attitude with the Fine By Me Top. The perfect base layer to carry your style through the seasons, this fitted women's long sleeve is made in a ribbed knit fabric with baby merrow ruffles at the hem. An all-over print elevates this everyday staple",
+        "price": 42.99,
+        "tags":["apparel", "womens","tops"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjkt00268_billabong,w_anw_frt1.jpg",
+        "stock": 8,
+        "bestSeller": true
+    },
+    {
+        "name": "Last Kiss Puff Sleeve Top",
+        "brand": "Billabong",
+        "description":"In a mix of cotton jersey and eyelet paneling, this Sundaze Collection top combines puff sleeves, bust cups, and a smocked back to perfectly hug your figure",
+        "price": 42.99,
+        "tags":["apparel", "womens","tops"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjkt00463_billabong,w_scs_frt1.jpg",
+        "stock": 8,
+        "saleItem": true
+    },
+    {
+        "name": "Classic Surf Cami",
+        "brand": "Rip Curl",
+        "description":"Soon to be your new favorite summer top, the Classic Surf Cami is an effortlessly flattering cami that is perfect for every occasion. Wear it over your bikini or out to your favorite restaurant. Made from cotton cross weave and featuring coconut buttons to feel like you're on the islands everyday.",
+        "price": 39.99,
+        "tags":["apparel", "womens","tops"],
+        "image": "https://www.ripcurl.com/media/catalog/product/p/r/premsurf-or-shirt_1_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "stock": 10,
+        "newArrival": true
     }
 
-    
 ]
