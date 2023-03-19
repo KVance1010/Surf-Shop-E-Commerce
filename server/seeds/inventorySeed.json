@@ -750,13 +750,73 @@
         "saleItem":true
     },
     {
-        "name": "Regular - High Bridge Fit",
-        "brand": "Oakley",
-        "description":"The Dawn Patrol is the wetsuit for the surfer who wants high performance and durability, providing great service whilst also being great value. Designed with E5 flash lining, back mesh skin panels and E4 thermoflex neoprene, this 4/3 back zip steamer will keep you warm in even the coldest waters, all winter long.",
-        "price": 134.99,
-        "tags":["apparel", "mens","wetsuits"],
-        "image": "https://www.ripcurl.com/media/catalog/product/w/s/wsm9em_0049-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "name": "KNOCKAROUND BRIGHTSIDES MEN'S POLARIZED SUNGLASSES",
+        "brand": "KNOCKAROUND",
+        "description":"There’s nothing better than a sunny day out in nature, and our collection of Brightsides unisex sunglasses fit the occasion perfectly. Whether you’re playing in the surf with friends or taking in views on a rejuvenating hike, Brightsides sunglasses take your adventures above and beyond with their solid construction and stylish vibe. Durable and reliable like other Knocks with a reasonable price tag, Brightsides are our next staple that we’re beyond stoked to share.",
+        "price": 35,
+        "tags":["apparel", "mens","shades"],
+        "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/brightsoul_5000x.jpg?v=1679100653",
+        "stock": 10,
+        "saleItem":true
+    },
+    {
+        "name": "ELECTRIC BRISTOL MEN'S POLARIZED SUNGLASSES",
+        "brand": "Electric",
+        "description":"Built for outdoor passions, the Bristol is a large square-shaped frame with top and side flanges for added solar and wind protection. From land to sea, and everywhere in-between, the Bristol provides performance features and great coverage in a lightweight package.",
+        "price": 200,
+        "tags":["apparel", "mens","shades"],
+        "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/bristol1_5000x.jpg?v=1678990246",
+        "stock": 15,
+        "newArrival":true
+    },
+    {
+        "name": "OTIS COASTIN SLIM MEN'S POLARIZED SUNGLASSES",
+        "brand": "Otis",
+        "description":"Refined beach style. This frame brings everything you love about our Coastin frame into something slimmer and more precise. Its comfy fit, light yet strong build, and wrapping shape has light blocked from all angles in eyewear you can wear all day. An all-rounder that suits most face shapes.",
+        "price": 329,
+        "tags":["apparel", "mens","shades"],
+        "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/coastblue_5000x.jpg?v=1679074234",
         "stock": 5,
+        "newArrival":true
+    },
+    {
+        "name": "ELECTRIC ELSINORE MEN'S POLARIZED SUNGLASSES",
+        "brand": "Electric",
+        "description":"The Electric Elsinore Men's Polarized Sunglasses. A throwback aviator inspired by the early desert motorbikes of the past. This medium-large classic shape wears well on women and men. The legend of the Elsinore lives on.",
+        "price": 169.99,
+        "tags":["apparel", "mens","shades"],
+        "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/electricelsinorepolarized1_5000x.jpg?v=1665848280",
+        "stock": 11,
+        "saleItem":true
+    },
+    {
+        "name": "DRAGON REEL X LL MEN'S POLARIZED SUNGLASSES",
+        "brand": "Dragon Alliance",
+        "description":"The Dragon Reel X LL Men's Polarized Sunglasses. With a slightly larger design, the Reel X provides max coverage with style. Rubber temple tips, floatable leash, and nose pads keep the reel secure. H2O floatable technology paired with Performance Polarized lenses offer the ultimate lightweight sunglass for all day comfort, whether you’re surf casting or trolling.",
+        "price": 200,
+        "tags":["apparel", "mens","shades"],
+        "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/dragonreel1_5000x.jpg?v=1659884523",
+        "stock": 3,
+        "saleItem":true
+    },
+    {
+        "name": "PIT VIPER THE SLAMMIN' ELLIPTICAL MEN'S SUNGLASSES",
+        "brand": "Pit Viper",
+        "description":"This is the Pit Viper The Slammin' Elliptical Men's Sunglasses Features: UVA & UVB Protection: 100% Light Transmission: 13% Lens: 2.2mm Polycarbonate Lens Look Thru Color: Brown",
+        "price": 99,
+        "tags":["apparel", "mens","shades"],
+        "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/viperslam1_5000x.jpg?v=1657400030",
+        "stock": 20,
+        "bestSeller":true
+    },
+    {
+        "name": "SPY REBAR ANSI MEN'S POLARIZED SUNGLASSES",
+        "brand": "Spy",
+        "description":"The Spy Rebar ANSI Men's Sunglasses. Rebar left bold in the dust and ripped straight through to brazen. With a Z87.2+ ANSI rating, they are more sheer force of nature than shades. Tough, lightweight, and built for those with big dome energy, these ANSI-safety sunglasses deliver the clarity and colossal individuality we all seek.",
+        "price": 150,
+        "tags":["apparel", "mens","shades"],
+        "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/rebargunmetal_c9a9ebd3-0fd2-47bd-b2c7-e3643b6a0276_5000x.jpg?v=1655916042",
+        "stock": 15,
         "saleItem":true
     }
 
