@@ -119,6 +119,7 @@ export default function Checkout() {
       clearCart()
       setActiveStep(activeStep + 1)
     }
+    //address form validation
     if(activeStep === 0){
       // if(false){
       if(!shippingAddress.firstName || !shippingAddress.lastName || !shippingAddress.address1 || !shippingAddress.city || !shippingAddress.state || !shippingAddress.zip || !shippingAddress.country){
@@ -129,7 +130,15 @@ export default function Checkout() {
         setAddressError('')
         setActiveStep(activeStep + 1)
       } 
-    }else{
+      //payment form validation
+    }else  if(activeStep === 1){
+      if(!paymentInfo.cardName || !paymentInfo.cardNumber || !paymentInfo.expDate || !paymentInfo.cvv){
+        setAddressError('you must fill out all required fields!')
+      }else{
+        setAddressError('')
+        setActiveStep(activeStep + 1)
+      }
+    } else {
       setActiveStep(activeStep + 1)
     }
     ;
