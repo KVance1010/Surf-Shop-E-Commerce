@@ -70,3 +70,10 @@ mutation Mutation($uuid: String, $name: String, $price: Float, $description: Str
     }
   }
 `
+export const DELETE_ITEM = gql `
+mutation Mutation($uuid: String!) {
+  deleteItem(uuid: $uuid) {
+    name
+  }
+}
+`

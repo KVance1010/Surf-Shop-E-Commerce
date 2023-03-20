@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
-import { useQuery } from '@apollo/client';
+import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_ITEM_BY_UUID } from '../utils/queries';
+import { DELETE_ITEM } from '../utils/mutations';
 import { useCartContext } from '../utils/cartContext';
 import CardHeader from '@mui/material/CardHeader';
 import Card from '@mui/material/Card';
@@ -32,8 +33,8 @@ const ExpandMore = styled((props) => {
 const Item = () => {
 	console.log(Auth.isAdmin())
 	const { item } = useParams({});
-	console.log('hello')
-	console.log(item)
+	const [deleteItemMutation, {error, deleteItemData}] = useMutation(DELETE_ITEM)
+
 	const [expanded, setExpanded] = React.useState(false);
 	const handleExpandClick = () => {
 		setExpanded(!expanded);
@@ -53,10 +54,17 @@ const Item = () => {
 	const storeItem = () => {
 		localStorage.setItem('item',JSON.stringify(itemData))
 	}
-	const deleteItem = () => {
-		const yesDelete = window.confirm('are you sure you want to delete this item? All data for this item will be lost')
+	const deleteItem = async () => {
+		const yesDelete = window.confirm('A	re you sure you want to delete this item? All data for this item will be lost')
 		if(yesDelete){
-			console.log('delete')
+			try{
+				const {deletedItem} = await deleteItemMutation({
+					variables:{uuid: item}
+				})
+				window.history.back()
+			}catch(error){
+				console.error(error)
+			}
 		}
 	}
 
