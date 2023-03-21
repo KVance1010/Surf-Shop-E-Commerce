@@ -37,7 +37,7 @@ const ItemList = () => {
         ) : (
             <ul className="container col-3 ">
                 {items.map((item, index) =>
-                    <div className="card container" key={index}>
+                    <div className="card container" key={index} data-uuid={item.uuid}>
                         {/* {console.log(mongoose.Types.ObjectId(item._id).toString())} */}
                         <div className="card-body">
                             <h3 className="card-title">
