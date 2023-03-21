@@ -43,6 +43,11 @@ const ItemList = () => {
                             <h3 className="card-title">
                                 {item.name}
                             </h3>
+                            {item.brand? (
+                                <h4>
+                                    By: {item.brand}
+                                </h4>
+                            ) : <></>}
                             {item.saleItem? (
                                 <h4>
                                     On Sale!!
