@@ -979,6 +979,77 @@
         "image": "https://www.ripcurl.com/media/catalog/product/p/r/premsurf-or-shirt_1_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
         "stock": 10,
         "newArrival": true
+    },
+    {
+        "name": "Day Dreamin Pullover Hoodie",
+        "brand": "Rip Curl",
+        "description":"Chase your dreams in this cozy women's hoodie made of soft blended cotton with a fleece feel. Complete with logo graphics on the back and left chest, a kangaroo pouch pocket, and a garment dye to give it a perfectly lived-in look.",
+        "price": 50.99,
+        "tags":["apparel", "womens","hoodies"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjsf00453_billabong,w_thr0_frt1.jpg",
+        "stock": 12,
+        "saleItem": true
+    },
+    {
+        "name": "OFFSHORE FLEECE",
+        "brand": "O'Neil",
+        "description":"Cute and comfy. This is a fleece hoodie that has a relaxed fit, adjustable drawcord and high quality screen print design.",
+        "price": 59.99,
+        "tags":["apparel", "womens","hoodies"],
+        "image": "https://cdn.shopify.com/s/files/1/2034/7683/products/SP3410002_FAD_5_720x.jpg?v=1668553665",
+        "stock": 18,
+        "newArrival": true
+    },
+    {
+        "name": "Day Break Crew",
+        "brand": "Rip Curl",
+        "description":"The Daybreak Crew is a rad pullover jumper featuring a timeless stripe design and embroidered logo. Featuring a burnout garment wash finish to give it that vintage appeal, and made in a relaxed fir with looser width and casual vibe.",
+        "price": 59.99,
+        "tags":["apparel", "womens","hoodies"],
+        "image": "https://www.ripcurl.com/media/catalog/product/0/2/028wfl_0049-2.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:",
+        "stock": 7,
+        "bestSeller": true
+    },
+    {
+        "name": "Forever Saturday Hoodie",
+        "brand": "Billabong",
+        "description":"Made of blended cotton fabric, this comfy women's hoodie has a relaxed fit with a V-neckline, a kangaroo pouch pocket, and logo embroidery. A vintage wash completes the lived-in look.",
+        "price": 59.99,
+        "tags":["apparel", "womens","hoodies"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjft00354_billabong,w_bsd_frt1.jpg",
+        "stock": 16,
+        "saleItem": true
+    },
+    {
+        "name": "Billabong Peace Out Hoodie",
+        "brand": "Billabong",
+        "description":"Keep cozy all season with the new Peace Out Hoodie from Billabong. This super cute hoodie features long sleeves, a drawstring hood, a kangaroo pocket, and custom Billabong graphics at the left chest and back.",
+        "price": 34.99,
+        "tags":["apparel", "womens","hoodies"],
+        "image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw48f40604/product_images/0751003220023NEW_00_054.jpg?sw=2000",
+        "stock": 18,
+        "saleItem": true,
+        "bestSeller":true
+    },
+    {
+        "name": "BRadiate Love Hoodie",
+        "brand": "Billabong",
+        "description":"Made of soft cotton-blend fabric, this cozy hoodie has a regular fit with a kangaroo pouch pocket and Billabong graphics. Instant good vibes.",
+        "price": 45,
+        "tags":["apparel", "womens","hoodies"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjsf00391_billabong,w_bfd0_frt1.jpg",
+        "stock": 7,
+        "newArrival": true
+    },
+    {
+        "name": "Sunbaked Shores Cropped Hooded Sweater",
+        "brand": "Roxy",
+        "description":"Made of cozy knit fabric, the Sunbaked Shores cropped hoodie sweater has a relaxed shape with a V-neck and coconut buttons. Striped in ocean blues and coastal hues, this long-sleeve sweater is a sunset essential.",
+        "price": 70,
+        "tags":["apparel", "womens","hoodies"],
+        "image": "https://images.boardriders.com/globalGrey/roxy-products/all/default/hi-res/arjsw03303_roxy,w_med4_frt1.jpg",
+        "stock": 10,
+        "newArrival": true
     }
 
 ]
