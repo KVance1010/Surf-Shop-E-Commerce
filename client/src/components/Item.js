@@ -52,9 +52,18 @@ const Item = ({ displayItem: item }) => {
 
 	// const itemData = data?.itemByUUID || {};
 	const addToCart = () => {
-		addItem({ name: item.name });
-		setCart({ ...cart });
-		localStorage.setItem('cart', JSON.stringify(cart));
+		const itemName = item.name
+		console.log(cart[itemName])
+		console.log('stock ', item.stock)
+		if(cart[itemName] === item.stock){
+			alert(`Sorry, our inventory cannot accommodate the quantity you're trying to specify. We will re-stock soon!`)
+		}else{
+			addItem({ name: item.name });
+			setCart({ ...cart });
+			localStorage.setItem('cart', JSON.stringify(cart));
+			console.log(cart)
+		}
+		
 	};
 	const storeItem = () => {
 		localStorage.setItem('item', JSON.stringify(item));
