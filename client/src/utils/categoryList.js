@@ -137,7 +137,7 @@ export const womensApparelCategory =
     categories: [
         {
             name: "Swimsuits",
-            image: "https://cdn.shopify.com/s/files/1/0783/3649/products/gsixx9_0090-3_1000x.jpg?v=1647972464"
+            image: "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjx300706_billabong,l_mul_frt1.jpg"
         },
         {
             name: "Tops",
@@ -153,7 +153,7 @@ export const womensApparelCategory =
         },
         {
             name: "Hats",
-            image: "https://cdn.shopify.com/s/files/1/2062/5873/products/ABJHA00222BLKSecondary1_x1400.jpg?v=1674244737"
+            image: "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjha00222_billabong,w_bml2_frt1.jpg"
         },
         {
             name: "Shades",
