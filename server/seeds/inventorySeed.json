@@ -1130,6 +1130,36 @@
         "image": "https://m.media-amazon.com/images/I/61whNM123PS._AC_SR1840,1472_.jpg",
         "stock": 9,
         "saleItem": true
+    },
+    {
+        "name": "Surf Bucket Oversized UPF 50 Bucket Hat",
+        "brand": "Billabong",
+        "description":"Missing the tropics? The Roxy® Slippy Jute sandal will have you sliding in to dMade of durable and water-resistant recycled material, this Adventure Division surf bucket hat has a soft brim and an adjustable chin strap to keep it in place through pop-ups and wipeouts",
+        "price": 42.99,
+        "tags":["apparel", "womens","hats"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjha00222_billabong,w_bml2_frt1.jpg",
+        "stock": 10,
+        "bestSeller": true
+    },
+    {
+        "name": "Patagonia Surf Brim Hat",
+        "brand": "Patagonia",
+        "description":"With sun, surf, and breeze on the brain, the Patagonia Surf Brim Hat is our cap of choice all summer long. This sun-blocking bucket hat stays snug thanks to the adjustable headband and chin strap. DWR coating stops splashes, and the floating brim keeps the hat within reach if it blows into the water.",
+        "price": 55,
+        "tags":["apparel", "womens","hats"],
+        "image": "https://content.backcountry.com/images/items/1200/PAT/PATZA6M/EVEMAU.jpg",
+        "stock": 16,
+        "newArrival": true
+    },
+    {
+        "name": "Water Sports Hat UPF50+ Legionnaire Style",
+        "brand": "Solbari",
+        "description":"Solbari’s Water Sports UPF 50+ Legionnaire Style has become an instant classic amongst our award-winning range. Perfect for those long afternoons out on the water",
+        "price": 55,
+        "tags":["apparel", "womens","hats"],
+        "image": "https://cdn.shopify.com/s/files/1/2276/9869/products/SOLBARIUPF50_WATERSPORTHATFORWOMENAU024BLACKArtboard6AU024_850x.jpg",
+        "stock": 2,
+        "bestSeller": true
     }
 
 ]
