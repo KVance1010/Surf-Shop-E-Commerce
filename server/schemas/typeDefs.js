@@ -28,6 +28,7 @@ const typeDefs = gql`
         user: User
     }
     type Order {
+        _id: ID
         email: String
         itemNames: [String]
         itemQuantities: [Int]
@@ -55,6 +56,7 @@ const typeDefs = gql`
         login(email: String, password: String!): Auth
 
         addOrder(email: String, itemNames: [String], itemPrices: [Float], itemQuantities: [Int], itemImages: [String] createdAt: String): Order
+        deleteOrder(id: ID): Order
         
         addItem(name: String, price: Float, description: String, tags: [String], image: String, stock: Int, brand: String, bestSeller: Boolean, saleItem: Boolean, newArrival: Boolean):Item
 

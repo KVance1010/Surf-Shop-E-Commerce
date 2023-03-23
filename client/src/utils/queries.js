@@ -122,6 +122,7 @@ query me {
 export const GET_ORDERS_BY_EMAIL = gql`
 query Query($email: String) {
     ordersByEmail(email: $email) {
+      _id
       email
       itemNames
       itemQuantities

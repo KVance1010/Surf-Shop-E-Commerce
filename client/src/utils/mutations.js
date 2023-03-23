@@ -36,6 +36,13 @@ mutation Mutation($email: String, $itemNames: [String], $itemPrices: [Float], $i
     }
   }
 `
+export const DELETE_ORDER = gql`
+mutation Mutation($id: ID) {
+  deleteOrder(id: $id) {
+    _id
+  }
+}
+`
 export const ADD_ITEM = gql`
 mutation Mutation($tags: [String], $name: String, $price: Float, $description: String, $image: String, $stock: Int, $brand: String, $bestSeller: Boolean, $saleItem: Boolean, $newArrival: Boolean) {
     addItem(tags: $tags, name: $name, price: $price, description: $description, image: $image, stock: $stock, brand: $brand, bestSeller: $bestSeller, saleItem: $saleItem, newArrival: $newArrival) {

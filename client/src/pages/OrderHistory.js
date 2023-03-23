@@ -1,6 +1,7 @@
 import React from 'react'
-import { useQuery } from '@apollo/client'
+import { useQuery, useMutation } from '@apollo/client'
 import { GET_ORDERS_BY_EMAIL } from '../utils/queries'
+import { DELETE_ORDER } from '../utils/mutations'
 
 const OrderHistory = () => {
 
@@ -13,6 +14,7 @@ const OrderHistory = () => {
 
     const orders = data?.ordersByEmail || []
 
+    const [deleteOrder, { deleteOrderError, deleteOrderData}] = useMutation(DELETE_ORDER)
     function formatDate(dateNumber) {
         const date = new Date(dateNumber);
         const year = date.getFullYear();
@@ -33,40 +35,59 @@ const OrderHistory = () => {
       
         return `${month}/${day}/${year} ${hours}:${minutes}${ampm}`;
       }
-
+    
+    const handleDeleteOrder = (id) => {
+        console.log(id)
+        deleteOrder({
+            variables: {
+                id: id
+            }
+        })
+        window.location.reload()
+    }
     return(
         <>
         {loading ? (
             <h1>...loading</h1>
         ) : (
-            <ul>
-            {orders.map((order, index) => {
-                console.log('number of orders', orders.length)
-                let total = 0
-                return(
-                    <li key={index}>
-                        <h1>
-                            {`Date: ${formatDate(parseInt(order.createdAt))}`}
-                        </h1>
-                        {order.itemNames.map((item, index) => {
-                            total += order.itemPrices[index] * order.itemQuantities[index]
-                            return(
-                                <>
-                                    <img style={{'width': '200px'}} src={order.itemImages[index]} alt={order.itemNames[index]}/>
-                                    <h3>
-                                        {`${order.itemNames[index]}: $${order.itemPrices[index]} X ${order.itemQuantities[index]} = ${order.itemPrices[index] * order.itemQuantities[index]}` }
-                                    </h3>
-                                </>
+            <>
+            {orders.length > 0 ? (
+                <ul>
+                {orders.map((order, index) => {
+                    console.log('number of orders', orders.length)
+                    let total = 0
+                    return(
+                        <li key={index}>
+                            <h1>
+                                {`Date: ${formatDate(parseInt(order.createdAt))}`}
+                            </h1>
+                            {order.itemNames.map((item, index) => {
+                                total += order.itemPrices[index] * order.itemQuantities[index]
+                                return(
+                                    <>
+                                        <img style={{'width': '200px'}} src={order.itemImages[index]} alt={order.itemNames[index]}/>
+                                        <h3>
+                                            {`${order.itemNames[index]}: $${order.itemPrices[index]} X ${order.itemQuantities[index]} = ${order.itemPrices[index] * order.itemQuantities[index]}` }
+                                        </h3>
+                                    </>
+                                )}
+                                
                             )}
-                            
-                        )}
-                        <h3>
-                            {`Total: ${total}`}
-                        </h3>
-                        <hr/>
-                    </li>
-                )})}
-            </ul>
+                            <h3>
+                                {`Total: ${total}`}
+                            </h3>
+                            <button onClick={() => {handleDeleteOrder(order._id)}}>
+                                Delete Order
+                            </button>
+                            <hr/>
+                        </li>
+                    )})}
+                </ul>
+            ) : (
+                <h1>You have no orders to display</h1>
+            )}
+            
+            </>
         )}
         
         </>

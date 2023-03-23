@@ -71,7 +71,13 @@ const resolvers = {
                 createdAt: args.createdAt,
                 itemImages: args.itemImages
             })
-        },addItem: async (parent, args) => {
+        },
+        deleteOrder: async (parent, args) => {
+            const deletedOrder = await Order.findOneAndDelete({
+                _id: args.id
+            })
+        },
+        addItem: async (parent, args) => {
       
             const item = await Item.create({
                 name: args.name,
