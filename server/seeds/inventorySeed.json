@@ -750,15 +750,386 @@
         "saleItem":true
     },
     {
-        "name": "Regular - High Bridge Fit",
-        "brand": "Oakley",
-        "description":"The Dawn Patrol is the wetsuit for the surfer who wants high performance and durability, providing great service whilst also being great value. Designed with E5 flash lining, back mesh skin panels and E4 thermoflex neoprene, this 4/3 back zip steamer will keep you warm in even the coldest waters, all winter long.",
-        "price": 134.99,
-        "tags":["apparel", "mens","wetsuits"],
-        "image": "https://www.ripcurl.com/media/catalog/product/w/s/wsm9em_0049-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
-        "stock": 5,
+        "name": "KNOCKAROUND BRIGHTSIDES MEN'S POLARIZED SUNGLASSES",
+        "brand": "KNOCKAROUND",
+        "description":"There’s nothing better than a sunny day out in nature, and our collection of Brightsides unisex sunglasses fit the occasion perfectly. Whether you’re playing in the surf with friends or taking in views on a rejuvenating hike, Brightsides sunglasses take your adventures above and beyond with their solid construction and stylish vibe. Durable and reliable like other Knocks with a reasonable price tag, Brightsides are our next staple that we’re beyond stoked to share.",
+        "price": 35,
+        "tags":["apparel", "mens","shades"],
+        "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/brightsoul_5000x.jpg?v=1679100653",
+        "stock": 10,
         "saleItem":true
+    },
+    {
+        "name": "ELECTRIC BRISTOL MEN'S POLARIZED SUNGLASSES",
+        "brand": "Electric",
+        "description":"Built for outdoor passions, the Bristol is a large square-shaped frame with top and side flanges for added solar and wind protection. From land to sea, and everywhere in-between, the Bristol provides performance features and great coverage in a lightweight package.",
+        "price": 200,
+        "tags":["apparel", "mens","shades"],
+        "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/bristol1_5000x.jpg?v=1678990246",
+        "stock": 15,
+        "newArrival":true
+    },
+    {
+        "name": "OTIS COASTIN SLIM MEN'S POLARIZED SUNGLASSES",
+        "brand": "Otis",
+        "description":"Refined beach style. This frame brings everything you love about our Coastin frame into something slimmer and more precise. Its comfy fit, light yet strong build, and wrapping shape has light blocked from all angles in eyewear you can wear all day. An all-rounder that suits most face shapes.",
+        "price": 329,
+        "tags":["apparel", "mens","shades"],
+        "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/coastblue_5000x.jpg?v=1679074234",
+        "stock": 5,
+        "newArrival":true
+    },
+    {
+        "name": "ELECTRIC ELSINORE MEN'S POLARIZED SUNGLASSES",
+        "brand": "Electric",
+        "description":"The Electric Elsinore Men's Polarized Sunglasses. A throwback aviator inspired by the early desert motorbikes of the past. This medium-large classic shape wears well on women and men. The legend of the Elsinore lives on.",
+        "price": 169.99,
+        "tags":["apparel", "mens","shades"],
+        "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/electricelsinorepolarized1_5000x.jpg?v=1665848280",
+        "stock": 11,
+        "saleItem":true
+    },
+    {
+        "name": "DRAGON REEL X LL MEN'S POLARIZED SUNGLASSES",
+        "brand": "Dragon Alliance",
+        "description":"The Dragon Reel X LL Men's Polarized Sunglasses. With a slightly larger design, the Reel X provides max coverage with style. Rubber temple tips, floatable leash, and nose pads keep the reel secure. H2O floatable technology paired with Performance Polarized lenses offer the ultimate lightweight sunglass for all day comfort, whether you’re surf casting or trolling.",
+        "price": 200,
+        "tags":["apparel", "mens","shades"],
+        "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/dragonreel1_5000x.jpg?v=1659884523",
+        "stock": 3,
+        "saleItem":true
+    },
+    {
+        "name": "PIT VIPER THE SLAMMIN' ELLIPTICAL MEN'S SUNGLASSES",
+        "brand": "Pit Viper",
+        "description":"This is the Pit Viper The Slammin' Elliptical Men's Sunglasses Features: UVA & UVB Protection: 100% Light Transmission: 13% Lens: 2.2mm Polycarbonate Lens Look Thru Color: Brown",
+        "price": 99,
+        "tags":["apparel", "mens","shades"],
+        "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/viperslam1_5000x.jpg?v=1657400030",
+        "stock": 20,
+        "bestSeller":true
+    },
+    {
+        "name": "SPY REBAR ANSI MEN'S POLARIZED SUNGLASSES",
+        "brand": "Spy",
+        "description":"The Spy Rebar ANSI Men's Sunglasses. Rebar left bold in the dust and ripped straight through to brazen. With a Z87.2+ ANSI rating, they are more sheer force of nature than shades. Tough, lightweight, and built for those with big dome energy, these ANSI-safety sunglasses deliver the clarity and colossal individuality we all seek.",
+        "price": 150,
+        "tags":["apparel", "mens","shades"],
+        "image": "https://cdn.shopify.com/s/files/1/0003/1902/9309/products/rebargunmetal_c9a9ebd3-0fd2-47bd-b2c7-e3643b6a0276_5000x.jpg?v=1655916042",
+        "stock": 15,
+        "saleItem":true
+    },
+    {
+        "name": "Color Jam One-Piece Swimsuit",
+        "brand": "Roxy",
+        "description":"Crafted from a textured blend of recycled stretch fabric, the Color Jam solid one-piece swimsuit elevates a classic fixed-strap design with a front cut-out and an O-ring at the center.",
+        "price": 99,
+        "tags":["apparel", "womens","swimsuits"],
+        "image": "https://images.boardriders.com/globalGrey/roxy-products/all/default/hi-res/erjx103522_roxy,m_tng_frt1.jpg",
+        "stock": 12,
+        "saleItem":true
+    },
+    {
+        "name": "Dreamland Rev Multi Reversible Triangle Bikini Top",
+        "brand": "Billabong",
+        "description":"Double the looks, double the fun. Featuring a reversible print on recycled Peach Stretch fabric, this convertible triangle bikini top ties at the neck and back.",
+        "price": 59.99,
+        "tags":["apparel", "womens","swimsuits"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjx300706_billabong,l_mul_frt1.jpg",
+        "stock": 13,
+        "saleItem":true
+    },
+    {
+        "name": "Covered In Love Tanlines Morgn Underwired Bikini Top",
+        "brand": "Billabong",
+        "description":"Made of recycled Tanlines rib fabric, this underwire bra bikini top features seaming detail on the cups, adjustable straps, and a back hook closure. In love is an understatement.",
+        "price": 69.95,
+        "tags":["apparel", "womens","swimsuits"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjx300725_billabong,l_pgr0_frt1.jpg",
+        "stock": 13,
+        "newArrival":true
+    },
+    {
+        "name": "In The Loop Emma Underwire Bikini Top",
+        "brand": "Billabong",
+        "description":"A fresh take on a timeless beauty, the In The Loop Emma Underwire Bikini Top goes all-in on style and support. This medium-coverage women's swim top is made of recycled terry rib texture fabric with fixed straps, a back hook closure, and seaming details to accentuate your shape.",
+        "price": 69.95,
+        "tags":["apparel", "womens","swimsuits"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjx300679_billabong,w_nhp0_frt1.jpg",
+        "stock": 13,
+        "bestSeller":true
+    },
+    {
+        "name": "Chi Chi Sirena Underwire Bra Bikini Top",
+        "brand": "Billabong",
+        "description":"Daydream in abstracts with the Chi Sirena Underwire Bra Bikini Top. Eco-consciously made in recycled Stretch Crepe fabric, this skimpy women's swim top doubles up on style and support with easily-adjustable shoulder straps, a hook back closure, and gathers at the front.",
+        "price": 69.95,
+        "tags":["apparel", "womens","swimsuits"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/ubjx300320_billabong,l_mul_frt1.jpg",
+        "stock": 20,
+        "bestSeller":true
+    },
+    {
+        "name": "Day Break Long Line Bandeau Bikini Top x Erin Miller Wray",
+        "brand": "Rip Curl",
+        "description":"The Day Break Long Line Bandeau is an epic women's bikini top made in collaboration with artist Erin Miller Wray. This piece is designed with Extra Life Microfiber Lycra that gives long-lasting comfort, fit and shape. Featuring a colorful asym stripe design, it's fully adjustable, offering light support, and removable padding and straps.",
+        "price": 69.95,
+        "tags":["apparel", "womens","swimsuits"],
+        "image": "https://www.ripcurl.com/media/catalog/product/e/m/emwr.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "stock": 14,
+        "saleItem":true,
+        "newArrival": true
+    },
+    {
+        "name": "Trippin Long Sleeve Surf Suit",
+        "brand": "Rip Curl",
+        "description":"Our Trippin Long Sleeve Surf Suit is a super cute silhouette with the throwback flare we love about our Surf Revival collection. This one piece is made from Extra Life Microfiber Lycra® for lasting wear and comfort through the seasons and a performance fit for less drag. The closure includes a 5 gauge back zip and offers good coverage.",
+        "price": 109.95,
+        "tags":["apparel", "womens","swimsuits"],
+        "image": "https://www.ripcurl.com/media/catalog/product/1/4/14xwrv_3282-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "stock": 20,
+        "newArrival": true
+    },
+    {
+        "name": "Day Break Long Sleeve Zip Through Rash Guard",
+        "brand": "Rip Curl",
+        "description":"Decorated with the iconic color blocking of our Surf Revival collection, the Day Break Long Sleeve Zip Through Rash Guard provides both sun protection and all day comfort. Made from Extra Life microfiber for lasting wear and a full front zip closure, this rashie is sure to be a beach favorite.",
+        "price": 69.95,
+        "tags":["apparel", "womens","swimsuits"],
+        "image": "https://www.ripcurl.com/media/catalog/product/1/4/14bwrv_0049-1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "stock": 5,
+        "bestSeller": true
+    },
+    {
+        "name": "Saturn Tee",
+        "brand": "Free People",
+        "description":"Take your tee game to the next level with this so cool version featured in an oversized, slouchy fit with exaggerated cutout at shoulder and defined distressing throughout for a true lived-in look.",
+        "price": 68,
+        "tags":["apparel", "womens","tops"],
+        "image": "https://images.urbndata.com/is/image/FreePeople/81768426_012_a/?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=1080",
+        "stock": 7,
+        "bestSeller": true
+    },
+    {
+        "name": "Blossom Tee",
+        "brand": "Free People",
+        "description":"More than just your average tee, this top is featured in a soft cotton and billowy silhouette with bold puffed sleeves.",
+        "price": 68,
+        "tags":["apparel", "womens","tops"],
+        "image": "https://images.urbndata.com/is/image/FreePeople/81139735_054_c/?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=1080",
+        "stock": 18,
+        "newArrival": true
+    },
+    {
+        "name": "Rubi Tee Tunic",
+        "brand": "Free People",
+        "description":"Effortlessly essential, this sweet tunic from our Endless Summer has endless ways to wear.",
+        "price": 75.99,
+        "tags":["apparel", "womens","tops"],
+        "image": "https://images.urbndata.com/is/image/FreePeople/82233560_011_a/?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=1080",
+        "stock": 8,
+        "saleItem": true
+    },
+    {
+        "name": "Pure Sugar Puff Sleeve Top",
+        "brand": "Roxy",
+        "description":"Sunny sky and warm weather will have you feelin' beachy, so pull on the Pure Sugar woven top. Crafted from lightweight viscose fabric in two summer-ready colorways, the puff sleeve top offers a flattering feminine fit with endless comfort. Complete with a square neckline and button front closure.",
+        "price": 42.99,
+        "tags":["apparel", "womens","tops"],
+        "image": "https://images.boardriders.com/globalGrey/roxy-products/all/default/hi-res/arjwt03275_roxy,l_cjj6_frt3.jpg",
+        "stock": 20,
+        "bestSeller": true
+    },
+    {
+        "name": "Tempest Floral Crop Top",
+        "brand": "Billabong",
+        "description":"We've revived this bold crop top for a limited time because you loved it, we loved it, and we're all tempted for more! The Tempest Top features a palette of warm sunshiny florals printed on viscose sateen fabric. It's silky-soft, and the straight-across style with adjustable straps make it seriously comfortable, too. The perfect crop to usher in spring— if you missed this beauty the first time around, don't make the same mistake twice. She's here for a limited time only so, treat yourself!",
+        "price": 42.99,
+        "tags":["apparel", "womens","tops"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/ubjwt00123_billabong,l_lml_frt1.jpg",
+        "stock": 12,
+        "bestSeller": true
+    },
+    {
+        "name": "Fine By Me Long Sleeve Top",
+        "brand": "Billabong",
+        "description":"Match your outfit with your easy-going attitude with the Fine By Me Top. The perfect base layer to carry your style through the seasons, this fitted women's long sleeve is made in a ribbed knit fabric with baby merrow ruffles at the hem. An all-over print elevates this everyday staple",
+        "price": 42.99,
+        "tags":["apparel", "womens","tops"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjkt00268_billabong,w_anw_frt1.jpg",
+        "stock": 8,
+        "bestSeller": true
+    },
+    {
+        "name": "Last Kiss Puff Sleeve Top",
+        "brand": "Billabong",
+        "description":"In a mix of cotton jersey and eyelet paneling, this Sundaze Collection top combines puff sleeves, bust cups, and a smocked back to perfectly hug your figure",
+        "price": 42.99,
+        "tags":["apparel", "womens","tops"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjkt00463_billabong,w_scs_frt1.jpg",
+        "stock": 8,
+        "saleItem": true
+    },
+    {
+        "name": "Classic Surf Cami",
+        "brand": "Rip Curl",
+        "description":"Soon to be your new favorite summer top, the Classic Surf Cami is an effortlessly flattering cami that is perfect for every occasion. Wear it over your bikini or out to your favorite restaurant. Made from cotton cross weave and featuring coconut buttons to feel like you're on the islands everyday.",
+        "price": 39.99,
+        "tags":["apparel", "womens","tops"],
+        "image": "https://www.ripcurl.com/media/catalog/product/p/r/premsurf-or-shirt_1_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=950&width=768&canvas=768:950",
+        "stock": 10,
+        "newArrival": true
+    },
+    {
+        "name": "Day Dreamin Pullover Hoodie",
+        "brand": "Rip Curl",
+        "description":"Chase your dreams in this cozy women's hoodie made of soft blended cotton with a fleece feel. Complete with logo graphics on the back and left chest, a kangaroo pouch pocket, and a garment dye to give it a perfectly lived-in look.",
+        "price": 50.99,
+        "tags":["apparel", "womens","hoodies"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjsf00453_billabong,w_thr0_frt1.jpg",
+        "stock": 12,
+        "saleItem": true
+    },
+    {
+        "name": "OFFSHORE FLEECE",
+        "brand": "O'Neil",
+        "description":"Cute and comfy. This is a fleece hoodie that has a relaxed fit, adjustable drawcord and high quality screen print design.",
+        "price": 59.99,
+        "tags":["apparel", "womens","hoodies"],
+        "image": "https://cdn.shopify.com/s/files/1/2034/7683/products/SP3410002_FAD_5_720x.jpg?v=1668553665",
+        "stock": 18,
+        "newArrival": true
+    },
+    {
+        "name": "Day Break Crew",
+        "brand": "Rip Curl",
+        "description":"The Daybreak Crew is a rad pullover jumper featuring a timeless stripe design and embroidered logo. Featuring a burnout garment wash finish to give it that vintage appeal, and made in a relaxed fir with looser width and casual vibe.",
+        "price": 59.99,
+        "tags":["apparel", "womens","hoodies"],
+        "image": "https://www.ripcurl.com/media/catalog/product/0/2/028wfl_0049-2.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:",
+        "stock": 7,
+        "bestSeller": true
+    },
+    {
+        "name": "Forever Saturday Hoodie",
+        "brand": "Billabong",
+        "description":"Made of blended cotton fabric, this comfy women's hoodie has a relaxed fit with a V-neckline, a kangaroo pouch pocket, and logo embroidery. A vintage wash completes the lived-in look.",
+        "price": 59.99,
+        "tags":["apparel", "womens","hoodies"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjft00354_billabong,w_bsd_frt1.jpg",
+        "stock": 16,
+        "saleItem": true
+    },
+    {
+        "name": "Billabong Peace Out Hoodie",
+        "brand": "Billabong",
+        "description":"Keep cozy all season with the new Peace Out Hoodie from Billabong. This super cute hoodie features long sleeves, a drawstring hood, a kangaroo pocket, and custom Billabong graphics at the left chest and back.",
+        "price": 34.99,
+        "tags":["apparel", "womens","hoodies"],
+        "image": "https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw48f40604/product_images/0751003220023NEW_00_054.jpg?sw=2000",
+        "stock": 18,
+        "saleItem": true,
+        "bestSeller":true
+    },
+    {
+        "name": "BRadiate Love Hoodie",
+        "brand": "Billabong",
+        "description":"Made of soft cotton-blend fabric, this cozy hoodie has a regular fit with a kangaroo pouch pocket and Billabong graphics. Instant good vibes.",
+        "price": 45,
+        "tags":["apparel", "womens","hoodies"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjsf00391_billabong,w_bfd0_frt1.jpg",
+        "stock": 7,
+        "newArrival": true
+    },
+    {
+        "name": "Sunbaked Shores Cropped Hooded Sweater",
+        "brand": "Roxy",
+        "description":"Made of cozy knit fabric, the Sunbaked Shores cropped hoodie sweater has a relaxed shape with a V-neck and coconut buttons. Striped in ocean blues and coastal hues, this long-sleeve sweater is a sunset essential.",
+        "price": 70,
+        "tags":["apparel", "womens","hoodies"],
+        "image": "https://images.boardriders.com/globalGrey/roxy-products/all/default/hi-res/arjsw03303_roxy,w_med4_frt1.jpg",
+        "stock": 10,
+        "newArrival": true
+    },
+    {
+        "name": "Cushion Vista Braid",
+        "brand": "Reef",
+        "description":"Offering the same renowned comfort with a stylish twit, the Reef® Cushion Vista Braid is an attractive sandal that is comfortable and offering incredible support. Once you slide your feet in you'll never want to take them off.",
+        "price": 30.99,
+        "tags":["apparel", "womens","footwear"],
+        "image": "https://m.media-amazon.com/images/I/71s4wdVMXAL._AC_SR1840,1472_.jpg",
+        "stock": 13,
+        "saleItem": true
+    },
+    {
+        "name": "COCO HO CUSHION SCOUT HI",
+        "brand": "Reef",
+        "description":"Our wildly popular Cushion Scout gets a lift and gets Hi, with a super cute layered platform sole that's made from injection-molded EVA for total comfort. In addition, our signature cushiony bouncy footbed includes arch and heel support for all-day \"ahhh.\" This on-trend sandal features a signature wide strap that's padded and water-friendly, so you can head to the beach in quite possibly the cutest sandal this season.",
+        "price": 60,
+        "tags":["apparel", "womens","footwear"],
+        "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/CJ3448_MAIN_16f26eba-5506-4cc3-b7c7-75945367f97c_1100x.jpg?v=1677865332",
+        "stock": 22,
+        "bestSeller": true
+    },
+    {
+        "name": "CUSHION REM HI",
+        "brand": "Reef",
+        "description":"Let's be a little cagey, as in straps that hug your foot all the way around, including a comfy elastic backstrap. The Cushion Rem Hi features our signature cushiony, bouncy footbed, with ultimate arch support, heel cupping, and a genuine cork topsheet. Best of all, these sandal's straps are made from 100% post-consumer plastic material, so you can feel good about them in every way. A layered, on-trend sole takes these platform sandals up a notch, so to speak. Cute, comfy, and up for anything.",
+        "price": 70,
+        "tags":["apparel", "womens","footwear"],
+        "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/CI9323_MAIN_1100x.jpg?v=1651184640",
+        "stock": 11,
+        "bestSeller": true
+    },
+    {
+        "name": "Crossing By Braided Sandals",
+        "brand": "Billabong",
+        "description":"Go wherever your wandering feet take you in the Crossing By sandal. This strappy sandal features a comfortable and lightweight design made with vegan friendly leather, and a flexible footbed that's built to hold up strong.",
+        "price": 35.95,
+        "tags":["apparel", "womens","footwear"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjl100047_billabong,p_ddz_frt3.jpg",
+        "stock": 20,
+        "bestSeller": true
+    },
+    {
+        "name": " Byron Bay Wedge Sandal",
+        "brand": "Billabong",
+        "description":"Elevate your summery wardrobe with the slip-on Byron Bay wedge sandal from BILLABONG. This cow leather-constructed sandal sports a cork wedge for a beachy touch.",
+        "price": 89.99,
+        "tags":["apparel", "womens","footwear"],
+        "image": "https://images.dsw.com/is/image/DSWShoes/556056_220_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2",
+        "stock": 13,
+        "newArrival": true
+    },
+    {
+        "name": "Montrey Slide Sandal",
+        "brand": "Billabong",
+        "description":"Diversify your summery wardrobe with the Montrey slide sandal from BILLABONG. This leather constructed pair sports a recycled sole for an added touch of sustainability.",
+        "price": 79.99,
+        "tags":["apparel", "womens","footwear"],
+        "image": "https://images.dsw.com/is/image/DSWShoes/556059_230_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2",
+        "stock": 24,
+        "newArrival": true
+    },
+    {
+        "name": "Gianna Flip Flop",
+        "brand": "Roxy",
+        "description":"Freshen up your warm weather shoe collection with the Gianna flip flop from Roxy. This casual pair is fashioned with bright stripes and easily pairs with anything from shorts to beach wear!",
+        "price": 29.99,
+        "tags":["apparel", "womens","footwear"],
+        "image": "https://images.dsw.com/is/image/DSWShoes/472975_122_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2",
+        "stock": 5,
+        "saleItem": true
+    },
+    {
+        "name": "Slippy Jute",
+        "brand": "Roxy",
+        "description":"Missing the tropics? The Roxy® Slippy Jute sandal will have you sliding in to dreams of palm trees and sandy toes. This slide sandal has a cushioned footbed and will add an exotic twist to your everyday look.",
+        "price": 31.95,
+        "tags":["apparel", "womens","footwear"],
+        "image": "https://m.media-amazon.com/images/I/61whNM123PS._AC_SR1840,1472_.jpg",
+        "stock": 9,
+        "saleItem": true
     }
 
-    
 ]

@@ -12,6 +12,7 @@ import {
 import '../css/home/Home.css';
 
 const Home = () => {
+
 	const { loading, data } = useQuery(QUERY_USERS);
 	const users = data?.users || [];
 	// const accessories = false;

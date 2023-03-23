@@ -9,15 +9,27 @@ import { useQuery } from '@apollo/client';
 import { QUERY_ITEMS_BY_NAMES, GET_ME } from '../utils/queries';
 
 const addresses = ['1 MUI Drive', 'Reactville', 'Anytown', '99999', 'USA'];
-const payments = [
-  { name: 'Card type', detail: 'Visa' },
-  { name: 'Card holder', detail: 'Mr John Smith' },
-  { name: 'Card number', detail: 'xxxx-xxxx-xxxx-1234' },
-  { name: 'Expiry date', detail: '04/2024' },
-];
+// const payments = [
+//   { name: 'Card type', detail: 'Visa' },
+//   { name: 'Card holder', detail: 'Mr John Smith' },
+//   { name: 'Card number', detail: 'xxxx-xxxx-xxxx-1234' },
+//   { name: 'Expiry date', detail: '04/2024' },
+// ];
+
+const payments = []
+
 
 export default function Review(props) {
-
+    let cardX = 'XXXX-'
+    for(let i = props.paymentInfo.cardNumber.length-4; i < props.paymentInfo.cardNumber.length; i++){
+            cardX += props.paymentInfo.cardNumber[i].toString()
+    }
+    console.log(cardX)
+    payments.push({name: 'Card Holder', detail: props.paymentInfo.cardName, })
+    payments.push({name: 'Card Number', detail: cardX})
+    payments.push({name: 'Expiration Date', detail: props.paymentInfo.expDate})
+    
+    console.log(props.paymentInfo)
     const { cart } = useCartContext()
 
     const itemNameList = []
@@ -66,24 +78,40 @@ export default function Review(props) {
             <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
                 Shipping
             </Typography>
-            <Typography gutterBottom>John Smith</Typography>
-            <Typography gutterBottom>{addresses.join(', ')}</Typography>
+            <Typography gutterBottom>{`${props.shippingAddress.firstName} ${props.shippingAddress.lastName}`}</Typography>
+            <Typography gutterBottom>{`${props.shippingAddress.address1} ${props.shippingAddress.address2}, ${props.shippingAddress.city}, ${props.shippingAddress.state}, ${props.shippingAddress.zip}, ${props.shippingAddress.country}`}</Typography>
             </Grid>
             <Grid item container direction="column" xs={12} sm={6}>
             <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
                 Payment details
             </Typography>
             <Grid container>
-                {payments.map((payment) => (
-                <React.Fragment key={payment.name}>
+                
+                <React.Fragment >
                     <Grid item xs={6}>
-                    <Typography gutterBottom>{payment.name}</Typography>
+                    <Typography gutterBottom>{`CardHolder`}</Typography>
                     </Grid>
                     <Grid item xs={6}>
-                    <Typography gutterBottom>{payment.detail}</Typography>
+                    <Typography gutterBottom>{props.paymentInfo.cardName}</Typography>
                     </Grid>
                 </React.Fragment>
-                ))}
+                <React.Fragment >
+                    <Grid item xs={6}>
+                    <Typography gutterBottom>{`Card Number`}</Typography>
+                    </Grid>
+                    <Grid item xs={6}>
+                    <Typography gutterBottom>{cardX}</Typography>
+                    </Grid>
+                </React.Fragment>
+                <React.Fragment >
+                    <Grid item xs={6}>
+                    <Typography gutterBottom>{`Expiration Date`}</Typography>
+                    </Grid>
+                    <Grid item xs={6}>
+                    <Typography gutterBottom>{props.paymentInfo.expDate}</Typography>
+                    </Grid>
+                </React.Fragment>
+               
             </Grid>
             </Grid>
         </Grid>

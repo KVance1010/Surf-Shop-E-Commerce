@@ -20,6 +20,7 @@ const typeDefs = gql`
         bestSeller: Boolean
         saleItem: Boolean
         newArrival: Boolean
+        uuid: String
     }
 
     type Auth {
@@ -41,7 +42,8 @@ const typeDefs = gql`
         items: [Item]
         itemsByCategory(tags: [String]): [Item]
         itemByName(name: String): Item
-        itemById(_id: String): Item
+        itemById(id: ID!): Item
+        itemByUUID(uuid: String!): Item
         itemsByNames(names: [String]): [Item]
         me: User
         ordersByEmail(email: String): [Order]
@@ -49,8 +51,16 @@ const typeDefs = gql`
 
     type Mutation {
         addUser(firstName: String!, lastName: String, email: String, password: String): Auth
+
         login(email: String, password: String!): Auth
+
         addOrder(email: String, itemNames: [String], itemPrices: [Float], itemQuantities: [Int], itemImages: [String] createdAt: String): Order
+        
+        addItem(name: String, price: Float, description: String, tags: [String], image: String, stock: Int, brand: String, bestSeller: Boolean, saleItem: Boolean, newArrival: Boolean):Item
+
+        updateItem(uuid: String, name: String, price: Float, description: String, tags: [String], image: String, stock: Int, brand: String, bestSeller: Boolean, saleItem: Boolean, newArrival: Boolean):Item
+
+        deleteItem(uuid: String!): Item
     }
 `
 

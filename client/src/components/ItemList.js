@@ -1,7 +1,6 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 import { QUERY_ITEMS_BY_TAGS } from '../utils/queries';
-import { Link } from 'react-router-dom';
 import Item from './Item';
 
 const ItemList = () => {
@@ -26,41 +25,17 @@ console.log('tags' + tags);
 
 	const items = data?.itemsByCategory || [];
 	return (
-		<div>
+		<div className='categoryItemContainer'>
 			{loading ? (
 				<div>...loading</div>
 			) : (
 				 (
 					<div className="categoryList">
-						{items.map((item, index) => (
+						{items.map((item) => (
 							<Item key= {item.name} displayItem ={item} />
 						))}
 					</div>
 				)
-				// <ul className="container col-3 ">
-				// 	{items.map((item, index) => (
-				// 		<div className="card container">
-				// 			<div className="card-body">
-				// 				<h3 className="card-title">{item.name}</h3>
-				// 				{item.saleItem ? <h4>On Sale!!</h4> : <></>}
-				// 				{item.newArrival ? <h4>New Arrival!!</h4> : <></>}
-				// 				{item.bestSeller ? <h4>Best Seller!!</h4> : <></>}
-				// 				<img
-				// 					src={item.image}
-				// 					alt={item.name}
-				// 					className="card-img-top img-fluid"
-				// 				/>
-				// 				<h4>Price: ${item.price}</h4>
-				// 				<Link
-				// 					to={`${item.name}`}
-				// 					className="btn btn-success d-flex justify-content-center"
-				// 				>
-				// 					Learn More
-				// 				</Link>
-				// 			</div>
-				// 		</div>
-				// 	))}
-				// </ul>
 			)}
 		</div>
 	);

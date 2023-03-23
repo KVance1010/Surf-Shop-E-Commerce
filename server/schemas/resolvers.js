@@ -37,7 +37,13 @@ const resolvers = {
             }))
         },
         itemById: async (parent, args) => {
-            return (await Item.findById(args._id))
+            console.log(args.id)
+            return Item.findOne({_id: args.id})
+        },
+        itemByUUID: async (parent, args) => {
+            return await Item.findOne({
+                uuid: args.uuid
+            })
         },
         ordersByEmail: async (parent, args) => {
             return (await Order.find({
@@ -64,6 +70,34 @@ const resolvers = {
                 itemQuantities: args.itemQuantities,
                 createdAt: args.createdAt,
                 itemImages: args.itemImages
+            })
+        },addItem: async (parent, args) => {
+      
+            const item = await Item.create({
+                name: args.name,
+                price: args.price,
+                description: args.description,
+                tags: args.tags,
+                image: args.image,
+                stock: args.stock,
+                brand: args.brand,
+                bestSeller: args.bestSeller,
+                saleItem: args.saleItem,
+                newArrival: args.newArrival
+            })
+            return item
+        },
+        updateItem: async (parent, args) => {
+            const item = await Item.findOne({
+                uuid: args.uuid
+            })
+            return (await item.update(
+                {...args},
+            ))
+        },
+        deleteItem: async (parent, args) => {
+            const deletedItem = await Item.deleteOne({
+                uuid: args.uuid
             })
         },
         login: async (parent, args) => {

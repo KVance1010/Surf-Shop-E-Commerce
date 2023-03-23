@@ -1,15 +1,51 @@
+.categoryItemContainer{
+	min-height:calc(100vh - 108px);
+	background-color: var(--mainBackgroundColor);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .itemContainer {
 	display: flex;
 	justify-content: center;
     align-items: center;
-	background-color: #005377;
-	padding: 40px 0;
-	height: 86vh;
+	flex-flow:row wrap;
+	background-color: var(--mainBackgroundColor);
+    align-content: space-around;
 }
 .itemCard {
-	max-width: 1000px;
+	width: 30vw;
+    min-width: 300px;
+    max-width:520px;
+	min-height: 526px;
+	height: 100%;
 	border: solid 2px var(--boldFontColor);
+}
+.extraInfoTags{
+	display: flex;
+}
+.itemCard h4{
+	margin-left: 20px;
 }
 .imgFluid {
 	margin-bottom: 20px;
+}
+
+.updateDelete{
+	padding: 10px;
+}
+.updateDelete a {
+	color: green;
+	margin: 10px;
+}
+.updateDelete span{
+	color: red;
+	margin: 10px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+	.dropDownDescription {
+		display: none !important;
+	}
 }

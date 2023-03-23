@@ -7,10 +7,20 @@ import { useCartContext } from '../../utils/cartContext';
 import Auth from '../../utils/auth';
 
 const Links = ({ currentPage, handlePageChange }) => {
+	console.log('is admin?', Auth.isAdmin())
 	const { cart, cartTotal } = useCartContext();
 
 	return (
 		<>
+			{Auth.isAdmin() ? (
+				<li>
+					<Link to={'/admin'} className="navLink">
+						Admin
+					</Link>
+				</li>
+				) : (
+				<></>
+			)}
 			<li>
 				<Link
 					to="/apparel"

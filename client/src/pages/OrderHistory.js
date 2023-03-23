@@ -41,6 +41,7 @@ const OrderHistory = () => {
         ) : (
             <ul>
             {orders.map((order, index) => {
+                console.log('number of orders', orders.length)
                 let total = 0
                 return(
                     <li key={index}>
