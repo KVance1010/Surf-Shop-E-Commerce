@@ -14,16 +14,6 @@ const Update = () => {
     let tagsArray = []
 
     let item = JSON.parse(localStorage.getItem('item'))
-    // setFormState({
-    //     name: item.name,
-    //     price: item.price.toString(),
-    //     description: item.description,
-    //     tags: item.tags,
-    //     image: item.image,
-    //     stock: item.stock,
-    //     brand: item.brand
-    // })
-
     
     useEffect(() => {
         console.log(item)
@@ -38,7 +28,6 @@ const Update = () => {
         })
     }, [])
     const handleChange = (event) => {
-       
         const { name, value } = event.target;
         
         setFormState({

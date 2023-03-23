@@ -9,7 +9,6 @@ const Admin = () => {
         window.location.replace('/login')
     }
 
-
     return(
         <div>
             <h1>

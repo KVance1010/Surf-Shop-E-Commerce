@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import Auth from '../utils/auth';
 
 const Cart = () => {
-	const { cart, setCart, clearCart, addItem, removeItem, cartTotal } =
+	const { cart, setCart} =
 		useCartContext();
 
 	const itemNameList = [];

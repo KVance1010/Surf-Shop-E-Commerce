@@ -67,37 +67,37 @@ export default function Checkout() {
   //convert cart object into order object
   const { cart } = useCartContext()
 
-    const itemNameList = []
-    for(let key in cart){
-        itemNameList.push(key)
-    }
+  const itemNameList = []
+  for(let key in cart){
+      itemNameList.push(key)
+  }
 
-    const { loading, data } = useQuery(QUERY_ITEMS_BY_NAMES, {
-        variables: {names: itemNameList}
-    })
-    const [addOrder, {error, orderData}] = useMutation(ADD_ORDER)
-    const [updateStocks, {updateStocksError, updateStocksData}] = useMutation(UPDATE_STOCKS_BY_NAMES)
-    
-    const items = data?.itemsByNames || []
+  const { loading, data } = useQuery(QUERY_ITEMS_BY_NAMES, {
+      variables: {names: itemNameList}
+  })
+  const [addOrder, {error, orderData}] = useMutation(ADD_ORDER)
+  const [updateStocks, {updateStocksError, updateStocksData}] = useMutation(UPDATE_STOCKS_BY_NAMES)
+  
+  const items = data?.itemsByNames || []
 
-    let total = 0
-    for(let i = 0; i < items.length; i++){
-        total += items[i].price * cart[items[i].name]
-    }
+  let total = 0
+  for(let i = 0; i < items.length; i++){
+      total += items[i].price * cart[items[i].name]
+  }
 
-    const itemPrices = []
-    const itemQuantities = []
-    const newStocks = []
-    const itemNames = []
-    const itemImages = []
+  const itemPrices = []
+  const itemQuantities = []
+  const newStocks = []
+  const itemNames = []
+  const itemImages = []
 
-    items.map((item) => {
-      itemPrices.push(item.price)
-      itemQuantities.push(cart[item.name])
-      newStocks.push(item.stock - cart[item.name])
-      itemNames.push(item.name)
-      itemImages.push(item.image)
-    })
+  items.map((item) => {
+    itemPrices.push(item.price)
+    itemQuantities.push(cart[item.name])
+    newStocks.push(item.stock - cart[item.name])
+    itemNames.push(item.name)
+    itemImages.push(item.image)
+  })
   console.log(newStocks)
   const [activeStep, setActiveStep] = React.useState(0);
   const { clearCart } = useCartContext()
