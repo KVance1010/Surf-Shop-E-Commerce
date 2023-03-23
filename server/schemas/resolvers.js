@@ -100,6 +100,15 @@ const resolvers = {
                 uuid: args.uuid
             })
         },
+        updateStocksByNames: async (parent, args) => {
+            for(let i = 0; i < args.names.length; i ++){
+                const updatedItem = await Item.findOneAndUpdate(
+                    {name: args.names[i]},
+                    {stock: args.stocks[i]},
+                    {new: true}
+                )
+            }
+        },
         login: async (parent, args) => {
             const user = await User.findOne({email: args.email})
             if(!user) {

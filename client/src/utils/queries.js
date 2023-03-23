@@ -98,14 +98,15 @@ query Query($uuid: String!) {
   }
 `
 export const QUERY_ITEMS_BY_NAMES = gql`
-    query getItemsByNames($names: [String]) {
-        itemsByNames(names: $names) {
-        name
-        price
-        image
-        brand
-        }
-    }
+query Query($names: [String]) {
+  itemsByNames(names: $names) {
+    name
+    price
+    image
+    brand
+    stock
+  }
+}
 `
 export const GET_ME = gql`
 query me {

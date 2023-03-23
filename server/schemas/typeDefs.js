@@ -61,6 +61,8 @@ const typeDefs = gql`
         updateItem(uuid: String, name: String, price: Float, description: String, tags: [String], image: String, stock: Int, brand: String, bestSeller: Boolean, saleItem: Boolean, newArrival: Boolean):Item
 
         deleteItem(uuid: String!): Item
+
+        updateStocksByNames(names: [String], stocks: [Int]): [Item]
     }
 `
 

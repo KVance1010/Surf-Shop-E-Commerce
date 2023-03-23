@@ -77,3 +77,11 @@ mutation Mutation($uuid: String!) {
   }
 }
 `
+export const UPDATE_STOCKS_BY_NAMES = gql`
+mutation UpdateStocksByNames($names: [String], $stocks: [Int]) {
+  updateStocksByNames(names: $names, stocks: $stocks) {
+    name
+    stock
+  }
+}
+`

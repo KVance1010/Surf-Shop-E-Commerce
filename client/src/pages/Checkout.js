@@ -19,7 +19,9 @@ import PaymentForm from '../components/PaymentForm';
 import Review from '../components/Review';
 import { useCartContext } from '../utils/cartContext';
 import { QUERY_ITEMS_BY_NAMES } from '../utils/queries';
+import { UPDATE_STOCKS_BY_NAMES } from '../utils/mutations';
 import { ADD_ORDER } from '../utils/mutations';
+import { UPDATE_ITEM } from '../utils/mutations';
 
 function Copyright() {
   return (
@@ -74,6 +76,7 @@ export default function Checkout() {
         variables: {names: itemNameList}
     })
     const [addOrder, {error, orderData}] = useMutation(ADD_ORDER)
+    const [updateStocks, {updateStocksError, updateStocksData}] = useMutation(UPDATE_STOCKS_BY_NAMES)
     
     const items = data?.itemsByNames || []
 
@@ -84,16 +87,18 @@ export default function Checkout() {
 
     const itemPrices = []
     const itemQuantities = []
+    const newStocks = []
     const itemNames = []
     const itemImages = []
 
     items.map((item) => {
       itemPrices.push(item.price)
       itemQuantities.push(cart[item.name])
+      newStocks.push(item.stock - cart[item.name])
       itemNames.push(item.name)
       itemImages.push(item.image)
     })
-
+  console.log(newStocks)
   const [activeStep, setActiveStep] = React.useState(0);
   const { clearCart } = useCartContext()
 
@@ -101,8 +106,10 @@ export default function Checkout() {
 
   const handleNext =  () => {
     console.log(shippingAddress)
+    //when order is submitted
     if(activeStep === steps.length - 1) {
       try{
+        
         const { data } =  addOrder({
           variables: {
             email: (localStorage.getItem('email')),
@@ -113,6 +120,13 @@ export default function Checkout() {
             createdAt: JSON.stringify(Date.now())
           }
         })
+        const { stocksData } = updateStocks({
+          variables: {
+            names: itemNames,
+            stocks: newStocks
+          }
+        })
+
       }catch(e){
         console.error(e)
       }
