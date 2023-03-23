@@ -61,7 +61,7 @@ const Item = ({ displayItem: item }) => {
 	};
 	const deleteItem = async () => {
 		const yesDelete = window.confirm(
-			'A	re you sure you want to delete this item? All data for this item will be lost'
+			'Are you sure you want to delete this item? All data for this item will be lost'
 		);
 		if (yesDelete) {
 			try {
@@ -94,6 +94,7 @@ const Item = ({ displayItem: item }) => {
 					{item.saleItem ? <h4>On Sale!!</h4> : <></>}
 					{item.newArrival ? <h4>New Arrival!!</h4> : <></>}
 					{item.bestSeller ? <h4>Best Seller!!</h4> : <></>}
+					{item.stock < 6 && item.stock > 0? <h4>Only {item.stock} left in stock!!</h4> : <></>}
 				</div>
 				<CardActions>
 					<Typography variant="body5">Price: ${item.price}</Typography>
@@ -101,9 +102,16 @@ const Item = ({ displayItem: item }) => {
 						<span className="dropDownDescription">Description</span>
 						<ExpandMoreIcon expand={expanded} aria-expanded={expanded} />
 					</ExpandMore>
-					<Button size="small" onClick={addToCart}>
+					{item.stock > 0 ? (
+						<Button size="small" onClick={addToCart}>
 						Add to Cart!
 					</Button>
+					) : (
+						<div style={{"color":"red"}}>
+							OUT OF STOCK
+						</div>
+					)}
+					
 				</CardActions>
 				<Collapse in={expanded} timeout="auto" unmountOnExit>
 					<CardContent>
