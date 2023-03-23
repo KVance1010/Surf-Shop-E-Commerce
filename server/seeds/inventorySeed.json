@@ -1050,6 +1050,86 @@
         "image": "https://images.boardriders.com/globalGrey/roxy-products/all/default/hi-res/arjsw03303_roxy,w_med4_frt1.jpg",
         "stock": 10,
         "newArrival": true
+    },
+    {
+        "name": "Cushion Vista Braid",
+        "brand": "Reef",
+        "description":"Offering the same renowned comfort with a stylish twit, the Reef® Cushion Vista Braid is an attractive sandal that is comfortable and offering incredible support. Once you slide your feet in you'll never want to take them off.",
+        "price": 30.99,
+        "tags":["apparel", "womens","footwear"],
+        "image": "https://m.media-amazon.com/images/I/71s4wdVMXAL._AC_SR1840,1472_.jpg",
+        "stock": 13,
+        "saleItem": true
+    },
+    {
+        "name": "COCO HO CUSHION SCOUT HI",
+        "brand": "Reef",
+        "description":"Our wildly popular Cushion Scout gets a lift and gets Hi, with a super cute layered platform sole that's made from injection-molded EVA for total comfort. In addition, our signature cushiony bouncy footbed includes arch and heel support for all-day \"ahhh.\" This on-trend sandal features a signature wide strap that's padded and water-friendly, so you can head to the beach in quite possibly the cutest sandal this season.",
+        "price": 60,
+        "tags":["apparel", "womens","footwear"],
+        "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/CJ3448_MAIN_16f26eba-5506-4cc3-b7c7-75945367f97c_1100x.jpg?v=1677865332",
+        "stock": 22,
+        "bestSeller": true
+    },
+    {
+        "name": "CUSHION REM HI",
+        "brand": "Reef",
+        "description":"Let's be a little cagey, as in straps that hug your foot all the way around, including a comfy elastic backstrap. The Cushion Rem Hi features our signature cushiony, bouncy footbed, with ultimate arch support, heel cupping, and a genuine cork topsheet. Best of all, these sandal's straps are made from 100% post-consumer plastic material, so you can feel good about them in every way. A layered, on-trend sole takes these platform sandals up a notch, so to speak. Cute, comfy, and up for anything.",
+        "price": 70,
+        "tags":["apparel", "womens","footwear"],
+        "image": "https://cdn.shopify.com/s/files/1/0589/8924/8667/products/CI9323_MAIN_1100x.jpg?v=1651184640",
+        "stock": 11,
+        "bestSeller": true
+    },
+    {
+        "name": "Crossing By Braided Sandals",
+        "brand": "Billabong",
+        "description":"Go wherever your wandering feet take you in the Crossing By sandal. This strappy sandal features a comfortable and lightweight design made with vegan friendly leather, and a flexible footbed that's built to hold up strong.",
+        "price": 35.95,
+        "tags":["apparel", "womens","footwear"],
+        "image": "https://images.boardriders.com/global/billabong-products/all/default/hi-res/abjl100047_billabong,p_ddz_frt3.jpg",
+        "stock": 20,
+        "bestSeller": true
+    },
+    {
+        "name": " Byron Bay Wedge Sandal",
+        "brand": "Billabong",
+        "description":"Elevate your summery wardrobe with the slip-on Byron Bay wedge sandal from BILLABONG. This cow leather-constructed sandal sports a cork wedge for a beachy touch.",
+        "price": 89.99,
+        "tags":["apparel", "womens","footwear"],
+        "image": "https://images.dsw.com/is/image/DSWShoes/556056_220_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2",
+        "stock": 13,
+        "newArrival": true
+    },
+    {
+        "name": "Montrey Slide Sandal",
+        "brand": "Billabong",
+        "description":"Diversify your summery wardrobe with the Montrey slide sandal from BILLABONG. This leather constructed pair sports a recycled sole for an added touch of sustainability.",
+        "price": 79.99,
+        "tags":["apparel", "womens","footwear"],
+        "image": "https://images.dsw.com/is/image/DSWShoes/556059_230_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2",
+        "stock": 24,
+        "newArrival": true
+    },
+    {
+        "name": "Gianna Flip Flop",
+        "brand": "Roxy",
+        "description":"Freshen up your warm weather shoe collection with the Gianna flip flop from Roxy. This casual pair is fashioned with bright stripes and easily pairs with anything from shorts to beach wear!",
+        "price": 29.99,
+        "tags":["apparel", "womens","footwear"],
+        "image": "https://images.dsw.com/is/image/DSWShoes/472975_122_ss_01?impolicy=qlt-medium-high&imwidth=640&imdensity=2",
+        "stock": 5,
+        "saleItem": true
+    },
+    {
+        "name": "Slippy Jute",
+        "brand": "Roxy",
+        "description":"Missing the tropics? The Roxy® Slippy Jute sandal will have you sliding in to dreams of palm trees and sandy toes. This slide sandal has a cushioned footbed and will add an exotic twist to your everyday look.",
+        "price": 31.95,
+        "tags":["apparel", "womens","footwear"],
+        "image": "https://m.media-amazon.com/images/I/61whNM123PS._AC_SR1840,1472_.jpg",
+        "stock": 9,
+        "saleItem": true
     }
 
 ]
