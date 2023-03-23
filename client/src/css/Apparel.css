@@ -3,14 +3,16 @@
 	background-color: var(--mainBackgroundColor);
 	padding: 40px 60px;
 	gap: 60px;
-	justify-content: center;
+	height: calc(100vh - 108px);
+	justify-content: space-between;
+	align-items: center;
 }
 .apparel {
 	width: 45vw;
 	position: relative;
-	/* height: calc(100vh- - 89px); */
 }
 .apparel img {
+	min-width: 300px;
 	width: 45vw;
 	object-fit: cover;
 	height: 75vh;
@@ -21,22 +23,20 @@
 .apparelTag {
 	color: var(--boldFontColor);
 	position: absolute;
-	z-index: 2;
+	z-index: 3;
 	width: 45vw;
-	padding: 40px;
 	font-size: 48px;
-	bottom: 60px;
+	bottom: 15%;
 	text-align: center;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1375px) {
 	.apparelContainer {
 		flex-direction: column-reverse;
 		justify-content: center;
 		align-items: center;
-		justify-content: center;
-		align-content: center;
 		gap: 40px;
+		height: 100%;
 	}
 	.apparel {
 		justify-self: center;

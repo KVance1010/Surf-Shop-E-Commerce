@@ -51,7 +51,7 @@ const Links = ({ currentPage, handlePageChange }) => {
 			</li>
 			<li>
 				<Link to={Auth.loggedIn() ? '/account' : '/login'}>
-					<PersonIcon />
+					<PersonIcon sx={{ fontSize: 32, color:'#d5c67a' }}/>
 				</Link>
 			</li>
 		</>

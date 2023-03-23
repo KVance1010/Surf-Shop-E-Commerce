@@ -12,7 +12,7 @@ const CarouselComponent = (props) => {
     let sex = props.type.substring(0, props.type.indexOf(' ')).toLowerCase();
     type = `${cat}/${sex}`;
   }else{
-    type = `${props.type}/${props.type}`;
+    type = `${props.type}`;
   }
   const responsive = {
 		desktop: {

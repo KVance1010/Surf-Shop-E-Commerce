@@ -47,3 +47,9 @@
 		
 	}
 }
+@media screen and (max-width: 425px) {
+	.heroContainer video {
+		height: calc(100vh - 59px);
+	}
+	
+}

@@ -28,18 +28,19 @@ const ExpandMore = styled((props) => {
 	}),
 }));
 
-const Item = () => {
-	const { item } = useParams({});
+const Item = ({displayItem: item}) => {
+	console.log(item);
+	// const { item } = useParams({});
 	const [expanded, setExpanded] = React.useState(false);
 	const handleExpandClick = () => {
 		setExpanded(!expanded);
 	};
 
 	const { cart, addItem, setCart } = useCartContext();
-	const { loading, data } = useQuery(QUERY_ITEM_BY_NAME, {
-		variables: { name: item },
-	});
-	const itemData = data?.itemByName || {};
+	// const { loading, data } = useQuery(QUERY_ITEM_BY_NAME, {
+	// 	variables: { name: item },
+	// });
+	// const itemData = data?.itemByName || {};
 	const addToCart = () => {
 		addItem({ name: item });
 		setCart({ ...cart });
@@ -47,22 +48,22 @@ const Item = () => {
 	};
 
 	return (
-		<div className="itemContainer" style={{}}>
-			{loading ? (
+		<div className="itemContainer">
+			{/* {loading ? (
 				<div>...loading</div>
-			) : (
+			) : ( */}
 				<Card className="itemCard">
-					<CardHeader title={itemData.name} />
+					<CardHeader title={item.name} />
 					<CardMedia
 						sx={{ height: 350, objectFit: 'scale-down' }}
-						image={itemData.image}
+						image={item.image}
 						alt={item.alt}
 						className="imgFluid"
 						title={item.name}
 						component="img"
 					/>
 					<CardActions>
-						<Typography variant="body5">Price: ${itemData.price}</Typography>
+						<Typography variant="body5">Price: ${item.price}</Typography>
 						<ExpandMore aria-label="show more" onClick={handleExpandClick}>
 							{' '}
 							Description
@@ -75,12 +76,12 @@ const Item = () => {
 					<Collapse in={expanded} timeout="auto" unmountOnExit>
 						<CardContent>
 							<Typography variant="body2" color="black">
-								{itemData.description}
+								{item.description}
 							</Typography>
 						</CardContent>
 					</Collapse>
 				</Card>
-			)}
+			{/* )} */}
 		</div>
 	);
 };

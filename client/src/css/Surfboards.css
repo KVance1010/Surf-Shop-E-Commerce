@@ -1,13 +1,17 @@
 .surfboardsContainer {
 	display: flex;
 	padding: 47px 0;
-	height: calc(100vh - 88px);
+	height: calc(100vh - 108px);
 	justify-content: space-evenly;
+	/* justify-content: center; */
+	flex-flow: row wrap;
+	align-content: space-around;
 	background-color: var(--mainBackgroundColor);
 }
 
 .boardContent {
 	width: 20%;
+	margin: 0 20px 40px ;
     min-width:285px;
 }
 .boardContent img:hover {
@@ -28,5 +32,6 @@
 }
 @media screen and (max-width: 1500px) {
 	.surfboardsContainer {
+		height: 100%;
 	}
 }
