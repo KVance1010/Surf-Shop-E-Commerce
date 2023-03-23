@@ -1,3 +1,19 @@
+.emptyCartContainer {
+    height: calc(100vh - 108px);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartContainer {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+}
 .cart_item_image{
     width: 200px
+}
+.emptyCart {
+    font-size: 68px;
 }
