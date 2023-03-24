@@ -1,4 +1,5 @@
 {
+  
   "name": "mern-template",
   "version": "1.0.0",
   "description": "",
@@ -24,6 +25,9 @@
     "url": "https://github.com/mseaman26/MERN-Template/issues"
   },
   "homepage": "https://github.com/mseaman26/MERN-Template#readme",
+  "engines":{
+    "node":"16.18.0"
+  },
   "dependencies": {
     "bson-objectid": "^2.0.4"
   }

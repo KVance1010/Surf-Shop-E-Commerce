@@ -9,6 +9,9 @@
     "seed": "node seeds/seed.js",
     "watch": "nodemon server.js"
   },
+  "engines":{
+    "node":"16.18.0"
+  },
   "dependencies": {
     "apollo-server-express": "^3.6.2",
     "bcrypt": "^5.1.0",
