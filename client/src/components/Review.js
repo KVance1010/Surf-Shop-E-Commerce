@@ -6,30 +6,14 @@ import ListItemText from '@mui/material/ListItemText';
 import Grid from '@mui/material/Grid';
 import { useCartContext } from '../utils/cartContext';
 import { useQuery } from '@apollo/client';
-import { QUERY_ITEMS_BY_NAMES, GET_ME } from '../utils/queries';
-
-const addresses = ['1 MUI Drive', 'Reactville', 'Anytown', '99999', 'USA'];
-// const payments = [
-//   { name: 'Card type', detail: 'Visa' },
-//   { name: 'Card holder', detail: 'Mr John Smith' },
-//   { name: 'Card number', detail: 'xxxx-xxxx-xxxx-1234' },
-//   { name: 'Expiry date', detail: '04/2024' },
-// ];
-
-const payments = []
-
+import { QUERY_ITEMS_BY_NAMES } from '../utils/queries';
 
 export default function Review(props) {
     let cardX = 'XXXX-'
     for(let i = props.paymentInfo.cardNumber.length-4; i < props.paymentInfo.cardNumber.length; i++){
             cardX += props.paymentInfo.cardNumber[i].toString()
     }
-    console.log(cardX)
-    payments.push({name: 'Card Holder', detail: props.paymentInfo.cardName, })
-    payments.push({name: 'Card Number', detail: cardX})
-    payments.push({name: 'Expiration Date', detail: props.paymentInfo.expDate})
-    
-    console.log(props.paymentInfo)
+
     const { cart } = useCartContext()
 
     const itemNameList = []
@@ -47,10 +31,6 @@ export default function Review(props) {
     for(let i = 0; i < items.length; i++){
         total += items[i].price * cart[items[i].name]
     }
-
-
-
-    
 
     return (
         <React.Fragment>

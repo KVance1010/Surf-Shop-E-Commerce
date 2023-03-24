@@ -20,7 +20,7 @@ const ItemList = () => {
 	if (pageTag) {
 		tags.push(pageTag);
 	}
-console.log('tags' + tags);
+
 	const { loading, data } = useQuery(QUERY_ITEMS_BY_TAGS, {
 		variables: { tags: tags },
 		fetchPolicy: 'cache-and-network' //gets most updated data

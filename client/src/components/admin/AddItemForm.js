@@ -61,7 +61,6 @@ const AddItemForm = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        console.log(formState)
 
         try{
             const {data} = await addItem({
@@ -104,18 +103,6 @@ const AddItemForm = () => {
                     <label>Image URL</label><br/>
                     <input type="text" className="form-control" id="itemBrand" name='image' onChange={handleChange}/>
                 </div><br/>
-                {/* <div className="form-group">
-                    <label >tag 1</label><br/>
-                    <input type="text" className="form-control" id="tag1" />
-                </div>
-                <div className="form-group">
-                    <label>tag 2</label><br/>
-                    <input type="text" className="form-control" id="tag2" />
-                </div>
-                <div className="form-group">
-                    <label>tag 3</label><br/>
-                    <input type="text" className="form-control" id="itemDescription" />
-                </div> */}
                 <div className="form-group row">
                     <div className="col-sm-10">
                         <div className="form-check">

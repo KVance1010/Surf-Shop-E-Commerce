@@ -7,7 +7,7 @@ import { useCartContext } from '../../utils/cartContext';
 import Auth from '../../utils/auth';
 
 const Links = ({ currentPage, handlePageChange }) => {
-	console.log('is admin?', Auth.isAdmin())
+
 	const { cart, cartTotal } = useCartContext();
 
 	return (
@@ -56,7 +56,6 @@ const Links = ({ currentPage, handlePageChange }) => {
 				>
 					<ShoppingCartCheckoutIcon sx={{ fontSize: 32 }}/>
 					<div className="cartTotal">{cartTotal()}</div>
-					{console.log('logged in', Auth.loggedIn())}
 				</Link>
 			</li>
 			<li>
