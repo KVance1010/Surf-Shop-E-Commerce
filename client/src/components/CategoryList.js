@@ -4,7 +4,7 @@ import {
 	mensApparelCategory,
 	womensApparelCategory,
 } from '../utils/categoryList';
-import '../css/CategoryList.css';
+import '../css/categoryList.css';
 
 const CategoryList = ({}) => {
 	const { categoryName } = useParams({});

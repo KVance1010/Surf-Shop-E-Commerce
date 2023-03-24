@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useQuery } from '@apollo/client';
 import { QUERY_ITEMS_BY_NAMES } from '../utils/queries';
 import { useCartContext } from '../utils/cartContext';
-import '../css/Cart.css';
+import '../css/cart.css';
 import { Link } from 'react-router-dom';
 import Auth from '../utils/auth';
 
