@@ -51,7 +51,6 @@ export default function Login() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(formState)
     try{
       const { data } = await login({
         variables: {...formState}

@@ -61,7 +61,6 @@ const AddItemForm = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        console.log(formState)
 
         try{
             const {data} = await addItem({

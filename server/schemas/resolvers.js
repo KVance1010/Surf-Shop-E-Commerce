@@ -13,7 +13,6 @@ const resolvers = {
         me: async (parent, args, context) => {
             if(context.user){
                 const userData = User.findOne({_id: context.user._id})
-                console.log(userData)
                 return userData
             }
             throw new AuthenticationError('you are not logged in!')
@@ -37,7 +36,6 @@ const resolvers = {
             }))
         },
         itemById: async (parent, args) => {
-            console.log(args.id)
             return Item.findOne({_id: args.id})
         },
         itemByUUID: async (parent, args) => {

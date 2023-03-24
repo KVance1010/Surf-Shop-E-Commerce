@@ -16,7 +16,6 @@ const Update = () => {
     let item = JSON.parse(localStorage.getItem('item'))
     
     useEffect(() => {
-        console.log(item)
         setFormState({
             name: item.name,
             price: item.price.toString(),
@@ -66,7 +65,6 @@ const Update = () => {
 
     const handleBooleanChange = async (event) => {
         const { name, checked } = event.target
-        console.log('check value', checked) 
         setFormState({
             ...formState,
             [name]: checked
@@ -75,7 +73,6 @@ const Update = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        console.log(formState)
         
         try{
             const {data} = await updateItem({

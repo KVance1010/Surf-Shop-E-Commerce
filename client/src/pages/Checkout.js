@@ -59,7 +59,6 @@ const theme = createTheme();
 export default function Checkout() {
   const [shippingAddress, setShippingAddress] = useState({})
   const handleShippingAddress = (address) => setShippingAddress(address)
-  console.log(shippingAddress)
 
   const [paymentInfo, setPaymentInfo] = useState({})
   const handlePaymentInfo = (paymentInfo) => setPaymentInfo(paymentInfo)
@@ -98,14 +97,12 @@ export default function Checkout() {
     itemNames.push(item.name)
     itemImages.push(item.image)
   })
-  console.log(newStocks)
   const [activeStep, setActiveStep] = React.useState(0);
   const { clearCart } = useCartContext()
 
   const [addressError, setAddressError] = useState('')
 
   const handleNext =  () => {
-    console.log(shippingAddress)
     //when order is submitted
     if(activeStep === steps.length - 1) {
       try{
