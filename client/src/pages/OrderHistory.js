@@ -37,13 +37,16 @@ const OrderHistory = () => {
       }
     
     const handleDeleteOrder = (id) => {
-        console.log(id)
-        deleteOrder({
-            variables: {
-                id: id
-            }
-        })
-        window.location.reload()
+        const confirmDelete = window.confirm('Are you sure you want to delete this Order?  It will be permanantly lost')
+        if(confirmDelete){
+            deleteOrder({
+                variables: {
+                    id: id
+                }
+            })
+            window.location.reload()
+        }
+        
     }
     return(
         <>
