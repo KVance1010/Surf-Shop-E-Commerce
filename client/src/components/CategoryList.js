@@ -4,6 +4,7 @@ import {
 	mensApparelCategory,
 	womensApparelCategory,
 } from '../utils/categoryList';
+import '../css/CategoryList.css';
 
 const CategoryList = ({}) => {
 	const { categoryName } = useParams({});
@@ -28,8 +29,8 @@ const CategoryList = ({}) => {
 					key={item.name}
 					to={`/apparel/${categoryName}/${item.name.toLocaleLowerCase()}`}
 				>
-					<img className = 'accessoriesPageImg' src={item.image} alt={item.alt} />
-					<p className="accessoriesPageTitle">{item.name}</p>
+					<img className = 'categoryListImg' src={item.image} alt={item.alt} />
+					<p className="categoryListTitle">{item.name}</p>
 				</Link>
 			))}
 		</div>

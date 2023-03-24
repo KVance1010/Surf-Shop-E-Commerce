@@ -26,27 +26,37 @@ const Cart = () => {
 		total += items[i].price * cart[items[i].name];
 	}
 	return (
-		<div className="cartContainer">
+		<div>
 			{loading ? (
 				<div>...Loading</div>
 			) : (
-				<div>
+				<div className='cartItemsContainer'>
 					{items.length > 0 ? (
-						<div>
-							<ul>
+						<>
+							<h1 className="cartTitle">Order</h1>
+							<table className="cartTable">
+								<tr className="cartTableHead">
+									<th>Item</th>
+									<th>Image</th>
+									<th>Price</th>
+									<th>Quantity</th>
+									<th>Total</th>
+									<th>Remove</th>
+								</tr>
 								{items.map((item, index) => (
-									<div key={index}>
-										<h3>{`${item.name}`}</h3>
-										<img
-											src={item.image}
-											alt={item.name}
-											className="cart_item_image"
-										/>
-										<h3>{`Price: ${item.price}`}</h3>
-										<h3>{`Quantity: ${cart[item.name]}`}</h3>
-										<h3>{`Total = ${item.price * cart[item.name]}`}</h3>
-
-										<button
+									<tr key={index} className="">
+										<td>{`${item.name}`}</td>
+										<td>
+											<img
+												src={item.image}
+												alt={item.name}
+												className="cart_item_image"
+											/>
+										</td>
+										<td>{`$${item.price}`}</td>
+										<td>{`${cart[item.name]}`}</td>
+										<td>{`$${item.price * cart[item.name]}`}</td>
+										<td className='cartRemove'
 											onClick={() => {
 												let newCart = cart;
 												delete newCart[item.name];
@@ -54,18 +64,32 @@ const Cart = () => {
 												localStorage.setItem('cart', JSON.stringify(newCart));
 											}}
 										>
-											Romove Item
-										</button>
-									</div>
+											Remove
+										</td>
+									</tr>
 								))}
-							</ul>
-							<h3>{`Grand Total: ${total}`}</h3>
-							<Link to={Auth.loggedIn() ? '/checkout' : '/login'}>
-								<button>Checkout</button>
-							</Link>
-						</div>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>{`Grand Total: $${total}`}</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>
+										<Link to={Auth.loggedIn() ? '/checkout' : '/login'}>
+											Checkout
+										</Link>
+									</td>
+								</tr>
+							</table>
+						</>
 					) : (
-						<div className='emptyCartContainer'>
+						<div className="emptyCartContainer">
 							<p className="emptyCart">Your Cart is Empty.</p>
 						</div>
 					)}
@@ -76,3 +100,43 @@ const Cart = () => {
 };
 
 export default Cart;
+// 		<div className="cartContainer">
+// 			{items.length > 0 ? (
+// 				<div>
+// 					<ul>
+// 						{items.map((item, index) => (
+// 							<li key={index} className= "cartItemsContainer">
+// 								<h3>{`${item.name}`}</h3>
+// 								<img
+// 									src={item.image}
+// 									alt={item.name}
+// 									className="cart_item_image"
+// 								/>
+// 								<h3>{`Price: $${item.price}`}</h3>
+// 								<h3>{`Quantity: ${cart[item.name]}`}</h3>
+// 								<h3>{`Total = $${item.price * cart[item.name]}`}</h3>
+
+// 								<button
+// 									onClick={() => {
+// 										let newCart = cart;
+// 										delete newCart[item.name];
+// 										setCart({ ...newCart });
+// 										localStorage.setItem('cart', JSON.stringify(newCart));
+// 									}}
+// 								>
+// 									Romove Item
+// 								</button>
+// 							</li>
+// 						))}
+// 					</ul>
+// 					<h3>{`Grand Total: ${total}`}</h3>
+// 					<Link to={Auth.loggedIn() ? '/checkout' : '/login'}>
+// 						<button>Checkout</button>
+// 					</Link>
+// 				</div>
+// 			) : (
+// 				<div className='emptyCartContainer'>
+// 					<p className="emptyCart">Your Cart is Empty.</p>
+// 				</div>
+// 			)}
+// 		</div>
