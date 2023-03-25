@@ -44,7 +44,7 @@ const OrderHistory = () => {
                     id: id
                 }
             })
-            window.location.replace('/order-history')
+            window.location.replace('/account')
         }
         
     }
