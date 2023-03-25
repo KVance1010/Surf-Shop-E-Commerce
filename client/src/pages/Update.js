@@ -85,7 +85,9 @@ const Update = () => {
                     image: formState.image,
                     stock: parseInt(formState.stock),
                     brand: formState.brand,
-                    saleItem: formState.saleItem
+                    saleItem: formState.saleItem,
+                    bestSeller: formState.bestSeller,
+                    newArrival: formState.newArrival
                 }
             })
             localStorage.setItem('item', JSON.stringify({
@@ -97,7 +99,9 @@ const Update = () => {
                     image: formState.image,
                     stock: parseInt(formState.stock),
                     brand: formState.brand,
-                    saleItem: formState.saleItem
+                    saleItem: formState.saleItem,
+                    bestSeller: formState.bestSeller,
+                    newArrival: formState.newArrival
             }))
             document.getElementById('success').textContent = 'Item has been updated!'
         }catch (e){

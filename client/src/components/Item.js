@@ -31,6 +31,7 @@ const ExpandMore = styled((props) => {
 }));
 
 const Item = ({ displayItem: item }) => {
+	console.log(item)
 	// mikes changes
 	// const Item = () => {
 	// 	console.log(Auth.isAdmin())
@@ -71,13 +72,14 @@ const Item = ({ displayItem: item }) => {
 		);
 		if (yesDelete) {
 			try {
-				const { deletedItem } = await deleteItemMutation({
-					variables: { uuid: item },
+				await deleteItemMutation({
+					variables: { uuid: item.uuid },
 				});
-				window.history.back();
+				
 			} catch (error) {
 				console.error(error);
 			}
+			window.location.reload();
 		}
 	};
 

@@ -100,7 +100,7 @@ const resolvers = {
             ))
         },
         deleteItem: async (parent, args) => {
-            const deletedItem = await Item.deleteOne({
+            const deletedItem = await Item.findOneAndDelete({
                 uuid: args.uuid
             })
         },
