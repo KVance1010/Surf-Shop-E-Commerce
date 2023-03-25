@@ -70,7 +70,7 @@ const AddItemForm = () => {
         }catch (e){
             console.error(e)
         }
-        window.location.reload()
+        window.location.replace('/')
         alert('Item has been added!')
     }
     
