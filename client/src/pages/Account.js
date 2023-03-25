@@ -5,12 +5,12 @@ import {Link} from 'react-router-dom'
 
 const Account = () => {
     if(!Auth.loggedIn()){
-        window.location.assign('/login')
+        window.location.replace('/login')
     }
 
     const logout = () => {
         Auth.logout()
-        window.location.assign('/')
+        window.location.replace('/')
     }
 
     return (
