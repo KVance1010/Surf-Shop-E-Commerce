@@ -79,7 +79,7 @@ const Item = ({ displayItem: item }) => {
 			} catch (error) {
 				console.error(error);
 			}
-			window.location.reload();
+			window.location.replace('/');
 		}
 	};
 
