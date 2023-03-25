@@ -66,10 +66,12 @@ const AddItemForm = () => {
             const {data} = await addItem({
                 variables: {...formState}
             })
-            document.getElementById('success').textContent = 'Item Added to inventory!'
+            
         }catch (e){
             console.error(e)
         }
+        window.location.reload()
+        alert('Item has been added!')
     }
     
 
