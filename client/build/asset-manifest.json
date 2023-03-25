@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7e1aa61b.chunk.css",
+    "main.js": "/static/js/main.7ed4ef4d.chunk.js",
+    "main.js.map": "/static/js/main.7ed4ef4d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.caf1f8a5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.caf1f8a5.js.map",
+    "static/css/2.ab424876.chunk.css": "/static/css/2.ab424876.chunk.css",
+    "static/js/2.b12c1f83.chunk.js": "/static/js/2.b12c1f83.chunk.js",
+    "static/js/2.b12c1f83.chunk.js.map": "/static/js/2.b12c1f83.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.ab424876.chunk.css.map": "/static/css/2.ab424876.chunk.css.map",
+    "static/css/main.7e1aa61b.chunk.css.map": "/static/css/main.7e1aa61b.chunk.css.map",
+    "static/js/2.b12c1f83.chunk.js.LICENSE.txt": "/static/js/2.b12c1f83.chunk.js.LICENSE.txt",
+    "static/media/bag.87080229.svg": "/static/media/bag.87080229.svg",
+    "static/media/dingRepair.50cf82f1.svg": "/static/media/dingRepair.50cf82f1.svg",
+    "static/media/earplugs.77136b98.svg": "/static/media/earplugs.77136b98.svg",
+    "static/media/ezgif.com-video-to-gif.46745a6a.mp4": "/static/media/ezgif.com-video-to-gif.46745a6a.mp4",
+    "static/media/fin.fc075129.svg": "/static/media/fin.fc075129.svg",
+    "static/media/helmet.0875784e.svg": "/static/media/helmet.0875784e.svg",
+    "static/media/leash.5f24d176.svg": "/static/media/leash.5f24d176.svg",
+    "static/media/mike_cropped.4b8f7f2d.jpg": "/static/media/mike_cropped.4b8f7f2d.jpg",
+    "static/media/rashGuard.a774fc58.svg": "/static/media/rashGuard.a774fc58.svg",
+    "static/media/styles.css": "/static/media/revicons.e8746a62.woff",
+    "static/media/sunscreen.de346761.svg": "/static/media/sunscreen.de346761.svg",
+    "static/media/surfboards.24587e37.jpg": "/static/media/surfboards.24587e37.jpg",
+    "static/media/tailPad.acbece56.svg": "/static/media/tailPad.acbece56.svg",
+    "static/media/towel.8c17866f.svg": "/static/media/towel.8c17866f.svg",
+    "static/media/watch.0b34253e.svg": "/static/media/watch.0b34253e.svg",
+    "static/media/wax.a5048d93.svg": "/static/media/wax.a5048d93.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.caf1f8a5.js",
+    "static/css/2.ab424876.chunk.css",
+    "static/js/2.b12c1f83.chunk.js",
+    "static/css/main.7e1aa61b.chunk.css",
+    "static/js/main.7ed4ef4d.chunk.js"
+  ]
+}
