@@ -103,7 +103,7 @@ const Update = () => {
                     bestSeller: formState.bestSeller,
                     newArrival: formState.newArrival
             }))
-            document.getElementById('success').textContent = 'Item has been updated!'
+            alert('Item has been updated!')
         }catch (e){
             console.error(e)
         }
