@@ -20,6 +20,11 @@
 	min-height: 526px;
 	border: solid 2px var(--boldFontColor);
 }
+.itemBrand{
+	font-weight: 900;
+	font-size:26px;
+	padding-bottom: 10px;
+}
 .extraInfoTags{
 	display: flex;
 }

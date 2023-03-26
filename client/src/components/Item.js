@@ -98,6 +98,7 @@ const Item = ({ displayItem: item }) => {
 					title={item.name}
 					component="img"
 				/>
+				{item.brand ? <h4 className='itemBrand'>{item.brand}</h4> : <></>}
 				<div className="extraInfoTags">
 					{item.saleItem ? <h4>On Sale!!</h4> : <></>}
 					{item.newArrival ? <h4>New Arrival!!</h4> : <></>}
