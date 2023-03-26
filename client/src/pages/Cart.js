@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import Auth from '../utils/auth';
 import Wave from 'react-wavify';
 
-const Cart = () => {
+const Cart = ({orderItems}) => {
 	const { cart, setCart } = useCartContext();
 
 	const itemNameList = [];
@@ -19,8 +19,14 @@ const Cart = () => {
 		variables: { names: itemNameList },
 	});
 
-	const items = data?.itemsByNames || [];
-
+	let items;
+	if(!orderItems){
+	items = data?.itemsByNames || [];
+	console.log(items);
+	}else{
+		items = orderItems;
+		console.log(items);
+	}
 	let total = 0;
 	for (let i = 0; i < items.length; i++) {
 		total += items[i].price * cart[items[i].name];

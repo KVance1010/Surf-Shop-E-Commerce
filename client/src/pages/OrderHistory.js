@@ -1,7 +1,7 @@
-import React from 'react'
-import { useQuery, useMutation } from '@apollo/client'
-import { GET_ORDERS_BY_EMAIL } from '../utils/queries'
-import { DELETE_ORDER } from '../utils/mutations'
+import React from 'react';
+import { useQuery, useMutation } from '@apollo/client';
+import { GET_ORDERS_BY_EMAIL } from '../utils/queries';
+import { DELETE_ORDER } from '../utils/mutations';
 
 const OrderHistory = () => {
 
