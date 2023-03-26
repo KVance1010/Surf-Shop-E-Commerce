@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useMutation } from '@apollo/client'
 import { ADD_ITEM } from '../../utils/mutations'
+import '../../css/add_updateItem.css'
 
 const AddItemForm = () => {
 
@@ -77,7 +78,11 @@ const AddItemForm = () => {
     
 
     return(
-        <form onSubmit={handleSubmit}>
+        <div className='container'>
+            <h1 className='admin_header'>
+                Add new item:  
+            </h1>
+            <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label >Item Name</label><br/>
                     <input type="text" className="form-control" name="name" id="itemName" onChange={handleChange}/>
@@ -139,17 +144,18 @@ const AddItemForm = () => {
                 <button type="submit" className="btn btn-primary">Submit</button>
                 { error && (
                 <div
-                  style={{color:'red'}}
-                  className="text-center">
-                  {'something went wrong. Check to make sure all the data you entered is of the correct type'}
+                    style={{color:'red'}}
+                    className="text-center">
+                    {'something went wrong. Check to make sure all the data you entered is of the correct type'}
                 </div>               
-              )}
-              <div
-                  style={{color:'green'}}
-                  className="text-center" id='success'>
-                  
-            </div> 
+                )}
+                <div
+                    style={{color:'green'}}
+                    className="text-center" id='success'>
+                    
+                </div> 
             </form>
+    </div>
             
     )
 }

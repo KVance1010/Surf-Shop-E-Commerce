@@ -11,9 +11,6 @@ const Admin = () => {
 
     return(
         <div>
-            <h1>
-                Add new item:  
-            </h1>
             <AddItemForm />
         </div>
     )
