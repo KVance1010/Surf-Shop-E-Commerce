@@ -9,27 +9,12 @@
     font-weight: 700;
     color: var(--boldFontColor);
 }
-.cartTotal {
-    position: absolute;
-    z-index: 3;
-    /* right: 162px; */
-    margin-left: 30px;
-    font-size: 18px;
-    padding: 1px;
-    top: 27px;
-    background-color: var(--headerColor);
-}
 
-@media screen and (max-width: 1510px){
-    .cartTotal {
-        /* right: 142px; */
-    }
-}
 @media screen and (max-width: 984px) { 
 	.navLink {
 		font-size: 16px;
-		padding: 15px 20px;
-        margin: 2px 0;
+		padding: 0px 10px;
+        margin: 10px 0;
         border-radius: 10px;
 	}
 }

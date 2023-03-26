@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
+// import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import '../../css/header/NavBar.css';
-import PersonIcon from '@mui/icons-material/Person';
-import { useCartContext } from '../../utils/cartContext';
+// import PersonIcon from '@mui/icons-material/Person';
+// import { useCartContext } from '../../utils/cartContext';
 import Auth from '../../utils/auth';
 
 const Links = ({ currentPage, handlePageChange }) => {
 
-	const { cart, cartTotal } = useCartContext();
+	// const { cart, cartTotal } = useCartContext();
 
 	return (
 		<>
@@ -48,7 +48,7 @@ const Links = ({ currentPage, handlePageChange }) => {
 					Accessories
 				</Link>
 			</li>
-			<li className="cartLi">
+			{/* <li className="cartLi">
 				<Link
 					to="/cart"
 					className="navLink"
@@ -62,7 +62,7 @@ const Links = ({ currentPage, handlePageChange }) => {
 				<Link to={Auth.loggedIn() ? '/account' : '/login'}>
 					<PersonIcon sx={{ fontSize: 32, color:'#d5c67a' }}/>
 				</Link>
-			</li>
+			</li> */}
 		</>
 	);
 };

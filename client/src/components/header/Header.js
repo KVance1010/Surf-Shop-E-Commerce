@@ -3,9 +3,15 @@ import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
 import SearchBar from './SearchBar';
 import '../../css/header/Header.css';
+import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
+import PersonIcon from '@mui/icons-material/Person';
+import Auth from '../../utils/auth';
 import { CartProvider } from '../../utils/cartContext';
+import { useCartContext } from '../../utils/cartContext';
+
 
 const Header = ({ currentPage, handlePageChange }) => {
+	const { cart, cartTotal } = useCartContext();
 	const [dropDown, setDropdown] = useState(false);
 	const [activeState, setActiveState] = useState('');
 	const handleDropDown = () => {
@@ -22,9 +28,8 @@ const Header = ({ currentPage, handlePageChange }) => {
 				SurfShop
 			</Link>
 			<nav className="navContainer">
-				
 				<ul className="navList">
-					<SearchBar/>
+					<SearchBar />
 					<NavBar
 						currentPage={currentPage}
 						handlePageChange={handlePageChange}
@@ -45,6 +50,14 @@ const Header = ({ currentPage, handlePageChange }) => {
 						<span></span>
 					)}
 				</div>
+				<Link to="/cart" className="navLinkIcon navLink">
+					<ShoppingCartCheckoutIcon className="navIcon"  sx={{ fontSize: 32 }} />
+					<div className="cartTotal">{cartTotal()}</div>
+				</Link>
+
+				<Link className="navLinkIcon" to={Auth.loggedIn() ? '/account' : '/login'}>
+					<PersonIcon className="navIcon" sx={{ fontSize: 32, color: '#d5c67a' }} />
+				</Link>
 			</nav>
 		</header>
 	);
