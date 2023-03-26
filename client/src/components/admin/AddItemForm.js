@@ -79,6 +79,7 @@ const AddItemForm = () => {
 
     return(
         <div className='container'>
+            <div></div>
             <h1 className='admin_header'>
                 Add new item:  
             </h1>
