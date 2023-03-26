@@ -5,10 +5,10 @@ import { useCartContext } from '../utils/cartContext';
 import '../css/cart.css';
 import { Link } from 'react-router-dom';
 import Auth from '../utils/auth';
+import Wave from 'react-wavify';
 
 const Cart = () => {
-	const { cart, setCart} =
-		useCartContext();
+	const { cart, setCart } = useCartContext();
 
 	const itemNameList = [];
 	for (let key in cart) {
@@ -30,33 +30,27 @@ const Cart = () => {
 			{loading ? (
 				<div>...Loading</div>
 			) : (
-				<div className='cartItemsContainer'>
+				<div className="cartContainer">
+					<h2 className="cartTitle">Cart</h2>
 					{items.length > 0 ? (
-						<>
-							<h1 className="cartTitle">Order</h1>
-							<table className="cartTable">
-								<tr className="cartTableHead">
-									<th>Item</th>
-									<th>Image</th>
-									<th>Price</th>
-									<th>Quantity</th>
-									<th>Total</th>
-									<th>Remove</th>
-								</tr>
+						<div>
+							<ul className="cartItems">
 								{items.map((item, index) => (
-									<tr key={index} className="">
-										<td>{`${item.name}`}</td>
-										<td>
-											<img
-												src={item.image}
-												alt={item.name}
-												className="cart_item_image"
-											/>
-										</td>
-										<td>{`$${item.price}`}</td>
-										<td>{`${cart[item.name]}`}</td>
-										<td>{`$${item.price * cart[item.name]}`}</td>
-										<td className='cartRemove'
+									<li key={index} className="cartItem">
+										<h3>{`${item.name}`}</h3>
+										<img
+											src={item.image}
+											alt={item.name}
+											className="cartItemImage"
+										/>
+										<h3>{`Price: $${item.price}`}</h3>
+										<h3>{`Quantity: ${cart[item.name]}`}</h3>
+										<h3>{`Total = $${(item.price * cart[item.name]).toFixed(
+											2
+										)}`}</h3>
+
+										<div
+											className="cartRemoveBtn"
 											onClick={() => {
 												let newCart = cart;
 												delete newCart[item.name];
@@ -64,33 +58,48 @@ const Cart = () => {
 												localStorage.setItem('cart', JSON.stringify(newCart));
 											}}
 										>
-											Remove
-										</td>
-									</tr>
+											Remove Item
+										</div>
+									</li>
 								))}
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>{`Grand Total: $${total}`}</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td></td>
-									<td>
-										<Link to={Auth.loggedIn() ? '/checkout' : '/login'}>
-											Checkout
-										</Link>
-									</td>
-								</tr>
-							</table>
-						</>
+							</ul>
+							<h3 className="cartGrandTotal">{`Grand Total: $${total.toFixed(
+								2
+							)}`}</h3>
+							<Link
+								className="checkoutBtn"
+								to={Auth.loggedIn() ? '/checkout' : '/login'}
+							>
+								<button>Checkout</button>
+							</Link>
+						</div>
 					) : (
 						<div className="emptyCartContainer">
-							<p className="emptyCart">Your Cart is Empty.</p>
+							<div>
+								<p className="emptyCart">Your Cart is Empty</p>
+							</div>
+							<div>
+								<Wave mask="url(#mask)" fill="#1277b0">
+									<defs>
+										<linearGradient
+											id="gradient"
+											gradientTransform="rotate(90)"
+										>
+											<stop offset="0" stopColor="white" />
+											<stop offset="0.5" stopColor="black" />
+										</linearGradient>
+										<mask id="mask">
+											<rect
+												x="0"
+												y="0"
+												width="800"
+												height="400"
+												fill="url(#gradient)"
+											/>
+										</mask>
+									</defs>
+								</Wave>
+							</div>
 						</div>
 					)}
 				</div>
@@ -100,43 +109,3 @@ const Cart = () => {
 };
 
 export default Cart;
-// 		<div className="cartContainer">
-// 			{items.length > 0 ? (
-// 				<div>
-// 					<ul>
-// 						{items.map((item, index) => (
-// 							<li key={index} className= "cartItemsContainer">
-// 								<h3>{`${item.name}`}</h3>
-// 								<img
-// 									src={item.image}
-// 									alt={item.name}
-// 									className="cart_item_image"
-// 								/>
-// 								<h3>{`Price: $${item.price}`}</h3>
-// 								<h3>{`Quantity: ${cart[item.name]}`}</h3>
-// 								<h3>{`Total = $${item.price * cart[item.name]}`}</h3>
-
-// 								<button
-// 									onClick={() => {
-// 										let newCart = cart;
-// 										delete newCart[item.name];
-// 										setCart({ ...newCart });
-// 										localStorage.setItem('cart', JSON.stringify(newCart));
-// 									}}
-// 								>
-// 									Romove Item
-// 								</button>
-// 							</li>
-// 						))}
-// 					</ul>
-// 					<h3>{`Grand Total: ${total}`}</h3>
-// 					<Link to={Auth.loggedIn() ? '/checkout' : '/login'}>
-// 						<button>Checkout</button>
-// 					</Link>
-// 				</div>
-// 			) : (
-// 				<div className='emptyCartContainer'>
-// 					<p className="emptyCart">Your Cart is Empty.</p>
-// 				</div>
-// 			)}
-// 		</div>

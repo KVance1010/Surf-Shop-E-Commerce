@@ -1,44 +1,79 @@
 .emptyCartContainer {
-    height: calc(100vh - 108px);
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	height: calc(100vh - 108px);
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
-.cartContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cart_item_image {
-    width: 200px;
-    margin-top: 20px;
+.emptyCartContainer div {
+	width: 40%;
 }
 .emptyCart {
-    font-size: 68px;
-}
-.cartTableHead th {
-    font-size: 26px;
-}
-.cartTable {
-    width: 100%;
-    /* margin: 60px; */
-}
-.cartRemove {
-    color:red;
-    cursor: pointer;
-}
-.cartRemove:hover {
-    font-weight: bolder;
-    color:brown;
-}
-.cartTitle {
-    font-size: 36px;
-    text-align: center;
-    background-color: var(--mainBackgroundColor);
-    padding: 20px;
+	font-size: 68px;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	color: var(--mainBackgroundColor);
 }
 
-.cartItemsContainer {
-    /* width:100vw; */
+.cartContainer {
+}
+.cartTitle {
+	text-align: center;
+	background-color: var(--mainBackgroundColor);
+	font-size: 36px;
+	padding: 20px;
+	font-weight: bold;
+	color: var(--boldFontColor);
+}
+.cartItemImage {
+	width: 200px;
+}
+.cartItems {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.cartItem {
+	margin: 20px;
+	width: 250px;
+	height: 500px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	border: 2px solid var(--mainBackgroundColor);
+	padding: 20px;
+	color: var(--mainBackgroundColor);
+}
+.cartItem * {
+	padding: 5px 0;
+}
+.cartRemoveBtn {
+	color: red;
+	border: none;
+	font-weight: bold;
+	width: 200px;
+	cursor: pointer;
+}
+.cartGrandTotal {
+	border-top: 2px solid var(--mainBackgroundColor);
+	margin: 0 60px;
+	text-align: end;
+	font-size: 26px;
+	color: var(--mainBackgroundColor);
+}
+.checkoutBtn {
+	display: block;
+	text-align: end;
+	margin: 20px 60px;
+}
+.checkoutBtn button {
+	padding: 20px 40px;
+	background-color: var(--mainBackgroundColor);
+	color: var(--boldFontColor);
+	font-weight: 900;
+	border-radius: 5px;
+}
+.checkoutBtn button:hover {
+	background-color: green;
 }
