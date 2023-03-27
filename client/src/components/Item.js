@@ -112,7 +112,7 @@ const Item = ({ displayItem: item }) => {
 						<ExpandMoreIcon expand={expanded} aria-expanded={expanded} />
 					</ExpandMore>
 					{item.stock > 0 ? (
-						<Button size="small" onClick={addToCart}>
+						<Button className= "addToCartBtn" size="small" onClick={addToCart}>
 						Add to Cart!
 					</Button>
 					) : (
