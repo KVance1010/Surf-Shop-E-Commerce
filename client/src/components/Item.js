@@ -1,7 +1,5 @@
-import React, { useContext } from 'react';
-import { useParams } from 'react-router-dom';
-import { useQuery, useMutation } from '@apollo/client';
-import { QUERY_ITEM_BY_UUID } from '../utils/queries';
+import React from 'react';
+import { useMutation } from '@apollo/client';
 import { DELETE_ITEM } from '../utils/mutations';
 import { useCartContext } from '../utils/cartContext';
 import CardHeader from '@mui/material/CardHeader';
@@ -30,14 +28,8 @@ const ExpandMore = styled((props) => {
 	}),
 }));
 
-const Item = ({ displayItem: item }) => {
-	console.log(item)
-	// mikes changes
-	// const Item = () => {
-	// 	console.log(Auth.isAdmin())
-	// 	const { item } = useParams({});
-	const [deleteItemMutation, { error, deleteItemData }] =
-		useMutation(DELETE_ITEM);
+const Item = ({ displayItem: item, deleteItemMutation, handleRerender }) => {
+
 
 	// old content
 	const [expanded, setExpanded] = React.useState(false);
@@ -75,11 +67,13 @@ const Item = ({ displayItem: item }) => {
 				await deleteItemMutation({
 					variables: { uuid: item.uuid },
 				});
+				handleRerender(item.uuid)
+				window.location.reload()
 				
 			} catch (error) {
 				console.error(error);
 			}
-			window.location.replace('/');
+			
 		}
 	};
 

@@ -1,7 +1,8 @@
 import React from 'react';
-import { useQuery } from '@apollo/client';
+import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_ITEMS_BY_TAGS } from '../utils/queries';
-import { useEffect } from 'react';
+import { DELETE_ITEM } from '../utils/mutations';
+import { useEffect, useState } from 'react';
 import Item from './Item';
 
 const ItemList = () => {
@@ -21,6 +22,15 @@ const ItemList = () => {
 		tags.push(pageTag);
 	}
 
+	const [reRender, setRerender] = useState('')
+
+	const [deleteItemMutation, { error, deleteItemData }] =
+		useMutation(DELETE_ITEM);
+	const handleRerender = (string) => {
+		console.log('state change')
+		setRerender(string)
+	}
+
 	const { loading, data } = useQuery(QUERY_ITEMS_BY_TAGS, {
 		variables: { tags: tags },
 		fetchPolicy: 'cache-and-network' //gets most updated data
@@ -28,6 +38,10 @@ const ItemList = () => {
 
 	const items = data?.itemsByCategory || [];
 	
+	useEffect(() => {
+
+	}, [reRender])
+
 	return (
 		<div className='categoryItemContainer'>
 			{loading ? (
@@ -36,11 +50,13 @@ const ItemList = () => {
 				 (
 					<div className="categoryList">
 						{items.map((item) => (
-							<Item key= {item.name} displayItem ={item} />
+							<Item key= {item.name} displayItem ={item} deleteItemMutation={deleteItemMutation} handleRerender={handleRerender} />
 						))}
 					</div>
+					
 				)
 			)}
+
 		</div>
 	);
 };
