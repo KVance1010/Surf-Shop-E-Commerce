@@ -2,6 +2,7 @@ import React from 'react';
 import { useQuery, useMutation } from '@apollo/client';
 import { GET_ORDERS_BY_EMAIL } from '../utils/queries';
 import { DELETE_ORDER } from '../utils/mutations';
+import '../css/OrderList.css';
 
 const OrderHistory = () => {
 
@@ -66,12 +67,12 @@ const OrderHistory = () => {
                             {order.itemNames.map((item, index) => {
                                 total += order.itemPrices[index] * order.itemQuantities[index]
                                 return(
-                                    <>
+                                    <div className='orderList'>
                                         <img style={{'width': '200px'}} src={order.itemImages[index]} alt={order.itemNames[index]}/>
                                         <h3>
                                             {`${order.itemNames[index]}: $${order.itemPrices[index]} X ${order.itemQuantities[index]} = ${order.itemPrices[index] * order.itemQuantities[index]}` }
                                         </h3>
-                                    </>
+                                    </div>
                                 )}
                                 
                             )}
@@ -96,4 +97,4 @@ const OrderHistory = () => {
     )
 }
 
-export default OrderHistory
+export default OrderHistory;

@@ -1,0 +1,47 @@
+.orderList {
+    display: flex;
+    /* border-left: solid 2px var(--mainBackgroundColor); */
+    /* border: solid 2px var(--mainBackgroundColor); */
+    /* width: 70%; */
+    /* justify-content: space-eve; */
+    align-items: center;
+    /* padding: 20px; */
+}
+.orderList img {
+    padding: 20px;
+}
+
+.hideOrderIcon{
+
+}
+.displayNone {
+    display: none;
+}
+.titleLogoutContainer{
+    background-color: var(--mainBackgroundColor);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+.titleLogoutContainer h1{
+    font-size: 38px;
+    color: var(--boldFontColor);
+}
+.titleLogoutContainer a {
+    font-size: 38px;
+    color: var(--fontColor);
+}
+.titleLogoutContainer a:hover {
+    color: var(--boldFontColor);
+    font-weight: 900;
+}
+.deleteOrder{
+    color: red;
+    padding:20px;
+    cursor: pointer;
+}
+.order {
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    margin: 20px 60px;
+}
