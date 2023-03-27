@@ -47,6 +47,13 @@
 	margin: 10px;
 	cursor: pointer;
 }
+.addToCartBtn{
+	color: var(--headerColor) !important;
+	font-weight: 900 !important;
+}
+.addToCartBtn:Hover{
+	background-color: var(--fontColor) !important;
+}
 
 @media screen and (max-width: 1300px) {
 	.dropDownDescription {

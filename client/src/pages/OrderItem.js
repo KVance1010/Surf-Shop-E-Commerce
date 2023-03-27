@@ -13,10 +13,10 @@ const OrderItem = (props) => {
                     <p>{props.name}</p>
                     <p>
                     {`$${
-                        props.price
-                    } X ${props.quantity} = ${
-                        props.price *
-                        props.quantity
+                        props.price.toFixed(2)
+                    } X ${props.quantity} = $${
+                        (props.price *
+                        props.quantity).toFixed(2)
                     }`}
                     </p>
                 </div>
