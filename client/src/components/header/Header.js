@@ -9,7 +9,6 @@ import Auth from '../../utils/auth';
 import { CartProvider } from '../../utils/cartContext';
 import { useCartContext } from '../../utils/cartContext';
 
-
 const Header = ({ currentPage, handlePageChange }) => {
 	const { cart, cartTotal } = useCartContext();
 	const [dropDown, setDropdown] = useState(false);
