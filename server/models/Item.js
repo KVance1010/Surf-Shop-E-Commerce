@@ -48,7 +48,6 @@ const itemSchema = new Schema ({
         trim: true,
         default: uuidv4
       },
-
 })
 
 itemSchema.plugin(uniqueValidator);

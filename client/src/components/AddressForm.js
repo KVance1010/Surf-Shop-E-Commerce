@@ -16,7 +16,7 @@ export default function AddressForm(props) {
       [name]: value
     })
   }
-  //the following useEffect was necessary to avoid getting stale data from the address form.  it was previously always one event behind before adding this.  It took me a loooooong time to find this solution
+
     useEffect(() => {
     props.handleShippingAddress(formState);
   }, [formState]);
