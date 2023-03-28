@@ -26,10 +26,20 @@
 	text-align: right;
 	margin: 0;
 }
+
 .downArrow {
 	position: absolute;
 	bottom: 40px;
 	right: 50%;
+	animation: 1s linear 1s infinite alternate animateDown ;
+}
+@keyframes animateDown{
+	from{
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(20px);
+	}
 }
 
 @media screen and (max-width: 901px) {
