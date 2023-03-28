@@ -20,30 +20,24 @@
 	/* object-fit: fill; */
 	object-fit: contain;
 }
-
+.categoryGender{
+	font-weight: 500;
+}
 /* .react-multiple-carousel__arrow {
 }
 .react-multi-carousel-item {
 } */
 
 .containerWhiteSpace div {
-	position: relative;
 	z-index: 3;
-	top: -90px;
-	font-size: 20px;
 	text-align: center;
-	border-radius: 10px;
+	margin: 10px;
 }
 .containerWhiteSpace h4{
-	position: relative;
 	z-index: 3;
-	font-size: 20px;
-	padding: 20px 40px;
-	display: inline;
-	text-align: center;
-	color: var(--boldFontColor);
-	background-color: var(--mainBackgroundColor);
-	border-radius: 10px;
+	font-size: 28px;
+	font-weight: 800;
+	color: var(--mainBackgroundColor);
 }
 
 .categoryGender {
