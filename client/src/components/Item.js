@@ -83,7 +83,7 @@ const Item = ({ displayItem: item, deleteItemMutation, handleRerender }) => {
 				<div>...loading</div>
 			) : ( */}
 			<Card className="itemCard">
-				<CardHeader title={item.name} />
+				<CardHeader className='itemTitle' title={item.name} />
 				<CardMedia
 					sx={{ height: 350, objectFit: 'scale-down' }}
 					image={item.image}
