@@ -29,9 +29,6 @@ const ExpandMore = styled((props) => {
 }));
 
 const Item = ({ displayItem: item, deleteItemMutation, handleRerender }) => {
-
-
-	// old content
 	const [expanded, setExpanded] = React.useState(false);
 	const handleExpandClick = () => {
 		setExpanded(!expanded);
