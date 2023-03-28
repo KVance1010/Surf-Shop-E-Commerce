@@ -1,7 +1,7 @@
 
 # SurfShop
 
-An e-commerce app for selling surf-related items.
+## An e-commerce app for selling surf-related items.
 This application is build using the MERN stack. It allows the user to browse a vast catalogue of surf merchandise. The user can navigate the site by selecting the category of their choice on the home page or by using the search bar.  They can add items to their shopping cart, view their cart, and checkout.  The site keeps a log of the user's order history for future reference.  There is added functionality if the user is logged in as an admin user.  This allows for items to be created, updated, and deleted.  Thus, the inventory becomes very manageable!
 
 
