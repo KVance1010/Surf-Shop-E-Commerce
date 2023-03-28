@@ -1,4 +1,4 @@
-Here is the model for an item.  Each item has a name, price, description, tags (categories), image URL, stock quantity, unique ID, and boolean values for weather or not the item is on sale, is a best seller, or is a new arrival
+
 # SurfShop
 
 An e-commerce app for selling surf-related items.
