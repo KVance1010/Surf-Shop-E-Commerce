@@ -10,10 +10,7 @@ const AccessoriesHome = () => {
 	return (
 		<div className="accessoriesContainer">
 			<div className="accessoriesContent">
-				<h3>hello</h3>
-				<p>
-					this is just a couple lined to see how text will look in this section
-				</p>
+				The ultimate selection of leashes, wax, fins, sunscreen, and more!  You'll always have the best equipment and you'll always be ready to shred!
 			</div>
 			<div className="accessoryImageContainer">
 				<div className="imageContainer">

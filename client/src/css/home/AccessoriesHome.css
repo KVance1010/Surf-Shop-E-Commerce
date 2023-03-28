@@ -10,12 +10,13 @@
 	background-color: rgba(0, 0, 0, 0.224);
 	height: 100vh;
 }
-.accessoriesContent h3 {
+.accessoriesContent {
 	color: var(--boldFontColor);
+	font-size: 36px;
+	line-height: 60px;
+	padding: 80px 60px;
 }
-.accessoriesContent p {
-	color: var(--fontColor);
-}
+
 .accessoriesTitle {
 	border-top: 5px solid var(--fontColor);
 	color: var(--boldFontColor);
