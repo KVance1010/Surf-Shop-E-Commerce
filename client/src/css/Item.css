@@ -17,7 +17,6 @@
 	width: 30vw;
     min-width: 300px;
     max-width:520px;
-	min-height: 526px;
 	border: solid 2px var(--boldFontColor);
 }
 .itemBrand{
@@ -53,6 +52,10 @@
 }
 .addToCartBtn:Hover{
 	background-color: var(--fontColor) !important;
+}
+.itemTitle{
+	height: 100px !important;
+	/* padding: 20px; */
 }
 
 @media screen and (max-width: 1300px) {

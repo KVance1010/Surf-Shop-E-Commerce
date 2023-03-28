@@ -26,14 +26,21 @@
 .react-multi-carousel-item {
 } */
 
-.containerWhiteSpace h4{
+.containerWhiteSpace div {
 	position: relative;
 	z-index: 3;
 	top: -90px;
-	left: 16vw;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 10px;
+}
+.containerWhiteSpace h4{
+	position: relative;
+	z-index: 3;
 	font-size: 20px;
 	padding: 20px 40px;
 	display: inline;
+	text-align: center;
 	color: var(--boldFontColor);
 	background-color: var(--mainBackgroundColor);
 	border-radius: 10px;
