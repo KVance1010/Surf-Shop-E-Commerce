@@ -19,7 +19,7 @@ const SearchBar = () => {
 			if (cat.includes('men')) {
 				cat = `apparel/${cat}`;
 			} else {
-				cat = `${cat}/${cat}`
+				cat = `${cat}`
 			}
 			link = `/${cat}/${item}`;
 			navigate(link, { replace: true });
